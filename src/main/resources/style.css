@@ -1,0 +1,11 @@
+div.board {
+    border: 2px solid brown;
+    width: 200px;
+}
+
+div.row > button {
+    height: 50px;
+    width: 50px;
+    font-size: 48px;
+    text-align: center;
+}
