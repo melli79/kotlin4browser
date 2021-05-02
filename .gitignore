@@ -1,0 +1,6 @@
+# debug files
+build/
+.gradle/
+
+# misc files
+.idea/
