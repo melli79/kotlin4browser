@@ -1,13 +1,11 @@
-import kotlinx.css.Align
-import kotlinx.css.alignItems
+import kotlinx.css.*
 import kotlinx.html.*
 import kotlinx.html.js.*
 import org.w3c.dom.*
 import org.w3c.dom.events.*
 import react.*
 import react.dom.*
-import styled.css
-import styled.styledDiv
+import styled.*
 import kotlin.js.Date
 import kotlin.random.Random
 
@@ -18,13 +16,16 @@ enum class Step {
 external interface AppState :RState {
     var name :String
     var step :Step
+    var size :Int
 }
 
+@OptIn(ExperimentalJsExport::class)
 @JsExport
 class App :RComponent<RProps, AppState>() {
     override fun AppState.init() {
         name = "Player${Random(Date.now().toLong()).nextInt(100)}"
         step = Step.Hello
+        size = 3
     }
 
     override fun RBuilder.render() {
@@ -32,7 +33,7 @@ class App :RComponent<RProps, AppState>() {
             +"Hello, ${state.name}!"
         }
         if (state.step == Step.Hello) {
-            p {
+            span {
                 +"Enter your name: "
             }
             input {
@@ -52,22 +53,56 @@ class App :RComponent<RProps, AppState>() {
                     }
                 }
             }
+            styledP {
+                css {
+                    height = 10.px
+                }
+            }
             button {
                 attrs {
                     onClickFunction = {
                         setState {
+                            size = 3
                             step = Step.Play
                         }
                     }
                 }
-                +"start Game"
+                +"3x3 Game"
+            }
+            span { +" "}
+            button {
+                attrs {
+                    onClickFunction = {
+                        setState {
+                            size = 4
+                            step = Step.Play
+                        }
+                    }
+                }
+                +"4x4 Game"
+            }
+            span { +" "}
+            button {
+                attrs {
+                    onClickFunction = {
+                        setState {
+                            size = 5
+                            step = Step.Play
+                        }
+                    }
+                }
+                +"5x5 Game"
             }
         } else
             styledDiv {
                 css {
                     alignItems = Align.center
                 }
-                board {}
+                board {
+                    attrs {
+                        size = state.size
+                    }
+                }
             }
     }
 }

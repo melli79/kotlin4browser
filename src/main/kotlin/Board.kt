@@ -2,9 +2,11 @@ import kotlinx.html.js.onClickFunction
 import react.*
 import react.dom.*
 
-val Size = 4
-
 data class Move(val row :Int, val col :Int, val player :Field)
+
+external interface BoardProps :RProps {
+    var size :Int
+}
 
 external interface BoardState :RState {
     var fields :MutableList<Field>
@@ -15,27 +17,34 @@ external interface BoardState :RState {
 
 fun BoardState.move() = moves.size
 
-class RBoard :RComponent<RProps, BoardState>() {
-    override fun BoardState.init() {
-        fields = (1..Size*Size).map{ Field.Empty }.toMutableList()
+class RBoard(props :BoardProps) :RComponent<BoardProps, BoardState>(props) {
+    override fun BoardState.init(props :BoardProps) {
+        reset(props)
+    }
+
+    private fun BoardState.reset(props :BoardProps) {
+        console.log(props.size)
+        fields = (1..props.size * props.size).map { Field.Empty }.toMutableList()
         moves = mutableListOf()
         human = Field.Empty
         winner = Field.Empty
     }
+
     override fun RBuilder.render() {
-        div("board") { for (r in 0 until Size) {
-            div("row") { for (c in 0 until Size) {
+        div("board") { for (r in 0 until props.size) {
+            div("row") { for (c in 0 until props.size) {
                 field {
                     attrs {
                         row = r
                         col = c
-                        value = state.fields[Size*r +c]
+                        value = state.fields[props.size*r +c]
+                        numButtons = props.size
                         if (state.winner == Field.Empty)
                             onClicked = { row, col ->
                                 setState {
                                     if (state.move() == 0)
                                         human = Field.X
-                                    fields[row*Size +col] = human
+                                    fields[row*props.size +col] = human
                                     moves.add(Move(row, col, human))
                                     checkGameOver()
                                     nextMove()
@@ -67,35 +76,43 @@ class RBoard :RComponent<RProps, BoardState>() {
                     else -> +"You lost the game!"
                 }
             }
+            button {
+                attrs.onClickFunction = {
+                    setState {
+                        reset(props)
+                    }
+                }
+                +"New Game?"
+            }
         }
     }
 
-    private fun isGameOver() = state.winner!=Field.Empty || state.move() >= Size*Size
+    private fun isGameOver() = state.winner!=Field.Empty || state.move() >= props.size*props.size
 
     private fun nextMove() {
-        val wMove = state.checkWinningMove()
+        val wMove = state.checkWinningMove(props.size)
         if (wMove!=null) {
             setState {
-                fields[wMove.row*Size +wMove.col] = wMove.player
+                fields[wMove.row*props.size +wMove.col] = wMove.player
                 moves.add(wMove)
             }
             return
         }
-        val fMove = state.checkForcingMove()
+        val fMove = state.checkForcingMove(props.size)
         if (fMove!=null) {
             setState {
-                fields[fMove.row*Size +fMove.col] = fMove.player
+                fields[fMove.row*props.size +fMove.col] = fMove.player
                 moves.add(fMove)
             }
             return
         }
-        if (state.move() < Size*Size)
-            for (f in 0 until Size*Size) {
+        if (state.move() < props.size*props.size)
+            for (f in 0 until props.size*props.size) {
             if (state.fields[f] == Field.Empty) {
                 setState {
                     val player = if (human == Field.X) Field.O else Field.X
                     fields[f] = player
-                    moves.add(Move(f/Size, f%Size, player))
+                    moves.add(Move(f/props.size, f%props.size, player))
                 }
                 break
             }
@@ -103,8 +120,8 @@ class RBoard :RComponent<RProps, BoardState>() {
     }
 
     private fun checkGameOver() {
-        val candidate = listOf(state.findRowWinner(), state.findColWinner(), state.findDiagWinner(),
-                state.findMDiagWinner())
+        val candidate = listOf(state.findRowWinner(props.size), state.findColWinner(props.size),
+                state.findDiagWinner(props.size), state.findMDiagWinner(props.size))
             .filterNotNull().firstOrNull()
         if (candidate != null) {
             setState {
@@ -114,29 +131,29 @@ class RBoard :RComponent<RProps, BoardState>() {
     }
 }
 
-fun BoardState.checkForcingMove() :Move? {
+fun BoardState.checkForcingMove(size :Int) :Move? {
     if (human == Field.Empty)
         return null
-    return listOf(checkFittingRowMove(human), checkFittingColMove(human), checkFittingDiagMove(human),
-            checkFittingMDiagMove(human))
+    return listOf(checkFittingRowMove(human, size), checkFittingColMove(human, size), checkFittingDiagMove(human, size),
+            checkFittingMDiagMove(human, size))
         .filterNotNull().firstOrNull()
 }
 
-fun BoardState.checkWinningMove() :Move? {
+fun BoardState.checkWinningMove(size: Int) :Move? {
     val player = if (human == Field.X) Field.O else Field.X
     if (human == Field.Empty)
         return null
-    return listOf(checkFittingRowMove(player), checkFittingColMove(player), checkFittingDiagMove(player),
-        checkFittingMDiagMove(player))
+    return listOf(checkFittingRowMove(player, size), checkFittingColMove(player, size), checkFittingDiagMove(player, size),
+        checkFittingMDiagMove(player, size))
         .filterNotNull().firstOrNull()
 }
 
-private fun BoardState.checkFittingRowMove(color :Field) :Move? {
+private fun BoardState.checkFittingRowMove(color :Field, size :Int) :Move? {
     val player = if (human == Field.X) Field.O else Field.X
-    outer@ for (row in 0 until Size) {
+    outer@ for (row in 0 until size) {
         var candidate :Move? = null
-        for (col in 0 until Size)
-            when (fields[row * Size + col]) {
+        for (col in 0 until size)
+            when (fields[row*size +col]) {
                 Field.Empty -> if (candidate == null)
                     candidate = Move(row, col, player)
                 else continue@outer
@@ -149,12 +166,12 @@ private fun BoardState.checkFittingRowMove(color :Field) :Move? {
     return null
 }
 
-private fun BoardState.checkFittingColMove(color :Field) :Move? {
+private fun BoardState.checkFittingColMove(color :Field, size :Int) :Move? {
     val player = if (human==Field.X) Field.O else Field.X
-    outer@for (col in 0 until Size) {
+    outer@for (col in 0 until size) {
         var candidate :Move? = null
-        for (row in 0 until Size)
-            when (fields[row*Size +col]) {
+        for (row in 0 until size)
+            when (fields[row*size +col]) {
                 Field.Empty -> if (candidate==null)
                     candidate = Move(row, col, player)
                 else continue@outer
@@ -167,11 +184,11 @@ private fun BoardState.checkFittingColMove(color :Field) :Move? {
     return null
 }
 
-fun BoardState.checkFittingDiagMove(color :Field) :Move? {
+fun BoardState.checkFittingDiagMove(color :Field, size :Int) :Move? {
     val player = if (human==Field.X) Field.O else Field.X
     var candidate :Move? = null
-    for (p in 0 until Size)
-        when (fields[p*(Size+1)]) {
+    for (p in 0 until size)
+        when (fields[p*(size+1)]) {
             Field.Empty -> if (candidate==null)
                 candidate = Move(p, p, player)
             else
@@ -182,13 +199,13 @@ fun BoardState.checkFittingDiagMove(color :Field) :Move? {
     return candidate
 }
 
-fun BoardState.checkFittingMDiagMove(color :Field) :Move? {
+fun BoardState.checkFittingMDiagMove(color :Field, size :Int) :Move? {
     val player = if (human==Field.X) Field.O else Field.X
     var candidate :Move? = null
-    for (p in 1..Size)
-        when (fields[p*(Size-1)]) {
+    for (p in 1..size)
+        when (fields[p*(size-1)]) {
             Field.Empty -> if (candidate==null)
-                candidate = Move(p-1, Size-p, player)
+                candidate = Move(p-1, size-p, player)
             else
                 return null
             color -> return null
@@ -197,51 +214,51 @@ fun BoardState.checkFittingMDiagMove(color :Field) :Move? {
     return candidate
 }
 
-fun BoardState.findColWinner() :Field? {
-    outer@for (c in 0 until Size) {
-        val candidate = fields[0 *Size +c]
+fun BoardState.findColWinner(size :Int) :Field? {
+    outer@for (c in 0 until size) {
+        val candidate = fields[0 *size +c]
         if (candidate == Field.Empty)
             continue
-        for (r in 1 until Size)
-            if (candidate != fields[r*Size +c])
+        for (r in 1 until size)
+            if (candidate != fields[r*size +c])
                 continue@outer
         return candidate
     }
     return null
 }
 
-fun BoardState.findRowWinner() :Field? {
-    outer@for (r in 0 until Size) {
-        val candidate = fields[r*Size +0]
+fun BoardState.findRowWinner(size :Int) :Field? {
+    outer@for (r in 0 until size) {
+        val candidate = fields[r*size +0]
         if (candidate == Field.Empty)
             continue
-        for (c in 1 until Size)
-            if (candidate != fields[r*Size +c])
+        for (c in 1 until size)
+            if (candidate != fields[r*size +c])
                 continue@outer
         return candidate
     }
     return null
 }
 
-fun BoardState.findDiagWinner() :Field? {
-    val candidate = fields[0 *(Size+1)]
+fun BoardState.findDiagWinner(size :Int) :Field? {
+    val candidate = fields[0 *(size+1)]
     if (candidate == Field.Empty)
         return null
-    for (f in 1 until Size) if (candidate != fields[f *(Size+1)])
+    for (f in 1 until size) if (candidate != fields[f *(size+1)])
         return null
     return candidate
 }
 
-fun BoardState.findMDiagWinner() :Field? {
-    val candidate = fields[Size-1]
+fun BoardState.findMDiagWinner(size :Int) :Field? {
+    val candidate = fields[size-1]
     if (candidate == Field.Empty)
         return null
-    for (p in 2..Size) if (candidate != fields[p*(Size-1)])
+    for (p in 2..size) if (candidate != fields[p*(size-1)])
         return null
     return candidate
 }
 
 
-fun RBuilder.board(handler :RProps.() -> Unit) = child(RBoard::class) {
+fun RBuilder.board(handler :BoardProps.() -> Unit) = child(RBoard::class) {
     this.attrs(handler)
 }
