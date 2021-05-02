@@ -62,32 +62,32 @@ fun RBuilder.history(handler :HistoryProps.() -> Unit) = child(HistoryComponent:
     this.attrs(handler)
 }
 
-fun evaluateGuess(guess :List<Pin?>, secret :Code) :List<Point> {
+fun Code.evaluateGuess(guess :List<Pin?>) :List<Point> {
     val openChoices = mutableListOf<Pin>()
     val openOptions = mutableSetOf<Pin>()
     val result = mutableListOf<Point>()
-    val first = secret[0].compare(guess[0])
+    val first = this[0].compare(guess[0])
     if (first == Point.Wrong) {
         openChoices.add(guess[0]!!)
-        openOptions.add(secret[0])
+        openOptions.add(this[0])
     } else
         result.add(first)
-    val second = secret[1].compare(guess[1])
+    val second = this[1].compare(guess[1])
     if (second == Point.Wrong) {
         openChoices.add(guess[1]!!)
-        openOptions.add(secret[1])
+        openOptions.add(this[1])
     } else
         result.add(second)
-    val third = secret[2].compare(guess[2])
+    val third = this[2].compare(guess[2])
     if (third == Point.Wrong) {
         openChoices.add(guess[2]!!)
-        openOptions.add(secret[2])
+        openOptions.add(this[2])
     } else
         result.add(third)
-    val fourth = secret[3].compare(guess[3])
+    val fourth = this[3].compare(guess[3])
     if (fourth == Point.Wrong) {
         openChoices.add(guess[3]!!)
-        openOptions.add(secret[3])
+        openOptions.add(this[3])
     } else
         result.add(fourth)
     while (openChoices.isNotEmpty()) {

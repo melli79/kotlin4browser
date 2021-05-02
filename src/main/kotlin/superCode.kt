@@ -122,7 +122,7 @@ class SuperCodeGame(props :SuperCodeProps) :RComponent<SuperCodeProps, SuperCode
             return
         }
 
-        val ev = evaluateGuess(state.guess, state.secret)
+        val ev = state.secret.evaluateGuess(state.guess)
         setState {
             history.add(HistoryEntry(Code(state.guess[0]!!, state.guess[1]!!,
                     state.guess[2]!!, state.guess[3]!!),
