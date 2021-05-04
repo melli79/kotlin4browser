@@ -1,4 +1,7 @@
 import kotlinx.browser.window
+import kotlinx.coroutines.MainScope
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.launch
 import kotlinx.css.*
 import kotlinx.html.*
 import kotlinx.html.js.onChangeFunction
@@ -19,6 +22,7 @@ external interface SuperCodeState :RState {
     var evaluation :MutableSet<Point>
     var history :MutableList<HistoryEntry>
     var clean :Boolean
+    var hint :Code?
 }
 
 @OptIn(ExperimentalJsExport::class)
@@ -27,12 +31,16 @@ class SuperCodeGame(props :SuperCodeProps) :RComponent<SuperCodeProps, SuperCode
     private lateinit var random :Random
     override fun SuperCodeState.init(props :SuperCodeProps) {
         random = Random(Date.now().toLong())
-        console.log(random)
+        reset()
+    }
+
+    private fun SuperCodeState.reset() {
         secret = random.nextCode()
         guess = mutableListOf(null, null, null, null)
         evaluation = mutableSetOf(Point.Wrong, Point.Wrong, Point.Wrong, Point.Wrong)
         history = mutableListOf()
         clean = true
+        hint = null
     }
 
     override fun RBuilder.render() {
@@ -53,59 +61,100 @@ class SuperCodeGame(props :SuperCodeProps) :RComponent<SuperCodeProps, SuperCode
                 entries = state.history
             }
         p {}
-        span {
-            +"Your guess: "
-        }
-        styledInput {
-            css {
-                +CodeStyles.guessInput
+        if (state.history.isEmpty() || state.history.last().totalPoints()<8) {
+            span {
+                +"Your guess: "
             }
-            attrs {
-                type = InputType.text
-                if (state.clean) {
-                    value = ""
-                    setState {
-                        clean = false
+            styledInput {
+                css {
+                    +CodeStyles.guessInput
+                }
+                attrs {
+                    type = InputType.text
+                    if (state.clean) {
+                        if (state.hint != null) {
+                            value =
+                                "${state.hint!!.first.abbr}${state.hint!!.second.abbr}${state.hint!!.third.abbr}${state.hint!!.fourth.abbr}"
+                            setState {
+                                state.guess = state.hint!!.toList().toMutableList()
+                                clean = false
+                                hint = null
+                            }
+                        } else {
+                            value = ""
+                            setState {
+                                clean = false
+                            }
+                        }
+                    }
+                    onChangeFunction = { event ->
+                        val element = event.target as HTMLInputElement
+                        processInput(element.value)
                     }
                 }
-                onChangeFunction = { event ->
-                    val element = event.target as HTMLInputElement
-                    processInput(element.value)
+            }
+            styledSpan {
+                css {
+                    +CodeStyles.pins
                 }
-            }
-        }
-        styledSpan {
-            css {
-                +CodeStyles.pins
-            }
-            state.guess.map { c ->
-                styledSpan {
-                    css {
-                        color = c?.color ?: Color.white
+                state.guess.map { c ->
+                    styledSpan {
+                        css {
+                            color = c?.color ?: Color.white
+                        }
+                        +if (c != null) "●" else "?"
                     }
-                    +if (c!=null) "●" else " "
                 }
             }
-        }
-        button {
-            attrs {
-                onClickFunction = {
-                    check()
-                }
-                disabled = state.guess.any { c -> c==null }
-            }
-            +"check"
-        }
-        p { +"Possible choices:" }
-        styledUl {
-            css { CodeStyles.choiceStyle }
-            Pin.values.map { c ->
-                styledLi {
-                    css {
-                        color = c.color
+            button {
+                attrs {
+                    onClickFunction = {
+                        if (state.guess.all { c -> c!=null })
+                            check()
+                        else
+                            cheat()
                     }
-                    +c.text
+                    disabled = state.guess.any { c -> c == null } && state.guess.any { c -> c != null}
                 }
+                +"check"
+            }
+            p { +"Possible choices:" }
+            styledUl {
+                css { CodeStyles.choiceStyle }
+                Pin.values.map { c ->
+                    styledLi {
+                        css {
+                            color = c.color
+                        }
+                        +c.text
+                    }
+                }
+            }
+        } else {
+            p {
+                +"You guessed it!! Congratulations!"
+            }
+            button {
+                attrs {
+                    onClickFunction = {
+                        setState {
+                            reset()
+                        }
+                    }
+                }
+                +"Play again"
+            }
+        }
+    }
+
+    private fun cheat() {
+        val mainScope = MainScope()
+        mainScope.launch {
+            val cheat = computeCheat(state.history)
+            console.log(cheat)
+            setState {
+                hint = cheat
+                clean = true
             }
         }
     }
@@ -126,7 +175,7 @@ class SuperCodeGame(props :SuperCodeProps) :RComponent<SuperCodeProps, SuperCode
         setState {
             history.add(HistoryEntry(Code(state.guess[0]!!, state.guess[1]!!,
                     state.guess[2]!!, state.guess[3]!!),
-                Evaluation(ev[0], ev[1], ev[2], ev[3])))
+                ev))
             clean = true
             guess = mutableListOf(null, null, null, null)
         }
@@ -150,4 +199,16 @@ fun Code.equal(guess :List<Pin?>) :Boolean {
     if (guess.any { p -> p==null})
         return false
     return this==Code(guess[0]!!, guess[1]!!, guess[2]!!, guess[3]!!)
+}
+
+suspend fun computeCheat(history :List<HistoryEntry>) :Code? = coroutineScope {
+    var result :Code? = null
+    outer@for (p0 in Pin.values)  for (p1 in Pin.values)  for (p2 in Pin.values) for (p3 in Pin.values) {
+        val code = Code(p0, p1, p2, p3)
+        if (history.all { h -> code.evaluateGuess(h.code.toList())==h.evaluation }) {
+            result = code
+            break@outer
+        }
+    }
+    result
 }

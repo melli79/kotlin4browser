@@ -25,6 +25,8 @@ data class Code(val first :Pin, val second :Pin, val third :Pin, val fourth :Pin
         else -> throw IndexOutOfBoundsException("only 4 colors in the state")
     }
     fun <T> map(mapper :(Pin) -> T) = listOf(mapper(first), mapper(second), mapper(third), mapper(fourth))
+    override fun toString() = "${first.abbr}${second.abbr}${third.abbr}${fourth.abbr}"
+    fun toList() = listOf(first, second, third, fourth)
 }
 
 fun Random.nextCode() = Code(nextPin(), nextPin(), nextPin(), nextPin())

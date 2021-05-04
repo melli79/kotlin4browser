@@ -4,14 +4,24 @@ import react.dom.*
 import styled.*
 
 sealed class Point(val color :Color, val value :Int, val abbr :Char) {
-    object Wrong :Point(Color.lightGray, 0, 'X')
-    object Half :Point(Color.gray, 1, 'H')
-    object Correct :Point(Color.black, 2, 'V')
+    object Wrong :Point(Color.lightGray, 0, 'X') {
+        override fun toString() = "Wrong"
+    }
+    object Half :Point(Color.gray, 1, 'H') {
+        override fun toString() = "Half"
+    }
+    object Correct :Point(Color.black, 2, 'V') {
+        override fun toString() = "Correct"
+    }
 }
 
 data class Evaluation(val points :Array<Point>) {
     constructor(first :Point, second :Point, third :Point, fourth :Point)
             :this(listOf(first, second, third, fourth).sortedBy { p -> -p.value }.toTypedArray())
+
+    override fun equals(other :Any?) = other is Evaluation && points.contentEquals(other.points)
+    override fun hashCode() = points.hashCode() +1
+    fun totalPoints() = points.sumBy { p -> p.value }
 }
 
 data class HistoryEntry(val code :Code, val evaluation :Evaluation) {
@@ -62,7 +72,7 @@ fun RBuilder.history(handler :HistoryProps.() -> Unit) = child(HistoryComponent:
     this.attrs(handler)
 }
 
-fun Code.evaluateGuess(guess :List<Pin?>) :List<Point> {
+fun Code.evaluateGuess(guess :List<Pin?>) :Evaluation {
     val openChoices = mutableListOf<Pin>()
     val openOptions = mutableSetOf<Pin>()
     val result = mutableListOf<Point>()
@@ -97,7 +107,7 @@ fun Code.evaluateGuess(guess :List<Pin?>) :List<Point> {
                 Point.Half else Point.Wrong
         )
     }
-    return result
+    return Evaluation(result[0], result[1], result[2], result[3])
 }
 
 private fun Pin.compare(color :Pin?) = when(color) {
