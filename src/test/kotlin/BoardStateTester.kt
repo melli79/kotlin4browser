@@ -7,7 +7,7 @@ class BoardStateTester {
         val result = stateOf(mutableListOf(Field.O, Field.Empty, Field.Empty,
             Field.Empty, Field.O, Field.Empty,
             Field.Empty, Field.Empty, Field.O))
-            .findDiagWinner()
+            .findDiagWinner(3)
         assertEquals(Field.O, result)
     }
 
@@ -16,7 +16,7 @@ class BoardStateTester {
                 Field.Empty, Field.Empty, Field.O,
                 Field.Empty, Field.O,     Field.Empty,
                 Field.O,     Field.Empty, Field.O))
-            .findMDiagWinner()
+            .findMDiagWinner(3)
         assertEquals(Field.O, result)
     }
 
@@ -25,7 +25,7 @@ class BoardStateTester {
                 Field.Empty, Field.Empty, Field.Empty,
                 Field.Empty, Field.O, Field.Empty,
                 Field.Empty, Field.Empty, Field.O))
-            .findDiagWinner()
+            .findDiagWinner(3)
         assertNull(result)
     }
 
@@ -34,7 +34,7 @@ class BoardStateTester {
                 Field.X, Field.X, Field.X,
                 Field.Empty, Field.Empty, Field.Empty,
                 Field.Empty, Field.Empty, Field.Empty))
-            .findRowWinner()
+            .findRowWinner(3)
         assertEquals(Field.X, result)
     }
 
@@ -43,7 +43,7 @@ class BoardStateTester {
             Field.Empty, Field.Empty, Field.Empty,
             Field.X, Field.X, Field.X,
             Field.Empty, Field.Empty, Field.Empty))
-            .findRowWinner()
+            .findRowWinner(3)
         assertEquals(Field.X, result)
     }
 
@@ -52,7 +52,7 @@ class BoardStateTester {
             Field.Empty, Field.Empty, Field.Empty,
             Field.Empty, Field.Empty, Field.Empty,
             Field.X,     Field.X,     Field.X))
-            .findRowWinner()
+            .findRowWinner(3)
         assertEquals(Field.X, result)
     }
 
@@ -61,7 +61,7 @@ class BoardStateTester {
             Field.X, Field.Empty, Field.Empty,
             Field.X, Field.Empty, Field.Empty,
             Field.X, Field.Empty, Field.Empty))
-            .findColWinner()
+            .findColWinner(3)
         assertEquals(Field.X, result)
     }
 
@@ -70,7 +70,7 @@ class BoardStateTester {
                 Field.Empty, Field.X, Field.Empty,
                 Field.Empty, Field.X, Field.Empty,
                 Field.Empty, Field.X, Field.Empty))
-            .findColWinner()
+            .findColWinner(3)
         assertEquals(Field.X, result)
     }
 
@@ -79,7 +79,7 @@ class BoardStateTester {
             Field.Empty, Field.Empty, Field.X,
             Field.Empty, Field.Empty, Field.X,
             Field.Empty, Field.Empty, Field.X))
-            .findColWinner()
+            .findColWinner(3)
         assertEquals(Field.X, result)
     }
 

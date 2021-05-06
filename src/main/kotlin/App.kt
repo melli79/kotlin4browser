@@ -1,3 +1,4 @@
+import kotlinx.browser.document
 import kotlinx.css.*
 import kotlinx.html.*
 import kotlinx.html.js.*
@@ -22,10 +23,32 @@ external interface AppState :RState {
 @OptIn(ExperimentalJsExport::class)
 @JsExport
 class App :RComponent<RProps, AppState>() {
+    private var cookies :MutableMap<String, String>? = null
+
     override fun AppState.init() {
-        name = "Player${Random(Date.now().toLong()).nextInt(100)}"
+        name = getCookie("name") ?: "Player${10+Random(Date.now().toLong()).nextInt(90)}"
         step = Step.Hello
         size = 3
+    }
+
+    private fun getCookie(name:String) :String? {
+        if (cookies == null) {
+            val cookieAssignments = document.cookie.split(";\\s")
+            console.log(cookieAssignments.joinToString("; "))
+            cookies = cookieAssignments.map { a ->
+                val keyValue = a.split("=")
+                if (keyValue[0].isNotBlank() && keyValue.size>1 && keyValue[1].isNotBlank())
+                    Pair(keyValue[0].trim(), keyValue[1].trim())
+                else
+                    null
+            }.filterNotNull().toMap().toMutableMap()
+            console.log("Found ${cookies!!.size} cookies.")
+        }
+        return cookies!![name]?.replace("\"","")
+    }
+
+    private fun setNameCookie(name :String) {
+        document.cookie = "name=$name;path=/"
     }
 
     override fun RBuilder.render() {
