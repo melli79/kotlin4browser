@@ -30,7 +30,6 @@ class App :RComponent<RProps, AppState>() {
     private fun getCookie(name:String) :String? {
         if (cookies == null) {
             val cookieAssignments = document.cookie.split(";\\s")
-            console.log(cookieAssignments.joinToString("; "))
             cookies = cookieAssignments.map { a ->
                 val keyValue = a.split("=")
                 if (keyValue[0].isNotBlank() && keyValue.size>1 && keyValue[1].isNotBlank())

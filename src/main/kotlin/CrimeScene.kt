@@ -22,6 +22,7 @@ external interface CrimeSceneState :RState {
     var observations :MutableList<Observation>
     var inquiry :String
     var clean :Boolean
+    var player2 :AutoDetective
 }
 
 @OptIn(ExperimentalJsExport::class)
@@ -61,6 +62,7 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
         observations = mutableListOf()
         clean = true
         inquiry = ""
+        player2 = AutoDetective(alibies = alibies[1], background = props)
     }
 
     override fun RBuilder.render() {
@@ -95,7 +97,9 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
                 attrs {
                     disabled = state.inquiry.trim().length < 10
                     onClickFunction = {
-                        inquiry(state.inquiry.trim())
+                        val alibi = inquiry(state.inquiry.trim())
+                        if (alibi==null || alibi.witness !=null)
+                            playOthers(alibi?.withoutAlibiItem())
                     }
                 }
                 +"Ask"
@@ -124,18 +128,41 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
         p { +("All motives: "+props.motives.joinToString()) }
     }
 
-    private fun inquiry(question :String) {
-        val inquiry = parseScenario(question, props) ?: return
+    private fun playOthers(oldAlibi :Observation?) {
+        val player = state.player2
+        if (oldAlibi != null)
+            player.tellObservation(oldAlibi)
+        val inquiry = player.createInquiry()
+        if (inquiry!=null && inquiry !in state.observations.map { o -> o.scene }) {
+            val alibi = findAlibi(player.name, inquiry, state.alibies, 1)
+            if (alibi.witness==null) {
+                window.alert("${player.name} solved the crime: ${inquiry.statement()}")
+                setState {
+                    observations.add(alibi.withoutAlibiItem())
+                }
+                return
+            }
+            player.tellObservation(alibi)
+            setState {
+                observations.add(alibi.withoutAlibiItem())
+            }
+        } else
+            console.log("${player.name} is stuck at the last question.")
+    }
+
+    private fun inquiry(question :String) :Observation? {
+        val inquiry = parseScenario(question, props) ?: return null
         if (inquiry in state.observations.map { o -> o.scene }) {
             window.alert("The accusation was already disproved! Try another one")
-            return
+            return null
         }
-        val alibi = findAlibi(inquiry, state.alibies, 1)
+        val alibi = findAlibi(props.criminals[0], inquiry, state.alibies, 1)
         if (alibi.witness==null)
             window.alert("You solved the crime: ${inquiry.statement()}")
         setState {
             observations.add(alibi)
         }
+        return alibi
     }
 }
 

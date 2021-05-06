@@ -1,8 +1,11 @@
+import kotlinx.css.*
 import react.*
 import react.dom.*
 import styled.*
 
-data class Observation (val scene: Scenario, val noWitnesses :List<Int>, val witness :Int?, val alibiItem :String?)
+data class Observation (val detective :String, val scene: Scenario, val noWitnesses :List<Int>, val witness :Int?, val alibiItem :String?) {
+    fun withoutAlibiItem() = Observation(detective, scene, noWitnesses, witness, null)
+}
 
 external interface ObservationsProps :RProps {
     var observations :List<Observation>
@@ -18,10 +21,15 @@ class ObservationsComponent :RComponent<ObservationsProps, RState>() {
         ol {
             for (observation in props.observations)
                 styledLi {
-                    css { CrimeStyles.observationStyle }
-                    +"""${observation.scene.question()} 
+                    css {
+                        CrimeStyles.observationStyle
+                        if (observation.witness==null)
+                            color = Color.red
+                    }
+                    +"""${observation.detective}: ${observation.scene.question()}
                         |${if (observation.noWitnesses.isNotEmpty()) "no witnesses: "+observation.noWitnesses.joinToString()+", " else ""}
-                        | counter-witness: ${if (observation.witness!=null) "${observation.witness}"+" alibi: "+observation.alibiItem else "nobody"}""".trimMargin()
+                        | counter-witness: ${if (observation.witness!=null) "${observation.witness}" else "nobody"}
+                        | ${if (observation.alibiItem!=null) " alibi: "+observation.alibiItem else ""}""".trimMargin()
                 }
         }
     }
@@ -31,22 +39,22 @@ fun RBuilder.observationsComponent(handler :ObservationsProps.() -> Unit) = chil
     this.attrs(handler)
 }
 
-fun findAlibi(inquiry :Scenario, alibies :List<Scenario>, start :Int) :Observation {
+fun findAlibi(detective :String, inquiry :Scenario, alibies :List<Scenario>, start :Int) :Observation {
     val noWitnesses = mutableListOf<Int>()
     for (i in 0 until alibies.size) {
         val witness = (start + i) % alibies.size
         val alibi = alibies[witness]
         if (inquiry.criminal==alibi.criminal)
-            return Observation(inquiry, noWitnesses, witness, alibi.criminal)
+            return Observation(detective, inquiry, noWitnesses, witness, alibi.criminal)
         if (inquiry.action==alibi.action)
-            return Observation(inquiry, noWitnesses, witness, alibi.action)
+            return Observation(detective, inquiry, noWitnesses, witness, alibi.action)
         if (inquiry.kind==alibi.kind)
-            return Observation(inquiry, noWitnesses, witness, alibi.kind)
+            return Observation(detective, inquiry, noWitnesses, witness, alibi.kind)
         if (inquiry.weapon==alibi.weapon)
-            return Observation(inquiry, noWitnesses, witness, alibi.weapon)
+            return Observation(detective, inquiry, noWitnesses, witness, alibi.weapon)
         if (inquiry.motive==alibi.motive)
-            return Observation(inquiry, noWitnesses, witness, alibi.motive)
+            return Observation(detective, inquiry, noWitnesses, witness, alibi.motive)
         noWitnesses += witness
     }
-    return Observation(inquiry, noWitnesses, null, null)
+    return Observation(detective, inquiry, noWitnesses, null, null)
 }
