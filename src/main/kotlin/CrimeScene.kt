@@ -30,23 +30,33 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
     private lateinit var random :Random
     override fun CrimeSceneState.init(props :CrimeSceneProps) {
         random = Random(Date.now().toLong())
+        reset()
+    }
+
+    private fun CrimeSceneState.reset() {
         val criminalsPermutation = Random.nextPermutation(props.criminals.size)
         val actionsPermutation = Random.nextPermutation(props.actions.size)
         val kindsPermutation = Random.nextPermutation(props.kinds.size)
         val weaponsPermutation = Random.nextPermutation(props.weapons.size)
         val motivesPermutation = Random.nextPermutation(props.motives.size)
-        crime = Scenario(props.criminals[criminalsPermutation[0]],
+        crime = Scenario(
+            props.criminals[criminalsPermutation[0]],
             props.actions[actionsPermutation[0]],
             props.kinds[kindsPermutation[0]],
             props.weapons[weaponsPermutation[0]],
-            props.motives[motivesPermutation[0]])
+            props.motives[motivesPermutation[0]]
+        )
         alibies = mutableListOf()
         (1 until props.criminals.size).forEach { i ->
-            alibies.add(Scenario(props.criminals[criminalsPermutation[i]],
-                props.actions[actionsPermutation[i]],
-                props.kinds[kindsPermutation[i]],
-                props.weapons[weaponsPermutation[i]],
-                props.motives[motivesPermutation[i]]))
+            alibies.add(
+                Scenario(
+                    props.criminals[criminalsPermutation[i]],
+                    props.actions[actionsPermutation[i]],
+                    props.kinds[kindsPermutation[i]],
+                    props.weapons[weaponsPermutation[i]],
+                    props.motives[motivesPermutation[i]]
+                )
+            )
         }
         observations = mutableListOf()
         clean = true
@@ -64,30 +74,44 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
             observationsComponent {
                 observations = state.observations
             }
-        span {
-            +"Your inquiry: "
-        }
-        styledInput {
-            css { +CrimeStyles.inputStyle }
-            attrs {
-                if (state.clean)
-                    value = state.inquiry
-                onChangeFunction = { event ->
-                    val inputField = event.target as HTMLInputElement
-                    setState {
-                        inquiry = inputField.value
+        if (state.observations.isEmpty() || state.observations.last().witness!=null) {
+            span {
+                +"Your inquiry: "
+            }
+            styledInput {
+                css { +CrimeStyles.inputStyle }
+                attrs {
+                    if (state.clean)
+                        value = state.inquiry
+                    onChangeFunction = { event ->
+                        val inputField = event.target as HTMLInputElement
+                        setState {
+                            inquiry = inputField.value
+                        }
                     }
                 }
             }
-        }
-        button {
-            attrs {
-                disabled = state.inquiry.trim().length<10
-                onClickFunction = {
-                    inquiry(state.inquiry.trim())
+            button {
+                attrs {
+                    disabled = state.inquiry.trim().length < 10
+                    onClickFunction = {
+                        inquiry(state.inquiry.trim())
+                    }
                 }
+                +"Ask"
             }
-            +"Ask"
+        } else {
+            p { +"""You solved the crime! Congratulations!!""" }
+            button {
+                attrs {
+                    onClickFunction = {
+                        setState {
+                            reset()
+                        }
+                    }
+                }
+                +"Play again?"
+            }
         }
         styledP {
             css { +CrimeStyles.alibiStyle }

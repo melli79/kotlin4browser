@@ -21,7 +21,7 @@ class ObservationsComponent :RComponent<ObservationsProps, RState>() {
                     css { CrimeStyles.observationStyle }
                     +"""${observation.scene.question()} 
                         |${if (observation.noWitnesses.isNotEmpty()) "no witnesses: "+observation.noWitnesses.joinToString()+", " else ""}
-                        | witness: ${if (observation.witness!=null) "${observation.witness}"+" alibi: "+observation.alibiItem else "nobody"}""".trimMargin()
+                        | counter-witness: ${if (observation.witness!=null) "${observation.witness}"+" alibi: "+observation.alibiItem else "nobody"}""".trimMargin()
                 }
         }
     }

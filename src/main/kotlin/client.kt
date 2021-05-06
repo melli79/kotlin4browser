@@ -64,7 +64,7 @@ class App :RComponent<RProps, AppState>() {
                 criminals = arrayOf(state.name, "Al Capone", "Sweeney Todd", "Jack the Ripper", "Axel Springer")
                 actions = arrayOf("slaughter", "butcher", "cut", "strangle", "twist")
                 kinds = arrayOf("brutally", "sneakily", "viciously", "coldblooded", "angrily")
-                weapons = arrayOf("axe", "knife", "rope", "super-string", "hands")
+                weapons = arrayOf("axe", "knife", "rope", "super-string", "bare hands")
                 motives = arrayOf("desperation", "self-defense", "greed", "passion", "jealousy")
             }
     }
