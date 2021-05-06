@@ -42,8 +42,9 @@ class App :RComponent<RProps, AppState>() {
                     type = InputType.text
                     value = state.name
                     onChangeFunction = { event ->
+                        val inputElement = event.target as HTMLInputElement
                         setState {
-                            name = (event.target as HTMLInputElement).value
+                            name = inputElement.value
                         }
                     }
                 }
@@ -60,11 +61,11 @@ class App :RComponent<RProps, AppState>() {
             }
         } else
             crimeScene {
-                criminals = arrayOf(state.name, "Al Capone", "Sweeney Todd", "Jack the Ripper")
-                actions = arrayOf("slaughter", "butcher", "cut", "strangle")
-                kinds = arrayOf("brutally", "sneakily", "viciously", "coldblooded")
-                weapons = arrayOf("axe", "knife", "rope", "super-string")
-                motives = arrayOf("desperation", "self-defense", "greed", "passion")
+                criminals = arrayOf(state.name, "Al Capone", "Sweeney Todd", "Jack the Ripper", "Axel Springer")
+                actions = arrayOf("slaughter", "butcher", "cut", "strangle", "twist")
+                kinds = arrayOf("brutally", "sneakily", "viciously", "coldblooded", "angrily")
+                weapons = arrayOf("axe", "knife", "rope", "super-string", "hands")
+                motives = arrayOf("desperation", "self-defense", "greed", "passion", "jealousy")
             }
     }
 }
