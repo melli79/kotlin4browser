@@ -19,10 +19,32 @@ external interface AppState :RState {
 @OptIn(ExperimentalJsExport::class)
 @JsExport
 class App :RComponent<RProps, AppState>() {
+    private var cookies :MutableMap<String, String>? = null
+
     override fun AppState.init() {
         val random = Random(Date.now().toLong())
-        name = "Player${10+random.nextInt(90)}"
+        name = getCookie("name") ?: "Player${10+random.nextInt(90)}"
         startGame = false
+    }
+
+    private fun getCookie(name:String) :String? {
+        if (cookies == null) {
+            val cookieAssignments = document.cookie.split(";\\s")
+            console.log(cookieAssignments.joinToString("; "))
+            cookies = cookieAssignments.map { a ->
+                val keyValue = a.split("=")
+                if (keyValue[0].isNotBlank() && keyValue.size>1 && keyValue[1].isNotBlank())
+                    Pair(keyValue[0].trim(), keyValue[1].trim())
+                else
+                    null
+            }.filterNotNull().toMap().toMutableMap()
+            console.log("Found ${cookies!!.size} cookies.")
+        }
+        return cookies!![name]
+    }
+
+    private fun setNameCookie(name :String) {
+        document.cookie = "name=$name;path=/"
     }
 
     override fun RBuilder.render() {
@@ -52,6 +74,7 @@ class App :RComponent<RProps, AppState>() {
             button {
                 attrs {
                     onClickFunction = {
+                        setNameCookie(state.name)
                         setState {
                             startGame = true
                         }
