@@ -28,7 +28,7 @@ class App :RComponent<RProps, AppState>() {
     private val defCriminals = listOf("Prof. Moriarty", "Al Capone", "Sweeney Todd", "Jack the Ripper")
     private val defActions = listOf("slaughter", "butcher", "cut", "strangle")
     private val defKinds = listOf("cruelly", "sneakily", "viciously", "coldblooded")
-    private val defWeapons = listOf("axe", "knife", "rope", "super-string")
+    private val defWeapons = listOf("an axe", "a knife", "a rope", "bare hands")
     private val defMotives = listOf("desperation", "self-defense", "greed", "passion")
 
     override fun AppState.init() {
@@ -189,7 +189,7 @@ class App :RComponent<RProps, AppState>() {
                 kinds = arrayOf(defKinds[0], defKinds[1], defKinds[2], defKinds[3],
                     state.favKind ?: "angrily")
                 weapons = arrayOf(defWeapons[0], defWeapons[1], defWeapons[2], defWeapons[3],
-                    state.favWeapon ?: "bare hands")
+                    state.favWeapon ?: "a super-string")
                 motives = arrayOf(defMotives[0], defMotives[1], defMotives[2], defMotives[3],
                     state.favMotive ?: "jealousy")
                 name = state.name

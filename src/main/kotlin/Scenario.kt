@@ -8,8 +8,8 @@ data class Scenario(
     val motive :String
 ) {
     override fun toString() = "$criminal, $action, $kind, $weapon, $motive."
-    fun question() = "Did $criminal $action $kind with a(n) $weapon out of $motive?"
-    fun statement() = "$criminal did $action $kind with a(n) $weapon out of $motive."
+    fun question() = "Did $criminal $action $kind with $weapon out of $motive?"
+    fun statement() = "$criminal did $action $kind with $weapon out of $motive."
 }
 
 fun parseScenario(inquiry :String, components :CrimeSceneProps) :Scenario? {

@@ -1,10 +1,11 @@
 
-class AutoDetective(val name :String = "B.F. Skinner", val alibies :Scenario, val background :CrimeSceneProps) {
+class AutoDetective(val name :String = "B.F. Skinner", val alibis :Scenario, val background :CrimeSceneProps) {
     private val observations = mutableListOf<Observation>()
     init {
-        observations.add(Observation(name, alibies, emptyList(), 1, null))
+        observations.add(Observation(name, alibis, emptyList(), 1, null))
     }
 
+    // TODO: stronger AI, by only updating the property that was disproved
     fun createInquiry() :Scenario? {
         cl@for (c in background.criminals) al@for (a in background.actions)
           kl@for (k in background.kinds) wl@for (w in background.weapons)

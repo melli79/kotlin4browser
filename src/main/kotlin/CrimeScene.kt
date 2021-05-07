@@ -18,7 +18,7 @@ external interface CrimeSceneProps :RProps {
 }
 
 external interface CrimeSceneState :RState {
-    var alibies :MutableList<Scenario>
+    var alibis :List<Scenario>
     var crime :Scenario
     var observations :MutableList<Observation>
     var inquiry :String
@@ -48,85 +48,97 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
             props.weapons[weaponsPermutation[0]],
             props.motives[motivesPermutation[0]]
         )
-        alibies = mutableListOf()
-        (1 until props.criminals.size).forEach { i ->
-            alibies.add(
-                Scenario(
-                    props.criminals[criminalsPermutation[i]],
-                    props.actions[actionsPermutation[i]],
-                    props.kinds[kindsPermutation[i]],
-                    props.weapons[weaponsPermutation[i]],
-                    props.motives[motivesPermutation[i]]
-                )
+        alibis = (1 until props.criminals.size).map { i ->
+            Scenario(
+                props.criminals[criminalsPermutation[i]],
+                props.actions[actionsPermutation[i]],
+                props.kinds[kindsPermutation[i]],
+                props.weapons[weaponsPermutation[i]],
+                props.motives[motivesPermutation[i]]
             )
         }
         observations = mutableListOf()
         clean = true
         inquiry = ""
-        player2 = AutoDetective(alibies = alibies[1], background = props)
+        player2 = AutoDetective(alibis = alibis[1], background = props)
     }
 
     override fun RBuilder.render() {
         if (state.observations.isEmpty())
-            p {
-                +"""You are to solve a crime that happened, that is you are to identify the criminal, the action, the kind,
-                    | the weapon and the motive by which the victim was killed.  You can do this by formulating
-                    | hypotheses and interrogating the witnesses whether anyone can provide an alibi against that.""".trimMargin()
-            }
+            describeScene()
         else
             observationsComponent {
                 observations = state.observations
             }
         if (state.observations.isEmpty() || state.observations.last().witness!=null) {
-            span {
-                +"Your inquiry: "
-            }
-            styledInput {
-                css { +CrimeStyles.inputStyle }
-                attrs {
-                    if (state.clean)
-                        value = state.inquiry
-                    onChangeFunction = { event ->
-                        val inputField = event.target as HTMLInputElement
-                        setState {
-                            inquiry = inputField.value
-                        }
-                    }
-                }
-            }
-            button {
-                attrs {
-                    disabled = state.inquiry.trim().length < 10
-                    onClickFunction = {
-                        val alibi = inquiry(state.inquiry.trim())
-                        if (alibi?.witness != null)
-                            playOthers(alibi.withoutAlibiItem())
-                    }
-                }
-                +"Ask"
-            }
-        } else {
-            p { +"""You solved the crime! Congratulations!!""" }
-            button {
-                attrs {
-                    onClickFunction = {
-                        setState {
-                            reset()
-                        }
-                    }
-                }
-                +"Play again?"
-            }
-        }
+            showInputs()
+        } else
+            showGameOver()
         styledP {
             css { +CrimeStyles.alibiStyle }
-            +"Your alibies: ${state.alibies[0]}"
+            +"Your alibies: ${state.alibis[0]}"
         }
-        p { +("All suspects: "+props.criminals.joinToString()) }
-        p { +("All actions: "+props.actions.joinToString()) }
-        p { +("All kinds: "+props.kinds.joinToString()) }
-        p { +("All weapons: "+props.weapons.joinToString()) }
-        p { +("All motives: "+props.motives.joinToString()) }
+        describeSuspects()
+    }
+
+    private fun RBuilder.describeScene() {
+        p {
+            +"""You are to solve a crime that happened, that is you are to identify the criminal, the action, the kind,
+                        | the weapon and the motive by which the victim was killed.  You can do this by formulating
+                        | hypotheses and interrogating the witnesses whether anyone can provide an alibi against that.""".trimMargin()
+        }
+    }
+
+    private fun RBuilder.showInputs() {
+        span {
+            +"Your inquiry: "
+        }
+        styledInput {
+            css { +CrimeStyles.inputStyle }
+            attrs {
+                if (state.clean)
+                    value = state.inquiry
+                onChangeFunction = { event ->
+                    val inputField = event.target as HTMLInputElement
+                    setState {
+                        inquiry = inputField.value
+                    }
+                }
+            }
+        }
+        button {
+            attrs {
+                disabled = state.inquiry.trim().length < 10
+                onClickFunction = {
+                    val alibi = inquiry(state.inquiry.trim())
+                    if (alibi?.witness != null)
+                        playOthers(alibi.withoutAlibiItem())
+                }
+            }
+            +"Ask"
+        }
+    }
+
+    private fun RBuilder.describeSuspects() {
+        p { +("All suspects: " + props.criminals.joinToString()) }
+        p { +("All actions: " + props.actions.joinToString()) }
+        p { +("All kinds: " + props.kinds.joinToString()) }
+        p { +("All weapons: " + props.weapons.joinToString()) }
+        p { +("All motives: " + props.motives.joinToString()) }
+    }
+
+    private fun RBuilder.showGameOver() {
+        p { +"""You solved the crime! Congratulations!!""" }
+        button {
+            attrs {
+                onClickFunction = {
+                    setState {
+                        reset()
+                    }
+                }
+            }
+            +"Play again?"
+        }
     }
 
     private fun playOthers(oldAlibi :Observation?) {
@@ -135,7 +147,7 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
             player.tellObservation(oldAlibi)
         val inquiry = player.createInquiry()
         if (inquiry!=null && inquiry !in state.observations.map { o -> o.scene }) {
-            val alibi = findAlibi(player.name, inquiry, state.alibies, 1)
+            val alibi = findAlibi(player.name, inquiry, state.alibis, 1)
             if (alibi.witness==null) {
                 window.alert("${player.name} solved the crime: ${inquiry.statement()}")
                 setState {
@@ -157,7 +169,7 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
             window.alert("The accusation was already disproved! Try another one")
             return null
         }
-        val alibi = findAlibi(props.name, inquiry, state.alibies, 1)
+        val alibi = findAlibi(props.name, inquiry, state.alibis, 1)
         if (alibi.witness==null)
             window.alert("You solved the crime: ${inquiry.statement()}")
         setState {
