@@ -13,6 +13,11 @@ import kotlin.random.Random
 
 external interface AppState :RState {
     var name :String
+    var favCriminal :String?
+    var favAction :String?
+    var favKind :String?
+    var favWeapon :String?
+    var favMotive :String?
     var startGame :Boolean
 }
 
@@ -20,6 +25,11 @@ external interface AppState :RState {
 @JsExport
 class App :RComponent<RProps, AppState>() {
     private var cookies :MutableMap<String, String>? = null
+    private val defCriminals = listOf("Prof. Moriarty", "Al Capone", "Sweeney Todd", "Jack the Ripper")
+    private val defActions = listOf("slaughter", "butcher", "cut", "strangle")
+    private val defKinds = listOf("cruelly", "sneakily", "viciously", "coldblooded")
+    private val defWeapons = listOf("axe", "knife", "rope", "super-string")
+    private val defMotives = listOf("desperation", "self-defense", "greed", "passion")
 
     override fun AppState.init() {
         val random = Random(Date.now().toLong())
@@ -81,15 +91,113 @@ class App :RComponent<RProps, AppState>() {
                 }
                 +"Start game"
             }
+            br {}
+            p { +"If you want, enter your " }
+            table { tbody {
+                tr {
+                    td { +"favorite criminal: " }
+                    td {
+                        input {
+                            attrs {
+                                onChangeFunction = { event ->
+                                    val field = event.target as HTMLInputElement
+                                    val input = field.value.trim()
+                                    setState {
+                                        favCriminal = if (input.isValid()) input
+                                        else null
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                tr {
+                    td { +"favorite crime: " }
+                    td {
+                        input {
+                            attrs {
+                                onChangeFunction = { event ->
+                                    val field = event.target as HTMLInputElement
+                                    val input = field.value.trim()
+                                    setState {
+                                        favAction = if (input.isValid()) input
+                                        else null
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                tr {
+                    td { +"favorite kind: " }
+                    td {
+                        input {
+                            attrs {
+                                onChangeFunction = { event ->
+                                    val field = event.target as HTMLInputElement
+                                    val input = field.value.trim()
+                                    setState {
+                                        favKind = if (input.isValid()) input
+                                        else null
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                tr {
+                    td { +"favorite weapon: " }
+                    td {
+                        input {
+                            attrs {
+                                onChangeFunction = { event ->
+                                    val field = event.target as HTMLInputElement
+                                    val input = field.value.trim()
+                                    setState {
+                                        favWeapon = if (input.isValid()) input
+                                        else null
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                tr {
+                    td { +"favorite motive: " }
+                    td {
+                        input {
+                            attrs {
+                                onChangeFunction = { event ->
+                                    val field = event.target as HTMLInputElement
+                                    val input = field.value.trim()
+                                    setState {
+                                        favMotive = if (input.isValid()) input
+                                        else null
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            } }
         } else
             crimeScene {
-                criminals = arrayOf(state.name, "Al Capone", "Sweeney Todd", "Jack the Ripper", "Axel Springer")
-                actions = arrayOf("slaughter", "butcher", "cut", "strangle", "twist")
-                kinds = arrayOf("brutally", "sneakily", "viciously", "coldblooded", "angrily")
-                weapons = arrayOf("axe", "knife", "rope", "super-string", "bare hands")
-                motives = arrayOf("desperation", "self-defense", "greed", "passion", "jealousy")
+                criminals = arrayOf(defCriminals[0], defCriminals[1], defCriminals[2], defCriminals[3],
+                    state.favCriminal ?: "Axel Springer")
+                actions = arrayOf(defActions[0], defActions[1], defActions[2], defActions[3],
+                    state.favAction ?: "twist")
+                kinds = arrayOf(defKinds[0], defKinds[1], defKinds[2], defKinds[3],
+                    state.favKind ?: "angrily")
+                weapons = arrayOf(defWeapons[0], defWeapons[1], defWeapons[2], defWeapons[3],
+                    state.favWeapon ?: "bare hands")
+                motives = arrayOf(defMotives[0], defMotives[1], defMotives[2], defMotives[3],
+                    state.favMotive ?: "jealousy")
+                name = state.name
             }
     }
+
+    private fun String.isValid() = length>=2 && this !in defCriminals && this !in defActions &&
+            this !in defKinds && this !in defWeapons && this !in defMotives
 }
 
 fun main() {

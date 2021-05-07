@@ -3,7 +3,7 @@ import styled.StyleSheet
 
 object CrimeStyles :StyleSheet("CrimeStyles", isStatic=true) {
     val observationStyle by css {
-        padding = "30px 0 30px 0"
+        padding = "30px"
     }
     val alibiStyle by css {
         color = Color.green

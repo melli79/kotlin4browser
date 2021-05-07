@@ -14,6 +14,7 @@ external interface CrimeSceneProps :RProps {
     var kinds :Array<String>
     var weapons :Array<String>
     var motives :Array<String>
+    var name :String
 }
 
 external interface CrimeSceneState :RState {
@@ -68,7 +69,7 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
     override fun RBuilder.render() {
         if (state.observations.isEmpty())
             p {
-                +"""You are to solve a crime that hapend, that is you are to identify the criminal, the action, the kind,
+                +"""You are to solve a crime that happened, that is you are to identify the criminal, the action, the kind,
                     | the weapon and the motive by which the victim was killed.  You can do this by formulating
                     | hypotheses and interrogating the witnesses whether anyone can provide an alibi against that.""".trimMargin()
             }
@@ -98,8 +99,8 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
                     disabled = state.inquiry.trim().length < 10
                     onClickFunction = {
                         val alibi = inquiry(state.inquiry.trim())
-                        if (alibi==null || alibi.witness !=null)
-                            playOthers(alibi?.withoutAlibiItem())
+                        if (alibi?.witness != null)
+                            playOthers(alibi.withoutAlibiItem())
                     }
                 }
                 +"Ask"
@@ -156,7 +157,7 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
             window.alert("The accusation was already disproved! Try another one")
             return null
         }
-        val alibi = findAlibi(props.criminals[0], inquiry, state.alibies, 1)
+        val alibi = findAlibi(props.name, inquiry, state.alibies, 1)
         if (alibi.witness==null)
             window.alert("You solved the crime: ${inquiry.statement()}")
         setState {
