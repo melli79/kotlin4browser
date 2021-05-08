@@ -14,6 +14,6 @@ object CrimeStyles :StyleSheet("CrimeStyles", isStatic=true) {
 
     val inputStyle by css {
         margin = "10px"
-        width = 250.px
+        width = 350.px
     }
 }

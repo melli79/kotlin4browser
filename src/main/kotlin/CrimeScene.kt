@@ -1,4 +1,6 @@
 import kotlinx.browser.window
+import kotlinx.css.TextAlign
+import kotlinx.css.textAlign
 import kotlinx.html.js.onChangeFunction
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLInputElement
@@ -86,10 +88,13 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
     }
 
     private fun RBuilder.describeScene() {
-        p {
+        styledP {
+            css {
+                textAlign = TextAlign.justify
+            }
             +"""You are to solve a crime that happened, that is you are to identify the criminal, the action, the kind,
-                        | the weapon and the motive by which the victim was killed.  You can do this by formulating
-                        | hypotheses and interrogating the witnesses whether anyone can provide an alibi against that.""".trimMargin()
+                | the weapon and the motive by which Bonny Taylor was killed.  You can do this by formulating
+                | hypotheses and interrogating the witnesses whether anyone can provide an alibi against that.""".trimMargin()
         }
     }
 
@@ -132,7 +137,11 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
     }
 
     private fun RBuilder.showGameOver() {
-        p { +"""You solved the crime! Congratulations!!""" }
+        val detective = state.observations.last().detective
+        if (detective ==props.name)
+            p { +"""You solved the crime! Congratulations!!""" }
+        else
+            p { +"""The crime was solved by $detective.  Maybe next time you will be faster."""}
         button {
             attrs {
                 onClickFunction = {
