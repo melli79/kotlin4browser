@@ -93,7 +93,7 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
                 textAlign = TextAlign.justify
             }
             +"""You are to solve a crime that happened, that is you are to identify the criminal, the action, the kind,
-                | the weapon and the motive by which Bonny Taylor was killed.  You can do this by formulating
+                | the weapon and the motive for which Liz Taylor was killed.  You can do this by formulating
                 | hypotheses and interrogating the witnesses whether anyone can provide an alibi against that.""".trimMargin()
         }
     }
