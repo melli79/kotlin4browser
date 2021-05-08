@@ -28,7 +28,7 @@ class ObservationsComponent :RComponent<ObservationsProps, RState>() {
                     }
                     +"""${observation.detective}: ${observation.scene.question()}
                         |${if (observation.noWitnesses.isNotEmpty()) "no witnesses: "+observation.noWitnesses.joinToString()+", " else ""}
-                        | counter-witness: ${if (observation.witness!=null) "${observation.witness}" else "nobody"}
+                        | alibi-witness: ${if (observation.witness!=null) "${observation.witness}" else "nobody"}
                         | ${if (observation.alibiItem!=null) " alibi: "+observation.alibiItem else ""}""".trimMargin()
                 }
         }
