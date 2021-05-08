@@ -18,6 +18,7 @@ external interface AppState :RState {
     var favKind :String?
     var favWeapon :String?
     var favMotive :String?
+    var tough :Boolean
     var startGame :Boolean
 }
 
@@ -85,11 +86,24 @@ class App :RComponent<RProps, AppState>() {
                     onClickFunction = {
                         setNameCookie(state.name)
                         setState {
+                            tough = false
                             startGame = true
                         }
                     }
                 }
-                +"Start game"
+                +"Easy game"
+            }
+            button {
+                attrs {
+                    onClickFunction = {
+                        setNameCookie(state.name)
+                        setState {
+                            tough = true
+                            startGame = true
+                        }
+                    }
+                }
+                +"Tough game"
             }
             br {}
             p { +"If you want, enter your " }
@@ -193,6 +207,7 @@ class App :RComponent<RProps, AppState>() {
                 motives = arrayOf(defMotives[0], defMotives[1], defMotives[2], defMotives[3],
                     state.favMotive ?: "jealousy")
                 name = state.name
+                tough = state.tough
             }
     }
 

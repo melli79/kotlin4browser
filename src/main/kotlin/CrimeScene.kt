@@ -15,6 +15,7 @@ external interface CrimeSceneProps :RProps {
     var weapons :Array<String>
     var motives :Array<String>
     var name :String
+    var tough :Boolean
 }
 
 external interface CrimeSceneState :RState {
@@ -23,7 +24,7 @@ external interface CrimeSceneState :RState {
     var observations :MutableList<Observation>
     var inquiry :String
     var clean :Boolean
-    var player2 :AutoDetective
+    var player2 :Detective
 }
 
 @OptIn(ExperimentalJsExport::class)
@@ -60,7 +61,10 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
         observations = mutableListOf()
         clean = true
         inquiry = ""
-        player2 = AutoDetective(alibis = alibis[1], background = props)
+        player2 = if (props.tough)
+                ToughDetective(alibis = alibis[1], background = props)
+            else
+                EasyDetective(alibis = alibis[1], background = props)
     }
 
     override fun RBuilder.render() {
