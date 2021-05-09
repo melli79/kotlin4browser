@@ -1,0 +1,8 @@
+# build files
+build/
+public*/
+
+# misc files
+.idea/
+.gradle/
+*.iml
