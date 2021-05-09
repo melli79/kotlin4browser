@@ -5,7 +5,7 @@ import styled.*
 val knownSymbols = listOf("♣","♠", "︎♥", "︎♦︎")
 val knownColors = listOf(Color.red, Color.orange, Color.green, Color.blue)
 val knownShades = listOf("🀆", "🀫", "🃘", "🀘")
-val knownRepetitions = listOf(1, 2, 3, 4)
+val knownRepetitions = listOf(1, 2, 3, 5)
 
 data class Card(
     val symbol :String,

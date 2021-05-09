@@ -6,6 +6,8 @@ import react.*
 import react.dom.*
 import styled.*
 import kotlin.js.Date
+import kotlin.math.ln
+import kotlin.math.roundToInt
 import kotlin.random.Random
 
 external interface GroupProps :RProps {
@@ -13,15 +15,19 @@ external interface GroupProps :RProps {
 }
 
 external interface GroupState :RState {
-    var newCards :MutableList<Card>
-    var openCards :MutableList<Card>
+    var remainingCards :MutableList<Card>
+    var openSet :List<Card>
     var groups :MutableList<Triple<Card, Card, Card>>
-    var minusPoints :Int
+    var points :Int
+    var revealTime :Double
+    var round :Int
 }
 
 @JsExport
 class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(props) {
     private lateinit var random :Random
+    val setSize = 6
+    val numRounds = 10
 
     override fun GroupState.init(props :GroupProps) {
         random = Random(Date.now().toLong())
@@ -30,22 +36,59 @@ class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(prop
 
     private fun GroupState.reset() {
         groups = mutableListOf()
-        minusPoints = 0
-        val deck = createDeck()
-        openCards = mutableListOf(deck.removeAt(0), deck.removeAt(0))
-        newCards = deck
+        points = 0
+        openSet = emptyList()
+        remainingCards = allCards().toMutableList()
+        round = 0
     }
 
-    private fun createDeck() :MutableList<Card> {
+    private fun pickSetWith1Group(remainingDeck :MutableList<Card>) :Pair<List<Card>, MutableList<Card>> {
         val result = mutableListOf<Card>()
-        val input = allCards().toMutableList()
-        while (input.isNotEmpty()) {
-            val card = input.removeAt(random.nextInt(input.size))
-            if (result.numGroupsWith(card)<=1)
+        val refused = mutableListOf<Card>()
+        while (remainingDeck.isNotEmpty()) {
+            val card = remainingDeck.removeAt(random.nextInt(remainingDeck.size))
+            val numGroups = result.numGroupsWith(card)
+            if (numGroups==1) {
                 result.add(card)
+                fillSet(result, remainingDeck, refused)
+                break
+            } else if (numGroups==0 && result.size+1<setSize)
+                result.add(card)
+            else
+                refused.add(card)
         }
-        console.log("Deck has ${result.size} cards.")
-        return result
+        console.log("Set has ${result.size} cards.")
+        if (result.size>=setSize) {
+            remainingDeck.addAll(refused)
+            return Pair(result, remainingDeck)
+        }
+        return Pair(emptyList(), remainingDeck)
+    }
+
+    private fun pickSetWithoutGroup(remainingDeck :MutableList<Card>) :Pair<List<Card>, MutableList<Card>> {
+        val result = mutableListOf<Card>()
+        val refused = mutableListOf<Card>()
+        fillSet(result, remainingDeck, refused)
+        console.log("Set has ${result.size} cards.")
+        if (result.size>=setSize) {
+            remainingDeck.addAll(refused)
+            return Pair(result, remainingDeck)
+        }
+        return Pair(emptyList(), remainingDeck)
+    }
+
+    private fun fillSet(
+        result :MutableList<Card>,
+        remainingDeck :MutableList<Card>,
+        refused :MutableList<Card>
+    ) {
+        while (remainingDeck.isNotEmpty() && result.size<setSize) {
+            val card = remainingDeck.removeAt(random.nextInt(remainingDeck.size))
+            if (result.numGroupsWith(card) < 1)
+                result.add(card)
+            else
+                refused.add(card)
+        }
     }
 
     override fun RBuilder.render() {
@@ -58,25 +101,26 @@ class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(prop
         }
         p {
             span { +"The open cards: " }
-            for (c in state.openCards) {
+            for (c in state.openSet) {
                 card {
                     card = c
                 }
             }
         }
-        if (state.newCards.isNotEmpty()) {
+        if (state.round < numRounds) {
             button {
                 attrs {
                     onClickFunction = {
-                        revealNextCard()
+                        revealNextSet()
                     }
                 }
-                +"Next"
+                + if (state.openSet.isEmpty()) "Start" else "Next"
             }
             button {
                 attrs {
                     onClickFunction = {
                         claimSet()
+                        revealNextSet()
                     }
                     +"Has Set"
                 }
@@ -86,7 +130,7 @@ class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(prop
                 css {
                     color = Color.green
                 }
-                +"""Game over!  You have ${state.groups.size-state.minusPoints} points."""
+                +"""Game over!  You have ${state.groups.size-state.points} points."""
             }
             button {
                 attrs {
@@ -112,37 +156,36 @@ class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(prop
     }
 
     private fun claimSet() {
-        val group = state.openCards.findGroup()
+        val group = state.openSet.findGroup()
         if(group==null) {
             window.alert("There is no Group! You lose a point.")
             setState {
-                minusPoints += 1
+                points -= 5
             }
             return
         }
+        val revealTime = state.revealTime
+        val now = Date.now()
         setState {
             groups.add(group)
-            openCards.removeAll(group.toList())
+            points += 5 +(100/ln(1+now-revealTime)).roundToInt()
         }
     }
 
-    private fun revealNextCard() {
-        if (state.newCards.isEmpty()) {
+    private fun revealNextSet() {
+        if (state.remainingCards.isEmpty()) {
             return
         }
-        if (state.openCards.size>4) {
-            val previous = state.openCards.subList(0, state.openCards.size-2)
-            val oldGroup = previous.findGroup()
-            if (oldGroup!=null) {
-                window.alert("You overlooked a group: $oldGroup.  I claim it.")
-                setState {
-                    openCards.removeAll(oldGroup.toList())
-                }
-            }
-        }
+        val remainingDeck = state.remainingCards
         setState {
-            val newCard = newCards.removeAt(0)
-            openCards.add(newCard)
+            val split = if (random.nextBoolean())
+                pickSetWithoutGroup(remainingDeck)
+            else
+                pickSetWith1Group(remainingDeck)
+            openSet = split.first
+            remainingCards = split.second
+            revealTime = Date.now()
+            round++
         }
     }
 }
