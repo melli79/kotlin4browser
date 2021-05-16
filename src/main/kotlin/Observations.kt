@@ -27,9 +27,12 @@ class ObservationsComponent :RComponent<ObservationsProps, RState>() {
                             color = Color.red
                     }
                     +"""${observation.detective}: ${observation.scene.question()}
-                        |${if (observation.noWitnesses.isNotEmpty()) "no witnesses: "+observation.noWitnesses.joinToString()+", " else ""}
-                        | alibi-witness: ${if (observation.witness!=null) "${observation.witness}" else "nobody"}
-                        | ${if (observation.alibiItem!=null) " alibi: "+observation.alibiItem else ""}""".trimMargin()
+                        |${if (observation.noWitnesses.isNotEmpty()) "no witnesses: "+observation.noWitnesses.joinToString()+", " else ""}""".trimMargin()
+                    styledSpan {
+                        css { color = Color.green }
+                        +"""alibi-witness: ${if (observation.witness!=null) "${observation.witness}" else "nobody"}
+                            | ${if (observation.alibiItem!=null) " alibi: "+observation.alibiItem else ""}""".trimMargin()
+                    }
                 }
         }
     }

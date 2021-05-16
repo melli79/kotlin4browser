@@ -50,11 +50,11 @@ class App :RComponent<RProps, AppState>() {
             }.filterNotNull().toMap().toMutableMap()
             console.log("Found ${cookies!!.size} cookies.")
         }
-        return cookies!![name]
+        return cookies!![name]?.replace("\"","")
     }
 
     private fun setNameCookie(name :String) {
-        document.cookie = "name=$name;path=/"
+        document.cookie = """name="$name" ;path=/"""
     }
 
     override fun RBuilder.render() {

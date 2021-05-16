@@ -3,7 +3,7 @@ import kotlinx.css.TextAlign
 import kotlinx.css.textAlign
 import kotlinx.html.js.onChangeFunction
 import kotlinx.html.js.onClickFunction
-import org.w3c.dom.HTMLInputElement
+import org.w3c.dom.HTMLSelectElement
 import react.*
 import react.dom.*
 import styled.*
@@ -24,7 +24,11 @@ external interface CrimeSceneState :RState {
     var alibis :List<Scenario>
     var crime :Scenario
     var observations :MutableList<Observation>
-    var inquiry :String
+    var suspect :String?
+    var suspectedAction :String?
+    var suspectedKind :String?
+    var suspectedWeapon :String?
+    var suspectedMotive :String?
     var clean :Boolean
     var player2 :Detective
 }
@@ -62,7 +66,11 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
         }
         observations = mutableListOf()
         clean = true
-        inquiry = ""
+        suspect = props.criminals[0]
+        suspectedAction = props.actions[0]
+        suspectedKind = props.kinds[0]
+        suspectedWeapon = props.weapons[0]
+        suspectedMotive = props.motives[0]
         player2 = if (props.tough)
                 ToughDetective(alibis = alibis[1], background = props)
             else
@@ -84,7 +92,6 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
             css { +CrimeStyles.alibiStyle }
             +"Your alibies: ${state.alibis[0]}"
         }
-        describeSuspects()
     }
 
     private fun RBuilder.describeScene() {
@@ -94,7 +101,9 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
             }
             +"""You are to solve a crime that happened, that is you are to identify the criminal, the action, the kind,
                 | the weapon and the motive for which Liz Taylor was killed.  You can do this by formulating
-                | hypotheses and interrogating the witnesses whether anyone can provide an alibi against that.""".trimMargin()
+                | hypotheses and interrogating the witnesses whether anyone can provide an alibi against that.
+                | When you ask a question, the witnesses will answer one by one until the first can disprove your
+                | hypothesis which you will see by being shown the item that disproves your hypothesis.""".trimMargin()
         }
     }
 
@@ -102,38 +111,111 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
         span {
             +"Your inquiry: "
         }
-        styledInput {
+        styledP {
             css { +CrimeStyles.inputStyle }
-            attrs {
-                if (state.clean)
-                    value = state.inquiry
-                onChangeFunction = { event ->
-                    val inputField = event.target as HTMLInputElement
-                    setState {
-                        inquiry = inputField.value
+            span { +"Did " }
+            select {
+                attrs {
+                    onChangeFunction = { event ->
+                        val input = event.target as HTMLSelectElement
+                        setState {
+                            suspect = input.value
+                        }
                     }
                 }
+                for (criminal in props.criminals)
+                    option {
+                        attrs {
+                            value = criminal
+                        }
+                        +criminal
+                    }
             }
+            select {
+                attrs {
+                    onChangeFunction = { event ->
+                        val input = event.target as HTMLSelectElement
+                        setState {
+                            suspectedAction = input.value
+                        }
+                    }
+                }
+                for (action in props.actions)
+                    option {
+                        attrs {
+                            value = action
+                        }
+                        +action
+                    }
+            }
+            span { +" Liz Taylor " }
+            select {
+                attrs {
+                    onChangeFunction = { event ->
+                        val input = event.target as HTMLSelectElement
+                        setState {
+                            suspectedKind = input.value
+                        }
+                    }
+                }
+                for (kind in props.kinds)
+                    option {
+                        attrs {
+                            value = kind
+                        }
+                        +kind
+                    }
+            }
+            span { +" with " }
+            select {
+                attrs {
+                    onChangeFunction = { event ->
+                        val input = event.target as HTMLSelectElement
+                        setState {
+                            suspectedWeapon = input.value
+                        }
+                    }
+                }
+                for (weapon in props.weapons)
+                    option {
+                        attrs {
+                            value = weapon
+                        }
+                        +weapon
+                    }
+            }
+            span { +" out of "}
+            select {
+                attrs {
+                    onChangeFunction = { event ->
+                        val input = event.target as HTMLSelectElement
+                        setState {
+                            suspectedMotive = input.value
+                        }
+                    }
+                }
+                for (motive in props.motives)
+                    option {
+                        attrs {
+                            value = motive
+                        }
+                        +motive
+                    }
+            }
+            span { +"?" }
         }
         button {
             attrs {
-                disabled = state.inquiry.trim().length < 10
+                disabled = state.suspect==null || state.suspectedAction==null || state.suspectedKind==null ||
+                        state.suspectedWeapon==null || state.suspectedMotive==null
                 onClickFunction = {
-                    val alibi = inquiry(state.inquiry.trim())
+                    val alibi = inquiry(Scenario(state.suspect!!, state.suspectedAction!!, state.suspectedKind!!, state.suspectedWeapon!!, state.suspectedMotive!!))
                     if (alibi?.witness != null)
                         playOthers(alibi.withoutAlibiItem())
                 }
             }
             +"Ask"
         }
-    }
-
-    private fun RBuilder.describeSuspects() {
-        p { +("All suspects: " + props.criminals.joinToString()) }
-        p { +("All actions: " + props.actions.joinToString()) }
-        p { +("All kinds: " + props.kinds.joinToString()) }
-        p { +("All weapons: " + props.weapons.joinToString()) }
-        p { +("All motives: " + props.motives.joinToString()) }
     }
 
     private fun RBuilder.showGameOver() {
@@ -176,8 +258,7 @@ class CrimeScene(props :CrimeSceneProps) :RComponent<CrimeSceneProps, CrimeScene
             console.log("${player.name} is stuck at the last question.")
     }
 
-    private fun inquiry(question :String) :Observation? {
-        val inquiry = parseScenario(question, props) ?: return null
+    private fun inquiry(inquiry :Scenario) :Observation? {
         if (inquiry in state.observations.map { o -> o.scene }) {
             window.alert("The accusation was already disproved! Try another one")
             return null
