@@ -14,6 +14,7 @@ import kotlin.random.Random
 external interface AppState :RState {
     var name :String
     var start :Boolean
+    var setSize :Int
 }
 
 @JsExport
@@ -35,7 +36,7 @@ class App :RComponent<RProps, AppState>() {
                 .map { e -> Pair(e[0], e[1]) }
                 .toMap().toMutableMap()
         }
-        return cookies!![name]
+        return cookies!![name]?.replace("\"", "")
     }
 
     override fun RBuilder.render() {
@@ -62,6 +63,7 @@ class App :RComponent<RProps, AppState>() {
                     }
                 }
             }
+            span { +" " }
             button {
                 attrs {
                     if (state.name.trim().length < 2)
@@ -70,14 +72,61 @@ class App :RComponent<RProps, AppState>() {
                         setCookie("name", state.name)
                         setState {
                             start = true
+                            setSize = 3
                         }
                     }
                 }
-                +"Start Game"
+                +"Training"
+            }
+            span { +" " }
+            button {
+                attrs {
+                    if (state.name.trim().length < 2)
+                        disabled = true
+                    onClickFunction = {
+                        setCookie("name", state.name)
+                        setState {
+                            start = true
+                            setSize = 4
+                        }
+                    }
+                }
+                +"Easy"
+            }
+            span { +" " }
+            button {
+                attrs {
+                    if (state.name.trim().length < 2)
+                        disabled = true
+                    onClickFunction = {
+                        setCookie("name", state.name)
+                        setState {
+                            start = true
+                            setSize = 5
+                        }
+                    }
+                }
+                +"Medium"
+            }
+            span { +" " }
+            button {
+                attrs {
+                    if (state.name.trim().length < 2)
+                        disabled = true
+                    onClickFunction = {
+                        setCookie("name", state.name)
+                        setState {
+                            start = true
+                            setSize = 6
+                        }
+                    }
+                }
+                +"Hard"
             }
         } else
             setsComponent {
                 name = state.name
+                setSize = state.setSize
             }
     }
 

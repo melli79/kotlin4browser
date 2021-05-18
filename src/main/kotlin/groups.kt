@@ -12,6 +12,7 @@ import kotlin.random.Random
 
 external interface GroupProps :RProps {
     var name :String
+    var setSize :Int
 }
 
 external interface GroupState :RState {
@@ -26,7 +27,6 @@ external interface GroupState :RState {
 @JsExport
 class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(props) {
     private lateinit var random :Random
-    val setSize = 6
     val numRounds = 10
 
     override fun GroupState.init(props :GroupProps) {
@@ -52,13 +52,13 @@ class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(prop
                 result.add(card)
                 fillSet(result, remainingDeck, refused)
                 break
-            } else if (numGroups==0 && result.size+1<setSize)
+            } else if (numGroups==0 && result.size+1<props.setSize)
                 result.add(card)
             else
                 refused.add(card)
         }
         console.log("Set has ${result.size} cards.")
-        if (result.size>=setSize) {
+        if (result.size>=props.setSize) {
             remainingDeck.addAll(refused)
             return Pair(result, remainingDeck)
         }
@@ -70,7 +70,7 @@ class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(prop
         val refused = mutableListOf<Card>()
         fillSet(result, remainingDeck, refused)
         console.log("Set has ${result.size} cards.")
-        if (result.size>=setSize) {
+        if (result.size>=props.setSize) {
             remainingDeck.addAll(refused)
             return Pair(result, remainingDeck)
         }
@@ -82,7 +82,7 @@ class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(prop
         remainingDeck :MutableList<Card>,
         refused :MutableList<Card>
     ) {
-        while (remainingDeck.isNotEmpty() && result.size<setSize) {
+        while (remainingDeck.isNotEmpty() && result.size<props.setSize) {
             val card = remainingDeck.removeAt(random.nextInt(remainingDeck.size))
             if (result.numGroupsWith(card) < 1)
                 result.add(card)
@@ -122,7 +122,7 @@ class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(prop
                         claimSet()
                         revealNextSet()
                     }
-                    +"Has Set"
+                    +"Has Group"
                 }
             }
         } else {
@@ -130,7 +130,7 @@ class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(prop
                 css {
                     color = Color.green
                 }
-                +"""Game over!  You have ${state.groups.size-state.points} points."""
+                +"""Game over!"""
             }
             button {
                 attrs {
@@ -144,6 +144,7 @@ class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(prop
             }
         }
         div {
+            p { +"You have ${state.points} points."}
             p { +"Your groups:" }
             for (group in state.groups) {
                 p {
@@ -158,7 +159,7 @@ class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(prop
     private fun claimSet() {
         val group = state.openSet.findGroup()
         if(group==null) {
-            window.alert("There is no Group! You lose a point.")
+            window.alert("There is no Group! You lose 5 points.")
             setState {
                 points -= 5
             }
