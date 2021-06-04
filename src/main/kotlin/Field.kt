@@ -31,7 +31,7 @@ class RField(props :FieldProps) :RComponent<FieldProps, RState>(props) {
                         props.onClicked(props.row, props.col)
                     }
                 }
-                +" "
+                +"\u00A0"
             }
         }
     }
