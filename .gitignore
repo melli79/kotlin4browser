@@ -1,5 +1,6 @@
 # debugging
 build/
+public*/
 
 # misc
 .idea/

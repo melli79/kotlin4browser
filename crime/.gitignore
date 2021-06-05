@@ -1,0 +1,9 @@
+# development files
+build/
+public*/
+*.zip
+
+# misc files
+.idea/
+.gradle/
+*.iml
