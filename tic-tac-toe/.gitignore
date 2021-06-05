@@ -1,7 +1,0 @@
-# debugging
-build/
-
-# misc
-.idea/
-.gradle/
-*.zip
