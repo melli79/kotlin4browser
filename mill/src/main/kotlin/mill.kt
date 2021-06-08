@@ -1,5 +1,6 @@
 import react.*
 import react.dom.*
+import kotlin.math.abs
 
 external interface MillState :RState {
     var board :Board
@@ -39,9 +40,11 @@ class Mill :RComponent<RProps, MillState>() {
                +"Move the ${state.board.whoseMove()} stone."
             else if (state.board.getPhase()==Phase.END)
                 if (state.board.countStones(Stone.WHITE)<3)
-                    +"Black won"
+                    +"Black won!"
+                else if (state.board.tie)
+                    +"A tie."
                 else
-                    +"White won"
+                    +"White won!"
             else {
                 +"${state.board.whoseMove()}s move (${state.board.move + 1})"
                 if (state.board.cannotMove()) {
@@ -52,6 +55,17 @@ class Mill :RComponent<RProps, MillState>() {
                     }
                 }
             }
+        }
+        p {
+            +"""A mill is three stones in a row or column.  Whenever you get a mill, 
+                |you can kill (i.e. remove) one of the opponent's stones.  You lost 
+                |when you have fewer than 3 stones (because then you cannot kill any
+                | opponent's stones anymore).""".trimMargin()
+        }
+        p {
+            +"""In the first phase you put stones on the board.
+                |In the second phase you move stones to neighboring fields.
+                |If you have only 3 stones left, your stones may jump.""".trimMargin()
         }
     }
 
@@ -71,16 +85,15 @@ class Mill :RComponent<RProps, MillState>() {
     }
 
     private fun maybeMoveStone(r :Int, l :Int, c :Int, selection :Triple<Int, Int, Int>) {
-        if (state.board.isValid(r, l, c)) setState {
-            val stone = board.grid[selection.first][selection.second][selection.third]
-            board.put(r, l, c, stone)
-            board.grid[selection.first][selection.second][selection.third] = Stone.EMPTY
-            selectedField = null
-            board.move ++
-        }
-        if (state.board.hasMill(r, l, c))
+        if (state.board.isValid(r, l, c) && (selection.isNeighbor(r,l,c)||state.board.getPhase()==Phase.JUMP))
             setState {
-                killStone = true
+                val stone = board.grid[selection.first][selection.second][selection.third]
+                board.put(r, l, c, stone)
+                board.grid[selection.first][selection.second][selection.third] = Stone.EMPTY
+                selectedField = null
+                board.move ++
+                if (state.board.hasMill(r, l, c))
+                    killStone = true
             }
     }
 
@@ -94,11 +107,16 @@ class Mill :RComponent<RProps, MillState>() {
 
     private fun putStone(r :Int, l :Int, c :Int) {
         setState {
-            if (board.put(r, l, c, if (board.move%2==0) Stone.BLACK else Stone.WHITE))
-                board.move ++
-        }
-        if (state.board.hasMill(r, l, c)) setState {
-            killStone = true
+            if (board.put(r, l, c, if (board.move%2==0) Stone.BLACK else Stone.WHITE)) {
+                board.move++
+                if (state.board.hasMill(r, l, c))
+                    killStone = true
+            }
         }
     }
 }
+
+private fun Triple<Int, Int, Int>.isNeighbor(r :Int, l :Int, c :Int) =
+    first==r&&second==l&&abs(third-c)==1 ||
+    first==r&&abs(second-l)==1&&third==c ||
+    abs(first-r)==1&&second==l&&third==c&&(second==1||third==1)

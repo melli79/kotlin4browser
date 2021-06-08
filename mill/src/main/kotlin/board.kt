@@ -41,7 +41,7 @@ data class Board(
         grid[r][l][c] != Stone.EMPTY && (
         grid[r][l][(c+1)%3]==grid[r][l][c]&&grid[r][l][(c+2)%3]==grid[r][l][c]
         || grid[r][(l+1)%3][c]==grid[r][l][c]&&grid[r][(l+2)%3][c]==grid[r][l][c]
-        || grid[(r+1)%3][l][c]==grid[r][l][c]&&grid[(r+2)%3][l][c]==grid[r][l][c])
+        || (l==1||c==1)&&grid[(r+1)%3][l][c]==grid[r][l][c]&&grid[(r+2)%3][l][c]==grid[r][l][c])
 
     fun whoseMove() = if (move%2==0) Stone.BLACK else Stone.WHITE
 
