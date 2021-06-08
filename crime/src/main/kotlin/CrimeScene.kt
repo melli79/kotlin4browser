@@ -1,8 +1,6 @@
 import kotlinx.browser.window
-import kotlinx.css.TextAlign
-import kotlinx.css.textAlign
-import kotlinx.html.js.onChangeFunction
-import kotlinx.html.js.onClickFunction
+import kotlinx.css.*
+import kotlinx.html.js.*
 import org.w3c.dom.HTMLSelectElement
 import react.*
 import react.dom.*
