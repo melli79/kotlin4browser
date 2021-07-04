@@ -5,8 +5,8 @@ import kotlinx.browser.window
 fun main() {
     window.onload = {
         render(document.getElementById("root")) {
-            child(Relatives::class) { attrs {
-                src = "klausGruetzmann.json"
+            child(RelativesComponent::class) { attrs {
+                url = "http://localhost:8080/klausGruetzmann.json"
             } }
         }
     }

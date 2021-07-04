@@ -45,11 +45,12 @@ class Person(
     var deathDay :PartialDate? = null
 
     override fun toString() = if (isEastern)
-        """$familyName${givenNames.joinToString("")} *$birthday ${if (deathDay != null) "♧$deathDay" else ""}"""
+        """$familyName${givenNames.joinToString("")}"""
       else
-        """${givenNames.joinToString(" ")} $familyName *$birthday ${if (deathDay != null) "♧$deathDay" else ""}"""
+        """${givenNames.joinToString(" ")} $familyName"""
 
-    fun describe(r :Relative = Relative.person, prefix :String ="") = println("""$prefix${r.prefix(gender)} ${toString()}""")
+    fun describe(r :Relative = Relative.person, prefix :String ="") = """$prefix${r.prefix(gender)} ${toString()}
+        | *$birthday ${if (deathDay != null) "♧$deathDay" else ""}""".trimMargin()
 
     fun getFather() = parents.firstOrNull { p -> p.gender==Gender.male }
     fun getMother() = parents.firstOrNull { p -> p.gender==Gender.female }
@@ -83,7 +84,6 @@ fun Person.details() {
         s.describe(Relative.sibling)
     }
 }
-
 
 fun Person.marry(s :Person) {
     divorce()
@@ -143,4 +143,25 @@ fun traverse(p :Person, src :Relative =Relative.person, prefix :String = "", vis
     for (s in newSiblings) {
         traverse(s, Relative.sibling, prefix+"+", visited)
     }
+}
+
+fun Person.balance(depth :Int =2) {
+    if (depth<1)
+        return
+    for (c in children) {
+        if (c.parents.isEmpty()) {
+            c.parents.add(this)
+        }
+        if (c.parents.size<2 && spouse!=null)
+            c.parents.add(spouse!!)
+        if (depth>1)
+            c.balance(depth-1)
+    }
+    if (spouse!=null&&spouse!!.children.isEmpty()) {
+        spouse!!.children.addAll(children)
+        if (depth>1)
+            spouse!!.balance(depth-1)
+    }
+    if (depth>1) for (p in parents)
+        p.balance(depth-1)
 }

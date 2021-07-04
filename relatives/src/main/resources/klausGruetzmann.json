@@ -189,7 +189,7 @@
   "isEastern" : false,
   "spouse" : {
     "givenNames" : [ "Susanne", "Else" ],
-    "gender" : "male",
+    "gender" : "female",
     "birthday" : {
       "year" : 1926,
       "month" : 2,
@@ -922,7 +922,7 @@
     } ]
   },
   "children" : [ {
-    "givenNames" : [ "Dieter" ],
+    "givenNames" : [ "Wolfgang", "Dieter" ],
     "gender" : "male",
     "birthday" : {
       "year" : 1954,
@@ -933,7 +933,7 @@
     "parents" : [ ],
     "isEastern" : false,
     "spouse" : {
-      "givenNames" : [ "Barbara" ],
+      "givenNames" : [ "Astrid","Ilse","Barbara" ],
       "gender" : "female",
       "birthday" : {
         "year" : 1955,
