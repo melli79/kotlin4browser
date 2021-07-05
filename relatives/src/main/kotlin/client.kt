@@ -6,7 +6,7 @@ fun main() {
     window.onload = {
         render(document.getElementById("root")) {
             child(RelativesComponent::class) { attrs {
-                url = "http://localhost:8080/klausGruetzmann.json"
+                url = "${document.URL}/klausGruetzmann.json"
             } }
         }
     }
