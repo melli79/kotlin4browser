@@ -1,3 +1,4 @@
+import kotlinx.css.th
 import kotlinx.serialization.*
 import kotlin.js.Date
 
@@ -145,11 +146,14 @@ fun traverse(p :Person, src :Relative =Relative.person, prefix :String = "", vis
     }
 }
 
-fun Person.balance(depth :Int =2) {
+fun Person.balance(depth :Int =8) {
     if (depth<1)
         return
+    for (p in parents)
+        if (this !in p.children)
+            p.children.add(this)
     for (c in children) {
-        if (c.parents.isEmpty()) {
+        if (this !in c.parents) {
             c.parents.add(this)
         }
         if (c.parents.size<2 && spouse!=null)

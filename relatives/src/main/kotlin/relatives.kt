@@ -63,28 +63,14 @@ class RelativesComponent(props :RelativesProps) :RComponent<RelativesProps, Rela
                         }
                     }
                 }
-                relative {
-                    p = state.person!!.parents.first().children.get(1)
-                    rel = Relative.sibling
-                    expandeds = state.expandeds
-                    expand = { person ->
-                        setState {
-                            expandeds.add(person)
-                        }
-                    }
-                    collapse = { person ->
-                        setState {
-                            expandeds.remove(person)
-                        }
-                    }
-                }
             }
         }}
     }
 }
 
-fun RDOMBuilder<TR>.relative(handle :RelativeProp.()->Unit) {
+fun RDOMBuilder<TR>.relative(colspan :Int =1, handle :RelativeProp.()->Unit) {
     styledTd { css { +RelativesStyles.ancestor }
+        attrs { colSpan = colspan.toString() }
         child(RelativeComponent::class) { attrs(handle) }
     }
 }
@@ -102,33 +88,13 @@ class RelativeComponent(props :RelativeProp) :RComponent<RelativeProp, RState>(p
     override fun RBuilder.render() {
         if (props.rel in listOf(Relative.parent, Relative.person)) {
             if (props.isExpanded()) {
-                table { tbody {
-                    tr {
-                        for (par in props.p.parents)
-                            relative {
-                                p = par
-                                rel = Relative.parent
-                                expandeds = props.expandeds
-                                expand = props.expand
-                                collapse = props.collapse
-                            }
-                    }
-                }}
+                renderWithParents()
+            } else {
+                showExpandParentsButton()
+                +describe()
             }
-            if (props.hasKnownParents())
-                styledButton { css { +RelativesStyles.exansionButton }
-                    attrs {
-                        onClickFunction = {
-                            if (props.isExpanded())
-                                props.collapse(props.p)
-                            else
-                                props.expand(props.p)
-                        }
-                    }
-                    +if (props.isExpanded()) "-" else "+"
-                }
-        }
-        +props.p.describe(props.rel)
+        } else
+            +describe()
         if (props.rel in listOf(Relative.child, Relative.person, Relative.sibling)) {
             if (props.hasChildren())
                 styledButton { css { +RelativesStyles.exansionButton }
@@ -158,6 +124,66 @@ class RelativeComponent(props :RelativeProp) :RComponent<RelativeProp, RState>(p
             }
         }
     }
+
+    private fun RBuilder.showExpandParentsButton() {
+        if (props.hasKnownParents())
+            styledButton {
+                css { +RelativesStyles.exansionButton }
+                attrs {
+                    onClickFunction = {
+                        if (props.isExpanded())
+                            props.collapse(props.p)
+                        else
+                            props.expand(props.p)
+                    }
+                }
+                +if (props.isExpanded()) "-" else "+"
+            }
+    }
+
+    private fun RBuilder.renderWithParents() {
+        table {
+            tbody {
+                tr {
+                    val numSiblings = getSiblings().size
+                    console.log(numSiblings)
+                    for (par in props.p.parents) {
+                        relative(numSiblings/2) {
+                            p = par
+                            rel = Relative.parent
+                            expandeds = props.expandeds
+                            expand = props.expand
+                            collapse = props.collapse
+                        }
+                    }
+                }
+                tr {
+                    td {
+                        showExpandParentsButton()
+                        +describe()
+                    }
+                    renderSiblings()
+                }
+            }
+        }
+    }
+
+    private fun RDOMBuilder<TR>.renderSiblings() {
+        for (s in getSiblings()) if (s != props.p)
+            relative {
+                p = s
+                rel = Relative.sibling
+                expandeds = props.expandeds
+                expand = props.expand
+                collapse = props.collapse
+            }
+    }
+
+    private fun getSiblings() = props.p.parents
+        .flatMap { p -> p.children }
+        .toSet()
+
+    private fun describe() = props.p.describe(props.rel)
 
     private fun RelativeProp.isExpanded() = p in expandeds
 

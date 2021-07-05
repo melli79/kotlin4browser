@@ -191,7 +191,7 @@
     "givenNames" : [ "Susanne", "Else" ],
     "gender" : "female",
     "birthday" : {
-      "year" : 1926,
+      "year" : 1929,
       "month" : 2,
       "day" : 6
     },
@@ -339,7 +339,7 @@
         "givenNames" : [ "Anneliese" ],
         "gender" : "female",
         "birthday" : {
-          "year" : 1900
+          "year" : 1933
         },
         "familyName" : "Rothensee",
         "parents" : [ ],
@@ -348,7 +348,7 @@
           "givenNames" : [ "Rudi" ],
           "gender" : "male",
           "birthday" : {
-            "year" : 1900
+            "year" : 1932
           },
           "familyName" : "Rothensee",
           "parents" : [ ],
@@ -359,14 +359,14 @@
           "givenNames" : [ "Werner" ],
           "gender" : "male",
           "birthday" : {
-            "year" : 1900
+            "year" : 1959
           },
           "familyName" : "Rothensee",
           "parents" : [ ],
           "isEastern" : false,
           "spouse" : {
             "givenNames" : [ "Nitaya" ],
-            "gender" : "male",
+            "gender" : "female",
             "birthday" : {
               "year" : 1975
             },
@@ -390,7 +390,7 @@
         "givenNames" : [ "Horst" ],
         "gender" : "male",
         "birthday" : {
-          "year" : 1933
+          "year" : 1934
         },
         "familyName" : "Friedemann",
         "isEastern" : false,
@@ -398,7 +398,7 @@
           "givenNames" : [ "Sigrid" ],
           "gender" : "female",
           "birthday" : {
-            "year" : 1934
+            "year" : 1935
           },
           "familyName" : "Friedemann",
           "parents" : [ {
