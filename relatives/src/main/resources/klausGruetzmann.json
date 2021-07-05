@@ -77,7 +77,7 @@
       "givenNames" : [ "Christa" ],
       "gender" : "female",
       "birthday" : {
-        "year" : 1900
+        "year" : 1929
       },
       "familyName" : "Dula",
       "isEastern" : false,
@@ -85,7 +85,7 @@
         "givenNames" : [ "Manfred" ],
         "gender" : "male",
         "birthday" : {
-          "year" : 1900
+          "year" : 1930
         },
         "familyName" : "Wolf",
         "parents" : [ ],

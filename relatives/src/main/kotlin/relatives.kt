@@ -145,8 +145,8 @@ class RelativeComponent(props :RelativeProp) :RComponent<RelativeProp, RState>(p
         table {
             tbody {
                 tr {
-                    val numSiblings = getSiblings().size
-                    console.log(numSiblings)
+                    var numSiblings = getSiblings().size
+                    var first = true
                     for (par in props.p.parents) {
                         relative(numSiblings/2) {
                             p = par
@@ -154,6 +154,10 @@ class RelativeComponent(props :RelativeProp) :RComponent<RelativeProp, RState>(p
                             expandeds = props.expandeds
                             expand = props.expand
                             collapse = props.collapse
+                        }
+                        if (first) {
+                            numSiblings += numSiblings%2
+                            first = false
                         }
                     }
                 }
