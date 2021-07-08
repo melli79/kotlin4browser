@@ -1,5 +1,7 @@
+import kotlinx.html.TD
 import kotlinx.html.TR
 import kotlinx.html.js.onClickFunction
+import kotlinx.html.progress
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import org.w3c.xhr.XMLHttpRequest
@@ -32,10 +34,7 @@ class RelativesComponent(props :RelativesProps) :RComponent<RelativesProps, Rela
             if (json.isNotBlank()) {
                 val p = Json.decodeFromString<Person>(json)
                 p.balance()
-                setState {
-                    person = p.children.first().children.first()
-                    expandeds.add(p.children.first().children.first())
-                }
+                selectPerson(p.children.first().children.first())
             }
         }
     }
@@ -62,10 +61,22 @@ class RelativesComponent(props :RelativesProps) :RComponent<RelativesProps, Rela
                             expandeds.remove(person)
                         }
                     }
+                    selectNode = { p -> selectPerson(p) }
                 }
             }
         }}
     }
+
+    fun selectPerson(p :Person) {
+        val maxLinear = findAncestors(p)+findDescendants(p)
+        setState {
+            person = p
+            expandeds = maxLinear.toMutableSet()
+        }
+    }
+
+    private fun findAncestors(p :Person) :Set<Person> = setOf(p)+p.parents.flatMap { par -> findAncestors(par) }.toSet()
+    private fun findDescendants(p :Person) :Set<Person> = setOf(p)+p.children.flatMap { c -> findDescendants(c) }.toSet()
 }
 
 fun RDOMBuilder<TR>.relative(colspan :Int =1, handle :RelativeProp.()->Unit) {
@@ -81,6 +92,7 @@ external interface RelativeProp :RProps {
     var expandeds :Set<Person>
     var expand :(Person) -> Unit
     var collapse :(Person) -> Unit
+    var selectNode :(Person) -> Unit
 }
 
 @JsExport
@@ -91,38 +103,49 @@ class RelativeComponent(props :RelativeProp) :RComponent<RelativeProp, RState>(p
                 renderWithParents()
             } else {
                 showExpandParentsButton()
-                +describe()
+                describe()
+                maybeShowExpandChildrenButton()
             }
-        } else
-            +describe()
-        if (props.rel in listOf(Relative.child, Relative.person, Relative.sibling)) {
-            if (props.hasChildren())
-                styledButton { css { +RelativesStyles.exansionButton }
-                    attrs {
-                        onClickFunction = {
-                            if (props.isExpanded())
-                                props.collapse(props.p)
-                            else
-                                props.expand(props.p)
-                        }
-                    }
-                    +if (props.isExpanded()) "-" else "+"
-                }
-            if (props.isExpanded()) {
-                table { tbody {
-                    tr {
-                        for (c in props.p.children)
-                            relative {
-                                p = c
-                                rel = Relative.child
-                                expandeds = props.expandeds
-                                expand = props.expand
-                                collapse = props.collapse
-                            }
-                    }
-                }}
-            }
+        } else {
+            describe()
+            maybeShowExpandChildrenButton()
         }
+        if (props.rel in listOf(Relative.child, Relative.person, Relative.sibling)) {
+            if (props.isExpanded())
+                renderChildren()
+        }
+    }
+
+    private fun RBuilder.renderChildren() {
+        table { tbody {
+            tr {
+                for (c in props.p.children)
+                    relative {
+                        p = c
+                        rel = Relative.child
+                        expandeds = props.expandeds
+                        expand = props.expand
+                        collapse = props.collapse
+                        selectNode = props.selectNode
+                    }
+            }
+        }}
+    }
+
+    private fun RBuilder.maybeShowExpandChildrenButton() {
+        if (props.hasChildren())
+            styledButton {
+                css { +RelativesStyles.exansionButton }
+                attrs {
+                    onClickFunction = {
+                        if (props.isExpanded())
+                            props.collapse(props.p)
+                        else
+                            props.expand(props.p)
+                    }
+                }
+                +if (props.isExpanded()) "-" else "+"
+            }
     }
 
     private fun RBuilder.showExpandParentsButton() {
@@ -154,6 +177,7 @@ class RelativeComponent(props :RelativeProp) :RComponent<RelativeProp, RState>(p
                             expandeds = props.expandeds
                             expand = props.expand
                             collapse = props.collapse
+                            selectNode = props.selectNode
                         }
                         if (first) {
                             numSiblings += numSiblings%2
@@ -164,7 +188,8 @@ class RelativeComponent(props :RelativeProp) :RComponent<RelativeProp, RState>(p
                 tr {
                     td {
                         showExpandParentsButton()
-                        +describe()
+                        describe()
+                        maybeShowExpandChildrenButton()
                     }
                     renderSiblings()
                 }
@@ -180,6 +205,7 @@ class RelativeComponent(props :RelativeProp) :RComponent<RelativeProp, RState>(p
                 expandeds = props.expandeds
                 expand = props.expand
                 collapse = props.collapse
+                selectNode = props.selectNode
             }
     }
 
@@ -187,7 +213,27 @@ class RelativeComponent(props :RelativeProp) :RComponent<RelativeProp, RState>(p
         .flatMap { p -> p.children }
         .toSet()
 
-    private fun describe() = props.p.describe(props.rel)
+
+    private fun RBuilder.describe() {
+        span {
+            attrs {
+                onClickFunction = {
+                    props.selectNode(props.p)
+                }
+            }
+            +props.p.describe(props.rel)
+        }
+    }
+    private fun RDOMBuilder<TD>.describe() {
+        span {
+            attrs {
+                onClickFunction = {
+                    props.selectNode(props.p)
+                }
+            }
+            +props.p.describe(props.rel)
+        }
+    }
 
     private fun RelativeProp.isExpanded() = p in expandeds
 

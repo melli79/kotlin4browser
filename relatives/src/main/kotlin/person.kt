@@ -1,4 +1,3 @@
-import kotlinx.css.th
 import kotlinx.serialization.*
 import kotlin.js.Date
 
@@ -39,10 +38,10 @@ class Person(
     val gender :Gender,
     val birthday :PartialDate,
     var familyName :String,
-    var parents :MutableList<Person> = mutableListOf(),
+    var parents :MutableSet<Person> = mutableSetOf(),
     val isEastern :Boolean =false) {
     var spouse :Person? = null
-    var children :MutableList<Person> = mutableListOf()
+    var children :MutableSet<Person> = mutableSetOf()
     var deathDay :PartialDate? = null
 
     override fun toString() = if (isEastern)
@@ -105,7 +104,7 @@ fun Person.giveBirth(givenNames :Array<String>, gender :Gender, birthday :Date, 
     giveBirth(givenNames, gender, PartialDate(birthday), father)
 
 fun Person.giveBirth(givenNames :Array<String>, gender :Gender, birthday :PartialDate, father :Person? =null) :Person {
-    val parents = mutableListOf(this)
+    val parents = mutableSetOf(this)
     val trueFather = father ?: spouse
     if (trueFather != null)
         parents.add(trueFather)
@@ -118,54 +117,32 @@ fun Person.giveBirth(givenNames :Array<String>, gender :Gender, birthday :Partia
     return child
 }
 
-fun traverse(p :Person, src :Relative =Relative.person, prefix :String = "", visited :MutableSet<Person> = mutableSetOf()) {
-    p.describe(src, prefix)
-    visited.add(p)
-    val newSiblings = mutableSetOf<Person>()
-    val newParents = mutableListOf<Person>()
-    for (par in p.parents) if (par !in visited) {
-        newParents.add(par)
-        visited.add(par)
-    }
-    for (par in newParents) {
-        traverse(par, Relative.parent, prefix+"+", visited)
-        for (c in par.children) if (c !in visited) {
-            newSiblings.add(c)
-            visited.add(c)
-        }
-    }
-    val spouse = p.spouse
-    if (spouse!=null && spouse !in visited)
-        traverse(spouse, Relative.spouse, prefix+"+", visited)
-    if (src !in listOf(Relative.parent, Relative.spouse)) for (c in p.children) {
-        if (c !in visited)
-            traverse(c, Relative.child, prefix+"+", visited)
-    }
-    for (s in newSiblings) {
-        traverse(s, Relative.sibling, prefix+"+", visited)
-    }
-}
-
-fun Person.balance(depth :Int =8) {
-    if (depth<1)
+fun Person.balance(visited :MutableSet<Person> = mutableSetOf()) {
+    if (this in visited)
         return
+    visited.add(this)
     for (p in parents)
         if (this !in p.children)
             p.children.add(this)
+    val marriedSpouse = spouse!=null && spouse!!.familyName == familyName
     for (c in children) {
         if (this !in c.parents) {
             c.parents.add(this)
         }
-        if (c.parents.size<2 && spouse!=null)
+        if (c.parents.size<2 && marriedSpouse)
             c.parents.add(spouse!!)
-        if (depth>1)
-            c.balance(depth-1)
     }
-    if (spouse!=null&&spouse!!.children.isEmpty()) {
-        spouse!!.children.addAll(children)
-        if (depth>1)
-            spouse!!.balance(depth-1)
+    if (spouse!=null) {
+        val s = spouse!!
+        if (marriedSpouse) {
+            for (c in children) if (s in c.parents || c.parents.size<2)
+                s.children.add(c)
+            s.spouse = this
+        }
+        s.balance(visited)
     }
-    if (depth>1) for (p in parents)
-        p.balance(depth-1)
+    for (p in parents.toTypedArray())
+        p.balance(visited)
+    for (c in children.toTypedArray())
+        c.balance(visited)
 }
