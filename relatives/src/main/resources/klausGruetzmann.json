@@ -1218,7 +1218,7 @@
           "birthday" : {
             "year" : 2012,
             "month" : 9,
-            "day": 20
+            "day": 16
           },
           "familyName" : "Specht",
           "parents" : [ {
@@ -1262,7 +1262,13 @@
         "givenNames" : [ "Werner" ],
         "gender" : "male",
         "birthday" : {
-          "year" : 1939
+          "year" : 1920,
+          "month": 9,
+          "day": 16
+        },
+        "deathDay": {
+          "year": 1965,
+          "month": 2
         },
         "familyName" : "Kulisch",
         "parents" : [ {
@@ -1284,6 +1290,23 @@
             "parents" : [ ],
             "isEastern" : false,
             "children" : [ ]
+          }, {
+            "givenNames": [ "Hanfried" ],
+            "gender": "male",
+            "birthday": {},
+            "familyName": "Kulisch",
+            "spouse": {
+              "givenNames": [],
+              "gender": "female",
+              "birthday": {},
+              "familyName": "Kulisch"
+            },
+            "children": [ {
+              "givenNames": [],
+              "gender": "female",
+              "birthday": {},
+              "familyName": "Kulisch"
+            } ]
           } ]
         } ],
         "isEastern" : false,
@@ -1291,7 +1314,9 @@
           "givenNames" : [ "Uwe" ],
           "gender" : "male",
           "birthday" : {
-            "year" : 1959
+            "year" : 1957,
+            "month": 2,
+            "day": 19
           },
           "familyName" : "Kulisch",
           "parents" : [ ],
@@ -1316,6 +1341,13 @@
             } ],
             "isEastern" : false,
             "children" : [ ]
+          }, {
+            "givenNames": [ "Rahild" ],
+            "gender": "female",
+            "birthday": {
+              "year": 1983
+            },
+            "familyName": "Kulisch"
           } ]
         } ]
       }, {
@@ -1324,7 +1356,11 @@
         "birthday" : {
           "year" : 1931,
           "month" : 7,
-          "day" : 31
+          "day" : 29
+        },
+        "deathDay": {
+          "year": 2000,
+          "month": 1
         },
         "familyName" : "Kulisch",
         "parents" : [ {
@@ -1340,7 +1376,9 @@
             "givenNames" : [ "Gertraude" ],
             "gender" : "female",
             "birthday" : {
-              "year" : 1900
+              "year" : 1933,
+              "month": 12,
+              "day": 29
             },
             "familyName" : "Riesner",
             "parents" : [ ],
