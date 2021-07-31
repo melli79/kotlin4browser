@@ -1,7 +1,6 @@
 import kotlinx.html.TD
 import kotlinx.html.TR
 import kotlinx.html.js.onClickFunction
-import kotlinx.html.progress
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import org.w3c.xhr.XMLHttpRequest
@@ -34,7 +33,7 @@ class RelativesComponent(props :RelativesProps) :RComponent<RelativesProps, Rela
             if (json.isNotBlank()) {
                 val p = Json.decodeFromString<Person>(json)
                 p.balance()
-                selectPerson(p.children.first().children.first())
+                selectPerson(p)
             }
         }
     }
@@ -49,7 +48,8 @@ class RelativesComponent(props :RelativesProps) :RComponent<RelativesProps, Rela
             tr {
                 relative {
                     p = state.person!!
-                    rel = Relative.person
+                    rel = Relative.Person
+                    gen = 0
                     expandeds = state.expandeds
                     expand = { person ->
                         setState {
@@ -89,6 +89,7 @@ fun RDOMBuilder<TR>.relative(colspan :Int =1, handle :RelativeProp.()->Unit) {
 external interface RelativeProp :RProps {
     var p :Person
     var rel :Relative
+    var gen :Int
     var expandeds :Set<Person>
     var expand :(Person) -> Unit
     var collapse :(Person) -> Unit
@@ -98,7 +99,7 @@ external interface RelativeProp :RProps {
 @JsExport
 class RelativeComponent(props :RelativeProp) :RComponent<RelativeProp, RState>(props) {
     override fun RBuilder.render() {
-        if (props.rel in listOf(Relative.parent, Relative.person)) {
+        if (props.rel in listOf(Relative.Parent, Relative.Person)) {
             if (props.isExpanded()) {
                 renderWithParents()
             } else {
@@ -110,7 +111,7 @@ class RelativeComponent(props :RelativeProp) :RComponent<RelativeProp, RState>(p
             describe()
             maybeShowExpandChildrenButton()
         }
-        if (props.rel in listOf(Relative.child, Relative.person, Relative.sibling)) {
+        if (props.rel in listOf(Relative.Child, Relative.Person, Relative.Sibling)) {
             if (props.isExpanded())
                 renderChildren()
         }
@@ -122,7 +123,8 @@ class RelativeComponent(props :RelativeProp) :RComponent<RelativeProp, RState>(p
                 for (c in props.p.children)
                     relative {
                         p = c
-                        rel = Relative.child
+                        rel = Relative.Child
+                        gen = props.gen-1
                         expandeds = props.expandeds
                         expand = props.expand
                         collapse = props.collapse
@@ -173,7 +175,8 @@ class RelativeComponent(props :RelativeProp) :RComponent<RelativeProp, RState>(p
                     for (par in props.p.parents) {
                         relative(numSiblings/2) {
                             p = par
-                            rel = Relative.parent
+                            rel = Relative.Parent
+                            gen = props.gen+1
                             expandeds = props.expandeds
                             expand = props.expand
                             collapse = props.collapse
@@ -201,7 +204,8 @@ class RelativeComponent(props :RelativeProp) :RComponent<RelativeProp, RState>(p
         for (s in getSiblings()) if (s != props.p)
             relative {
                 p = s
-                rel = Relative.sibling
+                rel = Relative.Sibling
+                gen = props.gen
                 expandeds = props.expandeds
                 expand = props.expand
                 collapse = props.collapse
@@ -221,7 +225,7 @@ class RelativeComponent(props :RelativeProp) :RComponent<RelativeProp, RState>(p
                     props.selectNode(props.p)
                 }
             }
-            +props.p.describe(props.rel)
+            +props.p.describe(props.rel, gen=props.gen)
         }
     }
     private fun RDOMBuilder<TD>.describe() {
@@ -231,7 +235,7 @@ class RelativeComponent(props :RelativeProp) :RComponent<RelativeProp, RState>(p
                     props.selectNode(props.p)
                 }
             }
-            +props.p.describe(props.rel)
+            +props.p.describe(props.rel, gen=props.gen)
         }
     }
 

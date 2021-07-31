@@ -6,19 +6,46 @@ enum class Gender {
 }
 
 enum class Relative {
-    person {
-        override fun prefix(g :Gender) = if (g==Gender.male) "Mr." else "Ms."
-    }, parent {
-        override fun prefix(g :Gender) = if (g==Gender.male) "father" else "mother"
-    }, spouse {
-        override fun prefix(g :Gender) = if (g==Gender.male) "husband" else "wife"
-    }, child {
-        override fun prefix(g :Gender) = if (g==Gender.male) "son" else "daughter"
-    }, sibling {
-        override fun prefix(g :Gender) = if (g==Gender.male) "brother" else "sister"
+    Person {
+        override fun prefix(g :Gender, gen :Int) = if (g==Gender.male) "Mr." else "Ms."
+    }, Parent {
+        override fun prefix(g :Gender, gen :Int) :String {
+            val grand = when (gen) {
+                2 -> "grand-"
+                3 -> "great-grand-"
+                4, 5, 6, 7, 8, 9, 10, 11 -> "great^${gen-2}-grand-"
+                else -> ""
+            }
+            return grand+ if (g==Gender.male) "father"  else "mother"
+        }
+    }, Spouse {
+        override fun prefix(g :Gender, gen :Int) = if (g==Gender.male) "husband" else "wife"
+    }, Child {
+        override fun prefix(g :Gender, gen :Int) :String {
+            val grand = when (-gen) {
+                2 -> "grand-"
+                3 -> "great-grand-"
+                4, 5, 6, 7, 8, 9, 10, 11 -> "great^${gen-2}-grand-"
+                else -> ""
+            }
+            return grand+ if (g==Gender.male) "son"  else "daughter"
+        }
+    }, Sibling {
+        override fun prefix(g :Gender, gen :Int) :String {
+            if (gen>0) {
+                val grand = when (gen) {
+                    2 -> "grand-"
+                    3 -> "great-grand-"
+                    4, 5, 6, 7, 8, 9, 10, 11 -> "great^${gen-2}-grand-"
+                    else -> ""
+                }
+                return grand+ if (g == Gender.male) "uncle" else "aunt"
+            }
+            return if (g==Gender.male) "brother" else "sister"
+        }
     };
 
-    abstract fun prefix(g :Gender) :String
+    abstract fun prefix(g :Gender, gen :Int =1) :String
 }
 
 @Serializable
@@ -49,7 +76,7 @@ class Person(
       else
         """${givenNames.joinToString(" ")} $familyName"""
 
-    fun describe(r :Relative = Relative.person, prefix :String ="") = """$prefix${r.prefix(gender)} ${toString()}
+    fun describe(r :Relative = Relative.Person, prefix :String ="", gen :Int =0) = """$prefix${r.prefix(gender, gen)} ${toString()}
         | *$birthday ${if (deathDay != null) "♧$deathDay" else ""}""".trimMargin()
 
     fun getFather() = parents.firstOrNull { p -> p.gender==Gender.male }
@@ -71,17 +98,17 @@ fun Person.details() {
     describe()
     val siblings = mutableSetOf<Person>()
     for (p in parents) {
-        p.describe(Relative.parent)
+        p.describe(Relative.Parent)
         siblings.addAll(p.children)
     }
     siblings.remove(this)
     if (spouse!=null)
-        spouse!!.describe(Relative.spouse)
+        spouse!!.describe(Relative.Spouse)
     for (c in children) {
-        c.describe(Relative.child)
+        c.describe(Relative.Child)
     }
     for (s in siblings) {
-        s.describe(Relative.sibling)
+        s.describe(Relative.Sibling)
     }
 }
 
