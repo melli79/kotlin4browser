@@ -1,7 +1,7 @@
 import kotlinx.css.*
 import styled.StyleSheet
 
-object SetStyles :StyleSheet("SetStyles", isStatic = true) {
+object GroupsStyles :StyleSheet("SetStyles", isStatic = true) {
 
     val title by css {
         color = Color.green

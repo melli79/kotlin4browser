@@ -1,6 +1,6 @@
 plugins {
-    kotlin("js") version "1.5.20"
-    kotlin("plugin.serialization") version "1.5.20"
+    kotlin("js") version "1.5.31"
+    kotlin("plugin.serialization") version "1.5.31"
 }
 
 group = "org.grutzmann"
@@ -13,10 +13,10 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.1")
-    implementation("org.jetbrains.kotlin-wrappers:kotlin-react:17.0.2-pre.206-kotlin-1.5.10")
-    implementation("org.jetbrains.kotlin-wrappers:kotlin-react-dom:17.0.2-pre.206-kotlin-1.5.10")
-    implementation("org.jetbrains.kotlin-wrappers:kotlin-styled:5.3.0-pre.206-kotlin-1.5.10")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0-RC")
+    implementation("org.jetbrains.kotlin-wrappers:kotlin-react:17.0.2-pre.260-kotlin-1.5.31")
+    implementation("org.jetbrains.kotlin-wrappers:kotlin-react-dom:17.0.2-pre.260-kotlin-1.5.31")
+    implementation("org.jetbrains.kotlin-wrappers:kotlin-styled:5.3.3-pre.260-kotlin-1.5.31")
 }
 
 kotlin {

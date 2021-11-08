@@ -96,8 +96,8 @@ class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(prop
             css {
                 textAlign = TextAlign.justify
             }
-            +"""Watch out for groups, i.e. triples of cards that cannot be split along one feature into 2 subgroups. 
-                | If you see a group, press the Group button.""".trimMargin()
+            +"""Watch out for groups, i.e. triples of cards that cannot be split along one feature (shape, number, color, shade)
+                | into 2 subgroups.  If you see a group, press the Group button.""".trimMargin()
         }
         p {
             span { +"The open cards: " }

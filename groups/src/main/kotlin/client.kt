@@ -42,7 +42,7 @@ class App :RComponent<RProps, AppState>() {
     override fun RBuilder.render() {
         styledH1 {
             css {
-                +SetStyles.title
+                +GroupsStyles.title
             }
             +"Groups Game"
         }
@@ -50,7 +50,7 @@ class App :RComponent<RProps, AppState>() {
             span { +"Please enter your name: " }
             styledInput {
                 css {
-                    +SetStyles.textInput
+                    +GroupsStyles.textInput
                 }
                 attrs {
                     type = InputType.text
