@@ -2,28 +2,46 @@ import react.dom.render
 import kotlinx.browser.document
 import kotlinx.browser.window
 import kotlinx.html.currentTimeMillis
+import react.Props
+import react.RBuilder
+import react.RComponent
+import react.State
+import react.setState
 import kotlin.random.Random
 
 val random = Random(currentTimeMillis())
 
-enum class KnownMaps(prefix :String, val region :String) {
-    CHINA("China", "P.R. of China"),
-    EUROPE("Europe", "Europe"),
-    GERMANY("Germany", "Germany"),
-    N_AMERICA("nAmerica", "Northern America");
+data class AppState(var region :KnownRegion?, var playerName :String = "Player 001") :State {
+}
 
-    val mapImage = "$prefix.jpg"
-    val mapDetails = "cities.$prefix.json"
+class App :RComponent<Props, AppState>() {
+    override fun RBuilder.render() {
+        if (state.region==null)
+            welcomeComponent {
+                knownRegions = KnownRegion.values()
+                setPlayerName = { name ->
+                    setState {
+                        playerName = name
+                    }
+                }
+                setRegion = { region ->
+                    setState {
+                        this.region = region
+                    }
+                }
+            }
+        else
+            mapComponent {
+                playerName = state.playerName
+                region = state.region!!
+            }
+    }
 }
 
 fun main() {
     window.onload = {
         render(document.getElementById("root")!!) {
-            child(Welcome::class) {
-                attrs {
-                    knownMaps = KnownMaps.values()
-                }
-            }
+            child(App::class) { }
         }
     }
 }

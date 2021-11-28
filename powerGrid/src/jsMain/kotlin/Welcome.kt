@@ -5,22 +5,25 @@ import kotlinx.html.InputType
 import kotlinx.html.js.onChangeFunction
 import kotlinx.html.js.onClickFunction
 import org.w3c.dom.HTMLInputElement
+import org.w3c.dom.HTMLSelectElement
 import react.*
 import react.dom.*
 import styled.*
 
 external interface WelcomeProps :Props {
-    var knownMaps :Array<KnownMaps>
+    var knownRegions :Array<KnownRegion>
+    var setPlayerName :(name :String) -> Unit
+    var setRegion :(region :KnownRegion) -> Unit
 }
 
-data class WelcomeState(val name :String) :State {
-    fun withName(name :String) = WelcomeState(name)
+data class WelcomeState(var name :String, var region :KnownRegion?) :State {
 }
 
 class Welcome(props :WelcomeProps) :RComponent<WelcomeProps, WelcomeState>(props) {
 
     init {
-        state = WelcomeState(getCookie("name") ?: "Player ${10+random.nextInt(90)}")
+        state = WelcomeState(getCookie("name") ?: "Player ${10+random.nextInt(90)}",
+            null)
     }
 
     private fun getCookie(name :String) :String? {
@@ -65,17 +68,46 @@ class Welcome(props :WelcomeProps) :RComponent<WelcomeProps, WelcomeState>(props
                 type = InputType.text
                 value = state.name
                 onChangeFunction = { event ->
-                    setState(WelcomeState(
-                        (event.target as HTMLInputElement).value
-                    ))
+                    setState {
+                        name = (event.target as HTMLInputElement).value
+                    }
                 }
             }
         }
+        br {  }
+        span { +"Region to play: " }
+        styledSelect {
+            css { +PowerGridStyles.selection }
+            attrs {
+                onChangeFunction = { event ->
+                    setState {
+                        region = KnownRegion.valueOf((event.target as HTMLSelectElement).value)
+                    }
+                }
+            }
+            styledOption {
+                attrs { value="" }
+                +"--Please choose a Region--"
+            }
+            for (rgn in props.knownRegions)
+                styledOption {
+                    attrs {
+                        value = rgn.name
+                    }
+                    +rgn.displayName
+                }
+        }
+        span { +" " }
         button {
             attrs {
-                onClickFunction = { event ->
+                onClickFunction = { _ ->
                     setCookie("name", state.name)
+                    props.setPlayerName(state.name)
+                    val region = state.region
+                    if (region!=null)
+                        props.setRegion(region)
                 }
+                disabled = state.region==null || state.name.isBlank()
             }
             +"Start Game"
         }
@@ -84,4 +116,8 @@ class Welcome(props :WelcomeProps) :RComponent<WelcomeProps, WelcomeState>(props
     private fun setCookie(name :String, value :String) {
         document.cookie = """$name=$value; path='/'"""
     }
+}
+
+fun RBuilder.welcomeComponent(handler :WelcomeProps.() -> Unit) = child(Welcome::class) {
+    this.attrs(handler)
 }

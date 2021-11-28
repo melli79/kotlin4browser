@@ -15,4 +15,8 @@ object PowerGridStyles : StyleSheet("PowerGridStyles", isStatic = true) {
         margin(vertical = 5.px)
         fontSize = 14.px
     }
+
+    val selection by css {
+
+    }
 }
