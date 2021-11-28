@@ -1,5 +1,5 @@
 plugins {
-    kotlin("js") version "1.5.0"
+    kotlin("js") version "1.5.31"
 }
 
 group = "org.grutzmann.games"

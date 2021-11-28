@@ -1,0 +1,2809 @@
+[ {
+  "name": "Shanghai",
+  "size": 17,
+  "lat": 31.225,
+  "lon": 121.475,
+  "neighbors": [
+    {
+      "city": "Suzhou",
+      "dist": 3
+    },
+    {
+      "city": "Nanjing",
+      "dist": 5
+    },
+    {
+      "city": "Hangzhou",
+      "dist": 5
+    },
+    {
+      "city": "Changzhou",
+      "dist": 4
+    },
+    {
+      "city": "Hefei",
+      "dist": 4
+    },
+    {
+      "city": "Wuhan",
+      "dist": 6
+    },
+    {
+      "city": "Wuxi",
+      "dist": 4
+    },
+    {
+      "city": "Ningbo",
+      "dist": 5
+    },
+    {
+      "city": "Qingdao",
+      "dist": 6
+    },
+    {
+      "city": "Kunshan",
+      "dist": 3
+    },
+    {
+      "city": "Nantong",
+      "dist": 4
+    },
+    {
+      "city": "Shaoxing",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Beijing",
+  "size": 17,
+  "lat": 39.90833333333333,
+  "lon": 116.4,
+  "neighbors": [
+    {
+      "city": "Tianjin",
+      "dist": 5
+    },
+    {
+      "city": "Shenyang",
+      "dist": 5
+    },
+    {
+      "city": "Xi\u0027an",
+      "dist": 7
+    },
+    {
+      "city": "Tangshan",
+      "dist": 5
+    },
+    {
+      "city": "Shijiazhuang",
+      "dist": 6
+    },
+    {
+      "city": "Jinan",
+      "dist": 6
+    },
+    {
+      "city": "Hohhot",
+      "dist": 6
+    },
+    {
+      "city": "Zibo",
+      "dist": 6
+    },
+    {
+      "city": "Handan",
+      "dist": 6
+    },
+    {
+      "city": "Baoding",
+      "dist": 5
+    },
+    {
+      "city": "Anshan",
+      "dist": 6
+    },
+    {
+      "city": "Weifang",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Chongqing",
+  "size": 17,
+  "lat": 29.566666666666666,
+  "lon": 106.55,
+  "neighbors": [
+    {
+      "city": "Chengdu",
+      "dist": 6
+    },
+    {
+      "city": "Xi\u0027an",
+      "dist": 6
+    },
+    {
+      "city": "Nanjing",
+      "dist": 7
+    },
+    {
+      "city": "Changsha",
+      "dist": 6
+    },
+    {
+      "city": "Kunming",
+      "dist": 6
+    },
+    {
+      "city": "Zhengzhou",
+      "dist": 7
+    },
+    {
+      "city": "Guiyang",
+      "dist": 6
+    },
+    {
+      "city": "Huai\u0027an",
+      "dist": 6
+    },
+    {
+      "city": "Fuzhou",
+      "dist": 7
+    },
+    {
+      "city": "Hengyang",
+      "dist": 6
+    },
+    {
+      "city": "Huainan",
+      "dist": 6
+    },
+    {
+      "city": "Yangzhou",
+      "dist": 7
+    }
+  ]
+}, {
+  "name": "Tianjin",
+  "size": 16,
+  "lat": 39.13333333333333,
+  "lon": 117.20833333333333,
+  "neighbors": [
+    {
+      "city": "Beijing",
+      "dist": 5
+    },
+    {
+      "city": "Jinan",
+      "dist": 6
+    },
+    {
+      "city": "Qingdao",
+      "dist": 6
+    },
+    {
+      "city": "Tangshan",
+      "dist": 5
+    },
+    {
+      "city": "Shijiazhuang",
+      "dist": 6
+    },
+    {
+      "city": "Shenyang",
+      "dist": 6
+    },
+    {
+      "city": "Zibo",
+      "dist": 6
+    },
+    {
+      "city": "Weifang",
+      "dist": 6
+    },
+    {
+      "city": "Handan",
+      "dist": 6
+    },
+    {
+      "city": "Baoding",
+      "dist": 5
+    },
+    {
+      "city": "Yantai",
+      "dist": 6
+    },
+    {
+      "city": "Lanzhou",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Guangzhou",
+  "size": 16,
+  "lat": 23.133333333333333,
+  "lon": 113.26666666666667,
+  "neighbors": [
+    {
+      "city": "Foshan",
+      "dist": 3
+    },
+    {
+      "city": "Dongguan",
+      "dist": 4
+    },
+    {
+      "city": "Shenzhen",
+      "dist": 5
+    },
+    {
+      "city": "Hong Kong",
+      "dist": 5
+    },
+    {
+      "city": "Shantou",
+      "dist": 6
+    },
+    {
+      "city": "Nanning",
+      "dist": 6
+    },
+    {
+      "city": "Zhongshan",
+      "dist": 4
+    },
+    {
+      "city": "Huizhou",
+      "dist": 5
+    },
+    {
+      "city": "Guiyang",
+      "dist": 6
+    },
+    {
+      "city": "Zhuhai",
+      "dist": 5
+    },
+    {
+      "city": "Haikou",
+      "dist": 6
+    },
+    {
+      "city": "Fuzhou",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Shenzhen",
+  "size": 16,
+  "lat": 22.541666666666668,
+  "lon": 114.05833333333334,
+  "neighbors": [
+    {
+      "city": "Hong Kong",
+      "dist": 3
+    },
+    {
+      "city": "Dongguan",
+      "dist": 4
+    },
+    {
+      "city": "Guangzhou",
+      "dist": 5
+    },
+    {
+      "city": "Foshan",
+      "dist": 5
+    },
+    {
+      "city": "Shantou",
+      "dist": 6
+    },
+    {
+      "city": "Nanning",
+      "dist": 6
+    },
+    {
+      "city": "Zhongshan",
+      "dist": 4
+    },
+    {
+      "city": "Huizhou",
+      "dist": 4
+    },
+    {
+      "city": "Gāoxióng",
+      "dist": 6
+    },
+    {
+      "city": "Zhuhai",
+      "dist": 4
+    },
+    {
+      "city": "Haikou",
+      "dist": 6
+    },
+    {
+      "city": "Xiamen",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Chengdu",
+  "size": 16,
+  "lat": 30.658333333333335,
+  "lon": 104.06666666666666,
+  "neighbors": [
+    {
+      "city": "Nanjing",
+      "dist": 5
+    },
+    {
+      "city": "Chongqing",
+      "dist": 6
+    },
+    {
+      "city": "Shanghai",
+      "dist": 7
+    },
+    {
+      "city": "Hefei",
+      "dist": 6
+    },
+    {
+      "city": "Changzhou",
+      "dist": 6
+    },
+    {
+      "city": "Fuzhou",
+      "dist": 6
+    },
+    {
+      "city": "Guiyang",
+      "dist": 6
+    },
+    {
+      "city": "Wuxi",
+      "dist": 6
+    },
+    {
+      "city": "Xi\u0027an",
+      "dist": 6
+    },
+    {
+      "city": "Nantong",
+      "dist": 5
+    },
+    {
+      "city": "Yangzhou",
+      "dist": 6
+    },
+    {
+      "city": "Huainan",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Quanzhou",
+  "size": 16,
+  "lat": 24.875,
+  "lon": 118.675,
+  "neighbors": [
+    {
+      "city": "Taipěi",
+      "dist": 4
+    },
+    {
+      "city": "Táoyuán",
+      "dist": 4
+    },
+    {
+      "city": "Shenzhen",
+      "dist": 6
+    },
+    {
+      "city": "Xiamen",
+      "dist": 4
+    },
+    {
+      "city": "Fuzhou",
+      "dist": 5
+    },
+    {
+      "city": "Shantou",
+      "dist": 6
+    },
+    {
+      "city": "Táizhōng",
+      "dist": 5
+    },
+    {
+      "city": "Kunming",
+      "dist": 6
+    },
+    {
+      "city": "Wenzhou",
+      "dist": 6
+    },
+    {
+      "city": "Putian",
+      "dist": 4
+    },
+    {
+      "city": "Gāoxióng",
+      "dist": 6
+    },
+    {
+      "city": "Huizhou",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Nanjing",
+  "size": 16,
+  "lat": 32.05833333333333,
+  "lon": 118.76666666666667,
+  "neighbors": [
+    {
+      "city": "Suzhou",
+      "dist": 5
+    },
+    {
+      "city": "Shanghai",
+      "dist": 5
+    },
+    {
+      "city": "Wuhan",
+      "dist": 5
+    },
+    {
+      "city": "Changzhou",
+      "dist": 4
+    },
+    {
+      "city": "Hefei",
+      "dist": 4
+    },
+    {
+      "city": "Chengdu",
+      "dist": 5
+    },
+    {
+      "city": "Wuxi",
+      "dist": 4
+    },
+    {
+      "city": "Huai\u0027an",
+      "dist": 5
+    },
+    {
+      "city": "Hangzhou",
+      "dist": 5
+    },
+    {
+      "city": "Yangzhou",
+      "dist": 4
+    },
+    {
+      "city": "Kunshan",
+      "dist": 5
+    },
+    {
+      "city": "Nantong",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Taipěi",
+  "size": 16,
+  "lat": 25.066666666666666,
+  "lon": 121.51666666666667,
+  "neighbors": [
+    {
+      "city": "Táoyuán",
+      "dist": 2
+    },
+    {
+      "city": "Quanzhou",
+      "dist": 4
+    },
+    {
+      "city": "Shanghai",
+      "dist": 7
+    },
+    {
+      "city": "Xiamen",
+      "dist": 5
+    },
+    {
+      "city": "Fuzhou",
+      "dist": 5
+    },
+    {
+      "city": "Kunming",
+      "dist": 5
+    },
+    {
+      "city": "Táizhōng",
+      "dist": 5
+    },
+    {
+      "city": "Gāoxióng",
+      "dist": 6
+    },
+    {
+      "city": "Wenzhou",
+      "dist": 6
+    },
+    {
+      "city": "Putian",
+      "dist": 4
+    },
+    {
+      "city": "Taizhou",
+      "dist": 6
+    },
+    {
+      "city": "Shantou",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Táoyuán",
+  "size": 16,
+  "lat": 24.991666666666667,
+  "lon": 121.31666666666666,
+  "neighbors": [
+    {
+      "city": "Taipěi",
+      "dist": 2
+    },
+    {
+      "city": "Quanzhou",
+      "dist": 4
+    },
+    {
+      "city": "Shanghai",
+      "dist": 7
+    },
+    {
+      "city": "Fuzhou",
+      "dist": 5
+    },
+    {
+      "city": "Xiamen",
+      "dist": 5
+    },
+    {
+      "city": "Kunming",
+      "dist": 5
+    },
+    {
+      "city": "Táizhōng",
+      "dist": 5
+    },
+    {
+      "city": "Gāoxióng",
+      "dist": 6
+    },
+    {
+      "city": "Wenzhou",
+      "dist": 6
+    },
+    {
+      "city": "Putian",
+      "dist": 4
+    },
+    {
+      "city": "Taizhou",
+      "dist": 6
+    },
+    {
+      "city": "Shantou",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Wuhan",
+  "size": 16,
+  "lat": 30.591666666666665,
+  "lon": 114.30833333333334,
+  "neighbors": [
+    {
+      "city": "Nanjing",
+      "dist": 5
+    },
+    {
+      "city": "Suzhou",
+      "dist": 6
+    },
+    {
+      "city": "Shanghai",
+      "dist": 6
+    },
+    {
+      "city": "Hefei",
+      "dist": 5
+    },
+    {
+      "city": "Changzhou",
+      "dist": 5
+    },
+    {
+      "city": "Changsha",
+      "dist": 6
+    },
+    {
+      "city": "Wuxi",
+      "dist": 5
+    },
+    {
+      "city": "Nanchang",
+      "dist": 6
+    },
+    {
+      "city": "Zhengzhou",
+      "dist": 6
+    },
+    {
+      "city": "Nantong",
+      "dist": 5
+    },
+    {
+      "city": "Yangzhou",
+      "dist": 5
+    },
+    {
+      "city": "Huainan",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Xi\u0027an",
+  "size": 16,
+  "lat": 34.266666666666666,
+  "lon": 108.95,
+  "neighbors": [
+    {
+      "city": "Zhengzhou",
+      "dist": 4
+    },
+    {
+      "city": "Chongqing",
+      "dist": 6
+    },
+    {
+      "city": "Chengdu",
+      "dist": 6
+    },
+    {
+      "city": "Linyi",
+      "dist": 5
+    },
+    {
+      "city": "Taiyuan",
+      "dist": 6
+    },
+    {
+      "city": "Wuhan",
+      "dist": 6
+    },
+    {
+      "city": "Lanzhou",
+      "dist": 6
+    },
+    {
+      "city": "Handan",
+      "dist": 6
+    },
+    {
+      "city": "Nanchang",
+      "dist": 6
+    },
+    {
+      "city": "Luoyang",
+      "dist": 4
+    },
+    {
+      "city": "Yinchuan",
+      "dist": 6
+    },
+    {
+      "city": "Changsha",
+      "dist": 7
+    }
+  ]
+}, {
+  "name": "Hangzhou",
+  "size": 16,
+  "lat": 30.266666666666666,
+  "lon": 120.15,
+  "neighbors": [
+    {
+      "city": "Suzhou",
+      "dist": 5
+    },
+    {
+      "city": "Shanghai",
+      "dist": 5
+    },
+    {
+      "city": "Nanjing",
+      "dist": 5
+    },
+    {
+      "city": "Ningbo",
+      "dist": 5
+    },
+    {
+      "city": "Changzhou",
+      "dist": 5
+    },
+    {
+      "city": "Hefei",
+      "dist": 5
+    },
+    {
+      "city": "Shaoxing",
+      "dist": 4
+    },
+    {
+      "city": "Wuxi",
+      "dist": 5
+    },
+    {
+      "city": "Wenzhou",
+      "dist": 6
+    },
+    {
+      "city": "Kunshan",
+      "dist": 5
+    },
+    {
+      "city": "Nantong",
+      "dist": 5
+    },
+    {
+      "city": "Taizhou",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Hong Kong",
+  "size": 16,
+  "lat": 22.3,
+  "lon": 114.2,
+  "neighbors": [
+    {
+      "city": "Shenzhen",
+      "dist": 3
+    },
+    {
+      "city": "Dongguan",
+      "dist": 4
+    },
+    {
+      "city": "Guangzhou",
+      "dist": 5
+    },
+    {
+      "city": "Foshan",
+      "dist": 5
+    },
+    {
+      "city": "Shantou",
+      "dist": 5
+    },
+    {
+      "city": "Nanning",
+      "dist": 6
+    },
+    {
+      "city": "Zhongshan",
+      "dist": 4
+    },
+    {
+      "city": "Huizhou",
+      "dist": 5
+    },
+    {
+      "city": "Gāoxióng",
+      "dist": 6
+    },
+    {
+      "city": "Zhuhai",
+      "dist": 3
+    },
+    {
+      "city": "Haikou",
+      "dist": 6
+    },
+    {
+      "city": "Xiamen",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Dongguan",
+  "size": 16,
+  "lat": 23.025,
+  "lon": 113.75,
+  "neighbors": [
+    {
+      "city": "Guangzhou",
+      "dist": 4
+    },
+    {
+      "city": "Shenzhen",
+      "dist": 4
+    },
+    {
+      "city": "Chongqing",
+      "dist": 7
+    },
+    {
+      "city": "Foshan",
+      "dist": 4
+    },
+    {
+      "city": "Hong Kong",
+      "dist": 4
+    },
+    {
+      "city": "Quanzhou",
+      "dist": 6
+    },
+    {
+      "city": "Zhongshan",
+      "dist": 4
+    },
+    {
+      "city": "Huizhou",
+      "dist": 4
+    },
+    {
+      "city": "Shantou",
+      "dist": 6
+    },
+    {
+      "city": "Zhuhai",
+      "dist": 4
+    },
+    {
+      "city": "Haikou",
+      "dist": 6
+    },
+    {
+      "city": "Guiyang",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Foshan",
+  "size": 16,
+  "lat": 23.025,
+  "lon": 113.125,
+  "neighbors": [
+    {
+      "city": "Guangzhou",
+      "dist": 3
+    },
+    {
+      "city": "Dongguan",
+      "dist": 4
+    },
+    {
+      "city": "Shenzhen",
+      "dist": 5
+    },
+    {
+      "city": "Hong Kong",
+      "dist": 5
+    },
+    {
+      "city": "Shantou",
+      "dist": 6
+    },
+    {
+      "city": "Nanning",
+      "dist": 6
+    },
+    {
+      "city": "Zhongshan",
+      "dist": 4
+    },
+    {
+      "city": "Huizhou",
+      "dist": 5
+    },
+    {
+      "city": "Guiyang",
+      "dist": 6
+    },
+    {
+      "city": "Zhuhai",
+      "dist": 4
+    },
+    {
+      "city": "Haikou",
+      "dist": 6
+    },
+    {
+      "city": "Fuzhou",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Shenyang",
+  "size": 16,
+  "lat": 41.80833333333333,
+  "lon": 123.43333333333334,
+  "neighbors": [
+    {
+      "city": "Beijing",
+      "dist": 5
+    },
+    {
+      "city": "Dalian",
+      "dist": 6
+    },
+    {
+      "city": "Tianjin",
+      "dist": 6
+    },
+    {
+      "city": "Tangshan",
+      "dist": 6
+    },
+    {
+      "city": "Changchun",
+      "dist": 6
+    },
+    {
+      "city": "Harbin",
+      "dist": 6
+    },
+    {
+      "city": "Hohhot",
+      "dist": 6
+    },
+    {
+      "city": "Qingdao",
+      "dist": 7
+    },
+    {
+      "city": "Weifang",
+      "dist": 7
+    },
+    {
+      "city": "Anshan",
+      "dist": 4
+    },
+    {
+      "city": "Jilin",
+      "dist": 6
+    },
+    {
+      "city": "Yantai",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Suzhou",
+  "size": 16,
+  "lat": 31.3,
+  "lon": 120.58333333333333,
+  "neighbors": [
+    {
+      "city": "Shanghai",
+      "dist": 3
+    },
+    {
+      "city": "Nanjing",
+      "dist": 5
+    },
+    {
+      "city": "Quanzhou",
+      "dist": 7
+    },
+    {
+      "city": "Changzhou",
+      "dist": 4
+    },
+    {
+      "city": "Hefei",
+      "dist": 4
+    },
+    {
+      "city": "Hangzhou",
+      "dist": 5
+    },
+    {
+      "city": "Wuxi",
+      "dist": 3
+    },
+    {
+      "city": "Shaoxing",
+      "dist": 5
+    },
+    {
+      "city": "Ningbo",
+      "dist": 5
+    },
+    {
+      "city": "Kunshan",
+      "dist": 2
+    },
+    {
+      "city": "Nantong",
+      "dist": 4
+    },
+    {
+      "city": "Yangzhou",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Harbin",
+  "size": 16,
+  "lat": 45.75833333333333,
+  "lon": 126.64166666666667,
+  "neighbors": [
+    {
+      "city": "Shenyang",
+      "dist": 6
+    },
+    {
+      "city": "Dalian",
+      "dist": 7
+    },
+    {
+      "city": "Qingdao",
+      "dist": 7
+    },
+    {
+      "city": "Changchun",
+      "dist": 5
+    },
+    {
+      "city": "Jinan",
+      "dist": 7
+    },
+    {
+      "city": "Beijing",
+      "dist": 7
+    },
+    {
+      "city": "Weifang",
+      "dist": 7
+    },
+    {
+      "city": "Zibo",
+      "dist": 7
+    },
+    {
+      "city": "Lanzhou",
+      "dist": 7
+    },
+    {
+      "city": "Jilin",
+      "dist": 5
+    },
+    {
+      "city": "Anshan",
+      "dist": 6
+    },
+    {
+      "city": "Yantai",
+      "dist": 7
+    }
+  ]
+}, {
+  "name": "Qingdao",
+  "size": 16,
+  "lat": 36.06666666666667,
+  "lon": 120.38333333333334,
+  "neighbors": [
+    {
+      "city": "Dalian",
+      "dist": 6
+    },
+    {
+      "city": "Tianjin",
+      "dist": 6
+    },
+    {
+      "city": "Beijing",
+      "dist": 6
+    },
+    {
+      "city": "Linyi",
+      "dist": 5
+    },
+    {
+      "city": "Jinan",
+      "dist": 6
+    },
+    {
+      "city": "Nanjing",
+      "dist": 6
+    },
+    {
+      "city": "Weifang",
+      "dist": 5
+    },
+    {
+      "city": "Zibo",
+      "dist": 6
+    },
+    {
+      "city": "Tangshan",
+      "dist": 6
+    },
+    {
+      "city": "Yantai",
+      "dist": 5
+    },
+    {
+      "city": "Huai\u0027an",
+      "dist": 6
+    },
+    {
+      "city": "Shijiazhuang",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Dalian",
+  "size": 16,
+  "lat": 38.916666666666664,
+  "lon": 121.61666666666666,
+  "neighbors": [
+    {
+      "city": "Jinan",
+      "dist": 6
+    },
+    {
+      "city": "Qingdao",
+      "dist": 6
+    },
+    {
+      "city": "Shenyang",
+      "dist": 6
+    },
+    {
+      "city": "Tangshan",
+      "dist": 6
+    },
+    {
+      "city": "Tianjin",
+      "dist": 6
+    },
+    {
+      "city": "Linyi",
+      "dist": 6
+    },
+    {
+      "city": "Zibo",
+      "dist": 5
+    },
+    {
+      "city": "Weifang",
+      "dist": 6
+    },
+    {
+      "city": "Handan",
+      "dist": 6
+    },
+    {
+      "city": "Yantai",
+      "dist": 5
+    },
+    {
+      "city": "Anshan",
+      "dist": 6
+    },
+    {
+      "city": "Xining",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Jinan",
+  "size": 15,
+  "lat": 36.666666666666664,
+  "lon": 117.01666666666667,
+  "neighbors": [
+    {
+      "city": "Dalian",
+      "dist": 6
+    },
+    {
+      "city": "Tianjin",
+      "dist": 6
+    },
+    {
+      "city": "Beijing",
+      "dist": 6
+    },
+    {
+      "city": "Shijiazhuang",
+      "dist": 5
+    },
+    {
+      "city": "Linyi",
+      "dist": 5
+    },
+    {
+      "city": "Qingdao",
+      "dist": 6
+    },
+    {
+      "city": "Zibo",
+      "dist": 5
+    },
+    {
+      "city": "Weifang",
+      "dist": 5
+    },
+    {
+      "city": "Handan",
+      "dist": 6
+    },
+    {
+      "city": "Baoding",
+      "dist": 6
+    },
+    {
+      "city": "Taiyuan",
+      "dist": 6
+    },
+    {
+      "city": "Yinchuan",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Zhengzhou",
+  "size": 15,
+  "lat": 34.766666666666666,
+  "lon": 113.68333333333334,
+  "neighbors": [
+    {
+      "city": "Xi\u0027an",
+      "dist": 4
+    },
+    {
+      "city": "Jinan",
+      "dist": 6
+    },
+    {
+      "city": "Wuhan",
+      "dist": 6
+    },
+    {
+      "city": "Linyi",
+      "dist": 5
+    },
+    {
+      "city": "Taiyuan",
+      "dist": 6
+    },
+    {
+      "city": "Shijiazhuang",
+      "dist": 6
+    },
+    {
+      "city": "Handan",
+      "dist": 5
+    },
+    {
+      "city": "Huai\u0027an",
+      "dist": 6
+    },
+    {
+      "city": "Hefei",
+      "dist": 6
+    },
+    {
+      "city": "Luoyang",
+      "dist": 3
+    },
+    {
+      "city": "Huainan",
+      "dist": 6
+    },
+    {
+      "city": "Zibo",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Changsha",
+  "size": 15,
+  "lat": 28.225,
+  "lon": 112.94166666666666,
+  "neighbors": [
+    {
+      "city": "Nanchang",
+      "dist": 4
+    },
+    {
+      "city": "Wuhan",
+      "dist": 6
+    },
+    {
+      "city": "Chongqing",
+      "dist": 6
+    },
+    {
+      "city": "Wenzhou",
+      "dist": 5
+    },
+    {
+      "city": "Guiyang",
+      "dist": 6
+    },
+    {
+      "city": "Guangzhou",
+      "dist": 6
+    },
+    {
+      "city": "Hengyang",
+      "dist": 5
+    },
+    {
+      "city": "Taizhou",
+      "dist": 5
+    },
+    {
+      "city": "Huizhou",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Kunming",
+  "size": 15,
+  "lat": 25.05,
+  "lon": 102.70833333333333,
+  "neighbors": [
+    {
+      "city": "Taipěi",
+      "dist": 5
+    },
+    {
+      "city": "Táoyuán",
+      "dist": 5
+    },
+    {
+      "city": "Quanzhou",
+      "dist": 6
+    },
+    {
+      "city": "Guiyang",
+      "dist": 6
+    },
+    {
+      "city": "Chongqing",
+      "dist": 6
+    },
+    {
+      "city": "Xiamen",
+      "dist": 6
+    },
+    {
+      "city": "Putian",
+      "dist": 5
+    },
+    {
+      "city": "Liuzhou",
+      "dist": 6
+    },
+    {
+      "city": "Chengdu",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Nanning",
+  "size": 15,
+  "lat": 22.816666666666666,
+  "lon": 108.325,
+  "neighbors": [
+    {
+      "city": "Hong Kong",
+      "dist": 6
+    },
+    {
+      "city": "Shenzhen",
+      "dist": 6
+    },
+    {
+      "city": "Guangzhou",
+      "dist": 6
+    },
+    {
+      "city": "Haikou",
+      "dist": 6
+    },
+    {
+      "city": "Zhongshan",
+      "dist": 6
+    },
+    {
+      "city": "Foshan",
+      "dist": 6
+    },
+    {
+      "city": "Liuzhou",
+      "dist": 5
+    },
+    {
+      "city": "Zhuhai",
+      "dist": 6
+    },
+    {
+      "city": "Guiyang",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Changchun",
+  "size": 15,
+  "lat": 43.9,
+  "lon": 125.325,
+  "neighbors": [
+    {
+      "city": "Harbin",
+      "dist": 5
+    },
+    {
+      "city": "Shenyang",
+      "dist": 6
+    },
+    {
+      "city": "Tianjin",
+      "dist": 7
+    },
+    {
+      "city": "Ürümqi",
+      "dist": 6
+    },
+    {
+      "city": "Dalian",
+      "dist": 6
+    },
+    {
+      "city": "Jinan",
+      "dist": 7
+    },
+    {
+      "city": "Jilin",
+      "dist": 3
+    },
+    {
+      "city": "Anshan",
+      "dist": 6
+    },
+    {
+      "city": "Shijiazhuang",
+      "dist": 7
+    }
+  ]
+}, {
+  "name": "Ürümqi",
+  "size": 15,
+  "lat": 43.825,
+  "lon": 87.61666666666666,
+  "neighbors": [
+    {
+      "city": "Changchun",
+      "dist": 6
+    },
+    {
+      "city": "Taiyuan",
+      "dist": 6
+    },
+    {
+      "city": "Shijiazhuang",
+      "dist": 7
+    },
+    {
+      "city": "Yinchuan",
+      "dist": 7
+    },
+    {
+      "city": "Wuxi",
+      "dist": 7
+    },
+    {
+      "city": "Hefei",
+      "dist": 7
+    },
+    {
+      "city": "Jilin",
+      "dist": 6
+    },
+    {
+      "city": "Yantai",
+      "dist": 7
+    },
+    {
+      "city": "Xining",
+      "dist": 7
+    }
+  ]
+}, {
+  "name": "Linyi",
+  "size": 15,
+  "lat": 35.1,
+  "lon": 118.35833333333333,
+  "neighbors": [
+    {
+      "city": "Xi\u0027an",
+      "dist": 5
+    },
+    {
+      "city": "Zhengzhou",
+      "dist": 5
+    },
+    {
+      "city": "Qingdao",
+      "dist": 5
+    },
+    {
+      "city": "Huai\u0027an",
+      "dist": 5
+    },
+    {
+      "city": "Zibo",
+      "dist": 5
+    },
+    {
+      "city": "Weifang",
+      "dist": 5
+    },
+    {
+      "city": "Luoyang",
+      "dist": 5
+    },
+    {
+      "city": "Jinan",
+      "dist": 5
+    },
+    {
+      "city": "Huainan",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Shantou",
+  "size": 15,
+  "lat": 23.35,
+  "lon": 116.68333333333334,
+  "neighbors": [
+    {
+      "city": "Xiamen",
+      "dist": 5
+    },
+    {
+      "city": "Hong Kong",
+      "dist": 5
+    },
+    {
+      "city": "Quanzhou",
+      "dist": 6
+    },
+    {
+      "city": "Huizhou",
+      "dist": 5
+    },
+    {
+      "city": "Shenzhen",
+      "dist": 6
+    },
+    {
+      "city": "Dongguan",
+      "dist": 6
+    },
+    {
+      "city": "Zhuhai",
+      "dist": 6
+    },
+    {
+      "city": "Putian",
+      "dist": 6
+    },
+    {
+      "city": "Zhongshan",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Hefei",
+  "size": 15,
+  "lat": 31.816666666666666,
+  "lon": 117.225,
+  "neighbors": [
+    {
+      "city": "Suzhou",
+      "dist": 4
+    },
+    {
+      "city": "Shanghai",
+      "dist": 4
+    },
+    {
+      "city": "Nanjing",
+      "dist": 4
+    },
+    {
+      "city": "Wuxi",
+      "dist": 5
+    },
+    {
+      "city": "Changzhou",
+      "dist": 5
+    },
+    {
+      "city": "Wuhan",
+      "dist": 5
+    },
+    {
+      "city": "Kunshan",
+      "dist": 4
+    },
+    {
+      "city": "Huainan",
+      "dist": 5
+    },
+    {
+      "city": "Yangzhou",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Shijiazhuang",
+  "size": 15,
+  "lat": 38.041666666666664,
+  "lon": 114.53333333333333,
+  "neighbors": [
+    {
+      "city": "Taiyuan",
+      "dist": 4
+    },
+    {
+      "city": "Jinan",
+      "dist": 5
+    },
+    {
+      "city": "Tianjin",
+      "dist": 6
+    },
+    {
+      "city": "Handan",
+      "dist": 5
+    },
+    {
+      "city": "Zibo",
+      "dist": 5
+    },
+    {
+      "city": "Beijing",
+      "dist": 6
+    },
+    {
+      "city": "Yantai",
+      "dist": 4
+    },
+    {
+      "city": "Baoding",
+      "dist": 5
+    },
+    {
+      "city": "Weifang",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Taiyuan",
+  "size": 15,
+  "lat": 37.86666666666667,
+  "lon": 112.55,
+  "neighbors": [
+    {
+      "city": "Shijiazhuang",
+      "dist": 4
+    },
+    {
+      "city": "Jinan",
+      "dist": 6
+    },
+    {
+      "city": "Zhengzhou",
+      "dist": 6
+    },
+    {
+      "city": "Handan",
+      "dist": 5
+    },
+    {
+      "city": "Zibo",
+      "dist": 5
+    },
+    {
+      "city": "Tianjin",
+      "dist": 6
+    },
+    {
+      "city": "Yantai",
+      "dist": 4
+    },
+    {
+      "city": "Baoding",
+      "dist": 5
+    },
+    {
+      "city": "Weifang",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Xiamen",
+  "size": 15,
+  "lat": 24.483333333333334,
+  "lon": 118.09166666666667,
+  "neighbors": [
+    {
+      "city": "Quanzhou",
+      "dist": 4
+    },
+    {
+      "city": "Taipěi",
+      "dist": 5
+    },
+    {
+      "city": "Shenzhen",
+      "dist": 6
+    },
+    {
+      "city": "Táoyuán",
+      "dist": 5
+    },
+    {
+      "city": "Fuzhou",
+      "dist": 5
+    },
+    {
+      "city": "Shantou",
+      "dist": 5
+    },
+    {
+      "city": "Putian",
+      "dist": 5
+    },
+    {
+      "city": "Táizhōng",
+      "dist": 5
+    },
+    {
+      "city": "Gāoxióng",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Fuzhou",
+  "size": 15,
+  "lat": 26.075,
+  "lon": 119.3,
+  "neighbors": [
+    {
+      "city": "Quanzhou",
+      "dist": 5
+    },
+    {
+      "city": "Táoyuán",
+      "dist": 5
+    },
+    {
+      "city": "Taipěi",
+      "dist": 5
+    },
+    {
+      "city": "Xiamen",
+      "dist": 5
+    },
+    {
+      "city": "Táizhōng",
+      "dist": 5
+    },
+    {
+      "city": "Wenzhou",
+      "dist": 6
+    },
+    {
+      "city": "Putian",
+      "dist": 4
+    },
+    {
+      "city": "Liuzhou",
+      "dist": 5
+    },
+    {
+      "city": "Shantou",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Changzhou",
+  "size": 15,
+  "lat": 31.808333333333334,
+  "lon": 119.975,
+  "neighbors": [
+    {
+      "city": "Suzhou",
+      "dist": 4
+    },
+    {
+      "city": "Shanghai",
+      "dist": 4
+    },
+    {
+      "city": "Nanjing",
+      "dist": 4
+    },
+    {
+      "city": "Wuxi",
+      "dist": 3
+    },
+    {
+      "city": "Hefei",
+      "dist": 5
+    },
+    {
+      "city": "Hangzhou",
+      "dist": 5
+    },
+    {
+      "city": "Nantong",
+      "dist": 4
+    },
+    {
+      "city": "Kunshan",
+      "dist": 4
+    },
+    {
+      "city": "Yangzhou",
+      "dist": 4
+    }
+  ]
+}, {
+  "name": "Nanchang",
+  "size": 15,
+  "lat": 28.683333333333334,
+  "lon": 115.85833333333333,
+  "neighbors": [
+    {
+      "city": "Changsha",
+      "dist": 4
+    },
+    {
+      "city": "Wuhan",
+      "dist": 6
+    },
+    {
+      "city": "Nanjing",
+      "dist": 6
+    },
+    {
+      "city": "Wenzhou",
+      "dist": 4
+    },
+    {
+      "city": "Hefei",
+      "dist": 6
+    },
+    {
+      "city": "Fuzhou",
+      "dist": 6
+    },
+    {
+      "city": "Taizhou",
+      "dist": 5
+    },
+    {
+      "city": "Hengyang",
+      "dist": 6
+    },
+    {
+      "city": "Huainan",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Ningbo",
+  "size": 15,
+  "lat": 29.866666666666667,
+  "lon": 121.55,
+  "neighbors": [
+    {
+      "city": "Shanghai",
+      "dist": 5
+    },
+    {
+      "city": "Hangzhou",
+      "dist": 5
+    },
+    {
+      "city": "Nanjing",
+      "dist": 6
+    },
+    {
+      "city": "Shaoxing",
+      "dist": 5
+    },
+    {
+      "city": "Suzhou",
+      "dist": 5
+    },
+    {
+      "city": "Wuxi",
+      "dist": 5
+    },
+    {
+      "city": "Taizhou",
+      "dist": 5
+    },
+    {
+      "city": "Kunshan",
+      "dist": 5
+    },
+    {
+      "city": "Wenzhou",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Tangshan",
+  "size": 15,
+  "lat": 39.63333333333333,
+  "lon": 118.18333333333334,
+  "neighbors": [
+    {
+      "city": "Tianjin",
+      "dist": 5
+    },
+    {
+      "city": "Beijing",
+      "dist": 5
+    },
+    {
+      "city": "Shanghai",
+      "dist": 7
+    },
+    {
+      "city": "Shenyang",
+      "dist": 6
+    },
+    {
+      "city": "Zibo",
+      "dist": 6
+    },
+    {
+      "city": "Jinan",
+      "dist": 6
+    },
+    {
+      "city": "Anshan",
+      "dist": 6
+    },
+    {
+      "city": "Baoding",
+      "dist": 6
+    },
+    {
+      "city": "Weifang",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Guiyang",
+  "size": 15,
+  "lat": 26.65,
+  "lon": 106.63333333333334,
+  "neighbors": [
+    {
+      "city": "Chongqing",
+      "dist": 6
+    },
+    {
+      "city": "Kunming",
+      "dist": 6
+    },
+    {
+      "city": "Guangzhou",
+      "dist": 6
+    },
+    {
+      "city": "Liuzhou",
+      "dist": 6
+    },
+    {
+      "city": "Ningbo",
+      "dist": 6
+    },
+    {
+      "city": "Shaoxing",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Wuxi",
+  "size": 15,
+  "lat": 31.575,
+  "lon": 120.3,
+  "neighbors": [
+    {
+      "city": "Changzhou",
+      "dist": 3
+    },
+    {
+      "city": "Suzhou",
+      "dist": 3
+    },
+    {
+      "city": "Shanghai",
+      "dist": 4
+    },
+    {
+      "city": "Kunshan",
+      "dist": 3
+    },
+    {
+      "city": "Nantong",
+      "dist": 4
+    },
+    {
+      "city": "Nanjing",
+      "dist": 4
+    }
+  ]
+}, {
+  "name": "Zibo",
+  "size": 15,
+  "lat": 36.81666666666667,
+  "lon": 118.05833333333334,
+  "neighbors": [
+    {
+      "city": "Jinan",
+      "dist": 5
+    },
+    {
+      "city": "Weifang",
+      "dist": 5
+    },
+    {
+      "city": "Shijiazhuang",
+      "dist": 5
+    },
+    {
+      "city": "Linyi",
+      "dist": 5
+    },
+    {
+      "city": "Yinchuan",
+      "dist": 5
+    },
+    {
+      "city": "Dalian",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Lanzhou",
+  "size": 15,
+  "lat": 36.05833333333333,
+  "lon": 103.825,
+  "neighbors": [
+    {
+      "city": "Yinchuan",
+      "dist": 6
+    },
+    {
+      "city": "Tianjin",
+      "dist": 6
+    },
+    {
+      "city": "Xi\u0027an",
+      "dist": 6
+    },
+    {
+      "city": "Xining",
+      "dist": 5
+    },
+    {
+      "city": "Baoding",
+      "dist": 6
+    },
+    {
+      "city": "Tangshan",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Wenzhou",
+  "size": 15,
+  "lat": 27.991666666666667,
+  "lon": 120.7,
+  "neighbors": [
+    {
+      "city": "Nanchang",
+      "dist": 4
+    },
+    {
+      "city": "Changsha",
+      "dist": 5
+    },
+    {
+      "city": "Hangzhou",
+      "dist": 6
+    },
+    {
+      "city": "Taizhou",
+      "dist": 4
+    },
+    {
+      "city": "Ningbo",
+      "dist": 5
+    },
+    {
+      "city": "Shaoxing",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Zhongshan",
+  "size": 15,
+  "lat": 22.516666666666666,
+  "lon": 113.39166666666667,
+  "neighbors": [
+    {
+      "city": "Shenzhen",
+      "dist": 4
+    },
+    {
+      "city": "Hong Kong",
+      "dist": 4
+    },
+    {
+      "city": "Guangzhou",
+      "dist": 4
+    },
+    {
+      "city": "Zhuhai",
+      "dist": 3
+    },
+    {
+      "city": "Foshan",
+      "dist": 4
+    },
+    {
+      "city": "Dongguan",
+      "dist": 4
+    }
+  ]
+}, {
+  "name": "Táizhōng",
+  "size": 15,
+  "lat": 24.15,
+  "lon": 120.66666666666667,
+  "neighbors": [
+    {
+      "city": "Táoyuán",
+      "dist": 5
+    },
+    {
+      "city": "Taipěi",
+      "dist": 5
+    },
+    {
+      "city": "Quanzhou",
+      "dist": 5
+    },
+    {
+      "city": "Putian",
+      "dist": 5
+    },
+    {
+      "city": "Gāoxióng",
+      "dist": 5
+    },
+    {
+      "city": "Xiamen",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Handan",
+  "size": 15,
+  "lat": 36.6,
+  "lon": 114.48333333333333,
+  "neighbors": [
+    {
+      "city": "Shijiazhuang",
+      "dist": 5
+    },
+    {
+      "city": "Taiyuan",
+      "dist": 5
+    },
+    {
+      "city": "Zhengzhou",
+      "dist": 5
+    },
+    {
+      "city": "Jinan",
+      "dist": 6
+    },
+    {
+      "city": "Baoding",
+      "dist": 6
+    },
+    {
+      "city": "Yinchuan",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Weifang",
+  "size": 15,
+  "lat": 36.708333333333336,
+  "lon": 119.15833333333333,
+  "neighbors": [
+    {
+      "city": "Zibo",
+      "dist": 5
+    },
+    {
+      "city": "Qingdao",
+      "dist": 5
+    },
+    {
+      "city": "Linyi",
+      "dist": 5
+    },
+    {
+      "city": "Yantai",
+      "dist": 5
+    },
+    {
+      "city": "Jinan",
+      "dist": 5
+    },
+    {
+      "city": "Shijiazhuang",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Huai\u0027an",
+  "size": 15,
+  "lat": 33.55,
+  "lon": 119.11666666666666,
+  "neighbors": [
+    {
+      "city": "Nanjing",
+      "dist": 5
+    },
+    {
+      "city": "Linyi",
+      "dist": 5
+    },
+    {
+      "city": "Zhengzhou",
+      "dist": 6
+    },
+    {
+      "city": "Yangzhou",
+      "dist": 5
+    },
+    {
+      "city": "Changzhou",
+      "dist": 5
+    },
+    {
+      "city": "Wuxi",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Hohhot",
+  "size": 15,
+  "lat": 40.833333333333336,
+  "lon": 111.65833333333333,
+  "neighbors": [
+    {
+      "city": "Beijing",
+      "dist": 6
+    },
+    {
+      "city": "Taiyuan",
+      "dist": 6
+    },
+    {
+      "city": "Shijiazhuang",
+      "dist": 6
+    },
+    {
+      "city": "Baotou",
+      "dist": 3
+    },
+    {
+      "city": "Anshan",
+      "dist": 5
+    },
+    {
+      "city": "Baoding",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Gāoxióng",
+  "size": 15,
+  "lat": 22.633333333333333,
+  "lon": 120.26666666666667,
+  "neighbors": [
+    {
+      "city": "Táizhōng",
+      "dist": 5
+    },
+    {
+      "city": "Táoyuán",
+      "dist": 6
+    },
+    {
+      "city": "Taipěi",
+      "dist": 6
+    },
+    {
+      "city": "Quanzhou",
+      "dist": 6
+    },
+    {
+      "city": "Hong Kong",
+      "dist": 6
+    },
+    {
+      "city": "Shenzhen",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Shaoxing",
+  "size": 15,
+  "lat": 30.0,
+  "lon": 120.58333333333333,
+  "neighbors": [
+    {
+      "city": "Hangzhou",
+      "dist": 4
+    },
+    {
+      "city": "Ningbo",
+      "dist": 5
+    },
+    {
+      "city": "Suzhou",
+      "dist": 5
+    },
+    {
+      "city": "Kunshan",
+      "dist": 5
+    },
+    {
+      "city": "Shanghai",
+      "dist": 5
+    },
+    {
+      "city": "Taizhou",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Huizhou",
+  "size": 15,
+  "lat": 23.108333333333334,
+  "lon": 114.41666666666667,
+  "neighbors": [
+    {
+      "city": "Dongguan",
+      "dist": 4
+    },
+    {
+      "city": "Shenzhen",
+      "dist": 4
+    },
+    {
+      "city": "Hong Kong",
+      "dist": 5
+    },
+    {
+      "city": "Zhongshan",
+      "dist": 5
+    },
+    {
+      "city": "Zhuhai",
+      "dist": 5
+    },
+    {
+      "city": "Guangzhou",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Yinchuan",
+  "size": 15,
+  "lat": 38.475,
+  "lon": 106.25833333333334,
+  "neighbors": [
+    {
+      "city": "Zibo",
+      "dist": 5
+    },
+    {
+      "city": "Weifang",
+      "dist": 6
+    },
+    {
+      "city": "Jinan",
+      "dist": 6
+    },
+    {
+      "city": "Xining",
+      "dist": 5
+    },
+    {
+      "city": "Handan",
+      "dist": 6
+    },
+    {
+      "city": "Lanzhou",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Haikou",
+  "size": 15,
+  "lat": 20.016666666666666,
+  "lon": 110.35,
+  "neighbors": [
+    {
+      "city": "Nanning",
+      "dist": 6
+    },
+    {
+      "city": "Zhongshan",
+      "dist": 6
+    },
+    {
+      "city": "Foshan",
+      "dist": 6
+    },
+    {
+      "city": "Zhuhai",
+      "dist": 6
+    },
+    {
+      "city": "Guangzhou",
+      "dist": 6
+    },
+    {
+      "city": "Dongguan",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Yantai",
+  "size": 15,
+  "lat": 37.53333333333333,
+  "lon": 121.39166666666667,
+  "neighbors": [
+    {
+      "city": "Taiyuan",
+      "dist": 4
+    },
+    {
+      "city": "Shijiazhuang",
+      "dist": 4
+    },
+    {
+      "city": "Dalian",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Nantong",
+  "size": 15,
+  "lat": 31.983333333333334,
+  "lon": 120.89166666666667,
+  "neighbors": [
+    {
+      "city": "Changzhou",
+      "dist": 4
+    },
+    {
+      "city": "Wuxi",
+      "dist": 4
+    },
+    {
+      "city": "Suzhou",
+      "dist": 4
+    }
+  ]
+}, {
+  "name": "Putian",
+  "size": 14,
+  "lat": 25.45,
+  "lon": 119.00833333333334,
+  "neighbors": [
+    {
+      "city": "Taipěi",
+      "dist": 4
+    },
+    {
+      "city": "Táoyuán",
+      "dist": 4
+    },
+    {
+      "city": "Quanzhou",
+      "dist": 4
+    }
+  ]
+}, {
+  "name": "Huainan",
+  "size": 14,
+  "lat": 32.63333333333333,
+  "lon": 117.01666666666667,
+  "neighbors": [
+    {
+      "city": "Hefei",
+      "dist": 5
+    },
+    {
+      "city": "Nanjing",
+      "dist": 5
+    },
+    {
+      "city": "Wuhan",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Luoyang",
+  "size": 14,
+  "lat": 34.61666666666667,
+  "lon": 112.45,
+  "neighbors": [
+    {
+      "city": "Zhengzhou",
+      "dist": 3
+    },
+    {
+      "city": "Xi\u0027an",
+      "dist": 4
+    },
+    {
+      "city": "Wuhan",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Baotou",
+  "size": 14,
+  "lat": 40.625,
+  "lon": 109.95,
+  "neighbors": [
+    {
+      "city": "Hohhot",
+      "dist": 3
+    },
+    {
+      "city": "Anshan",
+      "dist": 4
+    },
+    {
+      "city": "Beijing",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Taizhou",
+  "size": 14,
+  "lat": 28.658333333333335,
+  "lon": 121.41666666666667,
+  "neighbors": [
+    {
+      "city": "Wenzhou",
+      "dist": 4
+    },
+    {
+      "city": "Ningbo",
+      "dist": 5
+    },
+    {
+      "city": "Changsha",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Zhuhai",
+  "size": 14,
+  "lat": 22.275,
+  "lon": 113.575,
+  "neighbors": [
+    {
+      "city": "Hong Kong",
+      "dist": 3
+    },
+    {
+      "city": "Zhongshan",
+      "dist": 3
+    },
+    {
+      "city": "Shenzhen",
+      "dist": 4
+    }
+  ]
+}, {
+  "name": "Yangzhou",
+  "size": 14,
+  "lat": 32.391666666666666,
+  "lon": 119.41666666666667,
+  "neighbors": [
+    {
+      "city": "Nanjing",
+      "dist": 4
+    },
+    {
+      "city": "Changzhou",
+      "dist": 4
+    },
+    {
+      "city": "Suzhou",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Baoding",
+  "size": 14,
+  "lat": 38.875,
+  "lon": 115.46666666666667,
+  "neighbors": [
+    {
+      "city": "Shijiazhuang",
+      "dist": 5
+    },
+    {
+      "city": "Beijing",
+      "dist": 5
+    },
+    {
+      "city": "Tianjin",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Kunshan",
+  "size": 14,
+  "lat": 31.325,
+  "lon": 120.98333333333333,
+  "neighbors": [
+    {
+      "city": "Suzhou",
+      "dist": 2
+    },
+    {
+      "city": "Shanghai",
+      "dist": 3
+    },
+    {
+      "city": "Nanjing",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Xining",
+  "size": 14,
+  "lat": 36.625,
+  "lon": 101.78333333333333,
+  "neighbors": [
+    {
+      "city": "Yinchuan",
+      "dist": 5
+    },
+    {
+      "city": "Lanzhou",
+      "dist": 5
+    },
+    {
+      "city": "Dalian",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Hengyang",
+  "size": 14,
+  "lat": 26.891666666666666,
+  "lon": 112.575,
+  "neighbors": [
+    {
+      "city": "Changsha",
+      "dist": 5
+    },
+    {
+      "city": "Nanchang",
+      "dist": 6
+    },
+    {
+      "city": "Chongqing",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Liuzhou",
+  "size": 14,
+  "lat": 24.325,
+  "lon": 109.425,
+  "neighbors": [
+    {
+      "city": "Nanning",
+      "dist": 5
+    },
+    {
+      "city": "Fuzhou",
+      "dist": 5
+    },
+    {
+      "city": "Kunming",
+      "dist": 6
+    }
+  ]
+}, {
+  "name": "Anshan",
+  "size": 14,
+  "lat": 41.108333333333334,
+  "lon": 122.99166666666666,
+  "neighbors": [
+    {
+      "city": "Baotou",
+      "dist": 4
+    },
+    {
+      "city": "Shenyang",
+      "dist": 4
+    },
+    {
+      "city": "Hohhot",
+      "dist": 5
+    }
+  ]
+}, {
+  "name": "Jilin",
+  "size": 14,
+  "lat": 43.84166666666667,
+  "lon": 126.55,
+  "neighbors": [
+    {
+      "city": "Changchun",
+      "dist": 3
+    },
+    {
+      "city": "Harbin",
+      "dist": 5
+    },
+    {
+      "city": "Shenyang",
+      "dist": 6
+    }
+  ]
+} ]

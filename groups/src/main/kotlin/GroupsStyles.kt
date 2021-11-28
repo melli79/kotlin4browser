@@ -1,7 +1,7 @@
 import kotlinx.css.*
 import styled.StyleSheet
 
-object GroupsStyles :StyleSheet("SetStyles", isStatic = true) {
+object GroupsStyles :StyleSheet("GroupsStyles", isStatic = true) {
 
     val title by css {
         color = Color.green
@@ -11,4 +11,4 @@ object GroupsStyles :StyleSheet("SetStyles", isStatic = true) {
 
         fontSize = 14.px
     }
-} 
+}
