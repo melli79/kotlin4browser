@@ -1,2809 +1,2892 @@
-[ {
-  "name": "Mexico City",
-  "size": 16,
-  "lat": 19.433333333333334,
-  "lon": 99.13333333333334,
-  "neighbors": [
-    {
-      "city": "Nezahualcóyotl",
-      "dist": 2
-    },
-    {
-      "city": "Ecatepec de Morelos",
-      "dist": 3
-    },
-    {
-      "city": "Puebla",
-      "dist": 4
-    },
-    {
-      "city": "Naucalpan",
-      "dist": 2
-    },
-    {
-      "city": "Toluca",
-      "dist": 3
-    },
-    {
-      "city": "Querétaro",
-      "dist": 5
-    },
-    {
-      "city": "Chimalhuacán",
-      "dist": 2
-    },
-    {
-      "city": "Tlalnepantla",
-      "dist": 4
-    },
-    {
-      "city": "Veracruz",
-      "dist": 5
-    },
-    {
-      "city": "Morelia",
-      "dist": 5
-    },
-    {
-      "city": "Acapulco",
-      "dist": 6
-    },
-    {
-      "city": "León",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "New York City",
-  "size": 16,
-  "lat": 40.71,
-  "lon": 74.0,
-  "neighbors": [
-    {
-      "city": "Philadelphia",
-      "dist": 5
-    },
-    {
-      "city": "Montreal",
-      "dist": 6
-    },
-    {
-      "city": "Toronto",
-      "dist": 7
-    },
-    {
-      "city": "Columbus",
-      "dist": 6
-    },
-    {
-      "city": "Ottawa",
-      "dist": 6
-    },
-    {
-      "city": "Chicago",
-      "dist": 7
-    },
-    {
-      "city": "Charlotte",
-      "dist": 6
-    },
-    {
-      "city": "Detroit",
-      "dist": 6
-    },
-    {
-      "city": "Mississauga",
-      "dist": 7
-    },
-    {
-      "city": "Baltimore",
-      "dist": 6
-    },
-    {
-      "city": "Boston",
-      "dist": 6
-    },
-    {
-      "city": "Washington, D.C.",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Los Angeles",
-  "size": 15,
-  "lat": 34.05,
-  "lon": 118.25,
-  "neighbors": [
-    {
-      "city": "San Diego",
-      "dist": 5
-    },
-    {
-      "city": "Tijuana",
-      "dist": 5
-    },
-    {
-      "city": "Phoenix",
-      "dist": 6
-    },
-    {
-      "city": "Charlotte",
-      "dist": 6
-    },
-    {
-      "city": "San Jose",
-      "dist": 6
-    },
-    {
-      "city": "Chihuahua",
-      "dist": 6
-    },
-    {
-      "city": "Mexicali",
-      "dist": 6
-    },
-    {
-      "city": "Hermosillo",
-      "dist": 6
-    },
-    {
-      "city": "San Francisco",
-      "dist": 6
-    },
-    {
-      "city": "Memphis, TN",
-      "dist": 5
-    },
-    {
-      "city": "Las Vegas",
-      "dist": 6
-    },
-    {
-      "city": "Oklahoma City",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Toronto",
-  "size": 15,
-  "lat": 43.74166666666667,
-  "lon": 79.375,
-  "neighbors": [
-    {
-      "city": "Montreal",
-      "dist": 6
-    },
-    {
-      "city": "Philadelphia",
-      "dist": 6
-    },
-    {
-      "city": "New York City",
-      "dist": 7
-    },
-    {
-      "city": "Ottawa",
-      "dist": 6
-    },
-    {
-      "city": "Columbus",
-      "dist": 6
-    },
-    {
-      "city": "Indianapolis",
-      "dist": 7
-    },
-    {
-      "city": "Mississauga",
-      "dist": 3
-    },
-    {
-      "city": "Detroit",
-      "dist": 6
-    },
-    {
-      "city": "San Francisco",
-      "dist": 7
-    },
-    {
-      "city": "Brampton",
-      "dist": 3
-    },
-    {
-      "city": "Baltimore",
-      "dist": 6
-    },
-    {
-      "city": "Washington, D.C.",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Chicago",
-  "size": 15,
-  "lat": 41.88333333333333,
-  "lon": 87.625,
-  "neighbors": [
-    {
-      "city": "Philadelphia",
-      "dist": 5
-    },
-    {
-      "city": "Montreal",
-      "dist": 6
-    },
-    {
-      "city": "New York City",
-      "dist": 7
-    },
-    {
-      "city": "Columbus",
-      "dist": 5
-    },
-    {
-      "city": "Indianapolis",
-      "dist": 5
-    },
-    {
-      "city": "Ottawa",
-      "dist": 6
-    },
-    {
-      "city": "Denver",
-      "dist": 5
-    },
-    {
-      "city": "Detroit",
-      "dist": 6
-    },
-    {
-      "city": "Mississauga",
-      "dist": 7
-    },
-    {
-      "city": "Milwaukee",
-      "dist": 5
-    },
-    {
-      "city": "Baltimore",
-      "dist": 6
-    },
-    {
-      "city": "Louisville",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Houston",
-  "size": 15,
-  "lat": 29.766666666666666,
-  "lon": 95.38333333333334,
-  "neighbors": [
-    {
-      "city": "Dallas",
-      "dist": 6
-    },
-    {
-      "city": "San Antonio",
-      "dist": 6
-    },
-    {
-      "city": "San Diego",
-      "dist": 6
-    },
-    {
-      "city": "Austin",
-      "dist": 6
-    },
-    {
-      "city": "Fort Worth",
-      "dist": 6
-    },
-    {
-      "city": "Monterrey",
-      "dist": 6
-    },
-    {
-      "city": "Guadalupe NL",
-      "dist": 6
-    },
-    {
-      "city": "Phoenix",
-      "dist": 6
-    },
-    {
-      "city": "Mexicali",
-      "dist": 6
-    },
-    {
-      "city": "Reynosa",
-      "dist": 6
-    },
-    {
-      "city": "Saltillo",
-      "dist": 6
-    },
-    {
-      "city": "Torreón",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Havana",
-  "size": 15,
-  "lat": 23.133333333333333,
-  "lon": 82.35833333333333,
-  "neighbors": [
-    {
-      "city": "Zapopan",
-      "dist": 6
-    },
-    {
-      "city": "Guadalajara",
-      "dist": 6
-    },
-    {
-      "city": "León",
-      "dist": 6
-    },
-    {
-      "city": "Mérida",
-      "dist": 6
-    },
-    {
-      "city": "Querétaro",
-      "dist": 6
-    },
-    {
-      "city": "Ecatepec de Morelos",
-      "dist": 7
-    },
-    {
-      "city": "Cancún",
-      "dist": 5
-    },
-    {
-      "city": "Jacksonville",
-      "dist": 7
-    },
-    {
-      "city": "Phoenix",
-      "dist": 7
-    },
-    {
-      "city": "Tlaquepaque",
-      "dist": 6
-    },
-    {
-      "city": "Reynosa",
-      "dist": 7
-    },
-    {
-      "city": "Dallas",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Montreal",
-  "size": 14,
-  "lat": 45.50833333333333,
-  "lon": 73.55833333333334,
-  "neighbors": [
-    {
-      "city": "Toronto",
-      "dist": 6
-    },
-    {
-      "city": "New York City",
-      "dist": 6
-    },
-    {
-      "city": "Mexico City",
-      "dist": 8
-    },
-    {
-      "city": "Ottawa",
-      "dist": 5
-    },
-    {
-      "city": "Chicago",
-      "dist": 6
-    },
-    {
-      "city": "Philadelphia",
-      "dist": 6
-    },
-    {
-      "city": "Detroit",
-      "dist": 6
-    },
-    {
-      "city": "Mississauga",
-      "dist": 6
-    },
-    {
-      "city": "Columbus",
-      "dist": 7
-    },
-    {
-      "city": "Boston",
-      "dist": 6
-    },
-    {
-      "city": "Brampton",
-      "dist": 6
-    },
-    {
-      "city": "Baltimore",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Ecatepec de Morelos",
-  "size": 14,
-  "lat": 19.608333333333334,
-  "lon": 99.05833333333334,
-  "neighbors": [
-    {
-      "city": "Mexico City",
-      "dist": 3
-    },
-    {
-      "city": "Nezahualcóyotl",
-      "dist": 3
-    },
-    {
-      "city": "Puebla",
-      "dist": 4
-    },
-    {
-      "city": "Naucalpan",
-      "dist": 3
-    },
-    {
-      "city": "Toluca",
-      "dist": 4
-    },
-    {
-      "city": "Querétaro",
-      "dist": 5
-    },
-    {
-      "city": "Chimalhuacán",
-      "dist": 3
-    },
-    {
-      "city": "Tlalnepantla",
-      "dist": 5
-    },
-    {
-      "city": "Veracruz",
-      "dist": 5
-    },
-    {
-      "city": "Morelia",
-      "dist": 5
-    },
-    {
-      "city": "Acapulco",
-      "dist": 6
-    },
-    {
-      "city": "León",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Philadelphia",
-  "size": 14,
-  "lat": 39.95,
-  "lon": 75.16666666666667,
-  "neighbors": [
-    {
-      "city": "New York City",
-      "dist": 5
-    },
-    {
-      "city": "Chicago",
-      "dist": 5
-    },
-    {
-      "city": "Toronto",
-      "dist": 6
-    },
-    {
-      "city": "Charlotte",
-      "dist": 6
-    },
-    {
-      "city": "Ottawa",
-      "dist": 6
-    },
-    {
-      "city": "Montreal",
-      "dist": 6
-    },
-    {
-      "city": "Detroit",
-      "dist": 6
-    },
-    {
-      "city": "Mississauga",
-      "dist": 6
-    },
-    {
-      "city": "Columbus",
-      "dist": 7
-    },
-    {
-      "city": "Baltimore",
-      "dist": 5
-    },
-    {
-      "city": "Washington, D.C.",
-      "dist": 5
-    },
-    {
-      "city": "Boston",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Phoenix",
-  "size": 14,
-  "lat": 33.45,
-  "lon": 112.06666666666666,
-  "neighbors": [
-    {
-      "city": "San Antonio",
-      "dist": 6
-    },
-    {
-      "city": "Los Angeles",
-      "dist": 6
-    },
-    {
-      "city": "Houston",
-      "dist": 6
-    },
-    {
-      "city": "Hermosillo",
-      "dist": 6
-    },
-    {
-      "city": "Tijuana",
-      "dist": 6
-    },
-    {
-      "city": "San Diego",
-      "dist": 6
-    },
-    {
-      "city": "Mexicali",
-      "dist": 6
-    },
-    {
-      "city": "Chihuahua",
-      "dist": 6
-    },
-    {
-      "city": "Juárez",
-      "dist": 6
-    },
-    {
-      "city": "Oklahoma City",
-      "dist": 6
-    },
-    {
-      "city": "Las Vegas",
-      "dist": 6
-    },
-    {
-      "city": "El Paso",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "San Antonio",
-  "size": 14,
-  "lat": 29.433333333333334,
-  "lon": 98.5,
-  "neighbors": [
-    {
-      "city": "Houston",
-      "dist": 6
-    },
-    {
-      "city": "Dallas",
-      "dist": 6
-    },
-    {
-      "city": "Phoenix",
-      "dist": 6
-    },
-    {
-      "city": "Austin",
-      "dist": 5
-    },
-    {
-      "city": "Fort Worth",
-      "dist": 6
-    },
-    {
-      "city": "Monterrey",
-      "dist": 6
-    },
-    {
-      "city": "Guadalupe NL",
-      "dist": 6
-    },
-    {
-      "city": "Saltillo",
-      "dist": 6
-    },
-    {
-      "city": "Chihuahua",
-      "dist": 6
-    },
-    {
-      "city": "Reynosa",
-      "dist": 6
-    },
-    {
-      "city": "Torreón",
-      "dist": 6
-    },
-    {
-      "city": "El Paso",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Guadalajara",
-  "size": 14,
-  "lat": 20.675,
-  "lon": 103.35,
-  "neighbors": [
-    {
-      "city": "Zapopan",
-      "dist": 2
-    },
-    {
-      "city": "León",
-      "dist": 5
-    },
-    {
-      "city": "Havana",
-      "dist": 6
-    },
-    {
-      "city": "Querétaro",
-      "dist": 6
-    },
-    {
-      "city": "Toluca",
-      "dist": 6
-    },
-    {
-      "city": "Naucalpan",
-      "dist": 6
-    },
-    {
-      "city": "Aguascalientes",
-      "dist": 5
-    },
-    {
-      "city": "San Luis Potosí",
-      "dist": 5
-    },
-    {
-      "city": "Mexico City",
-      "dist": 6
-    },
-    {
-      "city": "Tlaquepaque",
-      "dist": 2
-    },
-    {
-      "city": "Morelia",
-      "dist": 6
-    },
-    {
-      "city": "Acapulco",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Puebla",
-  "size": 14,
-  "lat": 19.033333333333335,
-  "lon": 98.18333333333334,
-  "neighbors": [
-    {
-      "city": "Nezahualcóyotl",
-      "dist": 4
-    },
-    {
-      "city": "Mexico City",
-      "dist": 4
-    },
-    {
-      "city": "Ecatepec de Morelos",
-      "dist": 4
-    },
-    {
-      "city": "Toluca",
-      "dist": 4
-    },
-    {
-      "city": "Naucalpan",
-      "dist": 4
-    },
-    {
-      "city": "Querétaro",
-      "dist": 6
-    },
-    {
-      "city": "Tlalnepantla",
-      "dist": 3
-    },
-    {
-      "city": "Chimalhuacán",
-      "dist": 4
-    },
-    {
-      "city": "Veracruz",
-      "dist": 4
-    },
-    {
-      "city": "Morelia",
-      "dist": 5
-    },
-    {
-      "city": "Acapulco",
-      "dist": 6
-    },
-    {
-      "city": "León",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "San Diego",
-  "size": 14,
-  "lat": 32.71666666666667,
-  "lon": 117.16666666666667,
-  "neighbors": [
-    {
-      "city": "Tijuana",
-      "dist": 3
-    },
-    {
-      "city": "Los Angeles",
-      "dist": 5
-    },
-    {
-      "city": "Houston",
-      "dist": 6
-    },
-    {
-      "city": "Austin",
-      "dist": 6
-    },
-    {
-      "city": "Jacksonville",
-      "dist": 6
-    },
-    {
-      "city": "San Jose",
-      "dist": 6
-    },
-    {
-      "city": "Mexicali",
-      "dist": 5
-    },
-    {
-      "city": "Hermosillo",
-      "dist": 6
-    },
-    {
-      "city": "Phoenix",
-      "dist": 6
-    },
-    {
-      "city": "Las Vegas",
-      "dist": 6
-    },
-    {
-      "city": "Nashville",
-      "dist": 6
-    },
-    {
-      "city": "San Francisco",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Juárez",
-  "size": 14,
-  "lat": 31.741666666666667,
-  "lon": 106.48333333333333,
-  "neighbors": [
-    {
-      "city": "Phoenix",
-      "dist": 6
-    },
-    {
-      "city": "San Jose",
-      "dist": 6
-    },
-    {
-      "city": "San Antonio",
-      "dist": 7
-    },
-    {
-      "city": "Chihuahua",
-      "dist": 6
-    },
-    {
-      "city": "Austin",
-      "dist": 6
-    },
-    {
-      "city": "Monterrey",
-      "dist": 7
-    },
-    {
-      "city": "El Paso",
-      "dist": 1
-    },
-    {
-      "city": "Fort Worth",
-      "dist": 6
-    },
-    {
-      "city": "Hermosillo",
-      "dist": 6
-    },
-    {
-      "city": "Torreón",
-      "dist": 7
-    },
-    {
-      "city": "Mexicali",
-      "dist": 7
-    },
-    {
-      "city": "Saltillo",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "León",
-  "size": 14,
-  "lat": 21.116666666666667,
-  "lon": 101.68333333333334,
-  "neighbors": [
-    {
-      "city": "Guadalajara",
-      "dist": 5
-    },
-    {
-      "city": "Zapopan",
-      "dist": 5
-    },
-    {
-      "city": "Ecatepec de Morelos",
-      "dist": 6
-    },
-    {
-      "city": "Querétaro",
-      "dist": 5
-    },
-    {
-      "city": "Toluca",
-      "dist": 6
-    },
-    {
-      "city": "Naucalpan",
-      "dist": 6
-    },
-    {
-      "city": "Aguascalientes",
-      "dist": 5
-    },
-    {
-      "city": "San Luis Potosí",
-      "dist": 5
-    },
-    {
-      "city": "Mexico City",
-      "dist": 6
-    },
-    {
-      "city": "Morelia",
-      "dist": 5
-    },
-    {
-      "city": "Tlaquepaque",
-      "dist": 5
-    },
-    {
-      "city": "Nezahualcóyotl",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Dallas",
-  "size": 14,
-  "lat": 32.78333333333333,
-  "lon": 96.80833333333334,
-  "neighbors": [
-    {
-      "city": "Houston",
-      "dist": 6
-    },
-    {
-      "city": "San Antonio",
-      "dist": 6
-    },
-    {
-      "city": "Chicago",
-      "dist": 7
-    },
-    {
-      "city": "Fort Worth",
-      "dist": 5
-    },
-    {
-      "city": "Austin",
-      "dist": 6
-    },
-    {
-      "city": "Jacksonville",
-      "dist": 6
-    },
-    {
-      "city": "Chihuahua",
-      "dist": 7
-    },
-    {
-      "city": "Juárez",
-      "dist": 7
-    },
-    {
-      "city": "Monterrey",
-      "dist": 7
-    },
-    {
-      "city": "Oklahoma City",
-      "dist": 6
-    },
-    {
-      "city": "Nashville",
-      "dist": 6
-    },
-    {
-      "city": "Memphis, TN",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Tijuana",
-  "size": 14,
-  "lat": 32.525,
-  "lon": 117.03333333333333,
-  "neighbors": [
-    {
-      "city": "San Diego",
-      "dist": 3
-    },
-    {
-      "city": "Los Angeles",
-      "dist": 5
-    },
-    {
-      "city": "Phoenix",
-      "dist": 6
-    },
-    {
-      "city": "Jacksonville",
-      "dist": 6
-    },
-    {
-      "city": "Austin",
-      "dist": 6
-    },
-    {
-      "city": "San Jose",
-      "dist": 6
-    },
-    {
-      "city": "Mexicali",
-      "dist": 5
-    },
-    {
-      "city": "Hermosillo",
-      "dist": 6
-    },
-    {
-      "city": "San Francisco",
-      "dist": 7
-    },
-    {
-      "city": "Las Vegas",
-      "dist": 6
-    },
-    {
-      "city": "Houston",
-      "dist": 7
-    },
-    {
-      "city": "Juárez",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Calgary",
-  "size": 14,
-  "lat": 51.05,
-  "lon": 114.06666666666666,
-  "neighbors": [
-    {
-      "city": "Toronto",
-      "dist": 7
-    },
-    {
-      "city": "San Jose",
-      "dist": 7
-    },
-    {
-      "city": "Los Angeles",
-      "dist": 8
-    },
-    {
-      "city": "Edmonton",
-      "dist": 6
-    },
-    {
-      "city": "San Francisco",
-      "dist": 7
-    },
-    {
-      "city": "Phoenix",
-      "dist": 8
-    },
-    {
-      "city": "Winnipeg",
-      "dist": 6
-    },
-    {
-      "city": "Seattle",
-      "dist": 7
-    },
-    {
-      "city": "Mississauga",
-      "dist": 7
-    },
-    {
-      "city": "Vancouver",
-      "dist": 5
-    },
-    {
-      "city": "Milwaukee",
-      "dist": 7
-    },
-    {
-      "city": "Portland",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Zapopan",
-  "size": 14,
-  "lat": 20.716666666666665,
-  "lon": 103.39166666666667,
-  "neighbors": [
-    {
-      "city": "Guadalajara",
-      "dist": 2
-    },
-    {
-      "city": "León",
-      "dist": 5
-    },
-    {
-      "city": "Havana",
-      "dist": 6
-    },
-    {
-      "city": "Querétaro",
-      "dist": 6
-    },
-    {
-      "city": "Toluca",
-      "dist": 6
-    },
-    {
-      "city": "Naucalpan",
-      "dist": 6
-    },
-    {
-      "city": "Aguascalientes",
-      "dist": 5
-    },
-    {
-      "city": "San Luis Potosí",
-      "dist": 5
-    },
-    {
-      "city": "Mexico City",
-      "dist": 6
-    },
-    {
-      "city": "Tlaquepaque",
-      "dist": 3
-    },
-    {
-      "city": "Morelia",
-      "dist": 6
-    },
-    {
-      "city": "Acapulco",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Monterrey",
-  "size": 14,
-  "lat": 25.666666666666668,
-  "lon": 100.3,
-  "neighbors": [
-    {
-      "city": "San Antonio",
-      "dist": 6
-    },
-    {
-      "city": "León",
-      "dist": 6
-    },
-    {
-      "city": "Houston",
-      "dist": 6
-    },
-    {
-      "city": "Saltillo",
-      "dist": 4
-    },
-    {
-      "city": "Austin",
-      "dist": 6
-    },
-    {
-      "city": "Querétaro",
-      "dist": 6
-    },
-    {
-      "city": "Guadalupe NL",
-      "dist": 1
-    },
-    {
-      "city": "Culiacán",
-      "dist": 5
-    },
-    {
-      "city": "San Luis Potosí",
-      "dist": 6
-    },
-    {
-      "city": "Torreón",
-      "dist": 5
-    },
-    {
-      "city": "Reynosa",
-      "dist": 5
-    },
-    {
-      "city": "Aguascalientes",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Nezahualcóyotl",
-  "size": 14,
-  "lat": 19.4,
-  "lon": 98.99166666666666,
-  "neighbors": [
-    {
-      "city": "Mexico City",
-      "dist": 2
-    },
-    {
-      "city": "Ecatepec de Morelos",
-      "dist": 3
-    },
-    {
-      "city": "Houston",
-      "dist": 7
-    },
-    {
-      "city": "Naucalpan",
-      "dist": 3
-    },
-    {
-      "city": "Toluca",
-      "dist": 4
-    },
-    {
-      "city": "Puebla",
-      "dist": 4
-    },
-    {
-      "city": "Chimalhuacán",
-      "dist": 1
-    },
-    {
-      "city": "Tlalnepantla",
-      "dist": 4
-    },
-    {
-      "city": "Veracruz",
-      "dist": 5
-    },
-    {
-      "city": "Morelia",
-      "dist": 5
-    },
-    {
-      "city": "Querétaro",
-      "dist": 5
-    },
-    {
-      "city": "Acapulco",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "San Jose",
-  "size": 14,
-  "lat": 37.333333333333336,
-  "lon": 121.9,
-  "neighbors": [
-    {
-      "city": "Los Angeles",
-      "dist": 6
-    },
-    {
-      "city": "San Diego",
-      "dist": 6
-    },
-    {
-      "city": "Phoenix",
-      "dist": 7
-    },
-    {
-      "city": "San Francisco",
-      "dist": 4
-    },
-    {
-      "city": "Tijuana",
-      "dist": 6
-    },
-    {
-      "city": "Juárez",
-      "dist": 6
-    },
-    {
-      "city": "Mexicali",
-      "dist": 6
-    },
-    {
-      "city": "El Paso",
-      "dist": 6
-    },
-    {
-      "city": "Fort Worth",
-      "dist": 7
-    },
-    {
-      "city": "Louisville",
-      "dist": 6
-    },
-    {
-      "city": "Las Vegas",
-      "dist": 6
-    },
-    {
-      "city": "Portland",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Naucalpan",
-  "size": 14,
-  "lat": 19.483333333333334,
-  "lon": 99.23333333333333,
-  "neighbors": [
-    {
-      "city": "Mexico City",
-      "dist": 2
-    },
-    {
-      "city": "Nezahualcóyotl",
-      "dist": 3
-    },
-    {
-      "city": "Ecatepec de Morelos",
-      "dist": 3
-    },
-    {
-      "city": "Chimalhuacán",
-      "dist": 3
-    },
-    {
-      "city": "Toluca",
-      "dist": 3
-    },
-    {
-      "city": "Puebla",
-      "dist": 4
-    },
-    {
-      "city": "Tlalnepantla",
-      "dist": 4
-    },
-    {
-      "city": "Morelia",
-      "dist": 5
-    },
-    {
-      "city": "Veracruz",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Ottawa",
-  "size": 14,
-  "lat": 45.416666666666664,
-  "lon": 75.7,
-  "neighbors": [
-    {
-      "city": "Montreal",
-      "dist": 5
-    },
-    {
-      "city": "Toronto",
-      "dist": 6
-    },
-    {
-      "city": "New York City",
-      "dist": 6
-    },
-    {
-      "city": "Mississauga",
-      "dist": 6
-    },
-    {
-      "city": "Detroit",
-      "dist": 6
-    },
-    {
-      "city": "Chicago",
-      "dist": 6
-    },
-    {
-      "city": "Brampton",
-      "dist": 6
-    },
-    {
-      "city": "Boston",
-      "dist": 6
-    },
-    {
-      "city": "Philadelphia",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Austin",
-  "size": 14,
-  "lat": 30.266666666666666,
-  "lon": 97.74166666666666,
-  "neighbors": [
-    {
-      "city": "San Antonio",
-      "dist": 5
-    },
-    {
-      "city": "Fort Worth",
-      "dist": 5
-    },
-    {
-      "city": "Tijuana",
-      "dist": 6
-    },
-    {
-      "city": "Houston",
-      "dist": 6
-    },
-    {
-      "city": "Dallas",
-      "dist": 6
-    },
-    {
-      "city": "San Diego",
-      "dist": 6
-    },
-    {
-      "city": "Mexicali",
-      "dist": 6
-    },
-    {
-      "city": "El Paso",
-      "dist": 6
-    },
-    {
-      "city": "Juárez",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Edmonton",
-  "size": 14,
-  "lat": 53.53333333333333,
-  "lon": 113.48333333333333,
-  "neighbors": [
-    {
-      "city": "Calgary",
-      "dist": 6
-    },
-    {
-      "city": "New York City",
-      "dist": 7
-    },
-    {
-      "city": "Chicago",
-      "dist": 8
-    },
-    {
-      "city": "Seattle",
-      "dist": 7
-    },
-    {
-      "city": "Denver",
-      "dist": 7
-    },
-    {
-      "city": "Winnipeg",
-      "dist": 8
-    },
-    {
-      "city": "Vancouver",
-      "dist": 7
-    },
-    {
-      "city": "Portland",
-      "dist": 7
-    },
-    {
-      "city": "Columbus",
-      "dist": 8
-    }
-  ]
-}, {
-  "name": "Mérida",
-  "size": 14,
-  "lat": 20.966666666666665,
-  "lon": 89.61666666666666,
-  "neighbors": [
-    {
-      "city": "Havana",
-      "dist": 6
-    },
-    {
-      "city": "Puebla",
-      "dist": 7
-    },
-    {
-      "city": "San Antonio",
-      "dist": 7
-    },
-    {
-      "city": "Cancún",
-      "dist": 6
-    },
-    {
-      "city": "Acapulco",
-      "dist": 6
-    },
-    {
-      "city": "San Luis Potosí",
-      "dist": 6
-    },
-    {
-      "city": "Aguascalientes",
-      "dist": 7
-    },
-    {
-      "city": "Veracruz",
-      "dist": 7
-    },
-    {
-      "city": "Hermosillo",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Querétaro",
-  "size": 14,
-  "lat": 20.583333333333332,
-  "lon": 100.38333333333334,
-  "neighbors": [
-    {
-      "city": "León",
-      "dist": 5
-    },
-    {
-      "city": "Toluca",
-      "dist": 5
-    },
-    {
-      "city": "Naucalpan",
-      "dist": 5
-    },
-    {
-      "city": "Ecatepec de Morelos",
-      "dist": 5
-    },
-    {
-      "city": "San Luis Potosí",
-      "dist": 5
-    },
-    {
-      "city": "Mexico City",
-      "dist": 5
-    },
-    {
-      "city": "Morelia",
-      "dist": 5
-    },
-    {
-      "city": "Nezahualcóyotl",
-      "dist": 5
-    },
-    {
-      "city": "Chimalhuacán",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Toluca",
-  "size": 14,
-  "lat": 19.3,
-  "lon": 99.65,
-  "neighbors": [
-    {
-      "city": "Naucalpan",
-      "dist": 3
-    },
-    {
-      "city": "Mexico City",
-      "dist": 3
-    },
-    {
-      "city": "Nezahualcóyotl",
-      "dist": 4
-    },
-    {
-      "city": "Chimalhuacán",
-      "dist": 4
-    },
-    {
-      "city": "Ecatepec de Morelos",
-      "dist": 4
-    },
-    {
-      "city": "Puebla",
-      "dist": 4
-    },
-    {
-      "city": "Tlalnepantla",
-      "dist": 4
-    },
-    {
-      "city": "Morelia",
-      "dist": 5
-    },
-    {
-      "city": "Veracruz",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Jacksonville",
-  "size": 14,
-  "lat": 30.333333333333332,
-  "lon": 81.66666666666667,
-  "neighbors": [
-    {
-      "city": "Tijuana",
-      "dist": 6
-    },
-    {
-      "city": "Dallas",
-      "dist": 6
-    },
-    {
-      "city": "San Diego",
-      "dist": 6
-    },
-    {
-      "city": "Fort Worth",
-      "dist": 6
-    },
-    {
-      "city": "Mexicali",
-      "dist": 6
-    },
-    {
-      "city": "Charlotte",
-      "dist": 6
-    },
-    {
-      "city": "Reynosa",
-      "dist": 6
-    },
-    {
-      "city": "Guadalupe NL",
-      "dist": 7
-    },
-    {
-      "city": "Monterrey",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Chihuahua",
-  "size": 14,
-  "lat": 28.633333333333333,
-  "lon": 106.08333333333333,
-  "neighbors": [
-    {
-      "city": "Hermosillo",
-      "dist": 6
-    },
-    {
-      "city": "Juárez",
-      "dist": 6
-    },
-    {
-      "city": "San Antonio",
-      "dist": 6
-    },
-    {
-      "city": "El Paso",
-      "dist": 6
-    },
-    {
-      "city": "Culiacán",
-      "dist": 6
-    },
-    {
-      "city": "Phoenix",
-      "dist": 6
-    },
-    {
-      "city": "Torreón",
-      "dist": 6
-    },
-    {
-      "city": "Los Angeles",
-      "dist": 6
-    },
-    {
-      "city": "Saltillo",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "San Francisco",
-  "size": 14,
-  "lat": 37.775,
-  "lon": 122.41666666666667,
-  "neighbors": [
-    {
-      "city": "San Jose",
-      "dist": 4
-    },
-    {
-      "city": "Los Angeles",
-      "dist": 6
-    },
-    {
-      "city": "Tijuana",
-      "dist": 7
-    },
-    {
-      "city": "San Diego",
-      "dist": 7
-    },
-    {
-      "city": "Mexicali",
-      "dist": 7
-    },
-    {
-      "city": "Juárez",
-      "dist": 7
-    },
-    {
-      "city": "Las Vegas",
-      "dist": 6
-    },
-    {
-      "city": "El Paso",
-      "dist": 7
-    },
-    {
-      "city": "Toronto",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Indianapolis",
-  "size": 14,
-  "lat": 39.766666666666666,
-  "lon": 86.15833333333333,
-  "neighbors": [
-    {
-      "city": "Chicago",
-      "dist": 5
-    },
-    {
-      "city": "Columbus",
-      "dist": 6
-    },
-    {
-      "city": "Toronto",
-      "dist": 7
-    },
-    {
-      "city": "Detroit",
-      "dist": 6
-    },
-    {
-      "city": "Charlotte",
-      "dist": 6
-    },
-    {
-      "city": "Mississauga",
-      "dist": 7
-    },
-    {
-      "city": "Louisville",
-      "dist": 5
-    },
-    {
-      "city": "Milwaukee",
-      "dist": 6
-    },
-    {
-      "city": "Nashville",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Columbus",
-  "size": 14,
-  "lat": 39.958333333333336,
-  "lon": 83.0,
-  "neighbors": [
-    {
-      "city": "Chicago",
-      "dist": 5
-    },
-    {
-      "city": "Indianapolis",
-      "dist": 6
-    },
-    {
-      "city": "New York City",
-      "dist": 6
-    },
-    {
-      "city": "Detroit",
-      "dist": 6
-    },
-    {
-      "city": "Mississauga",
-      "dist": 6
-    },
-    {
-      "city": "Charlotte",
-      "dist": 6
-    },
-    {
-      "city": "Louisville",
-      "dist": 6
-    },
-    {
-      "city": "Nashville",
-      "dist": 6
-    },
-    {
-      "city": "Boston",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Fort Worth",
-  "size": 14,
-  "lat": 32.09166666666667,
-  "lon": 97.33333333333333,
-  "neighbors": [
-    {
-      "city": "Dallas",
-      "dist": 5
-    },
-    {
-      "city": "Austin",
-      "dist": 5
-    },
-    {
-      "city": "Houston",
-      "dist": 6
-    },
-    {
-      "city": "San Antonio",
-      "dist": 6
-    },
-    {
-      "city": "Jacksonville",
-      "dist": 6
-    },
-    {
-      "city": "Juárez",
-      "dist": 6
-    },
-    {
-      "city": "Oklahoma City",
-      "dist": 6
-    },
-    {
-      "city": "El Paso",
-      "dist": 6
-    },
-    {
-      "city": "Nashville",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Charlotte",
-  "size": 14,
-  "lat": 35.225,
-  "lon": 80.84166666666667,
-  "neighbors": [
-    {
-      "city": "Los Angeles",
-      "dist": 6
-    },
-    {
-      "city": "Indianapolis",
-      "dist": 6
-    },
-    {
-      "city": "Philadelphia",
-      "dist": 6
-    },
-    {
-      "city": "Columbus",
-      "dist": 6
-    },
-    {
-      "city": "Jacksonville",
-      "dist": 6
-    },
-    {
-      "city": "New York City",
-      "dist": 6
-    },
-    {
-      "city": "Washington, D.C.",
-      "dist": 6
-    },
-    {
-      "city": "Baltimore",
-      "dist": 6
-    },
-    {
-      "city": "Memphis, TN",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Hermosillo",
-  "size": 14,
-  "lat": 29.1,
-  "lon": 110.95,
-  "neighbors": [
-    {
-      "city": "Chihuahua",
-      "dist": 6
-    },
-    {
-      "city": "Phoenix",
-      "dist": 6
-    },
-    {
-      "city": "Juárez",
-      "dist": 6
-    },
-    {
-      "city": "Mexicali",
-      "dist": 6
-    },
-    {
-      "city": "El Paso",
-      "dist": 6
-    },
-    {
-      "city": "San Diego",
-      "dist": 6
-    },
-    {
-      "city": "Tijuana",
-      "dist": 6
-    },
-    {
-      "city": "Los Angeles",
-      "dist": 6
-    },
-    {
-      "city": "Dallas",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Saltillo",
-  "size": 14,
-  "lat": 25.433333333333334,
-  "lon": 101.0,
-  "neighbors": [
-    {
-      "city": "Monterrey",
-      "dist": 4
-    },
-    {
-      "city": "León",
-      "dist": 6
-    },
-    {
-      "city": "San Antonio",
-      "dist": 6
-    },
-    {
-      "city": "Guadalupe NL",
-      "dist": 4
-    },
-    {
-      "city": "Culiacán",
-      "dist": 4
-    },
-    {
-      "city": "San Luis Potosí",
-      "dist": 6
-    },
-    {
-      "city": "Torreón",
-      "dist": 5
-    },
-    {
-      "city": "Reynosa",
-      "dist": 5
-    },
-    {
-      "city": "Aguascalientes",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Aguascalientes",
-  "size": 14,
-  "lat": 22.016666666666666,
-  "lon": 102.35,
-  "neighbors": [
-    {
-      "city": "San Luis Potosí",
-      "dist": 3
-    },
-    {
-      "city": "León",
-      "dist": 5
-    },
-    {
-      "city": "Zapopan",
-      "dist": 5
-    },
-    {
-      "city": "Guadalajara",
-      "dist": 5
-    },
-    {
-      "city": "Tlaquepaque",
-      "dist": 5
-    },
-    {
-      "city": "Querétaro",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Mississauga",
-  "size": 14,
-  "lat": 43.6,
-  "lon": 79.65,
-  "neighbors": [
-    {
-      "city": "Toronto",
-      "dist": 3
-    },
-    {
-      "city": "Ottawa",
-      "dist": 6
-    },
-    {
-      "city": "Montreal",
-      "dist": 6
-    },
-    {
-      "city": "Brampton",
-      "dist": 2
-    },
-    {
-      "city": "Detroit",
-      "dist": 6
-    },
-    {
-      "city": "Columbus",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "San Luis Potosí",
-  "size": 14,
-  "lat": 22.15,
-  "lon": 100.975,
-  "neighbors": [
-    {
-      "city": "Aguascalientes",
-      "dist": 3
-    },
-    {
-      "city": "León",
-      "dist": 5
-    },
-    {
-      "city": "Querétaro",
-      "dist": 5
-    },
-    {
-      "city": "Zapopan",
-      "dist": 5
-    },
-    {
-      "city": "Guadalajara",
-      "dist": 5
-    },
-    {
-      "city": "Ecatepec de Morelos",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Veracruz",
-  "size": 14,
-  "lat": 19.191666666666666,
-  "lon": 96.15,
-  "neighbors": [
-    {
-      "city": "Tlalnepantla",
-      "dist": 4
-    },
-    {
-      "city": "Puebla",
-      "dist": 4
-    },
-    {
-      "city": "Nezahualcóyotl",
-      "dist": 5
-    },
-    {
-      "city": "Chimalhuacán",
-      "dist": 5
-    },
-    {
-      "city": "Mexico City",
-      "dist": 5
-    },
-    {
-      "city": "Toluca",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Culiacán",
-  "size": 13,
-  "lat": 24.808333333333334,
-  "lon": 107.39166666666667,
-  "neighbors": [
-    {
-      "city": "Saltillo",
-      "dist": 4
-    },
-    {
-      "city": "Monterrey",
-      "dist": 5
-    },
-    {
-      "city": "Chihuahua",
-      "dist": 6
-    },
-    {
-      "city": "Torreón",
-      "dist": 4
-    },
-    {
-      "city": "Guadalupe NL",
-      "dist": 5
-    },
-    {
-      "city": "Zapopan",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Winnipeg",
-  "size": 13,
-  "lat": 49.88333333333333,
-  "lon": 97.15,
-  "neighbors": [
-    {
-      "city": "Calgary",
-      "dist": 6
-    },
-    {
-      "city": "Toronto",
-      "dist": 7
-    },
-    {
-      "city": "Chicago",
-      "dist": 7
-    },
-    {
-      "city": "Brampton",
-      "dist": 7
-    },
-    {
-      "city": "Milwaukee",
-      "dist": 7
-    },
-    {
-      "city": "Mississauga",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Mexicali",
-  "size": 13,
-  "lat": 32.666666666666664,
-  "lon": 115.46666666666667,
-  "neighbors": [
-    {
-      "city": "Tijuana",
-      "dist": 5
-    },
-    {
-      "city": "San Diego",
-      "dist": 5
-    },
-    {
-      "city": "Los Angeles",
-      "dist": 6
-    },
-    {
-      "city": "Austin",
-      "dist": 6
-    },
-    {
-      "city": "Phoenix",
-      "dist": 6
-    },
-    {
-      "city": "Houston",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Cancún",
-  "size": 13,
-  "lat": 21.158333333333335,
-  "lon": 86.85,
-  "neighbors": [
-    {
-      "city": "Havana",
-      "dist": 5
-    },
-    {
-      "city": "Mérida",
-      "dist": 6
-    },
-    {
-      "city": "San Antonio",
-      "dist": 7
-    },
-    {
-      "city": "San Luis Potosí",
-      "dist": 6
-    },
-    {
-      "city": "Acapulco",
-      "dist": 6
-    },
-    {
-      "city": "Aguascalientes",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Acapulco",
-  "size": 13,
-  "lat": 16.866666666666667,
-  "lon": 99.88333333333334,
-  "neighbors": [
-    {
-      "city": "Toluca",
-      "dist": 6
-    },
-    {
-      "city": "Puebla",
-      "dist": 6
-    },
-    {
-      "city": "Nezahualcóyotl",
-      "dist": 6
-    },
-    {
-      "city": "Tlalnepantla",
-      "dist": 6
-    },
-    {
-      "city": "Mexico City",
-      "dist": 6
-    },
-    {
-      "city": "Naucalpan",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Tlalnepantla",
-  "size": 13,
-  "lat": 18.8662,
-  "lon": 97.8854,
-  "neighbors": [
-    {
-      "city": "Puebla",
-      "dist": 3
-    },
-    {
-      "city": "Veracruz",
-      "dist": 4
-    },
-    {
-      "city": "Toluca",
-      "dist": 4
-    },
-    {
-      "city": "Nezahualcóyotl",
-      "dist": 4
-    },
-    {
-      "city": "Chimalhuacán",
-      "dist": 4
-    },
-    {
-      "city": "Mexico City",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Seattle",
-  "size": 13,
-  "lat": 47.608333333333334,
-  "lon": 122.33333333333333,
-  "neighbors": [
-    {
-      "city": "Edmonton",
-      "dist": 7
-    },
-    {
-      "city": "Calgary",
-      "dist": 7
-    },
-    {
-      "city": "San Jose",
-      "dist": 7
-    },
-    {
-      "city": "Vancouver",
-      "dist": 5
-    },
-    {
-      "city": "Portland",
-      "dist": 5
-    },
-    {
-      "city": "Denver",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Guadalupe NL",
-  "size": 13,
-  "lat": 25.675,
-  "lon": 100.25833333333334,
-  "neighbors": [
-    {
-      "city": "Monterrey",
-      "dist": 1
-    },
-    {
-      "city": "Saltillo",
-      "dist": 4
-    },
-    {
-      "city": "San Antonio",
-      "dist": 6
-    },
-    {
-      "city": "Culiacán",
-      "dist": 5
-    },
-    {
-      "city": "Reynosa",
-      "dist": 5
-    },
-    {
-      "city": "Torreón",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Denver",
-  "size": 13,
-  "lat": 39.74166666666667,
-  "lon": 104.99166666666666,
-  "neighbors": [
-    {
-      "city": "Chicago",
-      "dist": 5
-    },
-    {
-      "city": "Detroit",
-      "dist": 6
-    },
-    {
-      "city": "Charlotte",
-      "dist": 7
-    },
-    {
-      "city": "Oklahoma City",
-      "dist": 6
-    },
-    {
-      "city": "Las Vegas",
-      "dist": 6
-    },
-    {
-      "city": "Nashville",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "El Paso",
-  "size": 13,
-  "lat": 31.758333333333333,
-  "lon": 106.48333333333333,
-  "neighbors": [
-    {
-      "city": "Juárez",
-      "dist": 1
-    },
-    {
-      "city": "Chihuahua",
-      "dist": 6
-    },
-    {
-      "city": "Austin",
-      "dist": 6
-    },
-    {
-      "city": "Fort Worth",
-      "dist": 6
-    },
-    {
-      "city": "Hermosillo",
-      "dist": 6
-    },
-    {
-      "city": "Phoenix",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Chimalhuacán",
-  "size": 13,
-  "lat": 19.433333333333334,
-  "lon": 98.95,
-  "neighbors": [
-    {
-      "city": "Nezahualcóyotl",
-      "dist": 1
-    },
-    {
-      "city": "Mexico City",
-      "dist": 2
-    },
-    {
-      "city": "Ecatepec de Morelos",
-      "dist": 3
-    },
-    {
-      "city": "Naucalpan",
-      "dist": 3
-    },
-    {
-      "city": "Toluca",
-      "dist": 4
-    },
-    {
-      "city": "Puebla",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Detroit",
-  "size": 13,
-  "lat": 42.333333333333336,
-  "lon": 83.05,
-  "neighbors": [
-    {
-      "city": "Columbus",
-      "dist": 6
-    },
-    {
-      "city": "Indianapolis",
-      "dist": 6
-    },
-    {
-      "city": "Ottawa",
-      "dist": 6
-    },
-    {
-      "city": "Brampton",
-      "dist": 6
-    },
-    {
-      "city": "Baltimore",
-      "dist": 6
-    },
-    {
-      "city": "Mississauga",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Washington, D.C.",
-  "size": 13,
-  "lat": 38.9101,
-  "lon": 77.0147,
-  "neighbors": [
-    {
-      "city": "Baltimore",
-      "dist": 4
-    },
-    {
-      "city": "Philadelphia",
-      "dist": 5
-    },
-    {
-      "city": "New York City",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Boston",
-  "size": 13,
-  "lat": 42.358333333333334,
-  "lon": 71.06666666666666,
-  "neighbors": [
-    {
-      "city": "New York City",
-      "dist": 6
-    },
-    {
-      "city": "Philadelphia",
-      "dist": 6
-    },
-    {
-      "city": "Montreal",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Tlaquepaque",
-  "size": 13,
-  "lat": 20.616666666666667,
-  "lon": 103.31666666666666,
-  "neighbors": [
-    {
-      "city": "Guadalajara",
-      "dist": 2
-    },
-    {
-      "city": "Zapopan",
-      "dist": 3
-    },
-    {
-      "city": "León",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Memphis, TN",
-  "size": 13,
-  "lat": 35.11666666666667,
-  "lon": 89.96666666666667,
-  "neighbors": [
-    {
-      "city": "Los Angeles",
-      "dist": 5
-    },
-    {
-      "city": "Nashville",
-      "dist": 6
-    },
-    {
-      "city": "Dallas",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Nashville",
-  "size": 13,
-  "lat": 36.166666666666664,
-  "lon": 86.78333333333333,
-  "neighbors": [
-    {
-      "city": "Louisville",
-      "dist": 5
-    },
-    {
-      "city": "Memphis, TN",
-      "dist": 6
-    },
-    {
-      "city": "Baltimore",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Torreón",
-  "size": 13,
-  "lat": 25.541666666666668,
-  "lon": 103.45,
-  "neighbors": [
-    {
-      "city": "Culiacán",
-      "dist": 4
-    },
-    {
-      "city": "Saltillo",
-      "dist": 5
-    },
-    {
-      "city": "Monterrey",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Vancouver",
-  "size": 13,
-  "lat": 49.25,
-  "lon": 123.1,
-  "neighbors": [
-    {
-      "city": "Seattle",
-      "dist": 5
-    },
-    {
-      "city": "Calgary",
-      "dist": 5
-    },
-    {
-      "city": "Edmonton",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Portland",
-  "size": 13,
-  "lat": 45.516666666666666,
-  "lon": 122.68333333333334,
-  "neighbors": [
-    {
-      "city": "Seattle",
-      "dist": 5
-    },
-    {
-      "city": "Vancouver",
-      "dist": 6
-    },
-    {
-      "city": "Detroit",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Reynosa",
-  "size": 13,
-  "lat": 26.091666666666665,
-  "lon": 98.275,
-  "neighbors": [
-    {
-      "city": "Guadalupe NL",
-      "dist": 5
-    },
-    {
-      "city": "Monterrey",
-      "dist": 5
-    },
-    {
-      "city": "Saltillo",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Oklahoma City",
-  "size": 13,
-  "lat": 35.46666666666667,
-  "lon": 97.51666666666667,
-  "neighbors": [
-    {
-      "city": "Phoenix",
-      "dist": 6
-    },
-    {
-      "city": "Dallas",
-      "dist": 6
-    },
-    {
-      "city": "Los Angeles",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Las Vegas",
-  "size": 13,
-  "lat": 36.175,
-  "lon": 115.13333333333334,
-  "neighbors": [
-    {
-      "city": "Los Angeles",
-      "dist": 6
-    },
-    {
-      "city": "Phoenix",
-      "dist": 6
-    },
-    {
-      "city": "Montreal",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Baltimore",
-  "size": 13,
-  "lat": 39.291666666666664,
-  "lon": 76.61666666666666,
-  "neighbors": [
-    {
-      "city": "Washington, D.C.",
-      "dist": 4
-    },
-    {
-      "city": "Philadelphia",
-      "dist": 5
-    },
-    {
-      "city": "New York City",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Brampton",
-  "size": 13,
-  "lat": 43.68333333333333,
-  "lon": 79.76666666666667,
-  "neighbors": [
-    {
-      "city": "Mississauga",
-      "dist": 2
-    },
-    {
-      "city": "Toronto",
-      "dist": 3
-    },
-    {
-      "city": "Ottawa",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Louisville",
-  "size": 13,
-  "lat": 38.25833333333333,
-  "lon": 85.75,
-  "neighbors": [
-    {
-      "city": "Indianapolis",
-      "dist": 5
-    },
-    {
-      "city": "Nashville",
-      "dist": 5
-    },
-    {
-      "city": "Columbus",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Morelia",
-  "size": 13,
-  "lat": 19.766666666666666,
-  "lon": 101.19166666666666,
-  "neighbors": [
-    {
-      "city": "Toluca",
-      "dist": 5
-    },
-    {
-      "city": "Querétaro",
-      "dist": 5
-    },
-    {
-      "city": "Naucalpan",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Milwaukee",
-  "size": 13,
-  "lat": 43.05,
-  "lon": 87.95,
-  "neighbors": [
-    {
-      "city": "Chicago",
-      "dist": 5
-    },
-    {
-      "city": "Indianapolis",
-      "dist": 6
-    },
-    {
-      "city": "Ottawa",
-      "dist": 6
-    }
-  ]
-} ]
+{
+  "map": {
+    "ax": 1550.8411,
+    "xx": -10.0123,
+    "xy": -0.7352,
+    "ay": 906.6834,
+    "yx": 1.2229,
+    "yy": -15.3814
+  },
+  "cities": [
+  {
+    "name": "Mexico City",
+    "size": 16,
+    "lat": 19.433333333333334,
+    "lon": 99.13333333333334,
+    "neighbors": [
+      {
+        "city": "Nezahualcóyotl",
+        "dist": 2
+      },
+      {
+        "city": "Ecatepec de Morelos",
+        "dist": 3
+      },
+      {
+        "city": "Puebla",
+        "dist": 4
+      },
+      {
+        "city": "Naucalpan",
+        "dist": 2
+      },
+      {
+        "city": "Toluca",
+        "dist": 3
+      },
+      {
+        "city": "Querétaro",
+        "dist": 5
+      },
+      {
+        "city": "Chimalhuacán",
+        "dist": 2
+      },
+      {
+        "city": "Tlalnepantla",
+        "dist": 4
+      },
+      {
+        "city": "Veracruz",
+        "dist": 5
+      },
+      {
+        "city": "Morelia",
+        "dist": 5
+      },
+      {
+        "city": "Acapulco",
+        "dist": 6
+      },
+      {
+        "city": "León",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "New York City",
+    "size": 16,
+    "lat": 40.71,
+    "lon": 74.0,
+    "neighbors": [
+      {
+        "city": "Philadelphia",
+        "dist": 5
+      },
+      {
+        "city": "Montreal",
+        "dist": 6
+      },
+      {
+        "city": "Toronto",
+        "dist": 7
+      },
+      {
+        "city": "Columbus",
+        "dist": 6
+      },
+      {
+        "city": "Ottawa",
+        "dist": 6
+      },
+      {
+        "city": "Chicago",
+        "dist": 7
+      },
+      {
+        "city": "Charlotte",
+        "dist": 6
+      },
+      {
+        "city": "Detroit",
+        "dist": 6
+      },
+      {
+        "city": "Mississauga",
+        "dist": 7
+      },
+      {
+        "city": "Baltimore",
+        "dist": 6
+      },
+      {
+        "city": "Boston",
+        "dist": 6
+      },
+      {
+        "city": "Washington, D.C.",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Los Angeles",
+    "size": 14,
+    "lat": 34.05,
+    "lon": 118.25,
+    "neighbors": [
+      {
+        "city": "San Diego",
+        "dist": 5
+      },
+      {
+        "city": "Tijuana",
+        "dist": 5
+      },
+      {
+        "city": "Phoenix",
+        "dist": 6
+      },
+      {
+        "city": "Charlotte",
+        "dist": 6
+      },
+      {
+        "city": "San Jose",
+        "dist": 6
+      },
+      {
+        "city": "Chihuahua",
+        "dist": 6
+      },
+      {
+        "city": "Mexicali",
+        "dist": 6
+      },
+      {
+        "city": "Hermosillo",
+        "dist": 6
+      },
+      {
+        "city": "San Francisco",
+        "dist": 6
+      },
+      {
+        "city": "Memphis, TN",
+        "dist": 5
+      },
+      {
+        "city": "Las Vegas",
+        "dist": 6
+      },
+      {
+        "city": "Oklahoma City",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Toronto",
+    "size": 13,
+    "lat": 43.74166666666667,
+    "lon": 79.375,
+    "neighbors": [
+      {
+        "city": "Montreal",
+        "dist": 6
+      },
+      {
+        "city": "Philadelphia",
+        "dist": 6
+      },
+      {
+        "city": "New York City",
+        "dist": 7
+      },
+      {
+        "city": "Ottawa",
+        "dist": 6
+      },
+      {
+        "city": "Columbus",
+        "dist": 6
+      },
+      {
+        "city": "Indianapolis",
+        "dist": 7
+      },
+      {
+        "city": "Mississauga",
+        "dist": 3
+      },
+      {
+        "city": "Detroit",
+        "dist": 6
+      },
+      {
+        "city": "San Francisco",
+        "dist": 7
+      },
+      {
+        "city": "Brampton",
+        "dist": 3
+      },
+      {
+        "city": "Baltimore",
+        "dist": 6
+      },
+      {
+        "city": "Washington, D.C.",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Chicago",
+    "size": 13,
+    "lat": 41.88333333333333,
+    "lon": 87.625,
+    "neighbors": [
+      {
+        "city": "Philadelphia",
+        "dist": 5
+      },
+      {
+        "city": "Montreal",
+        "dist": 6
+      },
+      {
+        "city": "New York City",
+        "dist": 7
+      },
+      {
+        "city": "Columbus",
+        "dist": 5
+      },
+      {
+        "city": "Indianapolis",
+        "dist": 5
+      },
+      {
+        "city": "Ottawa",
+        "dist": 6
+      },
+      {
+        "city": "Denver",
+        "dist": 5
+      },
+      {
+        "city": "Detroit",
+        "dist": 6
+      },
+      {
+        "city": "Mississauga",
+        "dist": 7
+      },
+      {
+        "city": "Milwaukee",
+        "dist": 5
+      },
+      {
+        "city": "Baltimore",
+        "dist": 6
+      },
+      {
+        "city": "Louisville",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Houston",
+    "size": 12,
+    "lat": 29.766666666666666,
+    "lon": 95.38333333333334,
+    "neighbors": [
+      {
+        "city": "Dallas",
+        "dist": 6
+      },
+      {
+        "city": "San Antonio",
+        "dist": 6
+      },
+      {
+        "city": "San Diego",
+        "dist": 6
+      },
+      {
+        "city": "Austin",
+        "dist": 6
+      },
+      {
+        "city": "Fort Worth",
+        "dist": 6
+      },
+      {
+        "city": "Monterrey",
+        "dist": 6
+      },
+      {
+        "city": "Guadalupe NL",
+        "dist": 6
+      },
+      {
+        "city": "Phoenix",
+        "dist": 6
+      },
+      {
+        "city": "Mexicali",
+        "dist": 6
+      },
+      {
+        "city": "Reynosa",
+        "dist": 6
+      },
+      {
+        "city": "Saltillo",
+        "dist": 6
+      },
+      {
+        "city": "Torreón",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Havana",
+    "size": 12,
+    "lat": 23.133333333333333,
+    "lon": 82.35833333333333,
+    "neighbors": [
+      {
+        "city": "Zapopan",
+        "dist": 6
+      },
+      {
+        "city": "Guadalajara",
+        "dist": 6
+      },
+      {
+        "city": "León",
+        "dist": 6
+      },
+      {
+        "city": "Mérida",
+        "dist": 6
+      },
+      {
+        "city": "Querétaro",
+        "dist": 6
+      },
+      {
+        "city": "Ecatepec de Morelos",
+        "dist": 7
+      },
+      {
+        "city": "Cancún",
+        "dist": 5
+      },
+      {
+        "city": "Jacksonville",
+        "dist": 7
+      },
+      {
+        "city": "Phoenix",
+        "dist": 7
+      },
+      {
+        "city": "Tlaquepaque",
+        "dist": 6
+      },
+      {
+        "city": "Reynosa",
+        "dist": 7
+      },
+      {
+        "city": "Dallas",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Montreal",
+    "size": 11,
+    "lat": 45.50833333333333,
+    "lon": 73.55833333333334,
+    "neighbors": [
+      {
+        "city": "Toronto",
+        "dist": 6
+      },
+      {
+        "city": "New York City",
+        "dist": 6
+      },
+      {
+        "city": "Mexico City",
+        "dist": 8
+      },
+      {
+        "city": "Ottawa",
+        "dist": 5
+      },
+      {
+        "city": "Chicago",
+        "dist": 6
+      },
+      {
+        "city": "Philadelphia",
+        "dist": 6
+      },
+      {
+        "city": "Detroit",
+        "dist": 6
+      },
+      {
+        "city": "Mississauga",
+        "dist": 6
+      },
+      {
+        "city": "Columbus",
+        "dist": 7
+      },
+      {
+        "city": "Boston",
+        "dist": 6
+      },
+      {
+        "city": "Brampton",
+        "dist": 6
+      },
+      {
+        "city": "Baltimore",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Ecatepec de Morelos",
+    "size": 11,
+    "lat": 19.608333333333334,
+    "lon": 99.05833333333334,
+    "neighbors": [
+      {
+        "city": "Mexico City",
+        "dist": 3
+      },
+      {
+        "city": "Nezahualcóyotl",
+        "dist": 3
+      },
+      {
+        "city": "Puebla",
+        "dist": 4
+      },
+      {
+        "city": "Naucalpan",
+        "dist": 3
+      },
+      {
+        "city": "Toluca",
+        "dist": 4
+      },
+      {
+        "city": "Querétaro",
+        "dist": 5
+      },
+      {
+        "city": "Chimalhuacán",
+        "dist": 3
+      },
+      {
+        "city": "Tlalnepantla",
+        "dist": 5
+      },
+      {
+        "city": "Veracruz",
+        "dist": 5
+      },
+      {
+        "city": "Morelia",
+        "dist": 5
+      },
+      {
+        "city": "Acapulco",
+        "dist": 6
+      },
+      {
+        "city": "León",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Philadelphia",
+    "size": 11,
+    "lat": 39.95,
+    "lon": 75.16666666666667,
+    "neighbors": [
+      {
+        "city": "New York City",
+        "dist": 5
+      },
+      {
+        "city": "Chicago",
+        "dist": 5
+      },
+      {
+        "city": "Toronto",
+        "dist": 6
+      },
+      {
+        "city": "Charlotte",
+        "dist": 6
+      },
+      {
+        "city": "Ottawa",
+        "dist": 6
+      },
+      {
+        "city": "Montreal",
+        "dist": 6
+      },
+      {
+        "city": "Detroit",
+        "dist": 6
+      },
+      {
+        "city": "Mississauga",
+        "dist": 6
+      },
+      {
+        "city": "Columbus",
+        "dist": 7
+      },
+      {
+        "city": "Baltimore",
+        "dist": 5
+      },
+      {
+        "city": "Washington, D.C.",
+        "dist": 5
+      },
+      {
+        "city": "Boston",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Phoenix",
+    "size": 11,
+    "lat": 33.45,
+    "lon": 112.06666666666666,
+    "neighbors": [
+      {
+        "city": "San Antonio",
+        "dist": 6
+      },
+      {
+        "city": "Los Angeles",
+        "dist": 6
+      },
+      {
+        "city": "Houston",
+        "dist": 6
+      },
+      {
+        "city": "Hermosillo",
+        "dist": 6
+      },
+      {
+        "city": "Tijuana",
+        "dist": 6
+      },
+      {
+        "city": "San Diego",
+        "dist": 6
+      },
+      {
+        "city": "Mexicali",
+        "dist": 6
+      },
+      {
+        "city": "Chihuahua",
+        "dist": 6
+      },
+      {
+        "city": "Juárez",
+        "dist": 6
+      },
+      {
+        "city": "Oklahoma City",
+        "dist": 6
+      },
+      {
+        "city": "Las Vegas",
+        "dist": 6
+      },
+      {
+        "city": "El Paso",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "San Antonio",
+    "size": 11,
+    "lat": 29.433333333333334,
+    "lon": 98.5,
+    "neighbors": [
+      {
+        "city": "Houston",
+        "dist": 6
+      },
+      {
+        "city": "Dallas",
+        "dist": 6
+      },
+      {
+        "city": "Phoenix",
+        "dist": 6
+      },
+      {
+        "city": "Austin",
+        "dist": 5
+      },
+      {
+        "city": "Fort Worth",
+        "dist": 6
+      },
+      {
+        "city": "Monterrey",
+        "dist": 6
+      },
+      {
+        "city": "Guadalupe NL",
+        "dist": 6
+      },
+      {
+        "city": "Saltillo",
+        "dist": 6
+      },
+      {
+        "city": "Chihuahua",
+        "dist": 6
+      },
+      {
+        "city": "Reynosa",
+        "dist": 6
+      },
+      {
+        "city": "Torreón",
+        "dist": 6
+      },
+      {
+        "city": "El Paso",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Guadalajara",
+    "size": 11,
+    "lat": 20.675,
+    "lon": 103.35,
+    "neighbors": [
+      {
+        "city": "Zapopan",
+        "dist": 2
+      },
+      {
+        "city": "León",
+        "dist": 5
+      },
+      {
+        "city": "Havana",
+        "dist": 6
+      },
+      {
+        "city": "Querétaro",
+        "dist": 6
+      },
+      {
+        "city": "Toluca",
+        "dist": 6
+      },
+      {
+        "city": "Naucalpan",
+        "dist": 6
+      },
+      {
+        "city": "Aguascalientes",
+        "dist": 5
+      },
+      {
+        "city": "San Luis Potosí",
+        "dist": 5
+      },
+      {
+        "city": "Mexico City",
+        "dist": 6
+      },
+      {
+        "city": "Tlaquepaque",
+        "dist": 2
+      },
+      {
+        "city": "Morelia",
+        "dist": 6
+      },
+      {
+        "city": "Acapulco",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Puebla",
+    "size": 11,
+    "lat": 19.033333333333335,
+    "lon": 98.18333333333334,
+    "neighbors": [
+      {
+        "city": "Nezahualcóyotl",
+        "dist": 4
+      },
+      {
+        "city": "Mexico City",
+        "dist": 4
+      },
+      {
+        "city": "Ecatepec de Morelos",
+        "dist": 4
+      },
+      {
+        "city": "Toluca",
+        "dist": 4
+      },
+      {
+        "city": "Naucalpan",
+        "dist": 4
+      },
+      {
+        "city": "Querétaro",
+        "dist": 6
+      },
+      {
+        "city": "Tlalnepantla",
+        "dist": 3
+      },
+      {
+        "city": "Chimalhuacán",
+        "dist": 4
+      },
+      {
+        "city": "Veracruz",
+        "dist": 4
+      },
+      {
+        "city": "Morelia",
+        "dist": 5
+      },
+      {
+        "city": "Acapulco",
+        "dist": 6
+      },
+      {
+        "city": "León",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "San Diego",
+    "size": 11,
+    "lat": 32.71666666666667,
+    "lon": 117.16666666666667,
+    "neighbors": [
+      {
+        "city": "Tijuana",
+        "dist": 3
+      },
+      {
+        "city": "Los Angeles",
+        "dist": 5
+      },
+      {
+        "city": "Houston",
+        "dist": 6
+      },
+      {
+        "city": "Austin",
+        "dist": 6
+      },
+      {
+        "city": "Jacksonville",
+        "dist": 6
+      },
+      {
+        "city": "San Jose",
+        "dist": 6
+      },
+      {
+        "city": "Mexicali",
+        "dist": 5
+      },
+      {
+        "city": "Hermosillo",
+        "dist": 6
+      },
+      {
+        "city": "Phoenix",
+        "dist": 6
+      },
+      {
+        "city": "Las Vegas",
+        "dist": 6
+      },
+      {
+        "city": "Nashville",
+        "dist": 6
+      },
+      {
+        "city": "San Francisco",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Juárez",
+    "size": 11,
+    "lat": 31.741666666666667,
+    "lon": 106.48333333333333,
+    "neighbors": [
+      {
+        "city": "Phoenix",
+        "dist": 6
+      },
+      {
+        "city": "San Jose",
+        "dist": 6
+      },
+      {
+        "city": "San Antonio",
+        "dist": 7
+      },
+      {
+        "city": "Chihuahua",
+        "dist": 6
+      },
+      {
+        "city": "Austin",
+        "dist": 6
+      },
+      {
+        "city": "Monterrey",
+        "dist": 7
+      },
+      {
+        "city": "El Paso",
+        "dist": 1
+      },
+      {
+        "city": "Fort Worth",
+        "dist": 6
+      },
+      {
+        "city": "Hermosillo",
+        "dist": 6
+      },
+      {
+        "city": "Torreón",
+        "dist": 7
+      },
+      {
+        "city": "Mexicali",
+        "dist": 7
+      },
+      {
+        "city": "Saltillo",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "León",
+    "size": 11,
+    "lat": 21.116666666666667,
+    "lon": 101.68333333333334,
+    "neighbors": [
+      {
+        "city": "Guadalajara",
+        "dist": 5
+      },
+      {
+        "city": "Zapopan",
+        "dist": 5
+      },
+      {
+        "city": "Ecatepec de Morelos",
+        "dist": 6
+      },
+      {
+        "city": "Querétaro",
+        "dist": 5
+      },
+      {
+        "city": "Toluca",
+        "dist": 6
+      },
+      {
+        "city": "Naucalpan",
+        "dist": 6
+      },
+      {
+        "city": "Aguascalientes",
+        "dist": 5
+      },
+      {
+        "city": "San Luis Potosí",
+        "dist": 5
+      },
+      {
+        "city": "Mexico City",
+        "dist": 6
+      },
+      {
+        "city": "Morelia",
+        "dist": 5
+      },
+      {
+        "city": "Tlaquepaque",
+        "dist": 5
+      },
+      {
+        "city": "Nezahualcóyotl",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Dallas",
+    "size": 11,
+    "lat": 32.78333333333333,
+    "lon": 96.80833333333334,
+    "neighbors": [
+      {
+        "city": "Houston",
+        "dist": 6
+      },
+      {
+        "city": "San Antonio",
+        "dist": 6
+      },
+      {
+        "city": "Chicago",
+        "dist": 7
+      },
+      {
+        "city": "Fort Worth",
+        "dist": 5
+      },
+      {
+        "city": "Austin",
+        "dist": 6
+      },
+      {
+        "city": "Jacksonville",
+        "dist": 6
+      },
+      {
+        "city": "Chihuahua",
+        "dist": 7
+      },
+      {
+        "city": "Juárez",
+        "dist": 7
+      },
+      {
+        "city": "Monterrey",
+        "dist": 7
+      },
+      {
+        "city": "Oklahoma City",
+        "dist": 6
+      },
+      {
+        "city": "Nashville",
+        "dist": 6
+      },
+      {
+        "city": "Memphis, TN",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Tijuana",
+    "size": 11,
+    "lat": 32.525,
+    "lon": 117.03333333333333,
+    "neighbors": [
+      {
+        "city": "San Diego",
+        "dist": 3
+      },
+      {
+        "city": "Los Angeles",
+        "dist": 5
+      },
+      {
+        "city": "Phoenix",
+        "dist": 6
+      },
+      {
+        "city": "Jacksonville",
+        "dist": 6
+      },
+      {
+        "city": "Austin",
+        "dist": 6
+      },
+      {
+        "city": "San Jose",
+        "dist": 6
+      },
+      {
+        "city": "Mexicali",
+        "dist": 5
+      },
+      {
+        "city": "Hermosillo",
+        "dist": 6
+      },
+      {
+        "city": "San Francisco",
+        "dist": 7
+      },
+      {
+        "city": "Las Vegas",
+        "dist": 6
+      },
+      {
+        "city": "Houston",
+        "dist": 7
+      },
+      {
+        "city": "Juárez",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Calgary",
+    "size": 11,
+    "lat": 51.05,
+    "lon": 114.06666666666666,
+    "neighbors": [
+      {
+        "city": "Toronto",
+        "dist": 7
+      },
+      {
+        "city": "San Jose",
+        "dist": 7
+      },
+      {
+        "city": "Los Angeles",
+        "dist": 8
+      },
+      {
+        "city": "Edmonton",
+        "dist": 6
+      },
+      {
+        "city": "San Francisco",
+        "dist": 7
+      },
+      {
+        "city": "Phoenix",
+        "dist": 8
+      },
+      {
+        "city": "Winnipeg",
+        "dist": 6
+      },
+      {
+        "city": "Seattle",
+        "dist": 7
+      },
+      {
+        "city": "Mississauga",
+        "dist": 7
+      },
+      {
+        "city": "Vancouver",
+        "dist": 5
+      },
+      {
+        "city": "Milwaukee",
+        "dist": 7
+      },
+      {
+        "city": "Portland",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Zapopan",
+    "size": 10,
+    "lat": 20.716666666666665,
+    "lon": 103.39166666666667,
+    "neighbors": [
+      {
+        "city": "Guadalajara",
+        "dist": 2
+      },
+      {
+        "city": "León",
+        "dist": 5
+      },
+      {
+        "city": "Havana",
+        "dist": 6
+      },
+      {
+        "city": "Querétaro",
+        "dist": 6
+      },
+      {
+        "city": "Toluca",
+        "dist": 6
+      },
+      {
+        "city": "Naucalpan",
+        "dist": 6
+      },
+      {
+        "city": "Aguascalientes",
+        "dist": 5
+      },
+      {
+        "city": "San Luis Potosí",
+        "dist": 5
+      },
+      {
+        "city": "Mexico City",
+        "dist": 6
+      },
+      {
+        "city": "Tlaquepaque",
+        "dist": 3
+      },
+      {
+        "city": "Morelia",
+        "dist": 6
+      },
+      {
+        "city": "Acapulco",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Monterrey",
+    "size": 10,
+    "lat": 25.666666666666668,
+    "lon": 100.3,
+    "neighbors": [
+      {
+        "city": "San Antonio",
+        "dist": 6
+      },
+      {
+        "city": "León",
+        "dist": 6
+      },
+      {
+        "city": "Houston",
+        "dist": 6
+      },
+      {
+        "city": "Saltillo",
+        "dist": 4
+      },
+      {
+        "city": "Austin",
+        "dist": 6
+      },
+      {
+        "city": "Querétaro",
+        "dist": 6
+      },
+      {
+        "city": "Guadalupe NL",
+        "dist": 1
+      },
+      {
+        "city": "Culiacán",
+        "dist": 5
+      },
+      {
+        "city": "San Luis Potosí",
+        "dist": 6
+      },
+      {
+        "city": "Torreón",
+        "dist": 5
+      },
+      {
+        "city": "Reynosa",
+        "dist": 5
+      },
+      {
+        "city": "Aguascalientes",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Nezahualcóyotl",
+    "size": 10,
+    "lat": 19.4,
+    "lon": 98.99166666666666,
+    "neighbors": [
+      {
+        "city": "Mexico City",
+        "dist": 2
+      },
+      {
+        "city": "Ecatepec de Morelos",
+        "dist": 3
+      },
+      {
+        "city": "Houston",
+        "dist": 7
+      },
+      {
+        "city": "Naucalpan",
+        "dist": 3
+      },
+      {
+        "city": "Toluca",
+        "dist": 4
+      },
+      {
+        "city": "Puebla",
+        "dist": 4
+      },
+      {
+        "city": "Chimalhuacán",
+        "dist": 1
+      },
+      {
+        "city": "Tlalnepantla",
+        "dist": 4
+      },
+      {
+        "city": "Veracruz",
+        "dist": 5
+      },
+      {
+        "city": "Morelia",
+        "dist": 5
+      },
+      {
+        "city": "Querétaro",
+        "dist": 5
+      },
+      {
+        "city": "Acapulco",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "San Jose",
+    "size": 10,
+    "lat": 37.333333333333336,
+    "lon": 121.9,
+    "neighbors": [
+      {
+        "city": "Los Angeles",
+        "dist": 6
+      },
+      {
+        "city": "San Diego",
+        "dist": 6
+      },
+      {
+        "city": "Phoenix",
+        "dist": 7
+      },
+      {
+        "city": "San Francisco",
+        "dist": 4
+      },
+      {
+        "city": "Tijuana",
+        "dist": 6
+      },
+      {
+        "city": "Juárez",
+        "dist": 6
+      },
+      {
+        "city": "Mexicali",
+        "dist": 6
+      },
+      {
+        "city": "El Paso",
+        "dist": 6
+      },
+      {
+        "city": "Fort Worth",
+        "dist": 7
+      },
+      {
+        "city": "Louisville",
+        "dist": 6
+      },
+      {
+        "city": "Las Vegas",
+        "dist": 6
+      },
+      {
+        "city": "Portland",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Naucalpan",
+    "size": 10,
+    "lat": 19.483333333333334,
+    "lon": 99.23333333333333,
+    "neighbors": [
+      {
+        "city": "Mexico City",
+        "dist": 2
+      },
+      {
+        "city": "Nezahualcóyotl",
+        "dist": 3
+      },
+      {
+        "city": "Ecatepec de Morelos",
+        "dist": 3
+      },
+      {
+        "city": "Chimalhuacán",
+        "dist": 3
+      },
+      {
+        "city": "Toluca",
+        "dist": 3
+      },
+      {
+        "city": "Puebla",
+        "dist": 4
+      },
+      {
+        "city": "Tlalnepantla",
+        "dist": 4
+      },
+      {
+        "city": "Morelia",
+        "dist": 5
+      },
+      {
+        "city": "Veracruz",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Ottawa",
+    "size": 10,
+    "lat": 45.416666666666664,
+    "lon": 75.7,
+    "neighbors": [
+      {
+        "city": "Montreal",
+        "dist": 5
+      },
+      {
+        "city": "Toronto",
+        "dist": 6
+      },
+      {
+        "city": "New York City",
+        "dist": 6
+      },
+      {
+        "city": "Mississauga",
+        "dist": 6
+      },
+      {
+        "city": "Detroit",
+        "dist": 6
+      },
+      {
+        "city": "Chicago",
+        "dist": 6
+      },
+      {
+        "city": "Brampton",
+        "dist": 6
+      },
+      {
+        "city": "Boston",
+        "dist": 6
+      },
+      {
+        "city": "Philadelphia",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Austin",
+    "size": 10,
+    "lat": 30.266666666666666,
+    "lon": 97.74166666666666,
+    "neighbors": [
+      {
+        "city": "San Antonio",
+        "dist": 5
+      },
+      {
+        "city": "Fort Worth",
+        "dist": 5
+      },
+      {
+        "city": "Tijuana",
+        "dist": 6
+      },
+      {
+        "city": "Houston",
+        "dist": 6
+      },
+      {
+        "city": "Dallas",
+        "dist": 6
+      },
+      {
+        "city": "San Diego",
+        "dist": 6
+      },
+      {
+        "city": "Mexicali",
+        "dist": 6
+      },
+      {
+        "city": "El Paso",
+        "dist": 6
+      },
+      {
+        "city": "Juárez",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Edmonton",
+    "size": 10,
+    "lat": 53.53333333333333,
+    "lon": 113.48333333333333,
+    "neighbors": [
+      {
+        "city": "Calgary",
+        "dist": 6
+      },
+      {
+        "city": "New York City",
+        "dist": 7
+      },
+      {
+        "city": "Chicago",
+        "dist": 8
+      },
+      {
+        "city": "Seattle",
+        "dist": 7
+      },
+      {
+        "city": "Denver",
+        "dist": 7
+      },
+      {
+        "city": "Winnipeg",
+        "dist": 8
+      },
+      {
+        "city": "Vancouver",
+        "dist": 7
+      },
+      {
+        "city": "Portland",
+        "dist": 7
+      },
+      {
+        "city": "Columbus",
+        "dist": 8
+      }
+    ]
+  },
+  {
+    "name": "Mérida",
+    "size": 10,
+    "lat": 20.966666666666665,
+    "lon": 89.61666666666666,
+    "neighbors": [
+      {
+        "city": "Havana",
+        "dist": 6
+      },
+      {
+        "city": "Puebla",
+        "dist": 7
+      },
+      {
+        "city": "San Antonio",
+        "dist": 7
+      },
+      {
+        "city": "Cancún",
+        "dist": 6
+      },
+      {
+        "city": "Acapulco",
+        "dist": 6
+      },
+      {
+        "city": "San Luis Potosí",
+        "dist": 6
+      },
+      {
+        "city": "Aguascalientes",
+        "dist": 7
+      },
+      {
+        "city": "Veracruz",
+        "dist": 7
+      },
+      {
+        "city": "Hermosillo",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Querétaro",
+    "size": 10,
+    "lat": 20.583333333333332,
+    "lon": 100.38333333333334,
+    "neighbors": [
+      {
+        "city": "León",
+        "dist": 5
+      },
+      {
+        "city": "Toluca",
+        "dist": 5
+      },
+      {
+        "city": "Naucalpan",
+        "dist": 5
+      },
+      {
+        "city": "Ecatepec de Morelos",
+        "dist": 5
+      },
+      {
+        "city": "San Luis Potosí",
+        "dist": 5
+      },
+      {
+        "city": "Mexico City",
+        "dist": 5
+      },
+      {
+        "city": "Morelia",
+        "dist": 5
+      },
+      {
+        "city": "Nezahualcóyotl",
+        "dist": 5
+      },
+      {
+        "city": "Chimalhuacán",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Toluca",
+    "size": 10,
+    "lat": 19.3,
+    "lon": 99.65,
+    "neighbors": [
+      {
+        "city": "Naucalpan",
+        "dist": 3
+      },
+      {
+        "city": "Mexico City",
+        "dist": 3
+      },
+      {
+        "city": "Nezahualcóyotl",
+        "dist": 4
+      },
+      {
+        "city": "Chimalhuacán",
+        "dist": 4
+      },
+      {
+        "city": "Ecatepec de Morelos",
+        "dist": 4
+      },
+      {
+        "city": "Puebla",
+        "dist": 4
+      },
+      {
+        "city": "Tlalnepantla",
+        "dist": 4
+      },
+      {
+        "city": "Morelia",
+        "dist": 5
+      },
+      {
+        "city": "Veracruz",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Jacksonville",
+    "size": 10,
+    "lat": 30.333333333333332,
+    "lon": 81.66666666666667,
+    "neighbors": [
+      {
+        "city": "Tijuana",
+        "dist": 6
+      },
+      {
+        "city": "Dallas",
+        "dist": 6
+      },
+      {
+        "city": "San Diego",
+        "dist": 6
+      },
+      {
+        "city": "Fort Worth",
+        "dist": 6
+      },
+      {
+        "city": "Mexicali",
+        "dist": 6
+      },
+      {
+        "city": "Charlotte",
+        "dist": 6
+      },
+      {
+        "city": "Reynosa",
+        "dist": 6
+      },
+      {
+        "city": "Guadalupe NL",
+        "dist": 7
+      },
+      {
+        "city": "Monterrey",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Chihuahua",
+    "size": 10,
+    "lat": 28.633333333333333,
+    "lon": 106.08333333333333,
+    "neighbors": [
+      {
+        "city": "Hermosillo",
+        "dist": 6
+      },
+      {
+        "city": "Juárez",
+        "dist": 6
+      },
+      {
+        "city": "San Antonio",
+        "dist": 6
+      },
+      {
+        "city": "El Paso",
+        "dist": 6
+      },
+      {
+        "city": "Culiacán",
+        "dist": 6
+      },
+      {
+        "city": "Phoenix",
+        "dist": 6
+      },
+      {
+        "city": "Torreón",
+        "dist": 6
+      },
+      {
+        "city": "Los Angeles",
+        "dist": 6
+      },
+      {
+        "city": "Saltillo",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "San Francisco",
+    "size": 10,
+    "lat": 37.775,
+    "lon": 122.41666666666667,
+    "neighbors": [
+      {
+        "city": "San Jose",
+        "dist": 4
+      },
+      {
+        "city": "Los Angeles",
+        "dist": 6
+      },
+      {
+        "city": "Tijuana",
+        "dist": 7
+      },
+      {
+        "city": "San Diego",
+        "dist": 7
+      },
+      {
+        "city": "Mexicali",
+        "dist": 7
+      },
+      {
+        "city": "Juárez",
+        "dist": 7
+      },
+      {
+        "city": "Las Vegas",
+        "dist": 6
+      },
+      {
+        "city": "El Paso",
+        "dist": 7
+      },
+      {
+        "city": "Toronto",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Indianapolis",
+    "size": 10,
+    "lat": 39.766666666666666,
+    "lon": 86.15833333333333,
+    "neighbors": [
+      {
+        "city": "Chicago",
+        "dist": 5
+      },
+      {
+        "city": "Columbus",
+        "dist": 6
+      },
+      {
+        "city": "Toronto",
+        "dist": 7
+      },
+      {
+        "city": "Detroit",
+        "dist": 6
+      },
+      {
+        "city": "Charlotte",
+        "dist": 6
+      },
+      {
+        "city": "Mississauga",
+        "dist": 7
+      },
+      {
+        "city": "Louisville",
+        "dist": 5
+      },
+      {
+        "city": "Milwaukee",
+        "dist": 6
+      },
+      {
+        "city": "Nashville",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Columbus",
+    "size": 10,
+    "lat": 39.958333333333336,
+    "lon": 83.0,
+    "neighbors": [
+      {
+        "city": "Chicago",
+        "dist": 5
+      },
+      {
+        "city": "Indianapolis",
+        "dist": 6
+      },
+      {
+        "city": "New York City",
+        "dist": 6
+      },
+      {
+        "city": "Detroit",
+        "dist": 6
+      },
+      {
+        "city": "Mississauga",
+        "dist": 6
+      },
+      {
+        "city": "Charlotte",
+        "dist": 6
+      },
+      {
+        "city": "Louisville",
+        "dist": 6
+      },
+      {
+        "city": "Nashville",
+        "dist": 6
+      },
+      {
+        "city": "Boston",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Fort Worth",
+    "size": 10,
+    "lat": 32.09166666666667,
+    "lon": 97.33333333333333,
+    "neighbors": [
+      {
+        "city": "Dallas",
+        "dist": 5
+      },
+      {
+        "city": "Austin",
+        "dist": 5
+      },
+      {
+        "city": "Houston",
+        "dist": 6
+      },
+      {
+        "city": "San Antonio",
+        "dist": 6
+      },
+      {
+        "city": "Jacksonville",
+        "dist": 6
+      },
+      {
+        "city": "Juárez",
+        "dist": 6
+      },
+      {
+        "city": "Oklahoma City",
+        "dist": 6
+      },
+      {
+        "city": "El Paso",
+        "dist": 6
+      },
+      {
+        "city": "Nashville",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Charlotte",
+    "size": 10,
+    "lat": 35.225,
+    "lon": 80.84166666666667,
+    "neighbors": [
+      {
+        "city": "Los Angeles",
+        "dist": 6
+      },
+      {
+        "city": "Indianapolis",
+        "dist": 6
+      },
+      {
+        "city": "Philadelphia",
+        "dist": 6
+      },
+      {
+        "city": "Columbus",
+        "dist": 6
+      },
+      {
+        "city": "Jacksonville",
+        "dist": 6
+      },
+      {
+        "city": "New York City",
+        "dist": 6
+      },
+      {
+        "city": "Washington, D.C.",
+        "dist": 6
+      },
+      {
+        "city": "Baltimore",
+        "dist": 6
+      },
+      {
+        "city": "Memphis, TN",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Hermosillo",
+    "size": 9,
+    "lat": 29.1,
+    "lon": 110.95,
+    "neighbors": [
+      {
+        "city": "Chihuahua",
+        "dist": 6
+      },
+      {
+        "city": "Phoenix",
+        "dist": 6
+      },
+      {
+        "city": "Juárez",
+        "dist": 6
+      },
+      {
+        "city": "Mexicali",
+        "dist": 6
+      },
+      {
+        "city": "El Paso",
+        "dist": 6
+      },
+      {
+        "city": "San Diego",
+        "dist": 6
+      },
+      {
+        "city": "Tijuana",
+        "dist": 6
+      },
+      {
+        "city": "Los Angeles",
+        "dist": 6
+      },
+      {
+        "city": "Dallas",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Saltillo",
+    "size": 9,
+    "lat": 25.433333333333334,
+    "lon": 101.0,
+    "neighbors": [
+      {
+        "city": "Monterrey",
+        "dist": 4
+      },
+      {
+        "city": "León",
+        "dist": 6
+      },
+      {
+        "city": "San Antonio",
+        "dist": 6
+      },
+      {
+        "city": "Guadalupe NL",
+        "dist": 4
+      },
+      {
+        "city": "Culiacán",
+        "dist": 4
+      },
+      {
+        "city": "San Luis Potosí",
+        "dist": 6
+      },
+      {
+        "city": "Torreón",
+        "dist": 5
+      },
+      {
+        "city": "Reynosa",
+        "dist": 5
+      },
+      {
+        "city": "Aguascalientes",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Aguascalientes",
+    "size": 9,
+    "lat": 22.016666666666666,
+    "lon": 102.35,
+    "neighbors": [
+      {
+        "city": "San Luis Potosí",
+        "dist": 3
+      },
+      {
+        "city": "León",
+        "dist": 5
+      },
+      {
+        "city": "Zapopan",
+        "dist": 5
+      },
+      {
+        "city": "Guadalajara",
+        "dist": 5
+      },
+      {
+        "city": "Tlaquepaque",
+        "dist": 5
+      },
+      {
+        "city": "Querétaro",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Mississauga",
+    "size": 9,
+    "lat": 43.6,
+    "lon": 79.65,
+    "neighbors": [
+      {
+        "city": "Toronto",
+        "dist": 3
+      },
+      {
+        "city": "Ottawa",
+        "dist": 6
+      },
+      {
+        "city": "Montreal",
+        "dist": 6
+      },
+      {
+        "city": "Brampton",
+        "dist": 2
+      },
+      {
+        "city": "Detroit",
+        "dist": 6
+      },
+      {
+        "city": "Columbus",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "San Luis Potosí",
+    "size": 9,
+    "lat": 22.15,
+    "lon": 100.975,
+    "neighbors": [
+      {
+        "city": "Aguascalientes",
+        "dist": 3
+      },
+      {
+        "city": "León",
+        "dist": 5
+      },
+      {
+        "city": "Querétaro",
+        "dist": 5
+      },
+      {
+        "city": "Zapopan",
+        "dist": 5
+      },
+      {
+        "city": "Guadalajara",
+        "dist": 5
+      },
+      {
+        "city": "Ecatepec de Morelos",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Veracruz",
+    "size": 9,
+    "lat": 19.191666666666666,
+    "lon": 96.15,
+    "neighbors": [
+      {
+        "city": "Tlalnepantla",
+        "dist": 4
+      },
+      {
+        "city": "Puebla",
+        "dist": 4
+      },
+      {
+        "city": "Nezahualcóyotl",
+        "dist": 5
+      },
+      {
+        "city": "Chimalhuacán",
+        "dist": 5
+      },
+      {
+        "city": "Mexico City",
+        "dist": 5
+      },
+      {
+        "city": "Toluca",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Culiacán",
+    "size": 9,
+    "lat": 24.808333333333334,
+    "lon": 107.39166666666667,
+    "neighbors": [
+      {
+        "city": "Saltillo",
+        "dist": 4
+      },
+      {
+        "city": "Monterrey",
+        "dist": 5
+      },
+      {
+        "city": "Chihuahua",
+        "dist": 6
+      },
+      {
+        "city": "Torreón",
+        "dist": 4
+      },
+      {
+        "city": "Guadalupe NL",
+        "dist": 5
+      },
+      {
+        "city": "Zapopan",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Winnipeg",
+    "size": 9,
+    "lat": 49.88333333333333,
+    "lon": 97.15,
+    "neighbors": [
+      {
+        "city": "Calgary",
+        "dist": 6
+      },
+      {
+        "city": "Toronto",
+        "dist": 7
+      },
+      {
+        "city": "Chicago",
+        "dist": 7
+      },
+      {
+        "city": "Brampton",
+        "dist": 7
+      },
+      {
+        "city": "Milwaukee",
+        "dist": 7
+      },
+      {
+        "city": "Mississauga",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Mexicali",
+    "size": 9,
+    "lat": 32.666666666666664,
+    "lon": 115.46666666666667,
+    "neighbors": [
+      {
+        "city": "Tijuana",
+        "dist": 5
+      },
+      {
+        "city": "San Diego",
+        "dist": 5
+      },
+      {
+        "city": "Los Angeles",
+        "dist": 6
+      },
+      {
+        "city": "Austin",
+        "dist": 6
+      },
+      {
+        "city": "Phoenix",
+        "dist": 6
+      },
+      {
+        "city": "Houston",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Cancún",
+    "size": 9,
+    "lat": 21.158333333333335,
+    "lon": 86.85,
+    "neighbors": [
+      {
+        "city": "Havana",
+        "dist": 5
+      },
+      {
+        "city": "Mérida",
+        "dist": 6
+      },
+      {
+        "city": "San Antonio",
+        "dist": 7
+      },
+      {
+        "city": "San Luis Potosí",
+        "dist": 6
+      },
+      {
+        "city": "Acapulco",
+        "dist": 6
+      },
+      {
+        "city": "Aguascalientes",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Acapulco",
+    "size": 9,
+    "lat": 16.866666666666667,
+    "lon": 99.88333333333334,
+    "neighbors": [
+      {
+        "city": "Toluca",
+        "dist": 6
+      },
+      {
+        "city": "Puebla",
+        "dist": 6
+      },
+      {
+        "city": "Nezahualcóyotl",
+        "dist": 6
+      },
+      {
+        "city": "Tlalnepantla",
+        "dist": 6
+      },
+      {
+        "city": "Mexico City",
+        "dist": 6
+      },
+      {
+        "city": "Naucalpan",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Tlalnepantla",
+    "size": 9,
+    "lat": 18.8662,
+    "lon": 97.8854,
+    "neighbors": [
+      {
+        "city": "Puebla",
+        "dist": 3
+      },
+      {
+        "city": "Veracruz",
+        "dist": 4
+      },
+      {
+        "city": "Toluca",
+        "dist": 4
+      },
+      {
+        "city": "Nezahualcóyotl",
+        "dist": 4
+      },
+      {
+        "city": "Chimalhuacán",
+        "dist": 4
+      },
+      {
+        "city": "Mexico City",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Seattle",
+    "size": 9,
+    "lat": 47.608333333333334,
+    "lon": 122.33333333333333,
+    "neighbors": [
+      {
+        "city": "Edmonton",
+        "dist": 7
+      },
+      {
+        "city": "Calgary",
+        "dist": 7
+      },
+      {
+        "city": "San Jose",
+        "dist": 7
+      },
+      {
+        "city": "Vancouver",
+        "dist": 5
+      },
+      {
+        "city": "Portland",
+        "dist": 5
+      },
+      {
+        "city": "Denver",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Guadalupe NL",
+    "size": 9,
+    "lat": 25.675,
+    "lon": 100.25833333333334,
+    "neighbors": [
+      {
+        "city": "Monterrey",
+        "dist": 1
+      },
+      {
+        "city": "Saltillo",
+        "dist": 4
+      },
+      {
+        "city": "San Antonio",
+        "dist": 6
+      },
+      {
+        "city": "Culiacán",
+        "dist": 5
+      },
+      {
+        "city": "Reynosa",
+        "dist": 5
+      },
+      {
+        "city": "Torreón",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Denver",
+    "size": 9,
+    "lat": 39.74166666666667,
+    "lon": 104.99166666666666,
+    "neighbors": [
+      {
+        "city": "Chicago",
+        "dist": 5
+      },
+      {
+        "city": "Detroit",
+        "dist": 6
+      },
+      {
+        "city": "Charlotte",
+        "dist": 7
+      },
+      {
+        "city": "Oklahoma City",
+        "dist": 6
+      },
+      {
+        "city": "Las Vegas",
+        "dist": 6
+      },
+      {
+        "city": "Nashville",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "El Paso",
+    "size": 9,
+    "lat": 31.758333333333333,
+    "lon": 106.48333333333333,
+    "neighbors": [
+      {
+        "city": "Juárez",
+        "dist": 1
+      },
+      {
+        "city": "Chihuahua",
+        "dist": 6
+      },
+      {
+        "city": "Austin",
+        "dist": 6
+      },
+      {
+        "city": "Fort Worth",
+        "dist": 6
+      },
+      {
+        "city": "Hermosillo",
+        "dist": 6
+      },
+      {
+        "city": "Phoenix",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Chimalhuacán",
+    "size": 9,
+    "lat": 19.433333333333334,
+    "lon": 98.95,
+    "neighbors": [
+      {
+        "city": "Nezahualcóyotl",
+        "dist": 1
+      },
+      {
+        "city": "Mexico City",
+        "dist": 2
+      },
+      {
+        "city": "Ecatepec de Morelos",
+        "dist": 3
+      },
+      {
+        "city": "Naucalpan",
+        "dist": 3
+      },
+      {
+        "city": "Toluca",
+        "dist": 4
+      },
+      {
+        "city": "Puebla",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Detroit",
+    "size": 9,
+    "lat": 42.333333333333336,
+    "lon": 83.05,
+    "neighbors": [
+      {
+        "city": "Columbus",
+        "dist": 6
+      },
+      {
+        "city": "Indianapolis",
+        "dist": 6
+      },
+      {
+        "city": "Ottawa",
+        "dist": 6
+      },
+      {
+        "city": "Brampton",
+        "dist": 6
+      },
+      {
+        "city": "Baltimore",
+        "dist": 6
+      },
+      {
+        "city": "Mississauga",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Washington, D.C.",
+    "size": 9,
+    "lat": 38.9101,
+    "lon": 77.0147,
+    "neighbors": [
+      {
+        "city": "Baltimore",
+        "dist": 4
+      },
+      {
+        "city": "Philadelphia",
+        "dist": 5
+      },
+      {
+        "city": "New York City",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Boston",
+    "size": 9,
+    "lat": 42.358333333333334,
+    "lon": 71.06666666666666,
+    "neighbors": [
+      {
+        "city": "New York City",
+        "dist": 6
+      },
+      {
+        "city": "Philadelphia",
+        "dist": 6
+      },
+      {
+        "city": "Montreal",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Tlaquepaque",
+    "size": 9,
+    "lat": 20.616666666666667,
+    "lon": 103.31666666666666,
+    "neighbors": [
+      {
+        "city": "Guadalajara",
+        "dist": 2
+      },
+      {
+        "city": "Zapopan",
+        "dist": 3
+      },
+      {
+        "city": "León",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Memphis, TN",
+    "size": 9,
+    "lat": 35.11666666666667,
+    "lon": 89.96666666666667,
+    "neighbors": [
+      {
+        "city": "Los Angeles",
+        "dist": 5
+      },
+      {
+        "city": "Nashville",
+        "dist": 6
+      },
+      {
+        "city": "Dallas",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Nashville",
+    "size": 9,
+    "lat": 36.166666666666664,
+    "lon": 86.78333333333333,
+    "neighbors": [
+      {
+        "city": "Louisville",
+        "dist": 5
+      },
+      {
+        "city": "Memphis, TN",
+        "dist": 6
+      },
+      {
+        "city": "Baltimore",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Torreón",
+    "size": 9,
+    "lat": 25.541666666666668,
+    "lon": 103.45,
+    "neighbors": [
+      {
+        "city": "Culiacán",
+        "dist": 4
+      },
+      {
+        "city": "Saltillo",
+        "dist": 5
+      },
+      {
+        "city": "Monterrey",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Vancouver",
+    "size": 9,
+    "lat": 49.25,
+    "lon": 123.1,
+    "neighbors": [
+      {
+        "city": "Seattle",
+        "dist": 5
+      },
+      {
+        "city": "Calgary",
+        "dist": 5
+      },
+      {
+        "city": "Edmonton",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Portland",
+    "size": 9,
+    "lat": 45.516666666666666,
+    "lon": 122.68333333333334,
+    "neighbors": [
+      {
+        "city": "Seattle",
+        "dist": 5
+      },
+      {
+        "city": "Vancouver",
+        "dist": 6
+      },
+      {
+        "city": "Detroit",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Reynosa",
+    "size": 9,
+    "lat": 26.091666666666665,
+    "lon": 98.275,
+    "neighbors": [
+      {
+        "city": "Guadalupe NL",
+        "dist": 5
+      },
+      {
+        "city": "Monterrey",
+        "dist": 5
+      },
+      {
+        "city": "Saltillo",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Oklahoma City",
+    "size": 9,
+    "lat": 35.46666666666667,
+    "lon": 97.51666666666667,
+    "neighbors": [
+      {
+        "city": "Phoenix",
+        "dist": 6
+      },
+      {
+        "city": "Dallas",
+        "dist": 6
+      },
+      {
+        "city": "Los Angeles",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Las Vegas",
+    "size": 9,
+    "lat": 36.175,
+    "lon": 115.13333333333334,
+    "neighbors": [
+      {
+        "city": "Los Angeles",
+        "dist": 6
+      },
+      {
+        "city": "Phoenix",
+        "dist": 6
+      },
+      {
+        "city": "Montreal",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Baltimore",
+    "size": 9,
+    "lat": 39.291666666666664,
+    "lon": 76.61666666666666,
+    "neighbors": [
+      {
+        "city": "Washington, D.C.",
+        "dist": 4
+      },
+      {
+        "city": "Philadelphia",
+        "dist": 5
+      },
+      {
+        "city": "New York City",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Brampton",
+    "size": 9,
+    "lat": 43.68333333333333,
+    "lon": 79.76666666666667,
+    "neighbors": [
+      {
+        "city": "Mississauga",
+        "dist": 2
+      },
+      {
+        "city": "Toronto",
+        "dist": 3
+      },
+      {
+        "city": "Ottawa",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Louisville",
+    "size": 9,
+    "lat": 38.25833333333333,
+    "lon": 85.75,
+    "neighbors": [
+      {
+        "city": "Indianapolis",
+        "dist": 5
+      },
+      {
+        "city": "Nashville",
+        "dist": 5
+      },
+      {
+        "city": "Columbus",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Morelia",
+    "size": 9,
+    "lat": 19.766666666666666,
+    "lon": 101.19166666666666,
+    "neighbors": [
+      {
+        "city": "Toluca",
+        "dist": 5
+      },
+      {
+        "city": "Querétaro",
+        "dist": 5
+      },
+      {
+        "city": "Naucalpan",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Milwaukee",
+    "size": 9,
+    "lat": 43.05,
+    "lon": 87.95,
+    "neighbors": [
+      {
+        "city": "Chicago",
+        "dist": 5
+      },
+      {
+        "city": "Indianapolis",
+        "dist": 6
+      },
+      {
+        "city": "Ottawa",
+        "dist": 6
+      }
+    ]
+  }
+]
+}

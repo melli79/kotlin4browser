@@ -1,5 +1,6 @@
 plugins {
     kotlin("multiplatform") version "1.6.0"
+    kotlin("plugin.serialization") version "1.6.0"
     application
 }
 
@@ -7,7 +8,6 @@ group = "org.grutzmann"
 version = "0.1-SNAPSHOT"
 
 repositories {
-    jcenter()
     mavenCentral()
     maven("https://maven.pkg.jetbrains.space/public/p/kotlinx-html/maven")
 }
@@ -31,7 +31,11 @@ kotlin {
         }
     }
     sourceSets {
-        val commonMain by getting
+        val commonMain by getting {
+            dependencies {
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.1")
+            }
+        }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test"))
@@ -50,6 +54,8 @@ kotlin {
                 implementation("org.jetbrains.kotlin-wrappers:kotlin-react:17.0.2-pre.272-kotlin-1.6.0")
                 implementation("org.jetbrains.kotlin-wrappers:kotlin-react-dom:17.0.2-pre.272-kotlin-1.6.0")
                 implementation("org.jetbrains.kotlin-wrappers:kotlin-styled:5.3.3-pre.272-kotlin-1.6.0")
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.1")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
             }
         }
         val jsTest by getting

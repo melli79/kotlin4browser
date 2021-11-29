@@ -1,2809 +1,2892 @@
-[ {
-  "name": "Berlin",
-  "size": 7,
-  "lat": 52.516666666666666,
-  "lon": 13.383333333333333,
-  "neighbors": [
-    {
-      "city": "Dresden",
-      "dist": 5
-    },
-    {
-      "city": "Leipzig",
-      "dist": 5
-    },
-    {
-      "city": "Hamburg",
-      "dist": 5
-    },
-    {
-      "city": "Lübeck",
-      "dist": 5
-    },
-    {
-      "city": "Rostock",
-      "dist": 5
-    },
-    {
-      "city": "Magdeburg",
-      "dist": 5
-    },
-    {
-      "city": "Potsdam",
-      "dist": 3
-    },
-    {
-      "city": "Halle/S",
-      "dist": 5
-    },
-    {
-      "city": "Chemnitz",
-      "dist": 5
-    },
-    {
-      "city": "Kiel",
-      "dist": 5
-    },
-    {
-      "city": "Bremerhaven",
-      "dist": 5
-    },
-    {
-      "city": "Wolfsburg",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Hamburg",
-  "size": 6,
-  "lat": 53.55,
-  "lon": 10.0,
-  "neighbors": [
-    {
-      "city": "Bremen",
-      "dist": 4
-    },
-    {
-      "city": "Hanover",
-      "dist": 5
-    },
-    {
-      "city": "Berlin",
-      "dist": 5
-    },
-    {
-      "city": "Lübeck",
-      "dist": 4
-    },
-    {
-      "city": "Kiel",
-      "dist": 4
-    },
-    {
-      "city": "Braunschweig",
-      "dist": 5
-    },
-    {
-      "city": "Oldenburg",
-      "dist": 4
-    },
-    {
-      "city": "Rostock",
-      "dist": 5
-    },
-    {
-      "city": "Magdeburg",
-      "dist": 5
-    },
-    {
-      "city": "Bremerhaven",
-      "dist": 3
-    },
-    {
-      "city": "Wolfsburg",
-      "dist": 5
-    },
-    {
-      "city": "Osnabrück",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Munich",
-  "size": 6,
-  "lat": 48.13333333333333,
-  "lon": 11.566666666666666,
-  "neighbors": [
-    {
-      "city": "Augsburg",
-      "dist": 4
-    },
-    {
-      "city": "Nuremberg",
-      "dist": 5
-    },
-    {
-      "city": "Stuttgart",
-      "dist": 6
-    },
-    {
-      "city": "Chemnitz",
-      "dist": 6
-    },
-    {
-      "city": "Erfurt",
-      "dist": 6
-    },
-    {
-      "city": "Freiburg i.B.",
-      "dist": 6
-    },
-    {
-      "city": "Regensburg",
-      "dist": 5
-    },
-    {
-      "city": "Heidelberg",
-      "dist": 6
-    },
-    {
-      "city": "Dresden",
-      "dist": 6
-    },
-    {
-      "city": "Ingolstadt",
-      "dist": 4
-    },
-    {
-      "city": "Fürth",
-      "dist": 5
-    },
-    {
-      "city": "Würzburg",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Cologne",
-  "size": 5,
-  "lat": 50.93333333333333,
-  "lon": 6.95,
-  "neighbors": [
-    {
-      "city": "Bonn",
-      "dist": 3
-    },
-    {
-      "city": "Düsseldorf",
-      "dist": 4
-    },
-    {
-      "city": "Wuppertal",
-      "dist": 4
-    },
-    {
-      "city": "Mönchengladbach",
-      "dist": 4
-    },
-    {
-      "city": "Krefeld",
-      "dist": 4
-    },
-    {
-      "city": "Aachen",
-      "dist": 4
-    },
-    {
-      "city": "Leverkusen",
-      "dist": 2
-    },
-    {
-      "city": "Solingen",
-      "dist": 3
-    },
-    {
-      "city": "Mülheim a.d.R.",
-      "dist": 4
-    },
-    {
-      "city": "Bergisch Gladbach",
-      "dist": 3
-    },
-    {
-      "city": "Neuss",
-      "dist": 4
-    },
-    {
-      "city": "Essen",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Frankfurt",
-  "size": 5,
-  "lat": 50.11666666666667,
-  "lon": 8.683333333333334,
-  "neighbors": [
-    {
-      "city": "Wiesbaden",
-      "dist": 2
-    },
-    {
-      "city": "Mannheim",
-      "dist": 4
-    },
-    {
-      "city": "Bonn",
-      "dist": 4
-    },
-    {
-      "city": "Mainz",
-      "dist": 3
-    },
-    {
-      "city": "Aachen",
-      "dist": 5
-    },
-    {
-      "city": "Cologne",
-      "dist": 5
-    },
-    {
-      "city": "Darmstadt",
-      "dist": 3
-    },
-    {
-      "city": "Ludwigshafen a.R.",
-      "dist": 4
-    },
-    {
-      "city": "Heidelberg",
-      "dist": 4
-    },
-    {
-      "city": "Offenbach a.M.",
-      "dist": 1
-    },
-    {
-      "city": "Koblenz",
-      "dist": 3
-    },
-    {
-      "city": "Würzburg",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Stuttgart",
-  "size": 4,
-  "lat": 48.78333333333333,
-  "lon": 9.183333333333334,
-  "neighbors": [
-    {
-      "city": "Karlsruhe",
-      "dist": 4
-    },
-    {
-      "city": "Mannheim",
-      "dist": 5
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 5
-    },
-    {
-      "city": "Mainz",
-      "dist": 5
-    },
-    {
-      "city": "Wiesbaden",
-      "dist": 5
-    },
-    {
-      "city": "Freiburg i.B.",
-      "dist": 5
-    },
-    {
-      "city": "Heidelberg",
-      "dist": 4
-    },
-    {
-      "city": "Ludwigshafen a.R.",
-      "dist": 5
-    },
-    {
-      "city": "Augsburg",
-      "dist": 5
-    },
-    {
-      "city": "Reutlingen",
-      "dist": 4
-    },
-    {
-      "city": "Heilbronn",
-      "dist": 4
-    },
-    {
-      "city": "Pforzheim",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Düsseldorf",
-  "size": 4,
-  "lat": 51.233333333333334,
-  "lon": 6.783333333333333,
-  "neighbors": [
-    {
-      "city": "Duisburg",
-      "dist": 3
-    },
-    {
-      "city": "Essen",
-      "dist": 4
-    },
-    {
-      "city": "Cologne",
-      "dist": 4
-    },
-    {
-      "city": "Krefeld",
-      "dist": 3
-    },
-    {
-      "city": "Oberhausen",
-      "dist": 3
-    },
-    {
-      "city": "Mönchengladbach",
-      "dist": 3
-    },
-    {
-      "city": "Neuss",
-      "dist": 2
-    },
-    {
-      "city": "Mülheim a.d.R.",
-      "dist": 3
-    },
-    {
-      "city": "Solingen",
-      "dist": 3
-    },
-    {
-      "city": "Leverkusen",
-      "dist": 3
-    },
-    {
-      "city": "Bergisch Gladbach",
-      "dist": 3
-    },
-    {
-      "city": "Bottrop",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Dortmund",
-  "size": 4,
-  "lat": 51.516666666666666,
-  "lon": 7.466666666666667,
-  "neighbors": [
-    {
-      "city": "Bochum",
-      "dist": 3
-    },
-    {
-      "city": "Wuppertal",
-      "dist": 4
-    },
-    {
-      "city": "Essen",
-      "dist": 4
-    },
-    {
-      "city": "Gelsenkirchen",
-      "dist": 4
-    },
-    {
-      "city": "Münster",
-      "dist": 4
-    },
-    {
-      "city": "Duisburg",
-      "dist": 4
-    },
-    {
-      "city": "Hagen",
-      "dist": 3
-    },
-    {
-      "city": "Herne",
-      "dist": 3
-    },
-    {
-      "city": "Hamm",
-      "dist": 4
-    },
-    {
-      "city": "Recklinghausen",
-      "dist": 4
-    },
-    {
-      "city": "Solingen",
-      "dist": 4
-    },
-    {
-      "city": "Bottrop",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Essen",
-  "size": 4,
-  "lat": 51.45,
-  "lon": 7.016666666666667,
-  "neighbors": [
-    {
-      "city": "Bochum",
-      "dist": 3
-    },
-    {
-      "city": "Duisburg",
-      "dist": 3
-    },
-    {
-      "city": "Düsseldorf",
-      "dist": 4
-    },
-    {
-      "city": "Gelsenkirchen",
-      "dist": 2
-    },
-    {
-      "city": "Oberhausen",
-      "dist": 3
-    },
-    {
-      "city": "Wuppertal",
-      "dist": 3
-    },
-    {
-      "city": "Mülheim a.d.R.",
-      "dist": 3
-    },
-    {
-      "city": "Herne",
-      "dist": 3
-    },
-    {
-      "city": "Solingen",
-      "dist": 3
-    },
-    {
-      "city": "Bottrop",
-      "dist": 3
-    },
-    {
-      "city": "Recklinghausen",
-      "dist": 3
-    },
-    {
-      "city": "Neuss",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Leipzig",
-  "size": 4,
-  "lat": 51.333333333333336,
-  "lon": 12.383333333333333,
-  "neighbors": [
-    {
-      "city": "Dresden",
-      "dist": 5
-    },
-    {
-      "city": "Berlin",
-      "dist": 5
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 5
-    },
-    {
-      "city": "Halle/S",
-      "dist": 4
-    },
-    {
-      "city": "Chemnitz",
-      "dist": 4
-    },
-    {
-      "city": "Nuremberg",
-      "dist": 5
-    },
-    {
-      "city": "Magdeburg",
-      "dist": 5
-    },
-    {
-      "city": "Erfurt",
-      "dist": 5
-    },
-    {
-      "city": "Mannheim",
-      "dist": 5
-    },
-    {
-      "city": "Potsdam",
-      "dist": 5
-    },
-    {
-      "city": "Würzburg",
-      "dist": 5
-    },
-    {
-      "city": "Darmstadt",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Bremen",
-  "size": 4,
-  "lat": 53.083333333333336,
-  "lon": 8.8,
-  "neighbors": [
-    {
-      "city": "Hamburg",
-      "dist": 4
-    },
-    {
-      "city": "Hanover",
-      "dist": 5
-    },
-    {
-      "city": "Dortmund",
-      "dist": 5
-    },
-    {
-      "city": "Lübeck",
-      "dist": 4
-    },
-    {
-      "city": "Bielefeld",
-      "dist": 5
-    },
-    {
-      "city": "Kiel",
-      "dist": 5
-    },
-    {
-      "city": "Oldenburg",
-      "dist": 3
-    },
-    {
-      "city": "Osnabrück",
-      "dist": 5
-    },
-    {
-      "city": "Rostock",
-      "dist": 5
-    },
-    {
-      "city": "Bremerhaven",
-      "dist": 4
-    },
-    {
-      "city": "Paderborn",
-      "dist": 5
-    },
-    {
-      "city": "Wolfsburg",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Dresden",
-  "size": 4,
-  "lat": 51.03333333333333,
-  "lon": 13.733333333333333,
-  "neighbors": [
-    {
-      "city": "Leipzig",
-      "dist": 5
-    },
-    {
-      "city": "Berlin",
-      "dist": 5
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 5
-    },
-    {
-      "city": "Chemnitz",
-      "dist": 4
-    },
-    {
-      "city": "Halle/S",
-      "dist": 5
-    },
-    {
-      "city": "Mannheim",
-      "dist": 5
-    },
-    {
-      "city": "Darmstadt",
-      "dist": 5
-    },
-    {
-      "city": "Potsdam",
-      "dist": 5
-    },
-    {
-      "city": "Ludwigshafen a.R.",
-      "dist": 5
-    },
-    {
-      "city": "Würzburg",
-      "dist": 5
-    },
-    {
-      "city": "Trier",
-      "dist": 5
-    },
-    {
-      "city": "Fürth",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Hanover",
-  "size": 4,
-  "lat": 52.36666666666667,
-  "lon": 9.716666666666667,
-  "neighbors": [
-    {
-      "city": "Bremen",
-      "dist": 5
-    },
-    {
-      "city": "Bielefeld",
-      "dist": 5
-    },
-    {
-      "city": "Hamburg",
-      "dist": 5
-    },
-    {
-      "city": "Braunschweig",
-      "dist": 4
-    },
-    {
-      "city": "Kassel",
-      "dist": 5
-    },
-    {
-      "city": "Lübeck",
-      "dist": 5
-    },
-    {
-      "city": "Paderborn",
-      "dist": 5
-    },
-    {
-      "city": "Oldenburg",
-      "dist": 5
-    },
-    {
-      "city": "Osnabrück",
-      "dist": 5
-    },
-    {
-      "city": "Göttingen",
-      "dist": 5
-    },
-    {
-      "city": "Wolfsburg",
-      "dist": 5
-    },
-    {
-      "city": "Magdeburg",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Nuremberg",
-  "size": 4,
-  "lat": 49.45,
-  "lon": 11.083333333333334,
-  "neighbors": [
-    {
-      "city": "Augsburg",
-      "dist": 5
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 5
-    },
-    {
-      "city": "Munich",
-      "dist": 5
-    },
-    {
-      "city": "Chemnitz",
-      "dist": 5
-    },
-    {
-      "city": "Bonn",
-      "dist": 5
-    },
-    {
-      "city": "Wiesbaden",
-      "dist": 5
-    },
-    {
-      "city": "Regensburg",
-      "dist": 5
-    },
-    {
-      "city": "Darmstadt",
-      "dist": 5
-    },
-    {
-      "city": "Cologne",
-      "dist": 5
-    },
-    {
-      "city": "Fürth",
-      "dist": 2
-    },
-    {
-      "city": "Ingolstadt",
-      "dist": 4
-    },
-    {
-      "city": "Würzburg",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Duisburg",
-  "size": 4,
-  "lat": 51.43333333333333,
-  "lon": 6.766666666666667,
-  "neighbors": [
-    {
-      "city": "Düsseldorf",
-      "dist": 3
-    },
-    {
-      "city": "Essen",
-      "dist": 3
-    },
-    {
-      "city": "Cologne",
-      "dist": 4
-    },
-    {
-      "city": "Oberhausen",
-      "dist": 2
-    },
-    {
-      "city": "Krefeld",
-      "dist": 3
-    },
-    {
-      "city": "Gelsenkirchen",
-      "dist": 4
-    },
-    {
-      "city": "Mülheim a.d.R.",
-      "dist": 2
-    },
-    {
-      "city": "Neuss",
-      "dist": 3
-    },
-    {
-      "city": "Mönchengladbach",
-      "dist": 4
-    },
-    {
-      "city": "Bottrop",
-      "dist": 3
-    },
-    {
-      "city": "Solingen",
-      "dist": 4
-    },
-    {
-      "city": "Wuppertal",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Bochum",
-  "size": 4,
-  "lat": 51.483333333333334,
-  "lon": 7.216666666666667,
-  "neighbors": [
-    {
-      "city": "Essen",
-      "dist": 3
-    },
-    {
-      "city": "Wuppertal",
-      "dist": 3
-    },
-    {
-      "city": "Dortmund",
-      "dist": 3
-    },
-    {
-      "city": "Gelsenkirchen",
-      "dist": 3
-    },
-    {
-      "city": "Oberhausen",
-      "dist": 4
-    },
-    {
-      "city": "Duisburg",
-      "dist": 4
-    },
-    {
-      "city": "Herne",
-      "dist": 2
-    },
-    {
-      "city": "Hagen",
-      "dist": 3
-    },
-    {
-      "city": "Mülheim a.d.R.",
-      "dist": 4
-    },
-    {
-      "city": "Recklinghausen",
-      "dist": 3
-    },
-    {
-      "city": "Bottrop",
-      "dist": 3
-    },
-    {
-      "city": "Solingen",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Wuppertal",
-  "size": 4,
-  "lat": 51.266666666666666,
-  "lon": 7.183333333333334,
-  "neighbors": [
-    {
-      "city": "Bochum",
-      "dist": 3
-    },
-    {
-      "city": "Essen",
-      "dist": 3
-    },
-    {
-      "city": "Düsseldorf",
-      "dist": 4
-    },
-    {
-      "city": "Gelsenkirchen",
-      "dist": 3
-    },
-    {
-      "city": "Dortmund",
-      "dist": 4
-    },
-    {
-      "city": "Cologne",
-      "dist": 4
-    },
-    {
-      "city": "Solingen",
-      "dist": 3
-    },
-    {
-      "city": "Hagen",
-      "dist": 3
-    },
-    {
-      "city": "Leverkusen",
-      "dist": 3
-    },
-    {
-      "city": "Bergisch Gladbach",
-      "dist": 3
-    },
-    {
-      "city": "Herne",
-      "dist": 3
-    },
-    {
-      "city": "Mülheim a.d.R.",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Bielefeld",
-  "size": 4,
-  "lat": 52.016666666666666,
-  "lon": 8.533333333333333,
-  "neighbors": [
-    {
-      "city": "Münster",
-      "dist": 5
-    },
-    {
-      "city": "Bremen",
-      "dist": 5
-    },
-    {
-      "city": "Hanover",
-      "dist": 5
-    },
-    {
-      "city": "Dortmund",
-      "dist": 5
-    },
-    {
-      "city": "Kassel",
-      "dist": 5
-    },
-    {
-      "city": "Bochum",
-      "dist": 5
-    },
-    {
-      "city": "Paderborn",
-      "dist": 4
-    },
-    {
-      "city": "Osnabrück",
-      "dist": 4
-    },
-    {
-      "city": "Hamm",
-      "dist": 4
-    },
-    {
-      "city": "Oldenburg",
-      "dist": 5
-    },
-    {
-      "city": "Hagen",
-      "dist": 5
-    },
-    {
-      "city": "Gelsenkirchen",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Bonn",
-  "size": 4,
-  "lat": 50.733333333333334,
-  "lon": 7.1,
-  "neighbors": [
-    {
-      "city": "Cologne",
-      "dist": 3
-    },
-    {
-      "city": "Wuppertal",
-      "dist": 4
-    },
-    {
-      "city": "Düsseldorf",
-      "dist": 4
-    },
-    {
-      "city": "Aachen",
-      "dist": 4
-    },
-    {
-      "city": "Mönchengladbach",
-      "dist": 4
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 4
-    },
-    {
-      "city": "Leverkusen",
-      "dist": 4
-    },
-    {
-      "city": "Solingen",
-      "dist": 4
-    },
-    {
-      "city": "Wiesbaden",
-      "dist": 4
-    },
-    {
-      "city": "Bergisch Gladbach",
-      "dist": 4
-    },
-    {
-      "city": "Koblenz",
-      "dist": 4
-    },
-    {
-      "city": "Neuss",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Münster",
-  "size": 4,
-  "lat": 51.96666666666667,
-  "lon": 7.633333333333333,
-  "neighbors": [
-    {
-      "city": "Dortmund",
-      "dist": 4
-    },
-    {
-      "city": "Bochum",
-      "dist": 4
-    },
-    {
-      "city": "Essen",
-      "dist": 4
-    },
-    {
-      "city": "Gelsenkirchen",
-      "dist": 4
-    },
-    {
-      "city": "Wuppertal",
-      "dist": 5
-    },
-    {
-      "city": "Bielefeld",
-      "dist": 5
-    },
-    {
-      "city": "Hamm",
-      "dist": 4
-    },
-    {
-      "city": "Osnabrück",
-      "dist": 4
-    },
-    {
-      "city": "Hagen",
-      "dist": 4
-    },
-    {
-      "city": "Herne",
-      "dist": 4
-    },
-    {
-      "city": "Recklinghausen",
-      "dist": 4
-    },
-    {
-      "city": "Bottrop",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Karlsruhe",
-  "size": 3,
-  "lat": 49.0,
-  "lon": 8.4,
-  "neighbors": [
-    {
-      "city": "Mannheim",
-      "dist": 4
-    },
-    {
-      "city": "Stuttgart",
-      "dist": 4
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 5
-    },
-    {
-      "city": "Mainz",
-      "dist": 5
-    },
-    {
-      "city": "Wiesbaden",
-      "dist": 5
-    },
-    {
-      "city": "Freiburg i.B.",
-      "dist": 5
-    },
-    {
-      "city": "Ludwigshafen a.R.",
-      "dist": 4
-    },
-    {
-      "city": "Heidelberg",
-      "dist": 4
-    },
-    {
-      "city": "Saarbrücken",
-      "dist": 5
-    },
-    {
-      "city": "Pforzheim",
-      "dist": 4
-    },
-    {
-      "city": "Heilbronn",
-      "dist": 4
-    },
-    {
-      "city": "Darmstadt",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Mannheim",
-  "size": 3,
-  "lat": 49.483333333333334,
-  "lon": 8.466666666666667,
-  "neighbors": [
-    {
-      "city": "Karlsruhe",
-      "dist": 4
-    },
-    {
-      "city": "Wiesbaden",
-      "dist": 4
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 4
-    },
-    {
-      "city": "Mainz",
-      "dist": 4
-    },
-    {
-      "city": "Stuttgart",
-      "dist": 5
-    },
-    {
-      "city": "Bonn",
-      "dist": 5
-    },
-    {
-      "city": "Ludwigshafen a.R.",
-      "dist": 1
-    },
-    {
-      "city": "Heidelberg",
-      "dist": 3
-    },
-    {
-      "city": "Saarbrücken",
-      "dist": 5
-    },
-    {
-      "city": "Darmstadt",
-      "dist": 4
-    },
-    {
-      "city": "Pforzheim",
-      "dist": 4
-    },
-    {
-      "city": "Offenbach a.M.",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Augsburg",
-  "size": 3,
-  "lat": 48.36666666666667,
-  "lon": 10.9,
-  "neighbors": [
-    {
-      "city": "Munich",
-      "dist": 4
-    },
-    {
-      "city": "Nuremberg",
-      "dist": 5
-    },
-    {
-      "city": "Stuttgart",
-      "dist": 5
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 6
-    },
-    {
-      "city": "Karlsruhe",
-      "dist": 6
-    },
-    {
-      "city": "Leipzig",
-      "dist": 6
-    },
-    {
-      "city": "Regensburg",
-      "dist": 5
-    },
-    {
-      "city": "Heidelberg",
-      "dist": 6
-    },
-    {
-      "city": "Darmstadt",
-      "dist": 6
-    },
-    {
-      "city": "Ingolstadt",
-      "dist": 4
-    },
-    {
-      "city": "Ulm",
-      "dist": 5
-    },
-    {
-      "city": "Fürth",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Wiesbaden",
-  "size": 3,
-  "lat": 50.083333333333336,
-  "lon": 8.233333333333333,
-  "neighbors": [
-    {
-      "city": "Frankfurt",
-      "dist": 2
-    },
-    {
-      "city": "Mannheim",
-      "dist": 4
-    },
-    {
-      "city": "Bonn",
-      "dist": 4
-    },
-    {
-      "city": "Mainz",
-      "dist": 2
-    },
-    {
-      "city": "Aachen",
-      "dist": 4
-    },
-    {
-      "city": "Cologne",
-      "dist": 5
-    },
-    {
-      "city": "Darmstadt",
-      "dist": 3
-    },
-    {
-      "city": "Ludwigshafen a.R.",
-      "dist": 4
-    },
-    {
-      "city": "Heidelberg",
-      "dist": 4
-    },
-    {
-      "city": "Offenbach a.M.",
-      "dist": 2
-    },
-    {
-      "city": "Koblenz",
-      "dist": 3
-    },
-    {
-      "city": "Würzburg",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Gelsenkirchen",
-  "size": 3,
-  "lat": 51.516666666666666,
-  "lon": 7.1,
-  "neighbors": [
-    {
-      "city": "Essen",
-      "dist": 2
-    },
-    {
-      "city": "Bochum",
-      "dist": 3
-    },
-    {
-      "city": "Duisburg",
-      "dist": 4
-    },
-    {
-      "city": "Herne",
-      "dist": 3
-    },
-    {
-      "city": "Mülheim a.d.R.",
-      "dist": 3
-    },
-    {
-      "city": "Oberhausen",
-      "dist": 3
-    },
-    {
-      "city": "Recklinghausen",
-      "dist": 2
-    },
-    {
-      "city": "Bottrop",
-      "dist": 3
-    },
-    {
-      "city": "Wuppertal",
-      "dist": 3
-    }
-  ]
-}, {
-  "name": "Mönchengladbach",
-  "size": 3,
-  "lat": 51.2,
-  "lon": 6.433333333333334,
-  "neighbors": [
-    {
-      "city": "Krefeld",
-      "dist": 3
-    },
-    {
-      "city": "Düsseldorf",
-      "dist": 3
-    },
-    {
-      "city": "Duisburg",
-      "dist": 4
-    },
-    {
-      "city": "Neuss",
-      "dist": 3
-    },
-    {
-      "city": "Leverkusen",
-      "dist": 4
-    },
-    {
-      "city": "Oberhausen",
-      "dist": 4
-    },
-    {
-      "city": "Mülheim a.d.R.",
-      "dist": 4
-    },
-    {
-      "city": "Cologne",
-      "dist": 4
-    },
-    {
-      "city": "Aachen",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Braunschweig",
-  "size": 3,
-  "lat": 52.266666666666666,
-  "lon": 10.516666666666667,
-  "neighbors": [
-    {
-      "city": "Hanover",
-      "dist": 4
-    },
-    {
-      "city": "Magdeburg",
-      "dist": 5
-    },
-    {
-      "city": "Hamburg",
-      "dist": 5
-    },
-    {
-      "city": "Erfurt",
-      "dist": 5
-    },
-    {
-      "city": "Kassel",
-      "dist": 5
-    },
-    {
-      "city": "Bremen",
-      "dist": 5
-    },
-    {
-      "city": "Wolfsburg",
-      "dist": 3
-    },
-    {
-      "city": "Göttingen",
-      "dist": 5
-    },
-    {
-      "city": "Lübeck",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Chemnitz",
-  "size": 3,
-  "lat": 50.833333333333336,
-  "lon": 12.916666666666666,
-  "neighbors": [
-    {
-      "city": "Dresden",
-      "dist": 4
-    },
-    {
-      "city": "Leipzig",
-      "dist": 4
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 5
-    },
-    {
-      "city": "Halle/S",
-      "dist": 5
-    },
-    {
-      "city": "Darmstadt",
-      "dist": 5
-    },
-    {
-      "city": "Mainz",
-      "dist": 5
-    },
-    {
-      "city": "Würzburg",
-      "dist": 5
-    },
-    {
-      "city": "Trier",
-      "dist": 5
-    },
-    {
-      "city": "Offenbach a.M.",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Kiel",
-  "size": 3,
-  "lat": 54.333333333333336,
-  "lon": 10.133333333333333,
-  "neighbors": [
-    {
-      "city": "Lübeck",
-      "dist": 4
-    },
-    {
-      "city": "Hamburg",
-      "dist": 4
-    },
-    {
-      "city": "Bremen",
-      "dist": 5
-    },
-    {
-      "city": "Oldenburg",
-      "dist": 5
-    },
-    {
-      "city": "Rostock",
-      "dist": 5
-    },
-    {
-      "city": "Berlin",
-      "dist": 5
-    },
-    {
-      "city": "Bremerhaven",
-      "dist": 5
-    },
-    {
-      "city": "Wolfsburg",
-      "dist": 5
-    },
-    {
-      "city": "Potsdam",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Aachen",
-  "size": 3,
-  "lat": 50.78333333333333,
-  "lon": 6.083333333333333,
-  "neighbors": [
-    {
-      "city": "Mönchengladbach",
-      "dist": 4
-    },
-    {
-      "city": "Bonn",
-      "dist": 4
-    },
-    {
-      "city": "Cologne",
-      "dist": 4
-    },
-    {
-      "city": "Neuss",
-      "dist": 4
-    },
-    {
-      "city": "Leverkusen",
-      "dist": 4
-    },
-    {
-      "city": "Krefeld",
-      "dist": 4
-    },
-    {
-      "city": "Koblenz",
-      "dist": 4
-    },
-    {
-      "city": "Düsseldorf",
-      "dist": 4
-    },
-    {
-      "city": "Solingen",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Halle/S",
-  "size": 3,
-  "lat": 51.483333333333334,
-  "lon": 11.966666666666667,
-  "neighbors": [
-    {
-      "city": "Leipzig",
-      "dist": 4
-    },
-    {
-      "city": "Magdeburg",
-      "dist": 4
-    },
-    {
-      "city": "Chemnitz",
-      "dist": 5
-    },
-    {
-      "city": "Erfurt",
-      "dist": 5
-    },
-    {
-      "city": "Potsdam",
-      "dist": 5
-    },
-    {
-      "city": "Dresden",
-      "dist": 5
-    },
-    {
-      "city": "Wolfsburg",
-      "dist": 5
-    },
-    {
-      "city": "Braunschweig",
-      "dist": 5
-    },
-    {
-      "city": "Berlin",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Magdeburg",
-  "size": 3,
-  "lat": 52.13333333333333,
-  "lon": 11.616666666666667,
-  "neighbors": [
-    {
-      "city": "Halle/S",
-      "dist": 4
-    },
-    {
-      "city": "Braunschweig",
-      "dist": 5
-    },
-    {
-      "city": "Leipzig",
-      "dist": 5
-    },
-    {
-      "city": "Erfurt",
-      "dist": 5
-    },
-    {
-      "city": "Potsdam",
-      "dist": 5
-    },
-    {
-      "city": "Berlin",
-      "dist": 5
-    },
-    {
-      "city": "Wolfsburg",
-      "dist": 4
-    },
-    {
-      "city": "Hamburg",
-      "dist": 5
-    },
-    {
-      "city": "Hanover",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Freiburg i.B.",
-  "size": 3,
-  "lat": 47.983333333333334,
-  "lon": 7.85,
-  "neighbors": [
-    {
-      "city": "Karlsruhe",
-      "dist": 5
-    },
-    {
-      "city": "Stuttgart",
-      "dist": 5
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 6
-    },
-    {
-      "city": "Saarbrücken",
-      "dist": 5
-    },
-    {
-      "city": "Ludwigshafen a.R.",
-      "dist": 5
-    },
-    {
-      "city": "Mannheim",
-      "dist": 5
-    },
-    {
-      "city": "Pforzheim",
-      "dist": 5
-    },
-    {
-      "city": "Reutlingen",
-      "dist": 5
-    },
-    {
-      "city": "Heidelberg",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Krefeld",
-  "size": 3,
-  "lat": 51.333333333333336,
-  "lon": 6.566666666666666,
-  "neighbors": [
-    {
-      "city": "Mönchengladbach",
-      "dist": 3
-    },
-    {
-      "city": "Duisburg",
-      "dist": 3
-    },
-    {
-      "city": "Düsseldorf",
-      "dist": 3
-    },
-    {
-      "city": "Neuss",
-      "dist": 3
-    },
-    {
-      "city": "Oberhausen",
-      "dist": 3
-    },
-    {
-      "city": "Mülheim a.d.R.",
-      "dist": 4
-    },
-    {
-      "city": "Bottrop",
-      "dist": 4
-    },
-    {
-      "city": "Essen",
-      "dist": 4
-    },
-    {
-      "city": "Leverkusen",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Lübeck",
-  "size": 3,
-  "lat": 53.86666666666667,
-  "lon": 10.683333333333334,
-  "neighbors": [
-    {
-      "city": "Hamburg",
-      "dist": 4
-    },
-    {
-      "city": "Kiel",
-      "dist": 4
-    },
-    {
-      "city": "Bremen",
-      "dist": 4
-    },
-    {
-      "city": "Oldenburg",
-      "dist": 4
-    },
-    {
-      "city": "Rostock",
-      "dist": 4
-    },
-    {
-      "city": "Berlin",
-      "dist": 5
-    },
-    {
-      "city": "Bremerhaven",
-      "dist": 4
-    },
-    {
-      "city": "Wolfsburg",
-      "dist": 5
-    },
-    {
-      "city": "Hanover",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Oberhausen",
-  "size": 3,
-  "lat": 51.46666666666667,
-  "lon": 6.85,
-  "neighbors": [
-    {
-      "city": "Duisburg",
-      "dist": 2
-    },
-    {
-      "city": "Essen",
-      "dist": 3
-    },
-    {
-      "city": "Düsseldorf",
-      "dist": 3
-    },
-    {
-      "city": "Mülheim a.d.R.",
-      "dist": 2
-    },
-    {
-      "city": "Gelsenkirchen",
-      "dist": 3
-    },
-    {
-      "city": "Krefeld",
-      "dist": 3
-    },
-    {
-      "city": "Bottrop",
-      "dist": 2
-    },
-    {
-      "city": "Neuss",
-      "dist": 3
-    },
-    {
-      "city": "Bochum",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Erfurt",
-  "size": 3,
-  "lat": 50.983333333333334,
-  "lon": 11.033333333333333,
-  "neighbors": [
-    {
-      "city": "Halle/S",
-      "dist": 5
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 5
-    },
-    {
-      "city": "Leipzig",
-      "dist": 5
-    },
-    {
-      "city": "Chemnitz",
-      "dist": 5
-    },
-    {
-      "city": "Mainz",
-      "dist": 5
-    },
-    {
-      "city": "Wiesbaden",
-      "dist": 5
-    },
-    {
-      "city": "Offenbach a.M.",
-      "dist": 5
-    },
-    {
-      "city": "Göttingen",
-      "dist": 5
-    },
-    {
-      "city": "Darmstadt",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Mainz",
-  "size": 3,
-  "lat": 50.0,
-  "lon": 8.266666666666667,
-  "neighbors": [
-    {
-      "city": "Wiesbaden",
-      "dist": 2
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 3
-    },
-    {
-      "city": "Mannheim",
-      "dist": 4
-    },
-    {
-      "city": "Darmstadt",
-      "dist": 3
-    },
-    {
-      "city": "Ludwigshafen a.R.",
-      "dist": 4
-    },
-    {
-      "city": "Heidelberg",
-      "dist": 4
-    },
-    {
-      "city": "Offenbach a.M.",
-      "dist": 3
-    },
-    {
-      "city": "Koblenz",
-      "dist": 4
-    },
-    {
-      "city": "Würzburg",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Rostock",
-  "size": 3,
-  "lat": 54.083333333333336,
-  "lon": 12.133333333333333,
-  "neighbors": [
-    {
-      "city": "Lübeck",
-      "dist": 4
-    },
-    {
-      "city": "Hamburg",
-      "dist": 5
-    },
-    {
-      "city": "Bremen",
-      "dist": 5
-    },
-    {
-      "city": "Oldenburg",
-      "dist": 5
-    },
-    {
-      "city": "Kiel",
-      "dist": 5
-    },
-    {
-      "city": "Berlin",
-      "dist": 5
-    },
-    {
-      "city": "Bremerhaven",
-      "dist": 5
-    },
-    {
-      "city": "Wolfsburg",
-      "dist": 5
-    },
-    {
-      "city": "Potsdam",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Kassel",
-  "size": 3,
-  "lat": 51.31666666666667,
-  "lon": 9.5,
-  "neighbors": [
-    {
-      "city": "Hanover",
-      "dist": 5
-    },
-    {
-      "city": "Bielefeld",
-      "dist": 5
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 5
-    },
-    {
-      "city": "Paderborn",
-      "dist": 4
-    },
-    {
-      "city": "Erfurt",
-      "dist": 5
-    },
-    {
-      "city": "Wiesbaden",
-      "dist": 5
-    },
-    {
-      "city": "Göttingen",
-      "dist": 4
-    },
-    {
-      "city": "Offenbach a.M.",
-      "dist": 5
-    },
-    {
-      "city": "Braunschweig",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Hagen",
-  "size": 3,
-  "lat": 51.36666666666667,
-  "lon": 7.483333333333333,
-  "neighbors": [
-    {
-      "city": "Dortmund",
-      "dist": 3
-    },
-    {
-      "city": "Bochum",
-      "dist": 3
-    },
-    {
-      "city": "Essen",
-      "dist": 4
-    },
-    {
-      "city": "Wuppertal",
-      "dist": 3
-    },
-    {
-      "city": "Herne",
-      "dist": 4
-    },
-    {
-      "city": "Gelsenkirchen",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Hamm",
-  "size": 3,
-  "lat": 51.68333333333333,
-  "lon": 7.816666666666666,
-  "neighbors": [
-    {
-      "city": "Münster",
-      "dist": 4
-    },
-    {
-      "city": "Dortmund",
-      "dist": 4
-    },
-    {
-      "city": "Bochum",
-      "dist": 4
-    },
-    {
-      "city": "Hagen",
-      "dist": 4
-    },
-    {
-      "city": "Herne",
-      "dist": 4
-    },
-    {
-      "city": "Osnabrück",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Saarbrücken",
-  "size": 3,
-  "lat": 49.233333333333334,
-  "lon": 7.0,
-  "neighbors": [
-    {
-      "city": "Mainz",
-      "dist": 5
-    },
-    {
-      "city": "Wiesbaden",
-      "dist": 5
-    },
-    {
-      "city": "Mannheim",
-      "dist": 5
-    },
-    {
-      "city": "Trier",
-      "dist": 4
-    },
-    {
-      "city": "Koblenz",
-      "dist": 5
-    },
-    {
-      "city": "Ludwigshafen a.R.",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Mülheim a.d.R.",
-  "size": 3,
-  "lat": 51.43333333333333,
-  "lon": 6.883333333333333,
-  "neighbors": [
-    {
-      "city": "Oberhausen",
-      "dist": 2
-    },
-    {
-      "city": "Duisburg",
-      "dist": 2
-    },
-    {
-      "city": "Essen",
-      "dist": 3
-    },
-    {
-      "city": "Bottrop",
-      "dist": 2
-    },
-    {
-      "city": "Düsseldorf",
-      "dist": 3
-    },
-    {
-      "city": "Gelsenkirchen",
-      "dist": 3
-    }
-  ]
-}, {
-  "name": "Potsdam",
-  "size": 3,
-  "lat": 52.4,
-  "lon": 13.066666666666666,
-  "neighbors": [
-    {
-      "city": "Berlin",
-      "dist": 3
-    },
-    {
-      "city": "Leipzig",
-      "dist": 5
-    },
-    {
-      "city": "Hamburg",
-      "dist": 5
-    },
-    {
-      "city": "Magdeburg",
-      "dist": 5
-    },
-    {
-      "city": "Halle/S",
-      "dist": 5
-    },
-    {
-      "city": "Dresden",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Ludwigshafen a.R.",
-  "size": 3,
-  "lat": 49.483333333333334,
-  "lon": 8.433333333333334,
-  "neighbors": [
-    {
-      "city": "Mannheim",
-      "dist": 1
-    },
-    {
-      "city": "Heidelberg",
-      "dist": 3
-    },
-    {
-      "city": "Karlsruhe",
-      "dist": 4
-    },
-    {
-      "city": "Darmstadt",
-      "dist": 4
-    },
-    {
-      "city": "Mainz",
-      "dist": 4
-    },
-    {
-      "city": "Wiesbaden",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Oldenburg",
-  "size": 3,
-  "lat": 53.13333333333333,
-  "lon": 8.216666666666667,
-  "neighbors": [
-    {
-      "city": "Bremen",
-      "dist": 3
-    },
-    {
-      "city": "Hamburg",
-      "dist": 4
-    },
-    {
-      "city": "Dortmund",
-      "dist": 5
-    },
-    {
-      "city": "Bremerhaven",
-      "dist": 4
-    },
-    {
-      "city": "Lübeck",
-      "dist": 4
-    },
-    {
-      "city": "Osnabrück",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Leverkusen",
-  "size": 3,
-  "lat": 51.03333333333333,
-  "lon": 6.983333333333333,
-  "neighbors": [
-    {
-      "city": "Cologne",
-      "dist": 2
-    },
-    {
-      "city": "Solingen",
-      "dist": 3
-    },
-    {
-      "city": "Düsseldorf",
-      "dist": 3
-    },
-    {
-      "city": "Bergisch Gladbach",
-      "dist": 3
-    },
-    {
-      "city": "Neuss",
-      "dist": 3
-    },
-    {
-      "city": "Wuppertal",
-      "dist": 3
-    }
-  ]
-}, {
-  "name": "Osnabrück",
-  "size": 3,
-  "lat": 52.28333333333333,
-  "lon": 8.05,
-  "neighbors": [
-    {
-      "city": "Münster",
-      "dist": 4
-    },
-    {
-      "city": "Bielefeld",
-      "dist": 4
-    },
-    {
-      "city": "Bremen",
-      "dist": 5
-    },
-    {
-      "city": "Hamm",
-      "dist": 4
-    },
-    {
-      "city": "Oldenburg",
-      "dist": 5
-    },
-    {
-      "city": "Dortmund",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Solingen",
-  "size": 3,
-  "lat": 51.166666666666664,
-  "lon": 7.083333333333333,
-  "neighbors": [
-    {
-      "city": "Wuppertal",
-      "dist": 3
-    },
-    {
-      "city": "Leverkusen",
-      "dist": 3
-    },
-    {
-      "city": "Düsseldorf",
-      "dist": 3
-    },
-    {
-      "city": "Bergisch Gladbach",
-      "dist": 2
-    },
-    {
-      "city": "Cologne",
-      "dist": 3
-    },
-    {
-      "city": "Essen",
-      "dist": 3
-    }
-  ]
-}, {
-  "name": "Heidelberg",
-  "size": 3,
-  "lat": 49.416666666666664,
-  "lon": 8.716666666666667,
-  "neighbors": [
-    {
-      "city": "Mannheim",
-      "dist": 3
-    },
-    {
-      "city": "Ludwigshafen a.R.",
-      "dist": 3
-    },
-    {
-      "city": "Karlsruhe",
-      "dist": 4
-    },
-    {
-      "city": "Darmstadt",
-      "dist": 4
-    },
-    {
-      "city": "Heilbronn",
-      "dist": 4
-    },
-    {
-      "city": "Mainz",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Herne",
-  "size": 3,
-  "lat": 51.55,
-  "lon": 7.216666666666667,
-  "neighbors": [
-    {
-      "city": "Bochum",
-      "dist": 2
-    },
-    {
-      "city": "Gelsenkirchen",
-      "dist": 3
-    },
-    {
-      "city": "Essen",
-      "dist": 3
-    },
-    {
-      "city": "Recklinghausen",
-      "dist": 2
-    },
-    {
-      "city": "Dortmund",
-      "dist": 3
-    },
-    {
-      "city": "Wuppertal",
-      "dist": 3
-    }
-  ]
-}, {
-  "name": "Neuss",
-  "size": 3,
-  "lat": 51.2,
-  "lon": 6.7,
-  "neighbors": [
-    {
-      "city": "Düsseldorf",
-      "dist": 2
-    },
-    {
-      "city": "Krefeld",
-      "dist": 3
-    },
-    {
-      "city": "Mönchengladbach",
-      "dist": 3
-    },
-    {
-      "city": "Duisburg",
-      "dist": 3
-    },
-    {
-      "city": "Leverkusen",
-      "dist": 3
-    },
-    {
-      "city": "Mülheim a.d.R.",
-      "dist": 3
-    }
-  ]
-}, {
-  "name": "Darmstadt",
-  "size": 3,
-  "lat": 49.86666666666667,
-  "lon": 8.65,
-  "neighbors": [
-    {
-      "city": "Mainz",
-      "dist": 3
-    },
-    {
-      "city": "Wiesbaden",
-      "dist": 3
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 3
-    },
-    {
-      "city": "Offenbach a.M.",
-      "dist": 3
-    },
-    {
-      "city": "Mannheim",
-      "dist": 4
-    },
-    {
-      "city": "Ludwigshafen a.R.",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Paderborn",
-  "size": 3,
-  "lat": 51.71666666666667,
-  "lon": 8.766666666666667,
-  "neighbors": [
-    {
-      "city": "Bielefeld",
-      "dist": 4
-    },
-    {
-      "city": "Kassel",
-      "dist": 4
-    },
-    {
-      "city": "Hanover",
-      "dist": 5
-    },
-    {
-      "city": "Osnabrück",
-      "dist": 5
-    },
-    {
-      "city": "Hamm",
-      "dist": 5
-    },
-    {
-      "city": "Münster",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Regensburg",
-  "size": 3,
-  "lat": 49.016666666666666,
-  "lon": 12.083333333333334,
-  "neighbors": [
-    {
-      "city": "Nuremberg",
-      "dist": 5
-    },
-    {
-      "city": "Munich",
-      "dist": 5
-    },
-    {
-      "city": "Dresden",
-      "dist": 5
-    },
-    {
-      "city": "Ingolstadt",
-      "dist": 4
-    },
-    {
-      "city": "Fürth",
-      "dist": 5
-    },
-    {
-      "city": "Augsburg",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Ingolstadt",
-  "size": 2,
-  "lat": 48.766666666666666,
-  "lon": 11.433333333333334,
-  "neighbors": [
-    {
-      "city": "Munich",
-      "dist": 4
-    },
-    {
-      "city": "Augsburg",
-      "dist": 4
-    },
-    {
-      "city": "Nuremberg",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Würzburg",
-  "size": 2,
-  "lat": 49.78333333333333,
-  "lon": 9.933333333333334,
-  "neighbors": [
-    {
-      "city": "Offenbach a.M.",
-      "dist": 4
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 4
-    },
-    {
-      "city": "Darmstadt",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Fürth",
-  "size": 2,
-  "lat": 49.46666666666667,
-  "lon": 11.0,
-  "neighbors": [
-    {
-      "city": "Nuremberg",
-      "dist": 2
-    },
-    {
-      "city": "Würzburg",
-      "dist": 4
-    },
-    {
-      "city": "Ingolstadt",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Wolfsburg",
-  "size": 2,
-  "lat": 52.416666666666664,
-  "lon": 10.783333333333333,
-  "neighbors": [
-    {
-      "city": "Braunschweig",
-      "dist": 3
-    },
-    {
-      "city": "Magdeburg",
-      "dist": 4
-    },
-    {
-      "city": "Hanover",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Offenbach a.M.",
-  "size": 2,
-  "lat": 50.1,
-  "lon": 8.8,
-  "neighbors": [
-    {
-      "city": "Frankfurt",
-      "dist": 1
-    },
-    {
-      "city": "Wiesbaden",
-      "dist": 2
-    },
-    {
-      "city": "Mannheim",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Ulm",
-  "size": 0,
-  "lat": 48.4,
-  "lon": 9.983333333333333,
-  "neighbors": [
-    {
-      "city": "Reutlingen",
-      "dist": 4
-    },
-    {
-      "city": "Augsburg",
-      "dist": 5
-    },
-    {
-      "city": "Stuttgart",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Heilbronn",
-  "size": 2,
-  "lat": 49.15,
-  "lon": 9.216666666666667,
-  "neighbors": [
-    {
-      "city": "Stuttgart",
-      "dist": 4
-    },
-    {
-      "city": "Heidelberg",
-      "dist": 4
-    },
-    {
-      "city": "Mannheim",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Pforzheim",
-  "size": 2,
-  "lat": 48.9,
-  "lon": 8.716666666666667,
-  "neighbors": [
-    {
-      "city": "Karlsruhe",
-      "dist": 4
-    },
-    {
-      "city": "Stuttgart",
-      "dist": 4
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Göttingen",
-  "size": 2,
-  "lat": 51.53333333333333,
-  "lon": 9.933333333333334,
-  "neighbors": [
-    {
-      "city": "Kassel",
-      "dist": 4
-    },
-    {
-      "city": "Hanover",
-      "dist": 5
-    },
-    {
-      "city": "Braunschweig",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Bottrop",
-  "size": 2,
-  "lat": 51.516666666666666,
-  "lon": 6.916666666666667,
-  "neighbors": [
-    {
-      "city": "Oberhausen",
-      "dist": 2
-    },
-    {
-      "city": "Mülheim a.d.R.",
-      "dist": 2
-    },
-    {
-      "city": "Essen",
-      "dist": 3
-    }
-  ]
-}, {
-  "name": "Trier",
-  "size": 2,
-  "lat": 49.75,
-  "lon": 6.633333333333333,
-  "neighbors": [
-    {
-      "city": "Saarbrücken",
-      "dist": 4
-    },
-    {
-      "city": "Koblenz",
-      "dist": 4
-    },
-    {
-      "city": "Wiesbaden",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Recklinghausen",
-  "size": 2,
-  "lat": 51.583333333333336,
-  "lon": 7.15,
-  "neighbors": [
-    {
-      "city": "Herne",
-      "dist": 2
-    },
-    {
-      "city": "Gelsenkirchen",
-      "dist": 2
-    },
-    {
-      "city": "Bochum",
-      "dist": 3
-    }
-  ]
-}, {
-  "name": "Reutlingen",
-  "size": 2,
-  "lat": 48.483333333333334,
-  "lon": 9.216666666666667,
-  "neighbors": [
-    {
-      "city": "Stuttgart",
-      "dist": 4
-    },
-    {
-      "city": "Pforzheim",
-      "dist": 4
-    },
-    {
-      "city": "Heilbronn",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Bremerhaven",
-  "size": 2,
-  "lat": 53.55,
-  "lon": 8.583333333333334,
-  "neighbors": [
-    {
-      "city": "Hamburg",
-      "dist": 3
-    },
-    {
-      "city": "Oldenburg",
-      "dist": 4
-    },
-    {
-      "city": "Bremen",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Koblenz",
-  "size": 2,
-  "lat": 50.35,
-  "lon": 7.583333333333333,
-  "neighbors": [
-    {
-      "city": "Frankfurt",
-      "dist": 3
-    },
-    {
-      "city": "Offenbach a.M.",
-      "dist": 3
-    },
-    {
-      "city": "Wiesbaden",
-      "dist": 3
-    }
-  ]
-}, {
-  "name": "Bergisch Gladbach",
-  "size": 2,
-  "lat": 51.1,
-  "lon": 7.116666666666666,
-  "neighbors": [
-    {
-      "city": "Solingen",
-      "dist": 2
-    },
-    {
-      "city": "Leverkusen",
-      "dist": 3
-    },
-    {
-      "city": "Wuppertal",
-      "dist": 3
-    }
-  ]
-} ]
+{
+  "map": {
+    "ax": -287.6296,
+    "xx": 100.6239,
+    "xy": -6.5704,
+    "ay": 8235.8055,
+    "yx": 2.0399,
+    "yy": -150.5447
+  },
+  "cities": [
+  {
+    "name": "Berlin",
+    "size": 16,
+    "lat": 52.516666666666666,
+    "lon": 13.383333333333333,
+    "neighbors": [
+      {
+        "city": "Dresden",
+        "dist": 5
+      },
+      {
+        "city": "Leipzig",
+        "dist": 5
+      },
+      {
+        "city": "Hamburg",
+        "dist": 5
+      },
+      {
+        "city": "Lübeck",
+        "dist": 5
+      },
+      {
+        "city": "Rostock",
+        "dist": 5
+      },
+      {
+        "city": "Magdeburg",
+        "dist": 5
+      },
+      {
+        "city": "Potsdam",
+        "dist": 3
+      },
+      {
+        "city": "Halle/S",
+        "dist": 5
+      },
+      {
+        "city": "Chemnitz",
+        "dist": 5
+      },
+      {
+        "city": "Kiel",
+        "dist": 5
+      },
+      {
+        "city": "Bremerhaven",
+        "dist": 5
+      },
+      {
+        "city": "Wolfsburg",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Hamburg",
+    "size": 14,
+    "lat": 53.55,
+    "lon": 10.0,
+    "neighbors": [
+      {
+        "city": "Bremen",
+        "dist": 4
+      },
+      {
+        "city": "Hanover",
+        "dist": 5
+      },
+      {
+        "city": "Berlin",
+        "dist": 5
+      },
+      {
+        "city": "Lübeck",
+        "dist": 4
+      },
+      {
+        "city": "Kiel",
+        "dist": 4
+      },
+      {
+        "city": "Braunschweig",
+        "dist": 5
+      },
+      {
+        "city": "Oldenburg",
+        "dist": 4
+      },
+      {
+        "city": "Rostock",
+        "dist": 5
+      },
+      {
+        "city": "Magdeburg",
+        "dist": 5
+      },
+      {
+        "city": "Bremerhaven",
+        "dist": 3
+      },
+      {
+        "city": "Wolfsburg",
+        "dist": 5
+      },
+      {
+        "city": "Osnabrück",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Munich",
+    "size": 14,
+    "lat": 48.13333333333333,
+    "lon": 11.566666666666666,
+    "neighbors": [
+      {
+        "city": "Augsburg",
+        "dist": 4
+      },
+      {
+        "city": "Nuremberg",
+        "dist": 5
+      },
+      {
+        "city": "Stuttgart",
+        "dist": 6
+      },
+      {
+        "city": "Chemnitz",
+        "dist": 6
+      },
+      {
+        "city": "Erfurt",
+        "dist": 6
+      },
+      {
+        "city": "Freiburg i.B.",
+        "dist": 6
+      },
+      {
+        "city": "Regensburg",
+        "dist": 5
+      },
+      {
+        "city": "Heidelberg",
+        "dist": 6
+      },
+      {
+        "city": "Dresden",
+        "dist": 6
+      },
+      {
+        "city": "Ingolstadt",
+        "dist": 4
+      },
+      {
+        "city": "Fürth",
+        "dist": 5
+      },
+      {
+        "city": "Würzburg",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Cologne",
+    "size": 13,
+    "lat": 50.93333333333333,
+    "lon": 6.95,
+    "neighbors": [
+      {
+        "city": "Bonn",
+        "dist": 3
+      },
+      {
+        "city": "Düsseldorf",
+        "dist": 4
+      },
+      {
+        "city": "Wuppertal",
+        "dist": 4
+      },
+      {
+        "city": "Mönchengladbach",
+        "dist": 4
+      },
+      {
+        "city": "Krefeld",
+        "dist": 4
+      },
+      {
+        "city": "Aachen",
+        "dist": 4
+      },
+      {
+        "city": "Leverkusen",
+        "dist": 2
+      },
+      {
+        "city": "Solingen",
+        "dist": 3
+      },
+      {
+        "city": "Mülheim a.d.R.",
+        "dist": 4
+      },
+      {
+        "city": "Bergisch Gladbach",
+        "dist": 3
+      },
+      {
+        "city": "Neuss",
+        "dist": 4
+      },
+      {
+        "city": "Essen",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Frankfurt",
+    "size": 12,
+    "lat": 50.11666666666667,
+    "lon": 8.683333333333334,
+    "neighbors": [
+      {
+        "city": "Wiesbaden",
+        "dist": 2
+      },
+      {
+        "city": "Mannheim",
+        "dist": 4
+      },
+      {
+        "city": "Bonn",
+        "dist": 4
+      },
+      {
+        "city": "Mainz",
+        "dist": 3
+      },
+      {
+        "city": "Aachen",
+        "dist": 5
+      },
+      {
+        "city": "Cologne",
+        "dist": 5
+      },
+      {
+        "city": "Darmstadt",
+        "dist": 3
+      },
+      {
+        "city": "Ludwigshafen a.R.",
+        "dist": 4
+      },
+      {
+        "city": "Heidelberg",
+        "dist": 4
+      },
+      {
+        "city": "Offenbach a.M.",
+        "dist": 1
+      },
+      {
+        "city": "Koblenz",
+        "dist": 3
+      },
+      {
+        "city": "Würzburg",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Stuttgart",
+    "size": 12,
+    "lat": 48.78333333333333,
+    "lon": 9.183333333333334,
+    "neighbors": [
+      {
+        "city": "Karlsruhe",
+        "dist": 4
+      },
+      {
+        "city": "Mannheim",
+        "dist": 5
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 5
+      },
+      {
+        "city": "Mainz",
+        "dist": 5
+      },
+      {
+        "city": "Wiesbaden",
+        "dist": 5
+      },
+      {
+        "city": "Freiburg i.B.",
+        "dist": 5
+      },
+      {
+        "city": "Heidelberg",
+        "dist": 4
+      },
+      {
+        "city": "Ludwigshafen a.R.",
+        "dist": 5
+      },
+      {
+        "city": "Augsburg",
+        "dist": 5
+      },
+      {
+        "city": "Reutlingen",
+        "dist": 4
+      },
+      {
+        "city": "Heilbronn",
+        "dist": 4
+      },
+      {
+        "city": "Pforzheim",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Düsseldorf",
+    "size": 12,
+    "lat": 51.233333333333334,
+    "lon": 6.783333333333333,
+    "neighbors": [
+      {
+        "city": "Duisburg",
+        "dist": 3
+      },
+      {
+        "city": "Essen",
+        "dist": 4
+      },
+      {
+        "city": "Cologne",
+        "dist": 4
+      },
+      {
+        "city": "Krefeld",
+        "dist": 3
+      },
+      {
+        "city": "Oberhausen",
+        "dist": 3
+      },
+      {
+        "city": "Mönchengladbach",
+        "dist": 3
+      },
+      {
+        "city": "Neuss",
+        "dist": 2
+      },
+      {
+        "city": "Mülheim a.d.R.",
+        "dist": 3
+      },
+      {
+        "city": "Solingen",
+        "dist": 3
+      },
+      {
+        "city": "Leverkusen",
+        "dist": 3
+      },
+      {
+        "city": "Bergisch Gladbach",
+        "dist": 3
+      },
+      {
+        "city": "Bottrop",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Dortmund",
+    "size": 12,
+    "lat": 51.516666666666666,
+    "lon": 7.466666666666667,
+    "neighbors": [
+      {
+        "city": "Bochum",
+        "dist": 3
+      },
+      {
+        "city": "Wuppertal",
+        "dist": 4
+      },
+      {
+        "city": "Essen",
+        "dist": 4
+      },
+      {
+        "city": "Gelsenkirchen",
+        "dist": 4
+      },
+      {
+        "city": "Münster",
+        "dist": 4
+      },
+      {
+        "city": "Duisburg",
+        "dist": 4
+      },
+      {
+        "city": "Hagen",
+        "dist": 3
+      },
+      {
+        "city": "Herne",
+        "dist": 3
+      },
+      {
+        "city": "Hamm",
+        "dist": 4
+      },
+      {
+        "city": "Recklinghausen",
+        "dist": 4
+      },
+      {
+        "city": "Solingen",
+        "dist": 4
+      },
+      {
+        "city": "Bottrop",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Essen",
+    "size": 12,
+    "lat": 51.45,
+    "lon": 7.016666666666667,
+    "neighbors": [
+      {
+        "city": "Bochum",
+        "dist": 3
+      },
+      {
+        "city": "Duisburg",
+        "dist": 3
+      },
+      {
+        "city": "Düsseldorf",
+        "dist": 4
+      },
+      {
+        "city": "Gelsenkirchen",
+        "dist": 2
+      },
+      {
+        "city": "Oberhausen",
+        "dist": 3
+      },
+      {
+        "city": "Wuppertal",
+        "dist": 3
+      },
+      {
+        "city": "Mülheim a.d.R.",
+        "dist": 3
+      },
+      {
+        "city": "Herne",
+        "dist": 3
+      },
+      {
+        "city": "Solingen",
+        "dist": 3
+      },
+      {
+        "city": "Bottrop",
+        "dist": 3
+      },
+      {
+        "city": "Recklinghausen",
+        "dist": 3
+      },
+      {
+        "city": "Neuss",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Leipzig",
+    "size": 12,
+    "lat": 51.333333333333336,
+    "lon": 12.383333333333333,
+    "neighbors": [
+      {
+        "city": "Dresden",
+        "dist": 5
+      },
+      {
+        "city": "Berlin",
+        "dist": 5
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 5
+      },
+      {
+        "city": "Halle/S",
+        "dist": 4
+      },
+      {
+        "city": "Chemnitz",
+        "dist": 4
+      },
+      {
+        "city": "Nuremberg",
+        "dist": 5
+      },
+      {
+        "city": "Magdeburg",
+        "dist": 5
+      },
+      {
+        "city": "Erfurt",
+        "dist": 5
+      },
+      {
+        "city": "Mannheim",
+        "dist": 5
+      },
+      {
+        "city": "Potsdam",
+        "dist": 5
+      },
+      {
+        "city": "Würzburg",
+        "dist": 5
+      },
+      {
+        "city": "Darmstadt",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Bremen",
+    "size": 12,
+    "lat": 53.083333333333336,
+    "lon": 8.8,
+    "neighbors": [
+      {
+        "city": "Hamburg",
+        "dist": 4
+      },
+      {
+        "city": "Hanover",
+        "dist": 5
+      },
+      {
+        "city": "Dortmund",
+        "dist": 5
+      },
+      {
+        "city": "Lübeck",
+        "dist": 4
+      },
+      {
+        "city": "Bielefeld",
+        "dist": 5
+      },
+      {
+        "city": "Kiel",
+        "dist": 5
+      },
+      {
+        "city": "Oldenburg",
+        "dist": 3
+      },
+      {
+        "city": "Osnabrück",
+        "dist": 5
+      },
+      {
+        "city": "Rostock",
+        "dist": 5
+      },
+      {
+        "city": "Bremerhaven",
+        "dist": 4
+      },
+      {
+        "city": "Paderborn",
+        "dist": 5
+      },
+      {
+        "city": "Wolfsburg",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Dresden",
+    "size": 12,
+    "lat": 51.03333333333333,
+    "lon": 13.733333333333333,
+    "neighbors": [
+      {
+        "city": "Leipzig",
+        "dist": 5
+      },
+      {
+        "city": "Berlin",
+        "dist": 5
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 5
+      },
+      {
+        "city": "Chemnitz",
+        "dist": 4
+      },
+      {
+        "city": "Halle/S",
+        "dist": 5
+      },
+      {
+        "city": "Mannheim",
+        "dist": 5
+      },
+      {
+        "city": "Darmstadt",
+        "dist": 5
+      },
+      {
+        "city": "Potsdam",
+        "dist": 5
+      },
+      {
+        "city": "Ludwigshafen a.R.",
+        "dist": 5
+      },
+      {
+        "city": "Würzburg",
+        "dist": 5
+      },
+      {
+        "city": "Trier",
+        "dist": 5
+      },
+      {
+        "city": "Fürth",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Hanover",
+    "size": 12,
+    "lat": 52.36666666666667,
+    "lon": 9.716666666666667,
+    "neighbors": [
+      {
+        "city": "Bremen",
+        "dist": 5
+      },
+      {
+        "city": "Bielefeld",
+        "dist": 5
+      },
+      {
+        "city": "Hamburg",
+        "dist": 5
+      },
+      {
+        "city": "Braunschweig",
+        "dist": 4
+      },
+      {
+        "city": "Kassel",
+        "dist": 5
+      },
+      {
+        "city": "Lübeck",
+        "dist": 5
+      },
+      {
+        "city": "Paderborn",
+        "dist": 5
+      },
+      {
+        "city": "Oldenburg",
+        "dist": 5
+      },
+      {
+        "city": "Osnabrück",
+        "dist": 5
+      },
+      {
+        "city": "Göttingen",
+        "dist": 5
+      },
+      {
+        "city": "Wolfsburg",
+        "dist": 5
+      },
+      {
+        "city": "Magdeburg",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Nuremberg",
+    "size": 12,
+    "lat": 49.45,
+    "lon": 11.083333333333334,
+    "neighbors": [
+      {
+        "city": "Augsburg",
+        "dist": 5
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 5
+      },
+      {
+        "city": "Munich",
+        "dist": 5
+      },
+      {
+        "city": "Chemnitz",
+        "dist": 5
+      },
+      {
+        "city": "Bonn",
+        "dist": 5
+      },
+      {
+        "city": "Wiesbaden",
+        "dist": 5
+      },
+      {
+        "city": "Regensburg",
+        "dist": 5
+      },
+      {
+        "city": "Darmstadt",
+        "dist": 5
+      },
+      {
+        "city": "Cologne",
+        "dist": 5
+      },
+      {
+        "city": "Fürth",
+        "dist": 2
+      },
+      {
+        "city": "Ingolstadt",
+        "dist": 4
+      },
+      {
+        "city": "Würzburg",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Duisburg",
+    "size": 11,
+    "lat": 51.43333333333333,
+    "lon": 6.766666666666667,
+    "neighbors": [
+      {
+        "city": "Düsseldorf",
+        "dist": 3
+      },
+      {
+        "city": "Essen",
+        "dist": 3
+      },
+      {
+        "city": "Cologne",
+        "dist": 4
+      },
+      {
+        "city": "Oberhausen",
+        "dist": 2
+      },
+      {
+        "city": "Krefeld",
+        "dist": 3
+      },
+      {
+        "city": "Gelsenkirchen",
+        "dist": 4
+      },
+      {
+        "city": "Mülheim a.d.R.",
+        "dist": 2
+      },
+      {
+        "city": "Neuss",
+        "dist": 3
+      },
+      {
+        "city": "Mönchengladbach",
+        "dist": 4
+      },
+      {
+        "city": "Bottrop",
+        "dist": 3
+      },
+      {
+        "city": "Solingen",
+        "dist": 4
+      },
+      {
+        "city": "Wuppertal",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Bochum",
+    "size": 11,
+    "lat": 51.483333333333334,
+    "lon": 7.216666666666667,
+    "neighbors": [
+      {
+        "city": "Essen",
+        "dist": 3
+      },
+      {
+        "city": "Wuppertal",
+        "dist": 3
+      },
+      {
+        "city": "Dortmund",
+        "dist": 3
+      },
+      {
+        "city": "Gelsenkirchen",
+        "dist": 3
+      },
+      {
+        "city": "Oberhausen",
+        "dist": 4
+      },
+      {
+        "city": "Duisburg",
+        "dist": 4
+      },
+      {
+        "city": "Herne",
+        "dist": 2
+      },
+      {
+        "city": "Hagen",
+        "dist": 3
+      },
+      {
+        "city": "Mülheim a.d.R.",
+        "dist": 4
+      },
+      {
+        "city": "Recklinghausen",
+        "dist": 3
+      },
+      {
+        "city": "Bottrop",
+        "dist": 3
+      },
+      {
+        "city": "Solingen",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Wuppertal",
+    "size": 11,
+    "lat": 51.266666666666666,
+    "lon": 7.183333333333334,
+    "neighbors": [
+      {
+        "city": "Bochum",
+        "dist": 3
+      },
+      {
+        "city": "Essen",
+        "dist": 3
+      },
+      {
+        "city": "Düsseldorf",
+        "dist": 4
+      },
+      {
+        "city": "Gelsenkirchen",
+        "dist": 3
+      },
+      {
+        "city": "Dortmund",
+        "dist": 4
+      },
+      {
+        "city": "Cologne",
+        "dist": 4
+      },
+      {
+        "city": "Solingen",
+        "dist": 3
+      },
+      {
+        "city": "Hagen",
+        "dist": 3
+      },
+      {
+        "city": "Leverkusen",
+        "dist": 3
+      },
+      {
+        "city": "Bergisch Gladbach",
+        "dist": 3
+      },
+      {
+        "city": "Herne",
+        "dist": 3
+      },
+      {
+        "city": "Mülheim a.d.R.",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Bielefeld",
+    "size": 11,
+    "lat": 52.016666666666666,
+    "lon": 8.533333333333333,
+    "neighbors": [
+      {
+        "city": "Münster",
+        "dist": 5
+      },
+      {
+        "city": "Bremen",
+        "dist": 5
+      },
+      {
+        "city": "Hanover",
+        "dist": 5
+      },
+      {
+        "city": "Dortmund",
+        "dist": 5
+      },
+      {
+        "city": "Kassel",
+        "dist": 5
+      },
+      {
+        "city": "Bochum",
+        "dist": 5
+      },
+      {
+        "city": "Paderborn",
+        "dist": 4
+      },
+      {
+        "city": "Osnabrück",
+        "dist": 4
+      },
+      {
+        "city": "Hamm",
+        "dist": 4
+      },
+      {
+        "city": "Oldenburg",
+        "dist": 5
+      },
+      {
+        "city": "Hagen",
+        "dist": 5
+      },
+      {
+        "city": "Gelsenkirchen",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Bonn",
+    "size": 11,
+    "lat": 50.733333333333334,
+    "lon": 7.1,
+    "neighbors": [
+      {
+        "city": "Cologne",
+        "dist": 3
+      },
+      {
+        "city": "Wuppertal",
+        "dist": 4
+      },
+      {
+        "city": "Düsseldorf",
+        "dist": 4
+      },
+      {
+        "city": "Aachen",
+        "dist": 4
+      },
+      {
+        "city": "Mönchengladbach",
+        "dist": 4
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 4
+      },
+      {
+        "city": "Leverkusen",
+        "dist": 4
+      },
+      {
+        "city": "Solingen",
+        "dist": 4
+      },
+      {
+        "city": "Wiesbaden",
+        "dist": 4
+      },
+      {
+        "city": "Bergisch Gladbach",
+        "dist": 4
+      },
+      {
+        "city": "Koblenz",
+        "dist": 4
+      },
+      {
+        "city": "Neuss",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Münster",
+    "size": 11,
+    "lat": 51.96666666666667,
+    "lon": 7.633333333333333,
+    "neighbors": [
+      {
+        "city": "Dortmund",
+        "dist": 4
+      },
+      {
+        "city": "Bochum",
+        "dist": 4
+      },
+      {
+        "city": "Essen",
+        "dist": 4
+      },
+      {
+        "city": "Gelsenkirchen",
+        "dist": 4
+      },
+      {
+        "city": "Wuppertal",
+        "dist": 5
+      },
+      {
+        "city": "Bielefeld",
+        "dist": 5
+      },
+      {
+        "city": "Hamm",
+        "dist": 4
+      },
+      {
+        "city": "Osnabrück",
+        "dist": 4
+      },
+      {
+        "city": "Hagen",
+        "dist": 4
+      },
+      {
+        "city": "Herne",
+        "dist": 4
+      },
+      {
+        "city": "Recklinghausen",
+        "dist": 4
+      },
+      {
+        "city": "Bottrop",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Karlsruhe",
+    "size": 10,
+    "lat": 49.0,
+    "lon": 8.4,
+    "neighbors": [
+      {
+        "city": "Mannheim",
+        "dist": 4
+      },
+      {
+        "city": "Stuttgart",
+        "dist": 4
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 5
+      },
+      {
+        "city": "Mainz",
+        "dist": 5
+      },
+      {
+        "city": "Wiesbaden",
+        "dist": 5
+      },
+      {
+        "city": "Freiburg i.B.",
+        "dist": 5
+      },
+      {
+        "city": "Ludwigshafen a.R.",
+        "dist": 4
+      },
+      {
+        "city": "Heidelberg",
+        "dist": 4
+      },
+      {
+        "city": "Saarbrücken",
+        "dist": 5
+      },
+      {
+        "city": "Pforzheim",
+        "dist": 4
+      },
+      {
+        "city": "Heilbronn",
+        "dist": 4
+      },
+      {
+        "city": "Darmstadt",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Mannheim",
+    "size": 10,
+    "lat": 49.483333333333334,
+    "lon": 8.466666666666667,
+    "neighbors": [
+      {
+        "city": "Karlsruhe",
+        "dist": 4
+      },
+      {
+        "city": "Wiesbaden",
+        "dist": 4
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 4
+      },
+      {
+        "city": "Mainz",
+        "dist": 4
+      },
+      {
+        "city": "Stuttgart",
+        "dist": 5
+      },
+      {
+        "city": "Bonn",
+        "dist": 5
+      },
+      {
+        "city": "Ludwigshafen a.R.",
+        "dist": 1
+      },
+      {
+        "city": "Heidelberg",
+        "dist": 3
+      },
+      {
+        "city": "Saarbrücken",
+        "dist": 5
+      },
+      {
+        "city": "Darmstadt",
+        "dist": 4
+      },
+      {
+        "city": "Pforzheim",
+        "dist": 4
+      },
+      {
+        "city": "Offenbach a.M.",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Augsburg",
+    "size": 10,
+    "lat": 48.36666666666667,
+    "lon": 10.9,
+    "neighbors": [
+      {
+        "city": "Munich",
+        "dist": 4
+      },
+      {
+        "city": "Nuremberg",
+        "dist": 5
+      },
+      {
+        "city": "Stuttgart",
+        "dist": 5
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 6
+      },
+      {
+        "city": "Karlsruhe",
+        "dist": 6
+      },
+      {
+        "city": "Leipzig",
+        "dist": 6
+      },
+      {
+        "city": "Regensburg",
+        "dist": 5
+      },
+      {
+        "city": "Heidelberg",
+        "dist": 6
+      },
+      {
+        "city": "Darmstadt",
+        "dist": 6
+      },
+      {
+        "city": "Ingolstadt",
+        "dist": 4
+      },
+      {
+        "city": "Ulm",
+        "dist": 5
+      },
+      {
+        "city": "Fürth",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Wiesbaden",
+    "size": 10,
+    "lat": 50.083333333333336,
+    "lon": 8.233333333333333,
+    "neighbors": [
+      {
+        "city": "Frankfurt",
+        "dist": 2
+      },
+      {
+        "city": "Mannheim",
+        "dist": 4
+      },
+      {
+        "city": "Bonn",
+        "dist": 4
+      },
+      {
+        "city": "Mainz",
+        "dist": 2
+      },
+      {
+        "city": "Aachen",
+        "dist": 4
+      },
+      {
+        "city": "Cologne",
+        "dist": 5
+      },
+      {
+        "city": "Darmstadt",
+        "dist": 3
+      },
+      {
+        "city": "Ludwigshafen a.R.",
+        "dist": 4
+      },
+      {
+        "city": "Heidelberg",
+        "dist": 4
+      },
+      {
+        "city": "Offenbach a.M.",
+        "dist": 2
+      },
+      {
+        "city": "Koblenz",
+        "dist": 3
+      },
+      {
+        "city": "Würzburg",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Gelsenkirchen",
+    "size": 10,
+    "lat": 51.516666666666666,
+    "lon": 7.1,
+    "neighbors": [
+      {
+        "city": "Essen",
+        "dist": 2
+      },
+      {
+        "city": "Bochum",
+        "dist": 3
+      },
+      {
+        "city": "Duisburg",
+        "dist": 4
+      },
+      {
+        "city": "Herne",
+        "dist": 3
+      },
+      {
+        "city": "Mülheim a.d.R.",
+        "dist": 3
+      },
+      {
+        "city": "Oberhausen",
+        "dist": 3
+      },
+      {
+        "city": "Recklinghausen",
+        "dist": 2
+      },
+      {
+        "city": "Bottrop",
+        "dist": 3
+      },
+      {
+        "city": "Wuppertal",
+        "dist": 3
+      }
+    ]
+  },
+  {
+    "name": "Mönchengladbach",
+    "size": 10,
+    "lat": 51.2,
+    "lon": 6.433333333333334,
+    "neighbors": [
+      {
+        "city": "Krefeld",
+        "dist": 3
+      },
+      {
+        "city": "Düsseldorf",
+        "dist": 3
+      },
+      {
+        "city": "Duisburg",
+        "dist": 4
+      },
+      {
+        "city": "Neuss",
+        "dist": 3
+      },
+      {
+        "city": "Leverkusen",
+        "dist": 4
+      },
+      {
+        "city": "Oberhausen",
+        "dist": 4
+      },
+      {
+        "city": "Mülheim a.d.R.",
+        "dist": 4
+      },
+      {
+        "city": "Cologne",
+        "dist": 4
+      },
+      {
+        "city": "Aachen",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Braunschweig",
+    "size": 10,
+    "lat": 52.266666666666666,
+    "lon": 10.516666666666667,
+    "neighbors": [
+      {
+        "city": "Hanover",
+        "dist": 4
+      },
+      {
+        "city": "Magdeburg",
+        "dist": 5
+      },
+      {
+        "city": "Hamburg",
+        "dist": 5
+      },
+      {
+        "city": "Erfurt",
+        "dist": 5
+      },
+      {
+        "city": "Kassel",
+        "dist": 5
+      },
+      {
+        "city": "Bremen",
+        "dist": 5
+      },
+      {
+        "city": "Wolfsburg",
+        "dist": 3
+      },
+      {
+        "city": "Göttingen",
+        "dist": 5
+      },
+      {
+        "city": "Lübeck",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Chemnitz",
+    "size": 10,
+    "lat": 50.833333333333336,
+    "lon": 12.916666666666666,
+    "neighbors": [
+      {
+        "city": "Dresden",
+        "dist": 4
+      },
+      {
+        "city": "Leipzig",
+        "dist": 4
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 5
+      },
+      {
+        "city": "Halle/S",
+        "dist": 5
+      },
+      {
+        "city": "Darmstadt",
+        "dist": 5
+      },
+      {
+        "city": "Mainz",
+        "dist": 5
+      },
+      {
+        "city": "Würzburg",
+        "dist": 5
+      },
+      {
+        "city": "Trier",
+        "dist": 5
+      },
+      {
+        "city": "Offenbach a.M.",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Kiel",
+    "size": 10,
+    "lat": 54.333333333333336,
+    "lon": 10.133333333333333,
+    "neighbors": [
+      {
+        "city": "Lübeck",
+        "dist": 4
+      },
+      {
+        "city": "Hamburg",
+        "dist": 4
+      },
+      {
+        "city": "Bremen",
+        "dist": 5
+      },
+      {
+        "city": "Oldenburg",
+        "dist": 5
+      },
+      {
+        "city": "Rostock",
+        "dist": 5
+      },
+      {
+        "city": "Berlin",
+        "dist": 5
+      },
+      {
+        "city": "Bremerhaven",
+        "dist": 5
+      },
+      {
+        "city": "Wolfsburg",
+        "dist": 5
+      },
+      {
+        "city": "Potsdam",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Aachen",
+    "size": 10,
+    "lat": 50.78333333333333,
+    "lon": 6.083333333333333,
+    "neighbors": [
+      {
+        "city": "Mönchengladbach",
+        "dist": 4
+      },
+      {
+        "city": "Bonn",
+        "dist": 4
+      },
+      {
+        "city": "Cologne",
+        "dist": 4
+      },
+      {
+        "city": "Neuss",
+        "dist": 4
+      },
+      {
+        "city": "Leverkusen",
+        "dist": 4
+      },
+      {
+        "city": "Krefeld",
+        "dist": 4
+      },
+      {
+        "city": "Koblenz",
+        "dist": 4
+      },
+      {
+        "city": "Düsseldorf",
+        "dist": 4
+      },
+      {
+        "city": "Solingen",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Halle/S",
+    "size": 10,
+    "lat": 51.483333333333334,
+    "lon": 11.966666666666667,
+    "neighbors": [
+      {
+        "city": "Leipzig",
+        "dist": 4
+      },
+      {
+        "city": "Magdeburg",
+        "dist": 4
+      },
+      {
+        "city": "Chemnitz",
+        "dist": 5
+      },
+      {
+        "city": "Erfurt",
+        "dist": 5
+      },
+      {
+        "city": "Potsdam",
+        "dist": 5
+      },
+      {
+        "city": "Dresden",
+        "dist": 5
+      },
+      {
+        "city": "Wolfsburg",
+        "dist": 5
+      },
+      {
+        "city": "Braunschweig",
+        "dist": 5
+      },
+      {
+        "city": "Berlin",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Magdeburg",
+    "size": 10,
+    "lat": 52.13333333333333,
+    "lon": 11.616666666666667,
+    "neighbors": [
+      {
+        "city": "Halle/S",
+        "dist": 4
+      },
+      {
+        "city": "Braunschweig",
+        "dist": 5
+      },
+      {
+        "city": "Leipzig",
+        "dist": 5
+      },
+      {
+        "city": "Erfurt",
+        "dist": 5
+      },
+      {
+        "city": "Potsdam",
+        "dist": 5
+      },
+      {
+        "city": "Berlin",
+        "dist": 5
+      },
+      {
+        "city": "Wolfsburg",
+        "dist": 4
+      },
+      {
+        "city": "Hamburg",
+        "dist": 5
+      },
+      {
+        "city": "Hanover",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Freiburg i.B.",
+    "size": 10,
+    "lat": 47.983333333333334,
+    "lon": 7.85,
+    "neighbors": [
+      {
+        "city": "Karlsruhe",
+        "dist": 5
+      },
+      {
+        "city": "Stuttgart",
+        "dist": 5
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 6
+      },
+      {
+        "city": "Saarbrücken",
+        "dist": 5
+      },
+      {
+        "city": "Ludwigshafen a.R.",
+        "dist": 5
+      },
+      {
+        "city": "Mannheim",
+        "dist": 5
+      },
+      {
+        "city": "Pforzheim",
+        "dist": 5
+      },
+      {
+        "city": "Reutlingen",
+        "dist": 5
+      },
+      {
+        "city": "Heidelberg",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Krefeld",
+    "size": 10,
+    "lat": 51.333333333333336,
+    "lon": 6.566666666666666,
+    "neighbors": [
+      {
+        "city": "Mönchengladbach",
+        "dist": 3
+      },
+      {
+        "city": "Duisburg",
+        "dist": 3
+      },
+      {
+        "city": "Düsseldorf",
+        "dist": 3
+      },
+      {
+        "city": "Neuss",
+        "dist": 3
+      },
+      {
+        "city": "Oberhausen",
+        "dist": 3
+      },
+      {
+        "city": "Mülheim a.d.R.",
+        "dist": 4
+      },
+      {
+        "city": "Bottrop",
+        "dist": 4
+      },
+      {
+        "city": "Essen",
+        "dist": 4
+      },
+      {
+        "city": "Leverkusen",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Lübeck",
+    "size": 10,
+    "lat": 53.86666666666667,
+    "lon": 10.683333333333334,
+    "neighbors": [
+      {
+        "city": "Hamburg",
+        "dist": 4
+      },
+      {
+        "city": "Kiel",
+        "dist": 4
+      },
+      {
+        "city": "Bremen",
+        "dist": 4
+      },
+      {
+        "city": "Oldenburg",
+        "dist": 4
+      },
+      {
+        "city": "Rostock",
+        "dist": 4
+      },
+      {
+        "city": "Berlin",
+        "dist": 5
+      },
+      {
+        "city": "Bremerhaven",
+        "dist": 4
+      },
+      {
+        "city": "Wolfsburg",
+        "dist": 5
+      },
+      {
+        "city": "Hanover",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Oberhausen",
+    "size": 10,
+    "lat": 51.46666666666667,
+    "lon": 6.85,
+    "neighbors": [
+      {
+        "city": "Duisburg",
+        "dist": 2
+      },
+      {
+        "city": "Essen",
+        "dist": 3
+      },
+      {
+        "city": "Düsseldorf",
+        "dist": 3
+      },
+      {
+        "city": "Mülheim a.d.R.",
+        "dist": 2
+      },
+      {
+        "city": "Gelsenkirchen",
+        "dist": 3
+      },
+      {
+        "city": "Krefeld",
+        "dist": 3
+      },
+      {
+        "city": "Bottrop",
+        "dist": 2
+      },
+      {
+        "city": "Neuss",
+        "dist": 3
+      },
+      {
+        "city": "Bochum",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Erfurt",
+    "size": 10,
+    "lat": 50.983333333333334,
+    "lon": 11.033333333333333,
+    "neighbors": [
+      {
+        "city": "Halle/S",
+        "dist": 5
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 5
+      },
+      {
+        "city": "Leipzig",
+        "dist": 5
+      },
+      {
+        "city": "Chemnitz",
+        "dist": 5
+      },
+      {
+        "city": "Mainz",
+        "dist": 5
+      },
+      {
+        "city": "Wiesbaden",
+        "dist": 5
+      },
+      {
+        "city": "Offenbach a.M.",
+        "dist": 5
+      },
+      {
+        "city": "Göttingen",
+        "dist": 5
+      },
+      {
+        "city": "Darmstadt",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Mainz",
+    "size": 10,
+    "lat": 50.0,
+    "lon": 8.266666666666667,
+    "neighbors": [
+      {
+        "city": "Wiesbaden",
+        "dist": 2
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 3
+      },
+      {
+        "city": "Mannheim",
+        "dist": 4
+      },
+      {
+        "city": "Darmstadt",
+        "dist": 3
+      },
+      {
+        "city": "Ludwigshafen a.R.",
+        "dist": 4
+      },
+      {
+        "city": "Heidelberg",
+        "dist": 4
+      },
+      {
+        "city": "Offenbach a.M.",
+        "dist": 3
+      },
+      {
+        "city": "Koblenz",
+        "dist": 4
+      },
+      {
+        "city": "Würzburg",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Rostock",
+    "size": 10,
+    "lat": 54.083333333333336,
+    "lon": 12.133333333333333,
+    "neighbors": [
+      {
+        "city": "Lübeck",
+        "dist": 4
+      },
+      {
+        "city": "Hamburg",
+        "dist": 5
+      },
+      {
+        "city": "Bremen",
+        "dist": 5
+      },
+      {
+        "city": "Oldenburg",
+        "dist": 5
+      },
+      {
+        "city": "Kiel",
+        "dist": 5
+      },
+      {
+        "city": "Berlin",
+        "dist": 5
+      },
+      {
+        "city": "Bremerhaven",
+        "dist": 5
+      },
+      {
+        "city": "Wolfsburg",
+        "dist": 5
+      },
+      {
+        "city": "Potsdam",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Kassel",
+    "size": 10,
+    "lat": 51.31666666666667,
+    "lon": 9.5,
+    "neighbors": [
+      {
+        "city": "Hanover",
+        "dist": 5
+      },
+      {
+        "city": "Bielefeld",
+        "dist": 5
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 5
+      },
+      {
+        "city": "Paderborn",
+        "dist": 4
+      },
+      {
+        "city": "Erfurt",
+        "dist": 5
+      },
+      {
+        "city": "Wiesbaden",
+        "dist": 5
+      },
+      {
+        "city": "Göttingen",
+        "dist": 4
+      },
+      {
+        "city": "Offenbach a.M.",
+        "dist": 5
+      },
+      {
+        "city": "Braunschweig",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Hagen",
+    "size": 9,
+    "lat": 51.36666666666667,
+    "lon": 7.483333333333333,
+    "neighbors": [
+      {
+        "city": "Dortmund",
+        "dist": 3
+      },
+      {
+        "city": "Bochum",
+        "dist": 3
+      },
+      {
+        "city": "Essen",
+        "dist": 4
+      },
+      {
+        "city": "Wuppertal",
+        "dist": 3
+      },
+      {
+        "city": "Herne",
+        "dist": 4
+      },
+      {
+        "city": "Gelsenkirchen",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Hamm",
+    "size": 9,
+    "lat": 51.68333333333333,
+    "lon": 7.816666666666666,
+    "neighbors": [
+      {
+        "city": "Münster",
+        "dist": 4
+      },
+      {
+        "city": "Dortmund",
+        "dist": 4
+      },
+      {
+        "city": "Bochum",
+        "dist": 4
+      },
+      {
+        "city": "Hagen",
+        "dist": 4
+      },
+      {
+        "city": "Herne",
+        "dist": 4
+      },
+      {
+        "city": "Osnabrück",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Saarbrücken",
+    "size": 9,
+    "lat": 49.233333333333334,
+    "lon": 7.0,
+    "neighbors": [
+      {
+        "city": "Mainz",
+        "dist": 5
+      },
+      {
+        "city": "Wiesbaden",
+        "dist": 5
+      },
+      {
+        "city": "Mannheim",
+        "dist": 5
+      },
+      {
+        "city": "Trier",
+        "dist": 4
+      },
+      {
+        "city": "Koblenz",
+        "dist": 5
+      },
+      {
+        "city": "Ludwigshafen a.R.",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Mülheim a.d.R.",
+    "size": 9,
+    "lat": 51.43333333333333,
+    "lon": 6.883333333333333,
+    "neighbors": [
+      {
+        "city": "Oberhausen",
+        "dist": 2
+      },
+      {
+        "city": "Duisburg",
+        "dist": 2
+      },
+      {
+        "city": "Essen",
+        "dist": 3
+      },
+      {
+        "city": "Bottrop",
+        "dist": 2
+      },
+      {
+        "city": "Düsseldorf",
+        "dist": 3
+      },
+      {
+        "city": "Gelsenkirchen",
+        "dist": 3
+      }
+    ]
+  },
+  {
+    "name": "Potsdam",
+    "size": 9,
+    "lat": 52.4,
+    "lon": 13.066666666666666,
+    "neighbors": [
+      {
+        "city": "Berlin",
+        "dist": 3
+      },
+      {
+        "city": "Leipzig",
+        "dist": 5
+      },
+      {
+        "city": "Hamburg",
+        "dist": 5
+      },
+      {
+        "city": "Magdeburg",
+        "dist": 5
+      },
+      {
+        "city": "Halle/S",
+        "dist": 5
+      },
+      {
+        "city": "Dresden",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Ludwigshafen a.R.",
+    "size": 9,
+    "lat": 49.483333333333334,
+    "lon": 8.433333333333334,
+    "neighbors": [
+      {
+        "city": "Mannheim",
+        "dist": 1
+      },
+      {
+        "city": "Heidelberg",
+        "dist": 3
+      },
+      {
+        "city": "Karlsruhe",
+        "dist": 4
+      },
+      {
+        "city": "Darmstadt",
+        "dist": 4
+      },
+      {
+        "city": "Mainz",
+        "dist": 4
+      },
+      {
+        "city": "Wiesbaden",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Oldenburg",
+    "size": 9,
+    "lat": 53.13333333333333,
+    "lon": 8.216666666666667,
+    "neighbors": [
+      {
+        "city": "Bremen",
+        "dist": 3
+      },
+      {
+        "city": "Hamburg",
+        "dist": 4
+      },
+      {
+        "city": "Dortmund",
+        "dist": 5
+      },
+      {
+        "city": "Bremerhaven",
+        "dist": 4
+      },
+      {
+        "city": "Lübeck",
+        "dist": 4
+      },
+      {
+        "city": "Osnabrück",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Leverkusen",
+    "size": 9,
+    "lat": 51.03333333333333,
+    "lon": 6.983333333333333,
+    "neighbors": [
+      {
+        "city": "Cologne",
+        "dist": 2
+      },
+      {
+        "city": "Solingen",
+        "dist": 3
+      },
+      {
+        "city": "Düsseldorf",
+        "dist": 3
+      },
+      {
+        "city": "Bergisch Gladbach",
+        "dist": 3
+      },
+      {
+        "city": "Neuss",
+        "dist": 3
+      },
+      {
+        "city": "Wuppertal",
+        "dist": 3
+      }
+    ]
+  },
+  {
+    "name": "Osnabrück",
+    "size": 9,
+    "lat": 52.28333333333333,
+    "lon": 8.05,
+    "neighbors": [
+      {
+        "city": "Münster",
+        "dist": 4
+      },
+      {
+        "city": "Bielefeld",
+        "dist": 4
+      },
+      {
+        "city": "Bremen",
+        "dist": 5
+      },
+      {
+        "city": "Hamm",
+        "dist": 4
+      },
+      {
+        "city": "Oldenburg",
+        "dist": 5
+      },
+      {
+        "city": "Dortmund",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Solingen",
+    "size": 9,
+    "lat": 51.166666666666664,
+    "lon": 7.083333333333333,
+    "neighbors": [
+      {
+        "city": "Wuppertal",
+        "dist": 3
+      },
+      {
+        "city": "Leverkusen",
+        "dist": 3
+      },
+      {
+        "city": "Düsseldorf",
+        "dist": 3
+      },
+      {
+        "city": "Bergisch Gladbach",
+        "dist": 2
+      },
+      {
+        "city": "Cologne",
+        "dist": 3
+      },
+      {
+        "city": "Essen",
+        "dist": 3
+      }
+    ]
+  },
+  {
+    "name": "Heidelberg",
+    "size": 9,
+    "lat": 49.416666666666664,
+    "lon": 8.716666666666667,
+    "neighbors": [
+      {
+        "city": "Mannheim",
+        "dist": 3
+      },
+      {
+        "city": "Ludwigshafen a.R.",
+        "dist": 3
+      },
+      {
+        "city": "Karlsruhe",
+        "dist": 4
+      },
+      {
+        "city": "Darmstadt",
+        "dist": 4
+      },
+      {
+        "city": "Heilbronn",
+        "dist": 4
+      },
+      {
+        "city": "Mainz",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Herne",
+    "size": 9,
+    "lat": 51.55,
+    "lon": 7.216666666666667,
+    "neighbors": [
+      {
+        "city": "Bochum",
+        "dist": 2
+      },
+      {
+        "city": "Gelsenkirchen",
+        "dist": 3
+      },
+      {
+        "city": "Essen",
+        "dist": 3
+      },
+      {
+        "city": "Recklinghausen",
+        "dist": 2
+      },
+      {
+        "city": "Dortmund",
+        "dist": 3
+      },
+      {
+        "city": "Wuppertal",
+        "dist": 3
+      }
+    ]
+  },
+  {
+    "name": "Neuss",
+    "size": 9,
+    "lat": 51.2,
+    "lon": 6.7,
+    "neighbors": [
+      {
+        "city": "Düsseldorf",
+        "dist": 2
+      },
+      {
+        "city": "Krefeld",
+        "dist": 3
+      },
+      {
+        "city": "Mönchengladbach",
+        "dist": 3
+      },
+      {
+        "city": "Duisburg",
+        "dist": 3
+      },
+      {
+        "city": "Leverkusen",
+        "dist": 3
+      },
+      {
+        "city": "Mülheim a.d.R.",
+        "dist": 3
+      }
+    ]
+  },
+  {
+    "name": "Darmstadt",
+    "size": 9,
+    "lat": 49.86666666666667,
+    "lon": 8.65,
+    "neighbors": [
+      {
+        "city": "Mainz",
+        "dist": 3
+      },
+      {
+        "city": "Wiesbaden",
+        "dist": 3
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 3
+      },
+      {
+        "city": "Offenbach a.M.",
+        "dist": 3
+      },
+      {
+        "city": "Mannheim",
+        "dist": 4
+      },
+      {
+        "city": "Ludwigshafen a.R.",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Paderborn",
+    "size": 9,
+    "lat": 51.71666666666667,
+    "lon": 8.766666666666667,
+    "neighbors": [
+      {
+        "city": "Bielefeld",
+        "dist": 4
+      },
+      {
+        "city": "Kassel",
+        "dist": 4
+      },
+      {
+        "city": "Hanover",
+        "dist": 5
+      },
+      {
+        "city": "Osnabrück",
+        "dist": 5
+      },
+      {
+        "city": "Hamm",
+        "dist": 5
+      },
+      {
+        "city": "Münster",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Regensburg",
+    "size": 9,
+    "lat": 49.016666666666666,
+    "lon": 12.083333333333334,
+    "neighbors": [
+      {
+        "city": "Nuremberg",
+        "dist": 5
+      },
+      {
+        "city": "Munich",
+        "dist": 5
+      },
+      {
+        "city": "Dresden",
+        "dist": 5
+      },
+      {
+        "city": "Ingolstadt",
+        "dist": 4
+      },
+      {
+        "city": "Fürth",
+        "dist": 5
+      },
+      {
+        "city": "Augsburg",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Ingolstadt",
+    "size": 9,
+    "lat": 48.766666666666666,
+    "lon": 11.433333333333334,
+    "neighbors": [
+      {
+        "city": "Munich",
+        "dist": 4
+      },
+      {
+        "city": "Augsburg",
+        "dist": 4
+      },
+      {
+        "city": "Nuremberg",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Würzburg",
+    "size": 9,
+    "lat": 49.78333333333333,
+    "lon": 9.933333333333334,
+    "neighbors": [
+      {
+        "city": "Offenbach a.M.",
+        "dist": 4
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 4
+      },
+      {
+        "city": "Darmstadt",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Fürth",
+    "size": 9,
+    "lat": 49.46666666666667,
+    "lon": 11.0,
+    "neighbors": [
+      {
+        "city": "Nuremberg",
+        "dist": 2
+      },
+      {
+        "city": "Würzburg",
+        "dist": 4
+      },
+      {
+        "city": "Ingolstadt",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Wolfsburg",
+    "size": 9,
+    "lat": 52.416666666666664,
+    "lon": 10.783333333333333,
+    "neighbors": [
+      {
+        "city": "Braunschweig",
+        "dist": 3
+      },
+      {
+        "city": "Magdeburg",
+        "dist": 4
+      },
+      {
+        "city": "Hanover",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Offenbach a.M.",
+    "size": 9,
+    "lat": 50.1,
+    "lon": 8.8,
+    "neighbors": [
+      {
+        "city": "Frankfurt",
+        "dist": 1
+      },
+      {
+        "city": "Wiesbaden",
+        "dist": 2
+      },
+      {
+        "city": "Mannheim",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Ulm",
+    "size": 9,
+    "lat": 48.4,
+    "lon": 9.983333333333333,
+    "neighbors": [
+      {
+        "city": "Reutlingen",
+        "dist": 4
+      },
+      {
+        "city": "Augsburg",
+        "dist": 5
+      },
+      {
+        "city": "Stuttgart",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Heilbronn",
+    "size": 9,
+    "lat": 49.15,
+    "lon": 9.216666666666667,
+    "neighbors": [
+      {
+        "city": "Stuttgart",
+        "dist": 4
+      },
+      {
+        "city": "Heidelberg",
+        "dist": 4
+      },
+      {
+        "city": "Mannheim",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Pforzheim",
+    "size": 9,
+    "lat": 48.9,
+    "lon": 8.716666666666667,
+    "neighbors": [
+      {
+        "city": "Karlsruhe",
+        "dist": 4
+      },
+      {
+        "city": "Stuttgart",
+        "dist": 4
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Göttingen",
+    "size": 8,
+    "lat": 51.53333333333333,
+    "lon": 9.933333333333334,
+    "neighbors": [
+      {
+        "city": "Kassel",
+        "dist": 4
+      },
+      {
+        "city": "Hanover",
+        "dist": 5
+      },
+      {
+        "city": "Braunschweig",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Bottrop",
+    "size": 8,
+    "lat": 51.516666666666666,
+    "lon": 6.916666666666667,
+    "neighbors": [
+      {
+        "city": "Oberhausen",
+        "dist": 2
+      },
+      {
+        "city": "Mülheim a.d.R.",
+        "dist": 2
+      },
+      {
+        "city": "Essen",
+        "dist": 3
+      }
+    ]
+  },
+  {
+    "name": "Trier",
+    "size": 8,
+    "lat": 49.75,
+    "lon": 6.633333333333333,
+    "neighbors": [
+      {
+        "city": "Saarbrücken",
+        "dist": 4
+      },
+      {
+        "city": "Koblenz",
+        "dist": 4
+      },
+      {
+        "city": "Wiesbaden",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Recklinghausen",
+    "size": 8,
+    "lat": 51.583333333333336,
+    "lon": 7.15,
+    "neighbors": [
+      {
+        "city": "Herne",
+        "dist": 2
+      },
+      {
+        "city": "Gelsenkirchen",
+        "dist": 2
+      },
+      {
+        "city": "Bochum",
+        "dist": 3
+      }
+    ]
+  },
+  {
+    "name": "Reutlingen",
+    "size": 8,
+    "lat": 48.483333333333334,
+    "lon": 9.216666666666667,
+    "neighbors": [
+      {
+        "city": "Stuttgart",
+        "dist": 4
+      },
+      {
+        "city": "Pforzheim",
+        "dist": 4
+      },
+      {
+        "city": "Heilbronn",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Bremerhaven",
+    "size": 8,
+    "lat": 53.55,
+    "lon": 8.583333333333334,
+    "neighbors": [
+      {
+        "city": "Hamburg",
+        "dist": 3
+      },
+      {
+        "city": "Oldenburg",
+        "dist": 4
+      },
+      {
+        "city": "Bremen",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Koblenz",
+    "size": 8,
+    "lat": 50.35,
+    "lon": 7.583333333333333,
+    "neighbors": [
+      {
+        "city": "Frankfurt",
+        "dist": 3
+      },
+      {
+        "city": "Offenbach a.M.",
+        "dist": 3
+      },
+      {
+        "city": "Wiesbaden",
+        "dist": 3
+      }
+    ]
+  },
+  {
+    "name": "Bergisch Gladbach",
+    "size": 8,
+    "lat": 51.1,
+    "lon": 7.116666666666666,
+    "neighbors": [
+      {
+        "city": "Solingen",
+        "dist": 2
+      },
+      {
+        "city": "Leverkusen",
+        "dist": 3
+      },
+      {
+        "city": "Wuppertal",
+        "dist": 3
+      }
+    ]
+  }
+]
+}

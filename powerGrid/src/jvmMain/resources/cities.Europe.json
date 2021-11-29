@@ -1,2809 +1,2891 @@
-[ {
-  "name": "Moscov",
-  "size": 16,
-  "lat": 55.75,
-  "lon": 37.616667,
-  "neighbors": [
-    {
-      "city": "Nizhny Novgorod",
-      "dist": 6
-    },
-    {
-      "city": "Kiev",
-      "dist": 6
-    },
-    {
-      "city": "Kharkov",
-      "dist": 6
-    },
-    {
-      "city": "Voronezh",
-      "dist": 6
-    },
-    {
-      "city": "Saratov",
-      "dist": 6
-    },
-    {
-      "city": "Cologne",
-      "dist": 6
-    },
-    {
-      "city": "Riga",
-      "dist": 6
-    },
-    {
-      "city": "Yekaterinburg",
-      "dist": 6
-    },
-    {
-      "city": "Perm",
-      "dist": 7
-    },
-    {
-      "city": "Yaroslavl",
-      "dist": 5
-    },
-    {
-      "city": "Izhevsk",
-      "dist": 6
-    },
-    {
-      "city": "Worclaw",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "London",
-  "size": 16,
-  "lat": 51.5,
-  "lon": -0.13333333333333333,
-  "neighbors": [
-    {
-      "city": "Paris",
-      "dist": 6
-    },
-    {
-      "city": "Munich",
-      "dist": 7
-    },
-    {
-      "city": "Vienna",
-      "dist": 7
-    },
-    {
-      "city": "Birmingham",
-      "dist": 5
-    },
-    {
-      "city": "Cologne",
-      "dist": 6
-    },
-    {
-      "city": "Prague",
-      "dist": 7
-    },
-    {
-      "city": "Leeds",
-      "dist": 6
-    },
-    {
-      "city": "Amsterdam",
-      "dist": 6
-    },
-    {
-      "city": "Volgograd",
-      "dist": 7
-    },
-    {
-      "city": "Stuttgart",
-      "dist": 6
-    },
-    {
-      "city": "Glasgow",
-      "dist": 6
-    },
-    {
-      "city": "Rotterdam",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "St Petersburg",
-  "size": 15,
-  "lat": 59.95,
-  "lon": 30.3,
-  "neighbors": [
-    {
-      "city": "Minsk",
-      "dist": 7
-    },
-    {
-      "city": "Samara",
-      "dist": 7
-    },
-    {
-      "city": "Hamburg",
-      "dist": 7
-    },
-    {
-      "city": "Moscov",
-      "dist": 7
-    },
-    {
-      "city": "Warsaw",
-      "dist": 7
-    },
-    {
-      "city": "Berlin",
-      "dist": 7
-    },
-    {
-      "city": "Stockholm",
-      "dist": 5
-    },
-    {
-      "city": "Riga",
-      "dist": 7
-    },
-    {
-      "city": "Kiev",
-      "dist": 7
-    },
-    {
-      "city": "Vilnius",
-      "dist": 7
-    },
-    {
-      "city": "Tolyatti",
-      "dist": 7
-    },
-    {
-      "city": "Yaroslavl",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Berlin",
-  "size": 15,
-  "lat": 52.516667,
-  "lon": 13.383333,
-  "neighbors": [
-    {
-      "city": "Hamburg",
-      "dist": 5
-    },
-    {
-      "city": "Prague",
-      "dist": 6
-    },
-    {
-      "city": "Minsk",
-      "dist": 6
-    },
-    {
-      "city": "Vienna",
-      "dist": 6
-    },
-    {
-      "city": "Munich",
-      "dist": 6
-    },
-    {
-      "city": "Budapest",
-      "dist": 6
-    },
-    {
-      "city": "Ulyanovsk",
-      "dist": 5
-    },
-    {
-      "city": "Leeds",
-      "dist": 6
-    },
-    {
-      "city": "Donetsk",
-      "dist": 6
-    },
-    {
-      "city": "Poznan",
-      "dist": 6
-    },
-    {
-      "city": "Vilnius",
-      "dist": 6
-    },
-    {
-      "city": "Worclaw",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Madrid",
-  "size": 15,
-  "lat": 40.383333,
-  "lon": -3.716667,
-  "neighbors": [
-    {
-      "city": "Barcelona",
-      "dist": 5
-    },
-    {
-      "city": "Rome",
-      "dist": 6
-    },
-    {
-      "city": "Budapest",
-      "dist": 7
-    },
-    {
-      "city": "Naples",
-      "dist": 6
-    },
-    {
-      "city": "Munich",
-      "dist": 7
-    },
-    {
-      "city": "Paris",
-      "dist": 7
-    },
-    {
-      "city": "Valencia",
-      "dist": 6
-    },
-    {
-      "city": "Sevilla",
-      "dist": 6
-    },
-    {
-      "city": "Marseille",
-      "dist": 7
-    },
-    {
-      "city": "Zaragoza",
-      "dist": 5
-    },
-    {
-      "city": "Thessaloniki",
-      "dist": 7
-    },
-    {
-      "city": "Zaporozhye",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Rome",
-  "size": 15,
-  "lat": 41.9,
-  "lon": 12.5,
-  "neighbors": [
-    {
-      "city": "Milan",
-      "dist": 6
-    },
-    {
-      "city": "Madrid",
-      "dist": 6
-    },
-    {
-      "city": "Belgrade",
-      "dist": 6
-    },
-    {
-      "city": "Naples",
-      "dist": 5
-    },
-    {
-      "city": "Turin",
-      "dist": 6
-    },
-    {
-      "city": "Odessa",
-      "dist": 6
-    },
-    {
-      "city": "Valencia",
-      "dist": 6
-    },
-    {
-      "city": "Palermo",
-      "dist": 6
-    },
-    {
-      "city": "Zagreb",
-      "dist": 6
-    },
-    {
-      "city": "Genoa",
-      "dist": 6
-    },
-    {
-      "city": "Thessaloniki",
-      "dist": 6
-    },
-    {
-      "city": "Munich",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Kiev",
-  "size": 15,
-  "lat": 50.45,
-  "lon": 30.523333,
-  "neighbors": [
-    {
-      "city": "Prague",
-      "dist": 4
-    },
-    {
-      "city": "Kharkov",
-      "dist": 4
-    },
-    {
-      "city": "Minsk",
-      "dist": 6
-    },
-    {
-      "city": "Dnepropetrovsk",
-      "dist": 6
-    },
-    {
-      "city": "Odessa",
-      "dist": 6
-    },
-    {
-      "city": "Moscov",
-      "dist": 6
-    },
-    {
-      "city": "Kraków",
-      "dist": 4
-    },
-    {
-      "city": "Lviv",
-      "dist": 5
-    },
-    {
-      "city": "Zaporozhye",
-      "dist": 6
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 4
-    },
-    {
-      "city": "Kryvy Rih",
-      "dist": 6
-    },
-    {
-      "city": "Chisinau",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Paris",
-  "size": 15,
-  "lat": 48.8567,
-  "lon": 2.3508,
-  "neighbors": [
-    {
-      "city": "London",
-      "dist": 6
-    },
-    {
-      "city": "Milan",
-      "dist": 6
-    },
-    {
-      "city": "Berlin",
-      "dist": 6
-    },
-    {
-      "city": "Cologne",
-      "dist": 6
-    },
-    {
-      "city": "Voronezh",
-      "dist": 6
-    },
-    {
-      "city": "Turin",
-      "dist": 6
-    },
-    {
-      "city": "Lódz",
-      "dist": 6
-    },
-    {
-      "city": "Amsterdam",
-      "dist": 6
-    },
-    {
-      "city": "Birmingham",
-      "dist": 6
-    },
-    {
-      "city": "Düsseldorf",
-      "dist": 6
-    },
-    {
-      "city": "Essen",
-      "dist": 6
-    },
-    {
-      "city": "Dortmund",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Bucharest",
-  "size": 15,
-  "lat": 44.4325,
-  "lon": 26.103889,
-  "neighbors": [
-    {
-      "city": "Sofia",
-      "dist": 5
-    },
-    {
-      "city": "Belgrade",
-      "dist": 6
-    },
-    {
-      "city": "Kharkov",
-      "dist": 6
-    },
-    {
-      "city": "Odessa",
-      "dist": 6
-    },
-    {
-      "city": "Prague",
-      "dist": 6
-    },
-    {
-      "city": "Kiev",
-      "dist": 7
-    },
-    {
-      "city": "Marseille",
-      "dist": 6
-    },
-    {
-      "city": "Thessaloniki",
-      "dist": 6
-    },
-    {
-      "city": "Lviv",
-      "dist": 6
-    },
-    {
-      "city": "Chisinau",
-      "dist": 6
-    },
-    {
-      "city": "Kraków",
-      "dist": 6
-    },
-    {
-      "city": "Athens",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Budapest",
-  "size": 14,
-  "lat": 47.4925,
-  "lon": 19.051389,
-  "neighbors": [
-    {
-      "city": "Vienna",
-      "dist": 5
-    },
-    {
-      "city": "Belgrade",
-      "dist": 6
-    },
-    {
-      "city": "Warsaw",
-      "dist": 6
-    },
-    {
-      "city": "Odessa",
-      "dist": 5
-    },
-    {
-      "city": "Zagreb",
-      "dist": 5
-    },
-    {
-      "city": "Munich",
-      "dist": 6
-    },
-    {
-      "city": "Kraków",
-      "dist": 6
-    },
-    {
-      "city": "Lódz",
-      "dist": 6
-    },
-    {
-      "city": "Rostov-na-Donu",
-      "dist": 6
-    },
-    {
-      "city": "Chisinau",
-      "dist": 5
-    },
-    {
-      "city": "Worclaw",
-      "dist": 6
-    },
-    {
-      "city": "Berlin",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Hamburg",
-  "size": 14,
-  "lat": 53.565278,
-  "lon": 10.001389,
-  "neighbors": [
-    {
-      "city": "Samara",
-      "dist": 5
-    },
-    {
-      "city": "Berlin",
-      "dist": 5
-    },
-    {
-      "city": "Munich",
-      "dist": 6
-    },
-    {
-      "city": "Cologne",
-      "dist": 6
-    },
-    {
-      "city": "Birmingham",
-      "dist": 6
-    },
-    {
-      "city": "Warsaw",
-      "dist": 6
-    },
-    {
-      "city": "Amsterdam",
-      "dist": 6
-    },
-    {
-      "city": "Leeds",
-      "dist": 6
-    },
-    {
-      "city": "Prague",
-      "dist": 6
-    },
-    {
-      "city": "Dortmund",
-      "dist": 6
-    },
-    {
-      "city": "Poznan",
-      "dist": 6
-    },
-    {
-      "city": "Essen",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Minsk",
-  "size": 14,
-  "lat": 53.9,
-  "lon": 27.566667,
-  "neighbors": [
-    {
-      "city": "Warsaw",
-      "dist": 6
-    },
-    {
-      "city": "Berlin",
-      "dist": 6
-    },
-    {
-      "city": "Kiev",
-      "dist": 6
-    },
-    {
-      "city": "Samara",
-      "dist": 6
-    },
-    {
-      "city": "Hamburg",
-      "dist": 6
-    },
-    {
-      "city": "St Petersburg",
-      "dist": 7
-    },
-    {
-      "city": "Riga",
-      "dist": 6
-    },
-    {
-      "city": "Lódz",
-      "dist": 6
-    },
-    {
-      "city": "Birmingham",
-      "dist": 7
-    },
-    {
-      "city": "Vilnius",
-      "dist": 5
-    },
-    {
-      "city": "Poznan",
-      "dist": 6
-    },
-    {
-      "city": "Lviv",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Warsaw",
-  "size": 14,
-  "lat": 52.233333,
-  "lon": 21.016667,
-  "neighbors": [
-    {
-      "city": "Minsk",
-      "dist": 6
-    },
-    {
-      "city": "Vienna",
-      "dist": 6
-    },
-    {
-      "city": "Budapest",
-      "dist": 6
-    },
-    {
-      "city": "Ufa",
-      "dist": 6
-    },
-    {
-      "city": "Dnepropetrovsk",
-      "dist": 6
-    },
-    {
-      "city": "Munich",
-      "dist": 6
-    },
-    {
-      "city": "Lódz",
-      "dist": 5
-    },
-    {
-      "city": "Kraków",
-      "dist": 6
-    },
-    {
-      "city": "Lviv",
-      "dist": 6
-    },
-    {
-      "city": "Vilnius",
-      "dist": 6
-    },
-    {
-      "city": "Poznan",
-      "dist": 6
-    },
-    {
-      "city": "Worclaw",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Belgrade",
-  "size": 14,
-  "lat": 44.816667,
-  "lon": 20.466667,
-  "neighbors": [
-    {
-      "city": "Sofia",
-      "dist": 6
-    },
-    {
-      "city": "Budapest",
-      "dist": 6
-    },
-    {
-      "city": "Bucharest",
-      "dist": 6
-    },
-    {
-      "city": "Vienna",
-      "dist": 6
-    },
-    {
-      "city": "Zagreb",
-      "dist": 6
-    },
-    {
-      "city": "Rome",
-      "dist": 6
-    },
-    {
-      "city": "Marseille",
-      "dist": 5
-    },
-    {
-      "city": "Thessaloniki",
-      "dist": 6
-    },
-    {
-      "city": "Lviv",
-      "dist": 6
-    },
-    {
-      "city": "Kraków",
-      "dist": 6
-    },
-    {
-      "city": "Stuttgart",
-      "dist": 6
-    },
-    {
-      "city": "Prague",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Vienna",
-  "size": 14,
-  "lat": 48.2,
-  "lon": 16.366667,
-  "neighbors": [
-    {
-      "city": "Budapest",
-      "dist": 5
-    },
-    {
-      "city": "Prague",
-      "dist": 6
-    },
-    {
-      "city": "Milan",
-      "dist": 6
-    },
-    {
-      "city": "Zagreb",
-      "dist": 6
-    },
-    {
-      "city": "Odessa",
-      "dist": 6
-    },
-    {
-      "city": "Warsaw",
-      "dist": 6
-    },
-    {
-      "city": "Lódz",
-      "dist": 6
-    },
-    {
-      "city": "Kraków",
-      "dist": 6
-    },
-    {
-      "city": "Belgrade",
-      "dist": 6
-    },
-    {
-      "city": "Worclaw",
-      "dist": 6
-    },
-    {
-      "city": "Munich",
-      "dist": 6
-    },
-    {
-      "city": "Amsterdam",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Kharkov",
-  "size": 14,
-  "lat": 50.004444,
-  "lon": 36.231389,
-  "neighbors": [
-    {
-      "city": "Kiev",
-      "dist": 4
-    },
-    {
-      "city": "Prague",
-      "dist": 6
-    },
-    {
-      "city": "Bucharest",
-      "dist": 6
-    },
-    {
-      "city": "Dnepropetrovsk",
-      "dist": 5
-    },
-    {
-      "city": "Voronezh",
-      "dist": 6
-    },
-    {
-      "city": "Donetsk",
-      "dist": 6
-    },
-    {
-      "city": "Zaporozhye",
-      "dist": 6
-    },
-    {
-      "city": "Kryvy Rih",
-      "dist": 6
-    },
-    {
-      "city": "Kraków",
-      "dist": 6
-    },
-    {
-      "city": "Lviv",
-      "dist": 6
-    },
-    {
-      "city": "Rostov-na-Donu",
-      "dist": 6
-    },
-    {
-      "city": "Saratov",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Barcelona",
-  "size": 14,
-  "lat": 41.383333,
-  "lon": 2.183333,
-  "neighbors": [
-    {
-      "city": "Madrid",
-      "dist": 5
-    },
-    {
-      "city": "Milan",
-      "dist": 6
-    },
-    {
-      "city": "Rome",
-      "dist": 7
-    },
-    {
-      "city": "Naples",
-      "dist": 6
-    },
-    {
-      "city": "Turin",
-      "dist": 6
-    },
-    {
-      "city": "Odessa",
-      "dist": 6
-    },
-    {
-      "city": "Valencia",
-      "dist": 5
-    },
-    {
-      "city": "Thessaloniki",
-      "dist": 6
-    },
-    {
-      "city": "Marseille",
-      "dist": 6
-    },
-    {
-      "city": "Zaragoza",
-      "dist": 5
-    },
-    {
-      "city": "Genoa",
-      "dist": 7
-    },
-    {
-      "city": "Zagreb",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Nizhny Novgorod",
-  "size": 14,
-  "lat": 56.326944,
-  "lon": 44.0075,
-  "neighbors": [
-    {
-      "city": "Yekaterinburg",
-      "dist": 4
-    },
-    {
-      "city": "Moscov",
-      "dist": 6
-    },
-    {
-      "city": "Kiev",
-      "dist": 6
-    },
-    {
-      "city": "Kazan",
-      "dist": 6
-    },
-    {
-      "city": "Saratov",
-      "dist": 6
-    },
-    {
-      "city": "Voronezh",
-      "dist": 6
-    },
-    {
-      "city": "Riga",
-      "dist": 5
-    },
-    {
-      "city": "Ulyanovsk",
-      "dist": 6
-    },
-    {
-      "city": "Tolyatti",
-      "dist": 7
-    },
-    {
-      "city": "Izhevsk",
-      "dist": 4
-    },
-    {
-      "city": "Yaroslavl",
-      "dist": 5
-    },
-    {
-      "city": "Kharkov",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Milan",
-  "size": 14,
-  "lat": 45.466667,
-  "lon": 9.183333,
-  "neighbors": [
-    {
-      "city": "Munich",
-      "dist": 6
-    },
-    {
-      "city": "Sofia",
-      "dist": 6
-    },
-    {
-      "city": "Paris",
-      "dist": 6
-    },
-    {
-      "city": "Turin",
-      "dist": 5
-    },
-    {
-      "city": "Vienna",
-      "dist": 6
-    },
-    {
-      "city": "Volgograd",
-      "dist": 6
-    },
-    {
-      "city": "Marseille",
-      "dist": 6
-    },
-    {
-      "city": "Rome",
-      "dist": 6
-    },
-    {
-      "city": "Dnepropetrovsk",
-      "dist": 6
-    },
-    {
-      "city": "Genoa",
-      "dist": 5
-    },
-    {
-      "city": "Stuttgart",
-      "dist": 6
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Yekaterinburg",
-  "size": 14,
-  "lat": 56.833333333333336,
-  "lon": 60.61666666666667,
-  "neighbors": [
-    {
-      "city": "Nizhny Novgorod",
-      "dist": 4
-    },
-    {
-      "city": "Moscov",
-      "dist": 6
-    },
-    {
-      "city": "Kharkov",
-      "dist": 7
-    },
-    {
-      "city": "Kazan",
-      "dist": 6
-    },
-    {
-      "city": "Perm",
-      "dist": 6
-    },
-    {
-      "city": "Ufa",
-      "dist": 6
-    },
-    {
-      "city": "Kraków",
-      "dist": 7
-    },
-    {
-      "city": "Prague",
-      "dist": 7
-    },
-    {
-      "city": "Lviv",
-      "dist": 7
-    },
-    {
-      "city": "Izhevsk",
-      "dist": 5
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 7
-    },
-    {
-      "city": "Kiev",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Munich",
-  "size": 14,
-  "lat": 48.133333,
-  "lon": 11.566667,
-  "neighbors": [
-    {
-      "city": "Milan",
-      "dist": 6
-    },
-    {
-      "city": "Prague",
-      "dist": 6
-    },
-    {
-      "city": "Vienna",
-      "dist": 6
-    },
-    {
-      "city": "Zagreb",
-      "dist": 6
-    },
-    {
-      "city": "Turin",
-      "dist": 6
-    },
-    {
-      "city": "Odessa",
-      "dist": 6
-    },
-    {
-      "city": "Cologne",
-      "dist": 6
-    },
-    {
-      "city": "Warsaw",
-      "dist": 6
-    },
-    {
-      "city": "Berlin",
-      "dist": 6
-    },
-    {
-      "city": "Stuttgart",
-      "dist": 6
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 6
-    },
-    {
-      "city": "Dortmund",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Prague",
-  "size": 14,
-  "lat": 50.083333,
-  "lon": 14.416667,
-  "neighbors": [
-    {
-      "city": "Kiev",
-      "dist": 4
-    },
-    {
-      "city": "Vienna",
-      "dist": 6
-    },
-    {
-      "city": "Berlin",
-      "dist": 6
-    },
-    {
-      "city": "Cologne",
-      "dist": 5
-    },
-    {
-      "city": "Munich",
-      "dist": 6
-    },
-    {
-      "city": "Kharkov",
-      "dist": 6
-    },
-    {
-      "city": "Kraków",
-      "dist": 5
-    },
-    {
-      "city": "Lviv",
-      "dist": 6
-    },
-    {
-      "city": "Lódz",
-      "dist": 6
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 5
-    },
-    {
-      "city": "Worclaw",
-      "dist": 5
-    },
-    {
-      "city": "Zagreb",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Samara",
-  "size": 14,
-  "lat": 53.202778,
-  "lon": 50.140833,
-  "neighbors": [
-    {
-      "city": "Hamburg",
-      "dist": 5
-    },
-    {
-      "city": "Minsk",
-      "dist": 6
-    },
-    {
-      "city": "Budapest",
-      "dist": 7
-    },
-    {
-      "city": "Kazan",
-      "dist": 6
-    },
-    {
-      "city": "Ufa",
-      "dist": 6
-    },
-    {
-      "city": "Nizhny Novgorod",
-      "dist": 7
-    },
-    {
-      "city": "Tolyatti",
-      "dist": 4
-    },
-    {
-      "city": "Ulyanovsk",
-      "dist": 5
-    },
-    {
-      "city": "Saratov",
-      "dist": 6
-    },
-    {
-      "city": "Izhevsk",
-      "dist": 6
-    },
-    {
-      "city": "Leeds",
-      "dist": 6
-    },
-    {
-      "city": "Volgograd",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Sofia",
-  "size": 14,
-  "lat": 42.7,
-  "lon": 23.33,
-  "neighbors": [
-    {
-      "city": "Bucharest",
-      "dist": 5
-    },
-    {
-      "city": "Belgrade",
-      "dist": 6
-    },
-    {
-      "city": "Budapest",
-      "dist": 7
-    },
-    {
-      "city": "Turin",
-      "dist": 6
-    },
-    {
-      "city": "Milan",
-      "dist": 6
-    },
-    {
-      "city": "Odessa",
-      "dist": 6
-    },
-    {
-      "city": "Thessaloniki",
-      "dist": 5
-    },
-    {
-      "city": "Zagreb",
-      "dist": 6
-    },
-    {
-      "city": "Athens",
-      "dist": 6
-    },
-    {
-      "city": "Krasnodar",
-      "dist": 6
-    },
-    {
-      "city": "Chisinau",
-      "dist": 7
-    },
-    {
-      "city": "Genoa",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Dnepropetrovsk",
-  "size": 14,
-  "lat": 48.45,
-  "lon": 35.03333333333333,
-  "neighbors": [
-    {
-      "city": "Zaporozhye",
-      "dist": 4
-    },
-    {
-      "city": "Kharkov",
-      "dist": 5
-    },
-    {
-      "city": "Odessa",
-      "dist": 6
-    },
-    {
-      "city": "Kryvy Rih",
-      "dist": 5
-    },
-    {
-      "city": "Donetsk",
-      "dist": 6
-    },
-    {
-      "city": "Zagreb",
-      "dist": 6
-    },
-    {
-      "city": "Rostov-na-Donu",
-      "dist": 6
-    },
-    {
-      "city": "Voronezh",
-      "dist": 6
-    },
-    {
-      "city": "Kiev",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Kazan",
-  "size": 14,
-  "lat": 55.790278,
-  "lon": 49.134722,
-  "neighbors": [
-    {
-      "city": "Nizhny Novgorod",
-      "dist": 6
-    },
-    {
-      "city": "Samara",
-      "dist": 6
-    },
-    {
-      "city": "Yekaterinburg",
-      "dist": 6
-    },
-    {
-      "city": "Ulyanovsk",
-      "dist": 5
-    },
-    {
-      "city": "Tolyatti",
-      "dist": 6
-    },
-    {
-      "city": "Perm",
-      "dist": 6
-    },
-    {
-      "city": "Izhevsk",
-      "dist": 5
-    },
-    {
-      "city": "Yaroslavl",
-      "dist": 6
-    },
-    {
-      "city": "Saratov",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Ufa",
-  "size": 14,
-  "lat": 54.75,
-  "lon": 55.966667,
-  "neighbors": [
-    {
-      "city": "Perm",
-      "dist": 6
-    },
-    {
-      "city": "Samara",
-      "dist": 6
-    },
-    {
-      "city": "Yekaterinburg",
-      "dist": 6
-    },
-    {
-      "city": "Warsaw",
-      "dist": 6
-    },
-    {
-      "city": "Saratov",
-      "dist": 6
-    },
-    {
-      "city": "Voronezh",
-      "dist": 6
-    },
-    {
-      "city": "Izhevsk",
-      "dist": 6
-    },
-    {
-      "city": "Tolyatti",
-      "dist": 6
-    },
-    {
-      "city": "Lódz",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Donetsk",
-  "size": 14,
-  "lat": 48.0,
-  "lon": 37.8,
-  "neighbors": [
-    {
-      "city": "Rostov-na-Donu",
-      "dist": 5
-    },
-    {
-      "city": "Odessa",
-      "dist": 5
-    },
-    {
-      "city": "Kharkov",
-      "dist": 6
-    },
-    {
-      "city": "Zaporozhye",
-      "dist": 5
-    },
-    {
-      "city": "Dnepropetrovsk",
-      "dist": 6
-    },
-    {
-      "city": "Voronezh",
-      "dist": 6
-    },
-    {
-      "city": "Krasnodar",
-      "dist": 6
-    },
-    {
-      "city": "Kryvy Rih",
-      "dist": 6
-    },
-    {
-      "city": "Chisinau",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Naples",
-  "size": 14,
-  "lat": 40.833333333333336,
-  "lon": 14.25,
-  "neighbors": [
-    {
-      "city": "Rome",
-      "dist": 5
-    },
-    {
-      "city": "Barcelona",
-      "dist": 6
-    },
-    {
-      "city": "Madrid",
-      "dist": 6
-    },
-    {
-      "city": "Thessaloniki",
-      "dist": 5
-    },
-    {
-      "city": "Palermo",
-      "dist": 6
-    },
-    {
-      "city": "Zagreb",
-      "dist": 6
-    },
-    {
-      "city": "Milan",
-      "dist": 6
-    },
-    {
-      "city": "Zaragoza",
-      "dist": 6
-    },
-    {
-      "city": "Chisinau",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Birmingham",
-  "size": 14,
-  "lat": 52.483056,
-  "lon": -1.893611,
-  "neighbors": [
-    {
-      "city": "London",
-      "dist": 5
-    },
-    {
-      "city": "Paris",
-      "dist": 6
-    },
-    {
-      "city": "Rome",
-      "dist": 7
-    },
-    {
-      "city": "Leeds",
-      "dist": 5
-    },
-    {
-      "city": "Ulyanovsk",
-      "dist": 5
-    },
-    {
-      "city": "Munich",
-      "dist": 6
-    },
-    {
-      "city": "Glasgow",
-      "dist": 6
-    },
-    {
-      "city": "Vienna",
-      "dist": 6
-    },
-    {
-      "city": "Hamburg",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Perm",
-  "size": 14,
-  "lat": 58.0,
-  "lon": 56.316667,
-  "neighbors": [
-    {
-      "city": "Ufa",
-      "dist": 6
-    },
-    {
-      "city": "Kazan",
-      "dist": 6
-    },
-    {
-      "city": "Yekaterinburg",
-      "dist": 6
-    },
-    {
-      "city": "Ulyanovsk",
-      "dist": 6
-    },
-    {
-      "city": "Moscov",
-      "dist": 7
-    },
-    {
-      "city": "Tolyatti",
-      "dist": 7
-    },
-    {
-      "city": "Izhevsk",
-      "dist": 6
-    },
-    {
-      "city": "Samara",
-      "dist": 7
-    },
-    {
-      "city": "Nizhny Novgorod",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Rostov-na-Donu",
-  "size": 14,
-  "lat": 47.2333,
-  "lon": 39.7,
-  "neighbors": [
-    {
-      "city": "Donetsk",
-      "dist": 5
-    },
-    {
-      "city": "Zaporozhye",
-      "dist": 5
-    },
-    {
-      "city": "Odessa",
-      "dist": 6
-    },
-    {
-      "city": "Kryvy Rih",
-      "dist": 6
-    },
-    {
-      "city": "Dnepropetrovsk",
-      "dist": 6
-    },
-    {
-      "city": "Volgograd",
-      "dist": 6
-    },
-    {
-      "city": "Chisinau",
-      "dist": 3
-    },
-    {
-      "city": "Krasnodar",
-      "dist": 6
-    },
-    {
-      "city": "Kharkov",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Odessa",
-  "size": 14,
-  "lat": 46.46666666666667,
-  "lon": 30.716666666666665,
-  "neighbors": [
-    {
-      "city": "Zaporozhye",
-      "dist": 5
-    },
-    {
-      "city": "Donetsk",
-      "dist": 5
-    },
-    {
-      "city": "Budapest",
-      "dist": 5
-    },
-    {
-      "city": "Kryvy Rih",
-      "dist": 5
-    },
-    {
-      "city": "Dnepropetrovsk",
-      "dist": 6
-    },
-    {
-      "city": "Rostov-na-Donu",
-      "dist": 6
-    },
-    {
-      "city": "Chisinau",
-      "dist": 5
-    },
-    {
-      "city": "Vienna",
-      "dist": 6
-    },
-    {
-      "city": "Munich",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Volgograd",
-  "size": 14,
-  "lat": 48.7,
-  "lon": 44.516667,
-  "neighbors": [
-    {
-      "city": "Saratov",
-      "dist": 6
-    },
-    {
-      "city": "Voronezh",
-      "dist": 6
-    },
-    {
-      "city": "Milan",
-      "dist": 6
-    },
-    {
-      "city": "Lódz",
-      "dist": 6
-    },
-    {
-      "city": "Rostov-na-Donu",
-      "dist": 6
-    },
-    {
-      "city": "Zagreb",
-      "dist": 6
-    },
-    {
-      "city": "Rotterdam",
-      "dist": 6
-    },
-    {
-      "city": "Krasnodar",
-      "dist": 6
-    },
-    {
-      "city": "Samara",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Cologne",
-  "size": 14,
-  "lat": 50.936389,
-  "lon": 6.952778,
-  "neighbors": [
-    {
-      "city": "Prague",
-      "dist": 5
-    },
-    {
-      "city": "Paris",
-      "dist": 6
-    },
-    {
-      "city": "Hamburg",
-      "dist": 6
-    },
-    {
-      "city": "Lviv",
-      "dist": 6
-    },
-    {
-      "city": "Amsterdam",
-      "dist": 6
-    },
-    {
-      "city": "Kraków",
-      "dist": 6
-    },
-    {
-      "city": "Düsseldorf",
-      "dist": 4
-    },
-    {
-      "city": "Essen",
-      "dist": 4
-    },
-    {
-      "city": "Dortmund",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Turin",
-  "size": 14,
-  "lat": 45.083333333333336,
-  "lon": 7.683333333333334,
-  "neighbors": [
-    {
-      "city": "Milan",
-      "dist": 5
-    },
-    {
-      "city": "Sofia",
-      "dist": 6
-    },
-    {
-      "city": "Munich",
-      "dist": 6
-    },
-    {
-      "city": "Marseille",
-      "dist": 5
-    },
-    {
-      "city": "Paris",
-      "dist": 6
-    },
-    {
-      "city": "Rome",
-      "dist": 6
-    },
-    {
-      "city": "Genoa",
-      "dist": 5
-    },
-    {
-      "city": "Stuttgart",
-      "dist": 6
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Voronezh",
-  "size": 14,
-  "lat": 51.671667,
-  "lon": 39.210556,
-  "neighbors": [
-    {
-      "city": "Kharkov",
-      "dist": 6
-    },
-    {
-      "city": "Paris",
-      "dist": 6
-    },
-    {
-      "city": "Moscov",
-      "dist": 6
-    },
-    {
-      "city": "Volgograd",
-      "dist": 6
-    },
-    {
-      "city": "Dnepropetrovsk",
-      "dist": 6
-    },
-    {
-      "city": "Donetsk",
-      "dist": 6
-    },
-    {
-      "city": "Stuttgart",
-      "dist": 6
-    },
-    {
-      "city": "Zaporozhye",
-      "dist": 6
-    },
-    {
-      "city": "Rostov-na-Donu",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Saratov",
-  "size": 14,
-  "lat": 51.53333333333333,
-  "lon": 46.016666666666666,
-  "neighbors": [
-    {
-      "city": "Volgograd",
-      "dist": 6
-    },
-    {
-      "city": "Samara",
-      "dist": 6
-    },
-    {
-      "city": "Paris",
-      "dist": 6
-    },
-    {
-      "city": "Ulyanovsk",
-      "dist": 6
-    },
-    {
-      "city": "Tolyatti",
-      "dist": 6
-    },
-    {
-      "city": "Ufa",
-      "dist": 6
-    },
-    {
-      "city": "Dnepropetrovsk",
-      "dist": 6
-    },
-    {
-      "city": "Kazan",
-      "dist": 6
-    },
-    {
-      "city": "Moscov",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Zagreb",
-  "size": 14,
-  "lat": 45.81666666666667,
-  "lon": 15.983333333333333,
-  "neighbors": [
-    {
-      "city": "Budapest",
-      "dist": 5
-    },
-    {
-      "city": "Vienna",
-      "dist": 6
-    },
-    {
-      "city": "Rome",
-      "dist": 6
-    },
-    {
-      "city": "Munich",
-      "dist": 6
-    },
-    {
-      "city": "Dnepropetrovsk",
-      "dist": 6
-    },
-    {
-      "city": "Sofia",
-      "dist": 6
-    },
-    {
-      "city": "Stuttgart",
-      "dist": 6
-    },
-    {
-      "city": "Paris",
-      "dist": 6
-    },
-    {
-      "city": "Prague",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Zaporozhye",
-  "size": 14,
-  "lat": 47.833333333333336,
-  "lon": 35.166666666666664,
-  "neighbors": [
-    {
-      "city": "Dnepropetrovsk",
-      "dist": 4
-    },
-    {
-      "city": "Odessa",
-      "dist": 5
-    },
-    {
-      "city": "Donetsk",
-      "dist": 5
-    },
-    {
-      "city": "Kryvy Rih",
-      "dist": 5
-    },
-    {
-      "city": "Rostov-na-Donu",
-      "dist": 5
-    },
-    {
-      "city": "Kharkov",
-      "dist": 6
-    },
-    {
-      "city": "Chisinau",
-      "dist": 5
-    },
-    {
-      "city": "Krasnodar",
-      "dist": 6
-    },
-    {
-      "city": "Voronezh",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Lódz",
-  "size": 14,
-  "lat": 51.78333333333333,
-  "lon": 19.45,
-  "neighbors": [
-    {
-      "city": "Warsaw",
-      "dist": 5
-    },
-    {
-      "city": "Kraków",
-      "dist": 5
-    },
-    {
-      "city": "Lviv",
-      "dist": 6
-    },
-    {
-      "city": "Worclaw",
-      "dist": 6
-    },
-    {
-      "city": "Poznan",
-      "dist": 6
-    },
-    {
-      "city": "Stuttgart",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Marseille",
-  "size": 14,
-  "lat": 43.3,
-  "lon": 5.366666666666666,
-  "neighbors": [
-    {
-      "city": "Turin",
-      "dist": 5
-    },
-    {
-      "city": "Belgrade",
-      "dist": 5
-    },
-    {
-      "city": "Milan",
-      "dist": 6
-    },
-    {
-      "city": "Genoa",
-      "dist": 5
-    },
-    {
-      "city": "Bucharest",
-      "dist": 6
-    },
-    {
-      "city": "Barcelona",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Riga",
-  "size": 14,
-  "lat": 56.95,
-  "lon": 24.1,
-  "neighbors": [
-    {
-      "city": "Nizhny Novgorod",
-      "dist": 5
-    },
-    {
-      "city": "Moscov",
-      "dist": 6
-    },
-    {
-      "city": "Minsk",
-      "dist": 6
-    },
-    {
-      "city": "Vilnius",
-      "dist": 6
-    },
-    {
-      "city": "Glasgow",
-      "dist": 6
-    },
-    {
-      "city": "Kazan",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Lviv",
-  "size": 14,
-  "lat": 49.833333333333336,
-  "lon": 24.016666666666666,
-  "neighbors": [
-    {
-      "city": "Kiev",
-      "dist": 5
-    },
-    {
-      "city": "Kraków",
-      "dist": 5
-    },
-    {
-      "city": "Cologne",
-      "dist": 6
-    },
-    {
-      "city": "Worclaw",
-      "dist": 5
-    },
-    {
-      "city": "Prague",
-      "dist": 6
-    },
-    {
-      "city": "Lódz",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Athens",
-  "size": 14,
-  "lat": 37.983333333333334,
-  "lon": 23.733333333333334,
-  "neighbors": [
-    {
-      "city": "Sevilla",
-      "dist": 4
-    },
-    {
-      "city": "Thessaloniki",
-      "dist": 6
-    },
-    {
-      "city": "Sofia",
-      "dist": 6
-    },
-    {
-      "city": "Palermo",
-      "dist": 6
-    },
-    {
-      "city": "Marseille",
-      "dist": 7
-    },
-    {
-      "city": "Bucharest",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Thessaloniki",
-  "size": 14,
-  "lat": 40.65,
-  "lon": 22.9,
-  "neighbors": [
-    {
-      "city": "Naples",
-      "dist": 5
-    },
-    {
-      "city": "Sofia",
-      "dist": 5
-    },
-    {
-      "city": "Barcelona",
-      "dist": 6
-    },
-    {
-      "city": "Athens",
-      "dist": 6
-    },
-    {
-      "city": "Rome",
-      "dist": 6
-    },
-    {
-      "city": "Belgrade",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Stockholm",
-  "size": 14,
-  "lat": 59.333333333333336,
-  "lon": 18.066666666666666,
-  "neighbors": [
-    {
-      "city": "St Petersburg",
-      "dist": 5
-    },
-    {
-      "city": "Minsk",
-      "dist": 6
-    },
-    {
-      "city": "Hamburg",
-      "dist": 6
-    },
-    {
-      "city": "Leeds",
-      "dist": 6
-    },
-    {
-      "city": "Vilnius",
-      "dist": 6
-    },
-    {
-      "city": "Riga",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Kraków",
-  "size": 14,
-  "lat": 50.06666666666667,
-  "lon": 19.933333333333334,
-  "neighbors": [
-    {
-      "city": "Kiev",
-      "dist": 4
-    },
-    {
-      "city": "Prague",
-      "dist": 5
-    },
-    {
-      "city": "Warsaw",
-      "dist": 6
-    },
-    {
-      "city": "Lviv",
-      "dist": 5
-    },
-    {
-      "city": "Worclaw",
-      "dist": 5
-    },
-    {
-      "city": "Lódz",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Valencia",
-  "size": 14,
-  "lat": 39.46666666666667,
-  "lon": -0.38333333333333336,
-  "neighbors": [
-    {
-      "city": "Barcelona",
-      "dist": 5
-    },
-    {
-      "city": "Madrid",
-      "dist": 6
-    },
-    {
-      "city": "Rome",
-      "dist": 6
-    },
-    {
-      "city": "Zaragoza",
-      "dist": 5
-    },
-    {
-      "city": "Sevilla",
-      "dist": 6
-    },
-    {
-      "city": "Marseille",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Amsterdam",
-  "size": 13,
-  "lat": 52.36666666666667,
-  "lon": 4.9,
-  "neighbors": [
-    {
-      "city": "Leeds",
-      "dist": 6
-    },
-    {
-      "city": "Cologne",
-      "dist": 6
-    },
-    {
-      "city": "Hamburg",
-      "dist": 6
-    },
-    {
-      "city": "Rotterdam",
-      "dist": 4
-    },
-    {
-      "city": "Düsseldorf",
-      "dist": 5
-    },
-    {
-      "city": "Essen",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Leeds",
-  "size": 13,
-  "lat": 53.8,
-  "lon": -0.44999999999999996,
-  "neighbors": [
-    {
-      "city": "Birmingham",
-      "dist": 5
-    },
-    {
-      "city": "Amsterdam",
-      "dist": 6
-    },
-    {
-      "city": "London",
-      "dist": 6
-    },
-    {
-      "city": "Hamburg",
-      "dist": 6
-    },
-    {
-      "city": "Rotterdam",
-      "dist": 6
-    },
-    {
-      "city": "Berlin",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Tolyatti",
-  "size": 13,
-  "lat": 53.516666666666666,
-  "lon": 49.416666666666664,
-  "neighbors": [
-    {
-      "city": "Samara",
-      "dist": 4
-    },
-    {
-      "city": "Ulyanovsk",
-      "dist": 5
-    },
-    {
-      "city": "Kazan",
-      "dist": 6
-    },
-    {
-      "city": "Saratov",
-      "dist": 6
-    },
-    {
-      "city": "Ufa",
-      "dist": 6
-    },
-    {
-      "city": "Hamburg",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Kryvy Rih",
-  "size": 13,
-  "lat": 47.916666666666664,
-  "lon": 33.15,
-  "neighbors": [
-    {
-      "city": "Zaporozhye",
-      "dist": 5
-    },
-    {
-      "city": "Odessa",
-      "dist": 5
-    },
-    {
-      "city": "Dnepropetrovsk",
-      "dist": 5
-    },
-    {
-      "city": "Chisinau",
-      "dist": 5
-    },
-    {
-      "city": "Rostov-na-Donu",
-      "dist": 6
-    },
-    {
-      "city": "Kiev",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Sevilla",
-  "size": 13,
-  "lat": 37.39,
-  "lon": -5.99,
-  "neighbors": [
-    {
-      "city": "Athens",
-      "dist": 4
-    },
-    {
-      "city": "Palermo",
-      "dist": 5
-    },
-    {
-      "city": "Madrid",
-      "dist": 6
-    },
-    {
-      "city": "Valencia",
-      "dist": 6
-    },
-    {
-      "city": "Zaragoza",
-      "dist": 7
-    },
-    {
-      "city": "Genoa",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Palermo",
-  "size": 13,
-  "lat": 38.11666666666667,
-  "lon": 13.366666666666667,
-  "neighbors": [
-    {
-      "city": "Sevilla",
-      "dist": 5
-    },
-    {
-      "city": "Naples",
-      "dist": 6
-    },
-    {
-      "city": "Athens",
-      "dist": 6
-    },
-    {
-      "city": "Rome",
-      "dist": 6
-    },
-    {
-      "city": "Marseille",
-      "dist": 6
-    },
-    {
-      "city": "Sofia",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Ulyanovsk",
-  "size": 13,
-  "lat": 54.31666666666667,
-  "lon": 48.36666666666667,
-  "neighbors": [
-    {
-      "city": "Tolyatti",
-      "dist": 5
-    },
-    {
-      "city": "Samara",
-      "dist": 5
-    },
-    {
-      "city": "Kazan",
-      "dist": 5
-    },
-    {
-      "city": "Berlin",
-      "dist": 5
-    },
-    {
-      "city": "Birmingham",
-      "dist": 5
-    },
-    {
-      "city": "Warsaw",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Chisinau",
-  "size": 13,
-  "lat": 47.016666666666666,
-  "lon": 28.833333333333332,
-  "neighbors": [
-    {
-      "city": "Rostov-na-Donu",
-      "dist": 3
-    },
-    {
-      "city": "Odessa",
-      "dist": 5
-    },
-    {
-      "city": "Budapest",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Genoa",
-  "size": 13,
-  "lat": 44.416666666666664,
-  "lon": 8.933333333333334,
-  "neighbors": [
-    {
-      "city": "Milan",
-      "dist": 5
-    },
-    {
-      "city": "Turin",
-      "dist": 5
-    },
-    {
-      "city": "Rome",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Izhevsk",
-  "size": 13,
-  "lat": 56.833333333333336,
-  "lon": 53.18333333333333,
-  "neighbors": [
-    {
-      "city": "Nizhny Novgorod",
-      "dist": 4
-    },
-    {
-      "city": "Kazan",
-      "dist": 5
-    },
-    {
-      "city": "Yekaterinburg",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Frankfurt",
-  "size": 13,
-  "lat": 50.1167,
-  "lon": 8.6833,
-  "neighbors": [
-    {
-      "city": "Kiev",
-      "dist": 4
-    },
-    {
-      "city": "Cologne",
-      "dist": 5
-    },
-    {
-      "city": "Prague",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Krasnodar",
-  "size": 13,
-  "lat": 45.03333333333333,
-  "lon": 38.96666666666667,
-  "neighbors": [
-    {
-      "city": "Rostov-na-Donu",
-      "dist": 6
-    },
-    {
-      "city": "Sofia",
-      "dist": 6
-    },
-    {
-      "city": "Donetsk",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Worclaw",
-  "size": 13,
-  "lat": 51.11666666666667,
-  "lon": 17.033333333333335,
-  "neighbors": [
-    {
-      "city": "Poznan",
-      "dist": 5
-    },
-    {
-      "city": "Prague",
-      "dist": 5
-    },
-    {
-      "city": "Kraków",
-      "dist": 5
-    }
-  ]
-}, {
-  "name": "Glasgow",
-  "size": 13,
-  "lat": 55.860916,
-  "lon": -4.251433,
-  "neighbors": [
-    {
-      "city": "Birmingham",
-      "dist": 6
-    },
-    {
-      "city": "Riga",
-      "dist": 6
-    },
-    {
-      "city": "London",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Yaroslavl",
-  "size": 13,
-  "lat": 57.61666666666667,
-  "lon": 39.85,
-  "neighbors": [
-    {
-      "city": "Moscov",
-      "dist": 5
-    },
-    {
-      "city": "Nizhny Novgorod",
-      "dist": 5
-    },
-    {
-      "city": "Kharkov",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Zaragoza",
-  "size": 13,
-  "lat": 41.65,
-  "lon": -0.8833333333333333,
-  "neighbors": [
-    {
-      "city": "Madrid",
-      "dist": 5
-    },
-    {
-      "city": "Barcelona",
-      "dist": 5
-    },
-    {
-      "city": "Paris",
-      "dist": 7
-    }
-  ]
-}, {
-  "name": "Essen",
-  "size": 13,
-  "lat": 51.45,
-  "lon": 7.0167,
-  "neighbors": [
-    {
-      "city": "Düsseldorf",
-      "dist": 4
-    },
-    {
-      "city": "Dortmund",
-      "dist": 4
-    },
-    {
-      "city": "Cologne",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Rotterdam",
-  "size": 13,
-  "lat": 51.916666666666664,
-  "lon": 4.5,
-  "neighbors": [
-    {
-      "city": "Amsterdam",
-      "dist": 4
-    },
-    {
-      "city": "Düsseldorf",
-      "dist": 6
-    },
-    {
-      "city": "Cologne",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Dortmund",
-  "size": 13,
-  "lat": 51.5167,
-  "lon": 7.4667,
-  "neighbors": [
-    {
-      "city": "Essen",
-      "dist": 4
-    },
-    {
-      "city": "Düsseldorf",
-      "dist": 4
-    },
-    {
-      "city": "Cologne",
-      "dist": 4
-    }
-  ]
-}, {
-  "name": "Stuttgart",
-  "size": 13,
-  "lat": 48.7833,
-  "lon": 9.1833,
-  "neighbors": [
-    {
-      "city": "Frankfurt",
-      "dist": 5
-    },
-    {
-      "city": "Cologne",
-      "dist": 6
-    },
-    {
-      "city": "Munich",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Vilnius",
-  "size": 13,
-  "lat": 54.68333333333333,
-  "lon": 25.283333333333335,
-  "neighbors": [
-    {
-      "city": "Minsk",
-      "dist": 5
-    },
-    {
-      "city": "Riga",
-      "dist": 6
-    },
-    {
-      "city": "Warsaw",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Poznan",
-  "size": 13,
-  "lat": 52.4,
-  "lon": 16.916666666666668,
-  "neighbors": [
-    {
-      "city": "Worclaw",
-      "dist": 5
-    },
-    {
-      "city": "Ulyanovsk",
-      "dist": 6
-    },
-    {
-      "city": "Lódz",
-      "dist": 6
-    }
-  ]
-}, {
-  "name": "Düsseldorf",
-  "size": 13,
-  "lat": 51.2333,
-  "lon": 6.7833,
-  "neighbors": [
-    {
-      "city": "Essen",
-      "dist": 4
-    },
-    {
-      "city": "Cologne",
-      "dist": 4
-    },
-    {
-      "city": "Frankfurt",
-      "dist": 5
-    }
-  ]
-} ]
+{
+  "map": {
+    "ax": 393.4415,
+    "xx": 14.8166,
+    "xy": -3.1353,
+    "ay": 1674.7397,
+    "yx": -0.105,
+    "yy": -26.5972
+  },
+  "cities": [
+  {
+    "name": "Moscov",
+    "size": 16,
+    "lat": 55.75,
+    "lon": 37.616667,
+    "neighbors": [
+      {
+        "city": "Nizhny Novgorod",
+        "dist": 6
+      },
+      {
+        "city": "Kiev",
+        "dist": 6
+      },
+      {
+        "city": "Kharkov",
+        "dist": 6
+      },
+      {
+        "city": "Voronezh",
+        "dist": 6
+      },
+      {
+        "city": "Saratov",
+        "dist": 6
+      },
+      {
+        "city": "Cologne",
+        "dist": 6
+      },
+      {
+        "city": "Riga",
+        "dist": 6
+      },
+      {
+        "city": "Yekaterinburg",
+        "dist": 6
+      },
+      {
+        "city": "Perm",
+        "dist": 7
+      },
+      {
+        "city": "Yaroslavl",
+        "dist": 5
+      },
+      {
+        "city": "Izhevsk",
+        "dist": 6
+      },
+      {
+        "city": "Worclaw",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "London",
+    "size": 16,
+    "lat": 51.5,
+    "lon": -0.13333333333333333,
+    "neighbors": [
+      {
+        "city": "Paris",
+        "dist": 6
+      },
+      {
+        "city": "Munich",
+        "dist": 7
+      },
+      {
+        "city": "Vienna",
+        "dist": 7
+      },
+      {
+        "city": "Birmingham",
+        "dist": 5
+      },
+      {
+        "city": "Cologne",
+        "dist": 6
+      },
+      {
+        "city": "Prague",
+        "dist": 7
+      },
+      {
+        "city": "Leeds",
+        "dist": 6
+      },
+      {
+        "city": "Amsterdam",
+        "dist": 6
+      },
+      {
+        "city": "Volgograd",
+        "dist": 7
+      },
+      {
+        "city": "Stuttgart",
+        "dist": 6
+      },
+      {
+        "city": "Glasgow",
+        "dist": 6
+      },
+      {
+        "city": "Rotterdam",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "St Petersburg",
+    "size": 15,
+    "lat": 59.95,
+    "lon": 30.3,
+    "neighbors": [
+      {
+        "city": "Minsk",
+        "dist": 7
+      },
+      {
+        "city": "Samara",
+        "dist": 7
+      },
+      {
+        "city": "Hamburg",
+        "dist": 7
+      },
+      {
+        "city": "Moscov",
+        "dist": 7
+      },
+      {
+        "city": "Warsaw",
+        "dist": 7
+      },
+      {
+        "city": "Berlin",
+        "dist": 7
+      },
+      {
+        "city": "Stockholm",
+        "dist": 5
+      },
+      {
+        "city": "Riga",
+        "dist": 7
+      },
+      {
+        "city": "Kiev",
+        "dist": 7
+      },
+      {
+        "city": "Vilnius",
+        "dist": 7
+      },
+      {
+        "city": "Tolyatti",
+        "dist": 7
+      },
+      {
+        "city": "Yaroslavl",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Berlin",
+    "size": 15,
+    "lat": 52.516667,
+    "lon": 13.383333,
+    "neighbors": [
+      {
+        "city": "Hamburg",
+        "dist": 5
+      },
+      {
+        "city": "Prague",
+        "dist": 6
+      },
+      {
+        "city": "Minsk",
+        "dist": 6
+      },
+      {
+        "city": "Vienna",
+        "dist": 6
+      },
+      {
+        "city": "Munich",
+        "dist": 6
+      },
+      {
+        "city": "Budapest",
+        "dist": 6
+      },
+      {
+        "city": "Ulyanovsk",
+        "dist": 5
+      },
+      {
+        "city": "Leeds",
+        "dist": 6
+      },
+      {
+        "city": "Donetsk",
+        "dist": 6
+      },
+      {
+        "city": "Poznan",
+        "dist": 6
+      },
+      {
+        "city": "Vilnius",
+        "dist": 6
+      },
+      {
+        "city": "Worclaw",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Madrid",
+    "size": 15,
+    "lat": 40.383333,
+    "lon": -3.716667,
+    "neighbors": [
+      {
+        "city": "Barcelona",
+        "dist": 5
+      },
+      {
+        "city": "Rome",
+        "dist": 6
+      },
+      {
+        "city": "Budapest",
+        "dist": 7
+      },
+      {
+        "city": "Naples",
+        "dist": 6
+      },
+      {
+        "city": "Munich",
+        "dist": 7
+      },
+      {
+        "city": "Paris",
+        "dist": 7
+      },
+      {
+        "city": "Valencia",
+        "dist": 6
+      },
+      {
+        "city": "Sevilla",
+        "dist": 6
+      },
+      {
+        "city": "Marseille",
+        "dist": 7
+      },
+      {
+        "city": "Zaragoza",
+        "dist": 5
+      },
+      {
+        "city": "Thessaloniki",
+        "dist": 7
+      },
+      {
+        "city": "Zaporozhye",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Rome",
+    "size": 15,
+    "lat": 41.9,
+    "lon": 12.5,
+    "neighbors": [
+      {
+        "city": "Milan",
+        "dist": 6
+      },
+      {
+        "city": "Madrid",
+        "dist": 6
+      },
+      {
+        "city": "Belgrade",
+        "dist": 6
+      },
+      {
+        "city": "Naples",
+        "dist": 5
+      },
+      {
+        "city": "Turin",
+        "dist": 6
+      },
+      {
+        "city": "Odessa",
+        "dist": 6
+      },
+      {
+        "city": "Valencia",
+        "dist": 6
+      },
+      {
+        "city": "Palermo",
+        "dist": 6
+      },
+      {
+        "city": "Zagreb",
+        "dist": 6
+      },
+      {
+        "city": "Genoa",
+        "dist": 6
+      },
+      {
+        "city": "Thessaloniki",
+        "dist": 6
+      },
+      {
+        "city": "Munich",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Kiev",
+    "size": 15,
+    "lat": 50.45,
+    "lon": 30.523333,
+    "neighbors": [
+      {
+        "city": "Prague",
+        "dist": 4
+      },
+      {
+        "city": "Kharkov",
+        "dist": 4
+      },
+      {
+        "city": "Minsk",
+        "dist": 6
+      },
+      {
+        "city": "Dnepropetrovsk",
+        "dist": 6
+      },
+      {
+        "city": "Odessa",
+        "dist": 6
+      },
+      {
+        "city": "Moscov",
+        "dist": 6
+      },
+      {
+        "city": "Kraków",
+        "dist": 4
+      },
+      {
+        "city": "Lviv",
+        "dist": 5
+      },
+      {
+        "city": "Zaporozhye",
+        "dist": 6
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 4
+      },
+      {
+        "city": "Kryvy Rih",
+        "dist": 6
+      },
+      {
+        "city": "Chisinau",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Paris",
+    "size": 15,
+    "lat": 48.8567,
+    "lon": 2.3508,
+    "neighbors": [
+      {
+        "city": "London",
+        "dist": 6
+      },
+      {
+        "city": "Milan",
+        "dist": 6
+      },
+      {
+        "city": "Berlin",
+        "dist": 6
+      },
+      {
+        "city": "Cologne",
+        "dist": 6
+      },
+      {
+        "city": "Voronezh",
+        "dist": 6
+      },
+      {
+        "city": "Turin",
+        "dist": 6
+      },
+      {
+        "city": "Lódz",
+        "dist": 6
+      },
+      {
+        "city": "Amsterdam",
+        "dist": 6
+      },
+      {
+        "city": "Birmingham",
+        "dist": 6
+      },
+      {
+        "city": "Düsseldorf",
+        "dist": 6
+      },
+      {
+        "city": "Essen",
+        "dist": 6
+      },
+      {
+        "city": "Dortmund",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Bucharest",
+    "size": 15,
+    "lat": 44.4325,
+    "lon": 26.103889,
+    "neighbors": [
+      {
+        "city": "Sofia",
+        "dist": 5
+      },
+      {
+        "city": "Belgrade",
+        "dist": 6
+      },
+      {
+        "city": "Kharkov",
+        "dist": 6
+      },
+      {
+        "city": "Odessa",
+        "dist": 6
+      },
+      {
+        "city": "Prague",
+        "dist": 6
+      },
+      {
+        "city": "Kiev",
+        "dist": 7
+      },
+      {
+        "city": "Marseille",
+        "dist": 6
+      },
+      {
+        "city": "Thessaloniki",
+        "dist": 6
+      },
+      {
+        "city": "Lviv",
+        "dist": 6
+      },
+      {
+        "city": "Chisinau",
+        "dist": 6
+      },
+      {
+        "city": "Kraków",
+        "dist": 6
+      },
+      {
+        "city": "Athens",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Budapest",
+    "size": 14,
+    "lat": 47.4925,
+    "lon": 19.051389,
+    "neighbors": [
+      {
+        "city": "Vienna",
+        "dist": 5
+      },
+      {
+        "city": "Belgrade",
+        "dist": 6
+      },
+      {
+        "city": "Warsaw",
+        "dist": 6
+      },
+      {
+        "city": "Odessa",
+        "dist": 5
+      },
+      {
+        "city": "Zagreb",
+        "dist": 5
+      },
+      {
+        "city": "Munich",
+        "dist": 6
+      },
+      {
+        "city": "Kraków",
+        "dist": 6
+      },
+      {
+        "city": "Lódz",
+        "dist": 6
+      },
+      {
+        "city": "Rostov-na-Donu",
+        "dist": 6
+      },
+      {
+        "city": "Chisinau",
+        "dist": 5
+      },
+      {
+        "city": "Worclaw",
+        "dist": 6
+      },
+      {
+        "city": "Berlin",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Hamburg",
+    "size": 14,
+    "lat": 53.565278,
+    "lon": 10.001389,
+    "neighbors": [
+      {
+        "city": "Samara",
+        "dist": 5
+      },
+      {
+        "city": "Berlin",
+        "dist": 5
+      },
+      {
+        "city": "Munich",
+        "dist": 6
+      },
+      {
+        "city": "Cologne",
+        "dist": 6
+      },
+      {
+        "city": "Birmingham",
+        "dist": 6
+      },
+      {
+        "city": "Warsaw",
+        "dist": 6
+      },
+      {
+        "city": "Amsterdam",
+        "dist": 6
+      },
+      {
+        "city": "Leeds",
+        "dist": 6
+      },
+      {
+        "city": "Prague",
+        "dist": 6
+      },
+      {
+        "city": "Dortmund",
+        "dist": 6
+      },
+      {
+        "city": "Poznan",
+        "dist": 6
+      },
+      {
+        "city": "Essen",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Minsk",
+    "size": 14,
+    "lat": 53.9,
+    "lon": 27.566667,
+    "neighbors": [
+      {
+        "city": "Warsaw",
+        "dist": 6
+      },
+      {
+        "city": "Berlin",
+        "dist": 6
+      },
+      {
+        "city": "Kiev",
+        "dist": 6
+      },
+      {
+        "city": "Samara",
+        "dist": 6
+      },
+      {
+        "city": "Hamburg",
+        "dist": 6
+      },
+      {
+        "city": "St Petersburg",
+        "dist": 7
+      },
+      {
+        "city": "Riga",
+        "dist": 6
+      },
+      {
+        "city": "Lódz",
+        "dist": 6
+      },
+      {
+        "city": "Birmingham",
+        "dist": 7
+      },
+      {
+        "city": "Vilnius",
+        "dist": 5
+      },
+      {
+        "city": "Poznan",
+        "dist": 6
+      },
+      {
+        "city": "Lviv",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Warsaw",
+    "size": 14,
+    "lat": 52.233333,
+    "lon": 21.016667,
+    "neighbors": [
+      {
+        "city": "Minsk",
+        "dist": 6
+      },
+      {
+        "city": "Vienna",
+        "dist": 6
+      },
+      {
+        "city": "Budapest",
+        "dist": 6
+      },
+      {
+        "city": "Ufa",
+        "dist": 6
+      },
+      {
+        "city": "Dnepropetrovsk",
+        "dist": 6
+      },
+      {
+        "city": "Munich",
+        "dist": 6
+      },
+      {
+        "city": "Lódz",
+        "dist": 5
+      },
+      {
+        "city": "Kraków",
+        "dist": 6
+      },
+      {
+        "city": "Lviv",
+        "dist": 6
+      },
+      {
+        "city": "Vilnius",
+        "dist": 6
+      },
+      {
+        "city": "Poznan",
+        "dist": 6
+      },
+      {
+        "city": "Worclaw",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Belgrade",
+    "size": 14,
+    "lat": 44.816667,
+    "lon": 20.466667,
+    "neighbors": [
+      {
+        "city": "Sofia",
+        "dist": 6
+      },
+      {
+        "city": "Budapest",
+        "dist": 6
+      },
+      {
+        "city": "Bucharest",
+        "dist": 6
+      },
+      {
+        "city": "Vienna",
+        "dist": 6
+      },
+      {
+        "city": "Zagreb",
+        "dist": 6
+      },
+      {
+        "city": "Rome",
+        "dist": 6
+      },
+      {
+        "city": "Marseille",
+        "dist": 5
+      },
+      {
+        "city": "Thessaloniki",
+        "dist": 6
+      },
+      {
+        "city": "Lviv",
+        "dist": 6
+      },
+      {
+        "city": "Kraków",
+        "dist": 6
+      },
+      {
+        "city": "Stuttgart",
+        "dist": 6
+      },
+      {
+        "city": "Prague",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Vienna",
+    "size": 14,
+    "lat": 48.2,
+    "lon": 16.366667,
+    "neighbors": [
+      {
+        "city": "Budapest",
+        "dist": 5
+      },
+      {
+        "city": "Prague",
+        "dist": 6
+      },
+      {
+        "city": "Milan",
+        "dist": 6
+      },
+      {
+        "city": "Zagreb",
+        "dist": 6
+      },
+      {
+        "city": "Odessa",
+        "dist": 6
+      },
+      {
+        "city": "Warsaw",
+        "dist": 6
+      },
+      {
+        "city": "Lódz",
+        "dist": 6
+      },
+      {
+        "city": "Kraków",
+        "dist": 6
+      },
+      {
+        "city": "Belgrade",
+        "dist": 6
+      },
+      {
+        "city": "Worclaw",
+        "dist": 6
+      },
+      {
+        "city": "Munich",
+        "dist": 6
+      },
+      {
+        "city": "Amsterdam",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Kharkov",
+    "size": 14,
+    "lat": 50.004444,
+    "lon": 36.231389,
+    "neighbors": [
+      {
+        "city": "Kiev",
+        "dist": 4
+      },
+      {
+        "city": "Prague",
+        "dist": 6
+      },
+      {
+        "city": "Bucharest",
+        "dist": 6
+      },
+      {
+        "city": "Dnepropetrovsk",
+        "dist": 5
+      },
+      {
+        "city": "Voronezh",
+        "dist": 6
+      },
+      {
+        "city": "Donetsk",
+        "dist": 6
+      },
+      {
+        "city": "Zaporozhye",
+        "dist": 6
+      },
+      {
+        "city": "Kryvy Rih",
+        "dist": 6
+      },
+      {
+        "city": "Kraków",
+        "dist": 6
+      },
+      {
+        "city": "Lviv",
+        "dist": 6
+      },
+      {
+        "city": "Rostov-na-Donu",
+        "dist": 6
+      },
+      {
+        "city": "Saratov",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Barcelona",
+    "size": 14,
+    "lat": 41.383333,
+    "lon": 2.183333,
+    "neighbors": [
+      {
+        "city": "Madrid",
+        "dist": 5
+      },
+      {
+        "city": "Milan",
+        "dist": 6
+      },
+      {
+        "city": "Rome",
+        "dist": 7
+      },
+      {
+        "city": "Naples",
+        "dist": 6
+      },
+      {
+        "city": "Turin",
+        "dist": 6
+      },
+      {
+        "city": "Odessa",
+        "dist": 6
+      },
+      {
+        "city": "Valencia",
+        "dist": 5
+      },
+      {
+        "city": "Thessaloniki",
+        "dist": 6
+      },
+      {
+        "city": "Marseille",
+        "dist": 6
+      },
+      {
+        "city": "Zaragoza",
+        "dist": 5
+      },
+      {
+        "city": "Genoa",
+        "dist": 7
+      },
+      {
+        "city": "Zagreb",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Nizhny Novgorod",
+    "size": 14,
+    "lat": 56.326944,
+    "lon": 44.0075,
+    "neighbors": [
+      {
+        "city": "Yekaterinburg",
+        "dist": 4
+      },
+      {
+        "city": "Moscov",
+        "dist": 6
+      },
+      {
+        "city": "Kiev",
+        "dist": 6
+      },
+      {
+        "city": "Kazan",
+        "dist": 6
+      },
+      {
+        "city": "Saratov",
+        "dist": 6
+      },
+      {
+        "city": "Voronezh",
+        "dist": 6
+      },
+      {
+        "city": "Riga",
+        "dist": 5
+      },
+      {
+        "city": "Ulyanovsk",
+        "dist": 6
+      },
+      {
+        "city": "Tolyatti",
+        "dist": 7
+      },
+      {
+        "city": "Izhevsk",
+        "dist": 4
+      },
+      {
+        "city": "Yaroslavl",
+        "dist": 5
+      },
+      {
+        "city": "Kharkov",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Milan",
+    "size": 14,
+    "lat": 45.466667,
+    "lon": 9.183333,
+    "neighbors": [
+      {
+        "city": "Munich",
+        "dist": 6
+      },
+      {
+        "city": "Sofia",
+        "dist": 6
+      },
+      {
+        "city": "Paris",
+        "dist": 6
+      },
+      {
+        "city": "Turin",
+        "dist": 5
+      },
+      {
+        "city": "Vienna",
+        "dist": 6
+      },
+      {
+        "city": "Volgograd",
+        "dist": 6
+      },
+      {
+        "city": "Marseille",
+        "dist": 6
+      },
+      {
+        "city": "Rome",
+        "dist": 6
+      },
+      {
+        "city": "Dnepropetrovsk",
+        "dist": 6
+      },
+      {
+        "city": "Genoa",
+        "dist": 5
+      },
+      {
+        "city": "Stuttgart",
+        "dist": 6
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Yekaterinburg",
+    "size": 14,
+    "lat": 56.833333333333336,
+    "lon": 60.61666666666667,
+    "neighbors": [
+      {
+        "city": "Nizhny Novgorod",
+        "dist": 4
+      },
+      {
+        "city": "Moscov",
+        "dist": 6
+      },
+      {
+        "city": "Kharkov",
+        "dist": 7
+      },
+      {
+        "city": "Kazan",
+        "dist": 6
+      },
+      {
+        "city": "Perm",
+        "dist": 6
+      },
+      {
+        "city": "Ufa",
+        "dist": 6
+      },
+      {
+        "city": "Kraków",
+        "dist": 7
+      },
+      {
+        "city": "Prague",
+        "dist": 7
+      },
+      {
+        "city": "Lviv",
+        "dist": 7
+      },
+      {
+        "city": "Izhevsk",
+        "dist": 5
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 7
+      },
+      {
+        "city": "Kiev",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Munich",
+    "size": 14,
+    "lat": 48.133333,
+    "lon": 11.566667,
+    "neighbors": [
+      {
+        "city": "Milan",
+        "dist": 6
+      },
+      {
+        "city": "Prague",
+        "dist": 6
+      },
+      {
+        "city": "Vienna",
+        "dist": 6
+      },
+      {
+        "city": "Zagreb",
+        "dist": 6
+      },
+      {
+        "city": "Turin",
+        "dist": 6
+      },
+      {
+        "city": "Odessa",
+        "dist": 6
+      },
+      {
+        "city": "Cologne",
+        "dist": 6
+      },
+      {
+        "city": "Warsaw",
+        "dist": 6
+      },
+      {
+        "city": "Berlin",
+        "dist": 6
+      },
+      {
+        "city": "Stuttgart",
+        "dist": 6
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 6
+      },
+      {
+        "city": "Dortmund",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Prague",
+    "size": 14,
+    "lat": 50.083333,
+    "lon": 14.416667,
+    "neighbors": [
+      {
+        "city": "Kiev",
+        "dist": 4
+      },
+      {
+        "city": "Vienna",
+        "dist": 6
+      },
+      {
+        "city": "Berlin",
+        "dist": 6
+      },
+      {
+        "city": "Cologne",
+        "dist": 5
+      },
+      {
+        "city": "Munich",
+        "dist": 6
+      },
+      {
+        "city": "Kharkov",
+        "dist": 6
+      },
+      {
+        "city": "Kraków",
+        "dist": 5
+      },
+      {
+        "city": "Lviv",
+        "dist": 6
+      },
+      {
+        "city": "Lódz",
+        "dist": 6
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 5
+      },
+      {
+        "city": "Worclaw",
+        "dist": 5
+      },
+      {
+        "city": "Zagreb",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Samara",
+    "size": 14,
+    "lat": 53.202778,
+    "lon": 50.140833,
+    "neighbors": [
+      {
+        "city": "Hamburg",
+        "dist": 5
+      },
+      {
+        "city": "Minsk",
+        "dist": 6
+      },
+      {
+        "city": "Budapest",
+        "dist": 7
+      },
+      {
+        "city": "Kazan",
+        "dist": 6
+      },
+      {
+        "city": "Ufa",
+        "dist": 6
+      },
+      {
+        "city": "Nizhny Novgorod",
+        "dist": 7
+      },
+      {
+        "city": "Tolyatti",
+        "dist": 4
+      },
+      {
+        "city": "Ulyanovsk",
+        "dist": 5
+      },
+      {
+        "city": "Saratov",
+        "dist": 6
+      },
+      {
+        "city": "Izhevsk",
+        "dist": 6
+      },
+      {
+        "city": "Leeds",
+        "dist": 6
+      },
+      {
+        "city": "Volgograd",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Sofia",
+    "size": 14,
+    "lat": 42.7,
+    "lon": 23.33,
+    "neighbors": [
+      {
+        "city": "Bucharest",
+        "dist": 5
+      },
+      {
+        "city": "Belgrade",
+        "dist": 6
+      },
+      {
+        "city": "Budapest",
+        "dist": 7
+      },
+      {
+        "city": "Turin",
+        "dist": 6
+      },
+      {
+        "city": "Milan",
+        "dist": 6
+      },
+      {
+        "city": "Odessa",
+        "dist": 6
+      },
+      {
+        "city": "Thessaloniki",
+        "dist": 5
+      },
+      {
+        "city": "Zagreb",
+        "dist": 6
+      },
+      {
+        "city": "Athens",
+        "dist": 6
+      },
+      {
+        "city": "Krasnodar",
+        "dist": 6
+      },
+      {
+        "city": "Chisinau",
+        "dist": 7
+      },
+      {
+        "city": "Genoa",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Dnepropetrovsk",
+    "size": 14,
+    "lat": 48.45,
+    "lon": 35.03333333333333,
+    "neighbors": [
+      {
+        "city": "Zaporozhye",
+        "dist": 4
+      },
+      {
+        "city": "Kharkov",
+        "dist": 5
+      },
+      {
+        "city": "Odessa",
+        "dist": 6
+      },
+      {
+        "city": "Kryvy Rih",
+        "dist": 5
+      },
+      {
+        "city": "Donetsk",
+        "dist": 6
+      },
+      {
+        "city": "Zagreb",
+        "dist": 6
+      },
+      {
+        "city": "Rostov-na-Donu",
+        "dist": 6
+      },
+      {
+        "city": "Voronezh",
+        "dist": 6
+      },
+      {
+        "city": "Kiev",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Kazan",
+    "size": 14,
+    "lat": 55.790278,
+    "lon": 49.134722,
+    "neighbors": [
+      {
+        "city": "Nizhny Novgorod",
+        "dist": 6
+      },
+      {
+        "city": "Samara",
+        "dist": 6
+      },
+      {
+        "city": "Yekaterinburg",
+        "dist": 6
+      },
+      {
+        "city": "Ulyanovsk",
+        "dist": 5
+      },
+      {
+        "city": "Tolyatti",
+        "dist": 6
+      },
+      {
+        "city": "Perm",
+        "dist": 6
+      },
+      {
+        "city": "Izhevsk",
+        "dist": 5
+      },
+      {
+        "city": "Yaroslavl",
+        "dist": 6
+      },
+      {
+        "city": "Saratov",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Ufa",
+    "size": 14,
+    "lat": 54.75,
+    "lon": 55.966667,
+    "neighbors": [
+      {
+        "city": "Perm",
+        "dist": 6
+      },
+      {
+        "city": "Samara",
+        "dist": 6
+      },
+      {
+        "city": "Yekaterinburg",
+        "dist": 6
+      },
+      {
+        "city": "Warsaw",
+        "dist": 6
+      },
+      {
+        "city": "Saratov",
+        "dist": 6
+      },
+      {
+        "city": "Voronezh",
+        "dist": 6
+      },
+      {
+        "city": "Izhevsk",
+        "dist": 6
+      },
+      {
+        "city": "Tolyatti",
+        "dist": 6
+      },
+      {
+        "city": "Lódz",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Donetsk",
+    "size": 14,
+    "lat": 48.0,
+    "lon": 37.8,
+    "neighbors": [
+      {
+        "city": "Rostov-na-Donu",
+        "dist": 5
+      },
+      {
+        "city": "Odessa",
+        "dist": 5
+      },
+      {
+        "city": "Kharkov",
+        "dist": 6
+      },
+      {
+        "city": "Zaporozhye",
+        "dist": 5
+      },
+      {
+        "city": "Dnepropetrovsk",
+        "dist": 6
+      },
+      {
+        "city": "Voronezh",
+        "dist": 6
+      },
+      {
+        "city": "Krasnodar",
+        "dist": 6
+      },
+      {
+        "city": "Kryvy Rih",
+        "dist": 6
+      },
+      {
+        "city": "Chisinau",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Naples",
+    "size": 14,
+    "lat": 40.833333333333336,
+    "lon": 14.25,
+    "neighbors": [
+      {
+        "city": "Rome",
+        "dist": 5
+      },
+      {
+        "city": "Barcelona",
+        "dist": 6
+      },
+      {
+        "city": "Madrid",
+        "dist": 6
+      },
+      {
+        "city": "Thessaloniki",
+        "dist": 5
+      },
+      {
+        "city": "Palermo",
+        "dist": 6
+      },
+      {
+        "city": "Zagreb",
+        "dist": 6
+      },
+      {
+        "city": "Milan",
+        "dist": 6
+      },
+      {
+        "city": "Zaragoza",
+        "dist": 6
+      },
+      {
+        "city": "Chisinau",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Birmingham",
+    "size": 14,
+    "lat": 52.483056,
+    "lon": -1.893611,
+    "neighbors": [
+      {
+        "city": "London",
+        "dist": 5
+      },
+      {
+        "city": "Paris",
+        "dist": 6
+      },
+      {
+        "city": "Rome",
+        "dist": 7
+      },
+      {
+        "city": "Leeds",
+        "dist": 5
+      },
+      {
+        "city": "Ulyanovsk",
+        "dist": 5
+      },
+      {
+        "city": "Munich",
+        "dist": 6
+      },
+      {
+        "city": "Glasgow",
+        "dist": 6
+      },
+      {
+        "city": "Vienna",
+        "dist": 6
+      },
+      {
+        "city": "Hamburg",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Perm",
+    "size": 14,
+    "lat": 58.0,
+    "lon": 56.316667,
+    "neighbors": [
+      {
+        "city": "Ufa",
+        "dist": 6
+      },
+      {
+        "city": "Kazan",
+        "dist": 6
+      },
+      {
+        "city": "Yekaterinburg",
+        "dist": 6
+      },
+      {
+        "city": "Ulyanovsk",
+        "dist": 6
+      },
+      {
+        "city": "Moscov",
+        "dist": 7
+      },
+      {
+        "city": "Tolyatti",
+        "dist": 7
+      },
+      {
+        "city": "Izhevsk",
+        "dist": 6
+      },
+      {
+        "city": "Samara",
+        "dist": 7
+      },
+      {
+        "city": "Nizhny Novgorod",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Rostov-na-Donu",
+    "size": 14,
+    "lat": 47.2333,
+    "lon": 39.7,
+    "neighbors": [
+      {
+        "city": "Donetsk",
+        "dist": 5
+      },
+      {
+        "city": "Zaporozhye",
+        "dist": 5
+      },
+      {
+        "city": "Odessa",
+        "dist": 6
+      },
+      {
+        "city": "Kryvy Rih",
+        "dist": 6
+      },
+      {
+        "city": "Dnepropetrovsk",
+        "dist": 6
+      },
+      {
+        "city": "Volgograd",
+        "dist": 6
+      },
+      {
+        "city": "Chisinau",
+        "dist": 3
+      },
+      {
+        "city": "Krasnodar",
+        "dist": 6
+      },
+      {
+        "city": "Kharkov",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Odessa",
+    "size": 14,
+    "lat": 46.46666666666667,
+    "lon": 30.716666666666665,
+    "neighbors": [
+      {
+        "city": "Zaporozhye",
+        "dist": 5
+      },
+      {
+        "city": "Donetsk",
+        "dist": 5
+      },
+      {
+        "city": "Budapest",
+        "dist": 5
+      },
+      {
+        "city": "Kryvy Rih",
+        "dist": 5
+      },
+      {
+        "city": "Dnepropetrovsk",
+        "dist": 6
+      },
+      {
+        "city": "Rostov-na-Donu",
+        "dist": 6
+      },
+      {
+        "city": "Chisinau",
+        "dist": 5
+      },
+      {
+        "city": "Vienna",
+        "dist": 6
+      },
+      {
+        "city": "Munich",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Volgograd",
+    "size": 14,
+    "lat": 48.7,
+    "lon": 44.516667,
+    "neighbors": [
+      {
+        "city": "Saratov",
+        "dist": 6
+      },
+      {
+        "city": "Voronezh",
+        "dist": 6
+      },
+      {
+        "city": "Milan",
+        "dist": 6
+      },
+      {
+        "city": "Lódz",
+        "dist": 6
+      },
+      {
+        "city": "Rostov-na-Donu",
+        "dist": 6
+      },
+      {
+        "city": "Zagreb",
+        "dist": 6
+      },
+      {
+        "city": "Rotterdam",
+        "dist": 6
+      },
+      {
+        "city": "Krasnodar",
+        "dist": 6
+      },
+      {
+        "city": "Samara",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Cologne",
+    "size": 14,
+    "lat": 50.936389,
+    "lon": 6.952778,
+    "neighbors": [
+      {
+        "city": "Prague",
+        "dist": 5
+      },
+      {
+        "city": "Paris",
+        "dist": 6
+      },
+      {
+        "city": "Hamburg",
+        "dist": 6
+      },
+      {
+        "city": "Lviv",
+        "dist": 6
+      },
+      {
+        "city": "Amsterdam",
+        "dist": 6
+      },
+      {
+        "city": "Kraków",
+        "dist": 6
+      },
+      {
+        "city": "Düsseldorf",
+        "dist": 4
+      },
+      {
+        "city": "Essen",
+        "dist": 4
+      },
+      {
+        "city": "Dortmund",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Turin",
+    "size": 14,
+    "lat": 45.083333333333336,
+    "lon": 7.683333333333334,
+    "neighbors": [
+      {
+        "city": "Milan",
+        "dist": 5
+      },
+      {
+        "city": "Sofia",
+        "dist": 6
+      },
+      {
+        "city": "Munich",
+        "dist": 6
+      },
+      {
+        "city": "Marseille",
+        "dist": 5
+      },
+      {
+        "city": "Paris",
+        "dist": 6
+      },
+      {
+        "city": "Rome",
+        "dist": 6
+      },
+      {
+        "city": "Genoa",
+        "dist": 5
+      },
+      {
+        "city": "Stuttgart",
+        "dist": 6
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Voronezh",
+    "size": 14,
+    "lat": 51.671667,
+    "lon": 39.210556,
+    "neighbors": [
+      {
+        "city": "Kharkov",
+        "dist": 6
+      },
+      {
+        "city": "Paris",
+        "dist": 6
+      },
+      {
+        "city": "Moscov",
+        "dist": 6
+      },
+      {
+        "city": "Volgograd",
+        "dist": 6
+      },
+      {
+        "city": "Dnepropetrovsk",
+        "dist": 6
+      },
+      {
+        "city": "Donetsk",
+        "dist": 6
+      },
+      {
+        "city": "Stuttgart",
+        "dist": 6
+      },
+      {
+        "city": "Zaporozhye",
+        "dist": 6
+      },
+      {
+        "city": "Rostov-na-Donu",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Saratov",
+    "size": 14,
+    "lat": 51.53333333333333,
+    "lon": 46.016666666666666,
+    "neighbors": [
+      {
+        "city": "Volgograd",
+        "dist": 6
+      },
+      {
+        "city": "Samara",
+        "dist": 6
+      },
+      {
+        "city": "Paris",
+        "dist": 6
+      },
+      {
+        "city": "Ulyanovsk",
+        "dist": 6
+      },
+      {
+        "city": "Tolyatti",
+        "dist": 6
+      },
+      {
+        "city": "Ufa",
+        "dist": 6
+      },
+      {
+        "city": "Dnepropetrovsk",
+        "dist": 6
+      },
+      {
+        "city": "Kazan",
+        "dist": 6
+      },
+      {
+        "city": "Moscov",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Zagreb",
+    "size": 14,
+    "lat": 45.81666666666667,
+    "lon": 15.983333333333333,
+    "neighbors": [
+      {
+        "city": "Budapest",
+        "dist": 5
+      },
+      {
+        "city": "Vienna",
+        "dist": 6
+      },
+      {
+        "city": "Rome",
+        "dist": 6
+      },
+      {
+        "city": "Munich",
+        "dist": 6
+      },
+      {
+        "city": "Dnepropetrovsk",
+        "dist": 6
+      },
+      {
+        "city": "Sofia",
+        "dist": 6
+      },
+      {
+        "city": "Stuttgart",
+        "dist": 6
+      },
+      {
+        "city": "Paris",
+        "dist": 6
+      },
+      {
+        "city": "Prague",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Zaporozhye",
+    "size": 14,
+    "lat": 47.833333333333336,
+    "lon": 35.166666666666664,
+    "neighbors": [
+      {
+        "city": "Dnepropetrovsk",
+        "dist": 4
+      },
+      {
+        "city": "Odessa",
+        "dist": 5
+      },
+      {
+        "city": "Donetsk",
+        "dist": 5
+      },
+      {
+        "city": "Kryvy Rih",
+        "dist": 5
+      },
+      {
+        "city": "Rostov-na-Donu",
+        "dist": 5
+      },
+      {
+        "city": "Kharkov",
+        "dist": 6
+      },
+      {
+        "city": "Chisinau",
+        "dist": 5
+      },
+      {
+        "city": "Krasnodar",
+        "dist": 6
+      },
+      {
+        "city": "Voronezh",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Lódz",
+    "size": 14,
+    "lat": 51.78333333333333,
+    "lon": 19.45,
+    "neighbors": [
+      {
+        "city": "Warsaw",
+        "dist": 5
+      },
+      {
+        "city": "Kraków",
+        "dist": 5
+      },
+      {
+        "city": "Lviv",
+        "dist": 6
+      },
+      {
+        "city": "Worclaw",
+        "dist": 6
+      },
+      {
+        "city": "Poznan",
+        "dist": 6
+      },
+      {
+        "city": "Stuttgart",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Marseille",
+    "size": 14,
+    "lat": 43.3,
+    "lon": 5.366666666666666,
+    "neighbors": [
+      {
+        "city": "Turin",
+        "dist": 5
+      },
+      {
+        "city": "Belgrade",
+        "dist": 5
+      },
+      {
+        "city": "Milan",
+        "dist": 6
+      },
+      {
+        "city": "Genoa",
+        "dist": 5
+      },
+      {
+        "city": "Bucharest",
+        "dist": 6
+      },
+      {
+        "city": "Barcelona",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Riga",
+    "size": 14,
+    "lat": 56.95,
+    "lon": 24.1,
+    "neighbors": [
+      {
+        "city": "Nizhny Novgorod",
+        "dist": 5
+      },
+      {
+        "city": "Moscov",
+        "dist": 6
+      },
+      {
+        "city": "Minsk",
+        "dist": 6
+      },
+      {
+        "city": "Vilnius",
+        "dist": 6
+      },
+      {
+        "city": "Glasgow",
+        "dist": 6
+      },
+      {
+        "city": "Kazan",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Lviv",
+    "size": 14,
+    "lat": 49.833333333333336,
+    "lon": 24.016666666666666,
+    "neighbors": [
+      {
+        "city": "Kiev",
+        "dist": 5
+      },
+      {
+        "city": "Kraków",
+        "dist": 5
+      },
+      {
+        "city": "Cologne",
+        "dist": 6
+      },
+      {
+        "city": "Worclaw",
+        "dist": 5
+      },
+      {
+        "city": "Prague",
+        "dist": 6
+      },
+      {
+        "city": "Lódz",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Athens",
+    "size": 14,
+    "lat": 37.983333333333334,
+    "lon": 23.733333333333334,
+    "neighbors": [
+      {
+        "city": "Sevilla",
+        "dist": 4
+      },
+      {
+        "city": "Thessaloniki",
+        "dist": 6
+      },
+      {
+        "city": "Sofia",
+        "dist": 6
+      },
+      {
+        "city": "Palermo",
+        "dist": 6
+      },
+      {
+        "city": "Marseille",
+        "dist": 7
+      },
+      {
+        "city": "Bucharest",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Thessaloniki",
+    "size": 14,
+    "lat": 40.65,
+    "lon": 22.9,
+    "neighbors": [
+      {
+        "city": "Naples",
+        "dist": 5
+      },
+      {
+        "city": "Sofia",
+        "dist": 5
+      },
+      {
+        "city": "Barcelona",
+        "dist": 6
+      },
+      {
+        "city": "Athens",
+        "dist": 6
+      },
+      {
+        "city": "Rome",
+        "dist": 6
+      },
+      {
+        "city": "Belgrade",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Stockholm",
+    "size": 14,
+    "lat": 59.333333333333336,
+    "lon": 18.066666666666666,
+    "neighbors": [
+      {
+        "city": "St Petersburg",
+        "dist": 5
+      },
+      {
+        "city": "Minsk",
+        "dist": 6
+      },
+      {
+        "city": "Hamburg",
+        "dist": 6
+      },
+      {
+        "city": "Leeds",
+        "dist": 6
+      },
+      {
+        "city": "Vilnius",
+        "dist": 6
+      },
+      {
+        "city": "Riga",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Kraków",
+    "size": 14,
+    "lat": 50.06666666666667,
+    "lon": 19.933333333333334,
+    "neighbors": [
+      {
+        "city": "Kiev",
+        "dist": 4
+      },
+      {
+        "city": "Prague",
+        "dist": 5
+      },
+      {
+        "city": "Warsaw",
+        "dist": 6
+      },
+      {
+        "city": "Lviv",
+        "dist": 5
+      },
+      {
+        "city": "Worclaw",
+        "dist": 5
+      },
+      {
+        "city": "Lódz",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Valencia",
+    "size": 14,
+    "lat": 39.46666666666667,
+    "lon": -0.38333333333333336,
+    "neighbors": [
+      {
+        "city": "Barcelona",
+        "dist": 5
+      },
+      {
+        "city": "Madrid",
+        "dist": 6
+      },
+      {
+        "city": "Rome",
+        "dist": 6
+      },
+      {
+        "city": "Zaragoza",
+        "dist": 5
+      },
+      {
+        "city": "Sevilla",
+        "dist": 6
+      },
+      {
+        "city": "Marseille",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Amsterdam",
+    "size": 13,
+    "lat": 52.36666666666667,
+    "lon": 4.9,
+    "neighbors": [
+      {
+        "city": "Leeds",
+        "dist": 6
+      },
+      {
+        "city": "Cologne",
+        "dist": 6
+      },
+      {
+        "city": "Hamburg",
+        "dist": 6
+      },
+      {
+        "city": "Rotterdam",
+        "dist": 4
+      },
+      {
+        "city": "Düsseldorf",
+        "dist": 5
+      },
+      {
+        "city": "Essen",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Leeds",
+    "size": 13,
+    "lat": 53.8,
+    "lon": -0.44999999999999996,
+    "neighbors": [
+      {
+        "city": "Birmingham",
+        "dist": 5
+      },
+      {
+        "city": "Amsterdam",
+        "dist": 6
+      },
+      {
+        "city": "London",
+        "dist": 6
+      },
+      {
+        "city": "Hamburg",
+        "dist": 6
+      },
+      {
+        "city": "Rotterdam",
+        "dist": 6
+      },
+      {
+        "city": "Berlin",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Tolyatti",
+    "size": 13,
+    "lat": 53.516666666666666,
+    "lon": 49.416666666666664,
+    "neighbors": [
+      {
+        "city": "Samara",
+        "dist": 4
+      },
+      {
+        "city": "Ulyanovsk",
+        "dist": 5
+      },
+      {
+        "city": "Kazan",
+        "dist": 6
+      },
+      {
+        "city": "Saratov",
+        "dist": 6
+      },
+      {
+        "city": "Ufa",
+        "dist": 6
+      },
+      {
+        "city": "Hamburg",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Kryvy Rih",
+    "size": 13,
+    "lat": 47.916666666666664,
+    "lon": 33.15,
+    "neighbors": [
+      {
+        "city": "Zaporozhye",
+        "dist": 5
+      },
+      {
+        "city": "Odessa",
+        "dist": 5
+      },
+      {
+        "city": "Dnepropetrovsk",
+        "dist": 5
+      },
+      {
+        "city": "Chisinau",
+        "dist": 5
+      },
+      {
+        "city": "Rostov-na-Donu",
+        "dist": 6
+      },
+      {
+        "city": "Kiev",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Sevilla",
+    "size": 13,
+    "lat": 37.39,
+    "lon": -5.99,
+    "neighbors": [
+      {
+        "city": "Athens",
+        "dist": 4
+      },
+      {
+        "city": "Palermo",
+        "dist": 5
+      },
+      {
+        "city": "Madrid",
+        "dist": 6
+      },
+      {
+        "city": "Valencia",
+        "dist": 6
+      },
+      {
+        "city": "Zaragoza",
+        "dist": 7
+      },
+      {
+        "city": "Genoa",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Palermo",
+    "size": 13,
+    "lat": 38.11666666666667,
+    "lon": 13.366666666666667,
+    "neighbors": [
+      {
+        "city": "Sevilla",
+        "dist": 5
+      },
+      {
+        "city": "Naples",
+        "dist": 6
+      },
+      {
+        "city": "Athens",
+        "dist": 6
+      },
+      {
+        "city": "Rome",
+        "dist": 6
+      },
+      {
+        "city": "Marseille",
+        "dist": 6
+      },
+      {
+        "city": "Sofia",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Ulyanovsk",
+    "size": 13,
+    "lat": 54.31666666666667,
+    "lon": 48.36666666666667,
+    "neighbors": [
+      {
+        "city": "Tolyatti",
+        "dist": 5
+      },
+      {
+        "city": "Samara",
+        "dist": 5
+      },
+      {
+        "city": "Kazan",
+        "dist": 5
+      },
+      {
+        "city": "Berlin",
+        "dist": 5
+      },
+      {
+        "city": "Birmingham",
+        "dist": 5
+      },
+      {
+        "city": "Warsaw",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Chisinau",
+    "size": 13,
+    "lat": 47.016666666666666,
+    "lon": 28.833333333333332,
+    "neighbors": [
+      {
+        "city": "Rostov-na-Donu",
+        "dist": 3
+      },
+      {
+        "city": "Odessa",
+        "dist": 5
+      },
+      {
+        "city": "Budapest",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Genoa",
+    "size": 13,
+    "lat": 44.416666666666664,
+    "lon": 8.933333333333334,
+    "neighbors": [
+      {
+        "city": "Milan",
+        "dist": 5
+      },
+      {
+        "city": "Turin",
+        "dist": 5
+      },
+      {
+        "city": "Rome",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Izhevsk",
+    "size": 13,
+    "lat": 56.833333333333336,
+    "lon": 53.18333333333333,
+    "neighbors": [
+      {
+        "city": "Nizhny Novgorod",
+        "dist": 4
+      },
+      {
+        "city": "Kazan",
+        "dist": 5
+      },
+      {
+        "city": "Yekaterinburg",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Frankfurt",
+    "size": 13,
+    "lat": 50.1167,
+    "lon": 8.6833,
+    "neighbors": [
+      {
+        "city": "Kiev",
+        "dist": 4
+      },
+      {
+        "city": "Cologne",
+        "dist": 5
+      },
+      {
+        "city": "Prague",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Krasnodar",
+    "size": 13,
+    "lat": 45.03333333333333,
+    "lon": 38.96666666666667,
+    "neighbors": [
+      {
+        "city": "Rostov-na-Donu",
+        "dist": 6
+      },
+      {
+        "city": "Sofia",
+        "dist": 6
+      },
+      {
+        "city": "Donetsk",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Worclaw",
+    "size": 13,
+    "lat": 51.11666666666667,
+    "lon": 17.033333333333335,
+    "neighbors": [
+      {
+        "city": "Poznan",
+        "dist": 5
+      },
+      {
+        "city": "Prague",
+        "dist": 5
+      },
+      {
+        "city": "Kraków",
+        "dist": 5
+      }
+    ]
+  },
+  {
+    "name": "Glasgow",
+    "size": 13,
+    "lat": 55.860916,
+    "lon": -4.251433,
+    "neighbors": [
+      {
+        "city": "Birmingham",
+        "dist": 6
+      },
+      {
+        "city": "Riga",
+        "dist": 6
+      },
+      {
+        "city": "London",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Yaroslavl",
+    "size": 13,
+    "lat": 57.61666666666667,
+    "lon": 39.85,
+    "neighbors": [
+      {
+        "city": "Moscov",
+        "dist": 5
+      },
+      {
+        "city": "Nizhny Novgorod",
+        "dist": 5
+      },
+      {
+        "city": "Kharkov",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Zaragoza",
+    "size": 13,
+    "lat": 41.65,
+    "lon": -0.8833333333333333,
+    "neighbors": [
+      {
+        "city": "Madrid",
+        "dist": 5
+      },
+      {
+        "city": "Barcelona",
+        "dist": 5
+      },
+      {
+        "city": "Paris",
+        "dist": 7
+      }
+    ]
+  },
+  {
+    "name": "Essen",
+    "size": 13,
+    "lat": 51.45,
+    "lon": 7.0167,
+    "neighbors": [
+      {
+        "city": "Düsseldorf",
+        "dist": 4
+      },
+      {
+        "city": "Dortmund",
+        "dist": 4
+      },
+      {
+        "city": "Cologne",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Rotterdam",
+    "size": 13,
+    "lat": 51.916666666666664,
+    "lon": 4.5,
+    "neighbors": [
+      {
+        "city": "Amsterdam",
+        "dist": 4
+      },
+      {
+        "city": "Düsseldorf",
+        "dist": 6
+      },
+      {
+        "city": "Cologne",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Dortmund",
+    "size": 13,
+    "lat": 51.5167,
+    "lon": 7.4667,
+    "neighbors": [
+      {
+        "city": "Essen",
+        "dist": 4
+      },
+      {
+        "city": "Düsseldorf",
+        "dist": 4
+      },
+      {
+        "city": "Cologne",
+        "dist": 4
+      }
+    ]
+  },
+  {
+    "name": "Stuttgart",
+    "size": 13,
+    "lat": 48.7833,
+    "lon": 9.1833,
+    "neighbors": [
+      {
+        "city": "Frankfurt",
+        "dist": 5
+      },
+      {
+        "city": "Cologne",
+        "dist": 6
+      },
+      {
+        "city": "Munich",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Vilnius",
+    "size": 13,
+    "lat": 54.68333333333333,
+    "lon": 25.283333333333335,
+    "neighbors": [
+      {
+        "city": "Minsk",
+        "dist": 5
+      },
+      {
+        "city": "Riga",
+        "dist": 6
+      },
+      {
+        "city": "Warsaw",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Poznan",
+    "size": 13,
+    "lat": 52.4,
+    "lon": 16.916666666666668,
+    "neighbors": [
+      {
+        "city": "Worclaw",
+        "dist": 5
+      },
+      {
+        "city": "Ulyanovsk",
+        "dist": 6
+      },
+      {
+        "city": "Lódz",
+        "dist": 6
+      }
+    ]
+  },
+  {
+    "name": "Düsseldorf",
+    "size": 13,
+    "lat": 51.2333,
+    "lon": 6.7833,
+    "neighbors": [
+      {
+        "city": "Essen",
+        "dist": 4
+      },
+      {
+        "city": "Cologne",
+        "dist": 4
+      },
+      {
+        "city": "Frankfurt",
+        "dist": 5
+      }
+    ]
+  } ]
+}

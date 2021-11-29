@@ -1,4 +1,4 @@
-package org.grutzmann.common.math
+package math
 
 data class Vector(val x :Double, val y :Double) {
     fun minus() = Vector(-x, -y)
@@ -9,4 +9,9 @@ data class Vector(val x :Double, val y :Double) {
     fun norm2() = x*x +y*y
     fun perp() = Vector(-y, x)
     fun dot(v :Vector) = x*v.x +y*v.y
+
+    companion object {
+        val ex = Vector(1.0, 0.0)
+        val ey = Vector(0.0, 1.0)
+    }
 }
