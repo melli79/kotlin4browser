@@ -2,23 +2,21 @@
 import kotlinx.browser.document
 import kotlinx.browser.window
 import kotlinx.html.InputType
-import kotlinx.html.js.onChangeFunction
-import kotlinx.html.js.onClickFunction
-import org.w3c.dom.HTMLInputElement
+import org.w3c.dom.*
 import react.*
 import react.dom.*
+import react.dom.events.ChangeEvent
 import styled.*
 import kotlin.js.Date
 import kotlin.random.Random
 
-external interface AppState :RState {
+external interface AppState :State {
     var name :String
     var start :Boolean
     var setSize :Int
 }
 
-@JsExport
-class App :RComponent<RProps, AppState>() {
+class App :RComponent<Props, AppState>() {
     private lateinit var random :Random
     private var cookies :MutableMap<String, String>? = null
     override fun AppState.init() {
@@ -55,7 +53,7 @@ class App :RComponent<RProps, AppState>() {
                 attrs {
                     type = InputType.text
                     value = state.name
-                    onChangeFunction = { event ->
+                    onChange = { event :ChangeEvent<*> ->
                         val inputElement = event.target as HTMLInputElement
                         setState {
                             name = inputElement.value
@@ -68,7 +66,7 @@ class App :RComponent<RProps, AppState>() {
                 attrs {
                     if (state.name.trim().length < 2)
                         disabled = true
-                    onClickFunction = {
+                    onClick = {
                         setCookie("name", state.name)
                         setState {
                             start = true
@@ -83,7 +81,7 @@ class App :RComponent<RProps, AppState>() {
                 attrs {
                     if (state.name.trim().length < 2)
                         disabled = true
-                    onClickFunction = {
+                    onClick = {
                         setCookie("name", state.name)
                         setState {
                             start = true
@@ -98,7 +96,7 @@ class App :RComponent<RProps, AppState>() {
                 attrs {
                     if (state.name.trim().length < 2)
                         disabled = true
-                    onClickFunction = {
+                    onClick = {
                         setCookie("name", state.name)
                         setState {
                             start = true
@@ -113,7 +111,7 @@ class App :RComponent<RProps, AppState>() {
                 attrs {
                     if (state.name.trim().length < 2)
                         disabled = true
-                    onClickFunction = {
+                    onClick = {
                         setCookie("name", state.name)
                         setState {
                             start = true
@@ -137,7 +135,7 @@ class App :RComponent<RProps, AppState>() {
 
 fun main() {
     window.onload = {
-        render(document.getElementById("root")) {
+        render(document.getElementById("root")!!) {
             child(App::class) {}
         }
     }

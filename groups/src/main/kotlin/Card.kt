@@ -74,13 +74,11 @@ fun List<Card>.numGroupsWith(card :Card) :Int {
     return solutions
 }
 
-external interface CardProps :RProps {
+external interface CardProps :Props {
     var card :Card
 }
 
-@OptIn(ExperimentalJsExport::class)
-@JsExport
-class CardComponent(props :CardProps) :RComponent<CardProps, RState>(props) {
+class CardComponent(props :CardProps) :RComponent<CardProps, State>(props) {
     override fun RBuilder.render() {
         styledSpan {
             css {

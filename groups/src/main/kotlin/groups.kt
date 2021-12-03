@@ -10,12 +10,12 @@ import kotlin.math.ln
 import kotlin.math.roundToInt
 import kotlin.random.Random
 
-external interface GroupProps :RProps {
+external interface GroupProps :Props {
     var name :String
     var setSize :Int
 }
 
-external interface GroupState :RState {
+external interface GroupState :State {
     var remainingCards :MutableList<Card>
     var openSet :List<Card>
     var groups :MutableList<Triple<Card, Card, Card>>
@@ -24,7 +24,6 @@ external interface GroupState :RState {
     var round :Int
 }
 
-@JsExport
 class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(props) {
     private lateinit var random :Random
     val numRounds = 10
@@ -96,7 +95,7 @@ class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(prop
             css {
                 textAlign = TextAlign.justify
             }
-            +"""Watch out for groups, i.e. triples of cards that cannot be split along one feature (shape, number, color, shade)
+            +"""Watch out for groups, i.e. triples of cards that cannot be split along one feature (shape – ♣, ♠, ♥, ♦︎, number, color, shade)
                 | into 2 subgroups.  If you see a group, press the Group button.""".trimMargin()
         }
         p {
@@ -107,7 +106,7 @@ class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(prop
                 }
             }
         }
-        if (state.round < numRounds) {
+        if (state.round <= numRounds) {
             button {
                 attrs {
                     onClickFunction = {
@@ -118,7 +117,7 @@ class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(prop
             }
             button {
                 attrs {
-                    onClickFunction = {
+                    onClick = {
                         claimSet()
                         revealNextSet()
                     }
@@ -134,7 +133,7 @@ class GroupComponent(props :GroupProps) :RComponent<GroupProps, GroupState>(prop
             }
             button {
                 attrs {
-                    onClickFunction = {
+                    onClick = {
                         setState {
                             reset()
                         }

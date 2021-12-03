@@ -1,21 +1,19 @@
 plugins {
-    kotlin("js") version "1.5.31"
+    kotlin("js") version "1.6.0"
 }
 
-group = "org.grutzmann.games"
-version = "0.3-SNAPSHOT"
+group = "org.grutzmann"
+version = "0.5-SNAPSHOT"
 
 repositories {
-    jcenter()
     mavenCentral()
-    maven { url = uri("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/kotlin-js-wrappers") }
 }
 
 dependencies {
-    testImplementation(kotlin("test-js"))
-    implementation("org.jetbrains:kotlin-react:17.0.1-pre.148-kotlin-1.4.30")
-    implementation("org.jetbrains:kotlin-react-dom:17.0.1-pre.148-kotlin-1.4.30")
-    implementation("org.jetbrains:kotlin-styled:5.2.1-pre.148-kotlin-1.4.30")
+    testImplementation("org.jetbrains.kotlin:kotlin-test:1.6.0")
+    implementation("org.jetbrains.kotlin-wrappers:kotlin-react:17.0.2-pre.272-kotlin-1.6.0")
+    implementation("org.jetbrains.kotlin-wrappers:kotlin-react-dom:17.0.2-pre.272-kotlin-1.6.0")
+    implementation("org.jetbrains.kotlin-wrappers:kotlin-styled:5.3.3-pre.272-kotlin-1.6.0")
 }
 
 kotlin {
@@ -24,11 +22,6 @@ kotlin {
         browser {
             commonWebpackConfig {
                 cssSupport.enabled = true
-            }
-            testTask {
-                useKarma {
-                    usePhantomJS()
-                }
             }
         }
     }
